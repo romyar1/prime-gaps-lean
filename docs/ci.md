@@ -31,7 +31,9 @@ the memory cap requests a Lean error if its allocation limit is reached.
 The direct audit probes use the same limits. The workflow first adds a unique
 24 GiB swap file to its disposable Linux VM, after checking that 30 GiB of disk
 space is free following the Mathlib cache download. This reserves 6 GiB for
-build outputs. If space is insufficient it fails with a capacity message; it
+build outputs. If the workspace has that 6 GiB reserve and an additional `/mnt`
+temporary disk has 30 GiB free, swap can use that disk instead. If space is
+insufficient it fails with a capacity message; it
 does not delete existing files or installed software. The setup script refuses
 to run outside a GitHub-hosted Linux runner. This cap is not an operating-system
 limit on total resident memory or all subprocesses. These settings leave kernel
