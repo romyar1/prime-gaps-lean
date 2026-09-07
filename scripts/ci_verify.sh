@@ -22,9 +22,9 @@ resource_snapshot | tee verification/resources.log
 monitor_pid=$!
 trap 'kill "$monitor_pid" 2>/dev/null || true; wait "$monitor_pid" 2>/dev/null || true' EXIT
 
-# A whole-verification deadline leaves time within the 180-minute job for
+# A whole-verification deadline leaves time within the 240-minute job for
 # cleanup and upload. SIGINT lets verify.py record FAIL and stop its children.
 # --fresh cleans this package only; the pinned Mathlib cache remains usable.
-timeout --signal=INT --kill-after=30s 150m \
+timeout --signal=INT --kill-after=30s 210m \
   /usr/bin/time -v -o verification/time.txt \
-  ./verify.sh --fresh --timeout 8400
+  ./verify.sh --fresh --timeout 12000

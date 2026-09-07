@@ -12,7 +12,7 @@ jobs:
   verify:
     # The ARM image has fewer preinstalled SDKs. Disk headroom is checked below.
     runs-on: ubuntu-24.04-arm
-    timeout-minutes: 180
+    timeout-minutes: 240
     env:
       # Lake's worker pool; the package weakLeanArgs caps each Lean frontend.
       LEAN_NUM_THREADS: "1"

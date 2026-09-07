@@ -42,9 +42,11 @@ in place. The audit registry records the reviewed configuration change.
 Lake may still buffer a compiler's diagnostics until that module finishes, so
 `scripts/ci_verify.sh` also prints memory, disk and process information every
 30 seconds. GNU time records resource statistics in `verification/time.txt`.
-The wrapper's 150-minute deadline sends SIGINT so the verifier can stop its
+The wrapper's 210-minute deadline sends SIGINT so the verifier can stop its
 children and record failure, leaving time for artifact upload within the
-180-minute job. A runner that disappears abruptly can still skip artifact
+240-minute job. This extra timing headroom accommodates the conservative
+single-worker build; it is not an explanation of the earlier shutdowns.
+A runner that disappears abruptly can still skip artifact
 upload; the console diagnostics are therefore essential.
 
 The verifier retains `--no-cache --rehash`. In the pinned Lake version,
