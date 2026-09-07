@@ -83,8 +83,8 @@ See [verification instructions](docs/verification.md) for a fresh project build,
 the exact audit policy and adding new modules. A successful build checks the
 stated implications; it does not remove their hypotheses.
 
-The GitHub workflow runs the same verifier. A hosted run has not yet been
-observed; [CI notes](docs/ci.md) record the available resource measurements.
+The GitHub workflow runs the same verifier. A successful hosted run has not yet
+been observed; [CI notes](docs/ci.md) record the shutdowns and resource settings.
 
 ## Publishing this snapshot
 

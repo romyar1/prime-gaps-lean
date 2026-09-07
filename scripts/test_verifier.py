@@ -4,12 +4,18 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import io
+import os
 from pathlib import Path
 import tempfile
+import sys
+import subprocess
+import time
 import unittest
 from unittest.mock import patch
 
 import verify
+import package_release
 from lean_text import (
     APPROVED_BASELINE_WRAPPER_AXIOMS, SourceCheckError, axiom_requests,
     imports, parse_axiom_reports, source_scan, strip_lean_comments_and_strings,
@@ -208,6 +214,89 @@ class VerifierBoundaryTests(unittest.TestCase):
                 source.unlink()
                 with self.assertRaises(SourceCheckError):
                     verify.data_fingerprints()
+
+
+class ProcessTests(unittest.TestCase):
+    def test_memory_setup_refuses_local_execution(self):
+        env = dict(os.environ, GITHUB_ACTIONS="false", RUNNER_OS="macOS")
+        result = subprocess.run(["bash", str(verify.ROOT / "scripts/ci_prepare_memory.sh")],
+                                env=env, text=True, capture_output=True)
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("restricted to a GitHub-hosted Linux runner", result.stderr)
+
+    def test_memory_setup_refuses_to_overwrite_existing_files(self):
+        with tempfile.TemporaryDirectory() as directory:
+            existing = Path(directory) / "prime-gaps-verification.swap"
+            existing.write_bytes(b"existing data")
+            env = dict(os.environ, GITHUB_ACTIONS="true", RUNNER_OS="Linux",
+                       RUNNER_ENVIRONMENT="github-hosted", RUNNER_TEMP=directory)
+            result = subprocess.run(["bash", str(verify.ROOT / "scripts/ci_prepare_memory.sh")],
+                                    env=env, text=True, capture_output=True)
+            self.assertEqual(result.returncode, 1)
+            self.assertIn("Refusing to overwrite", result.stderr)
+            self.assertEqual(existing.read_bytes(), b"existing data")
+
+    def test_release_includes_the_workflow_entry_points(self):
+        selected = {path.relative_to(package_release.ROOT).as_posix()
+                    for pattern in package_release.PATTERNS
+                    for path in package_release.ROOT.glob(pattern) if path.is_file()}
+        self.assertTrue({"verify.sh", "scripts/verify.py", "scripts/ci_verify.sh",
+                         "scripts/ci_prepare_memory.sh",
+                         ".github/workflows/verify.yml"} <= selected)
+
+    def test_live_output_arrives_before_process_exit_and_log_is_exact(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            log = root / "test.log"
+            release = root / "release"
+
+            class Consumer(io.StringIO):
+                def write(self, text):
+                    result = super().write(text)
+                    if "ready π" in self.getvalue():
+                        release.touch()
+                    return result
+
+            code = ("from pathlib import Path\nimport time\n"
+                    "print('ready π', flush=True)\n"
+                    "while not Path('release').exists(): time.sleep(0.02)\n"
+                    "print('finished', flush=True)\n")
+            output = Consumer()
+            env = dict(os.environ, PRIME_GAPS_LIVE_LOGS="1")
+            with patch.object(verify, "ROOT", root), patch("sys.stdout", output):
+                record = verify.run([sys.executable, "-u", "-c", code], env, log, 5)
+            self.assertEqual(record["exit_code"], 0)
+            self.assertEqual(log.read_text(), "ready π\nfinished\n")
+            self.assertIn("finished", output.getvalue())
+            self.assertEqual(record["log_sha256"], verify.digest(log))
+
+    def test_failure_is_reported_even_with_live_output_enabled(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            output = io.StringIO()
+            env = dict(os.environ, PRIME_GAPS_LIVE_LOGS="1")
+            with patch.object(verify, "ROOT", root), patch("sys.stdout", output):
+                with self.assertRaises(SourceCheckError):
+                    verify.run([sys.executable, "-c", "print('failure detail'); raise SystemExit(7)"],
+                               env, root / "failure.log", 5)
+            self.assertIn("failure detail", output.getvalue())
+
+    def test_timeout_stops_descendants_and_retains_output(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            # The child would leave a marker if only its parent were stopped.
+            child = "import time; from pathlib import Path; time.sleep(2); Path('escaped').touch()"
+            code = ("import subprocess, sys, time\n"
+                    f"subprocess.Popen([sys.executable, '-c', {child!r}])\n"
+                    "print('waiting', flush=True)\ntime.sleep(30)\n")
+            output = io.StringIO()
+            env = dict(os.environ, PRIME_GAPS_LIVE_LOGS="1")
+            with patch.object(verify, "ROOT", root), patch("sys.stdout", output):
+                with self.assertRaises(TimeoutError):
+                    verify.run([sys.executable, "-u", "-c", code], env, root / "timeout.log", 1)
+            time.sleep(1.5)
+            self.assertFalse((root / "escaped").exists())
+            self.assertIn("waiting", output.getvalue())
 
 
 if __name__ == "__main__":

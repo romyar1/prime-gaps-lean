@@ -32,11 +32,12 @@ This runs `lake clean primeGapsLean` first. It preserves dependency caches.
 Do not replace it with unqualified `lake clean`, which also cleans dependencies.
 The baseline is large, so allow time for this build.
 
-The package supplies `-j2` to Lean for both project libraries, and the generated
-audit probes use the same limit of two frontend threads. Set
-`LEAN_NUM_THREADS=2` in the invoking environment to limit Lake's worker pool
-as well. The package setting uses `weakLeanArgs`, a runtime scheduling option
-that the pinned Lake implementation excludes from proof artifact cache keys.
+The package and audit probes use `-j1 -DElab.async=false -M30000`: one frontend
+worker, synchronous elaboration, and a 30000 MiB Lean allocation limit. Set
+`LEAN_NUM_THREADS=1` in the invoking environment to limit Lake's worker pool
+as well. The package uses `weakLeanArgs`, which the pinned Lake implementation
+excludes from proof artifact cache keys. See [CI notes](ci.md) for the resource
+limits and their scope. Set `PRIME_GAPS_LIVE_LOGS=1` to stream verifier logs.
 
 For a source, dependency, and numerical-data integrity check without a proof
 build or axiom audit:

@@ -14,7 +14,8 @@ jobs:
     timeout-minutes: 180
     env:
       # Lake's worker pool; the package weakLeanArgs caps each Lean frontend.
-      LEAN_NUM_THREADS: "2"
+      LEAN_NUM_THREADS: "1"
+      PRIME_GAPS_LIVE_LOGS: "1"
     steps:
       - name: Check out sources
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -31,16 +32,17 @@ jobs:
           use-mathlib-cache: "true"
           use-github-cache: "false"
 
+      - name: Provide memory headroom for the public baseline
+        run: bash scripts/ci_prepare_memory.sh
+
       - name: Check runtime and unchanged dependency pins
         run: |
           python3 -c 'import sys; assert sys.version_info >= (3, 11)'
           git diff --exit-code -- lean-toolchain lakefile.toml lake-manifest.json
+          python3 -B -m unittest discover -s scripts -p 'test_*.py'
 
       - name: Rebuild project proofs and audit declarations
-        run: |
-          # Keep fetched dependencies; no root-project proof objects are reused.
-          rm -rf -- .lake/build
-          ./verify.sh --timeout 10800
+        run: bash scripts/ci_verify.sh
 
       - name: Upload verification receipts and logs
         if: ${{ always() }}

@@ -9,6 +9,7 @@ Python 3.11+, Git, and the project-pinned Lean/Lake toolchain are required.
 from __future__ import annotations
 
 import argparse
+import codecs
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -128,12 +129,26 @@ def capture(command: list[str], env: dict[str, str], timeout: float = 120) -> st
 
 def run(command: list[str], env: dict[str, str], log: Path, timeout: float) -> dict:
     started = time.monotonic()
-    with log.open("w", encoding="utf-8") as stream:
+    # Keep the exact log for auditing while exposing new output to CI. Reading
+    # the file avoids pipe backpressure and preserves the existing timeout loop.
+    live = env.get("PRIME_GAPS_LIVE_LOGS") == "1"
+    decoder = codecs.getincrementaldecoder("utf-8")(errors="replace")
+    with log.open("w", encoding="utf-8") as stream, log.open("rb") as reader:
+        def relay(*, final: bool = False) -> None:
+            if live:
+                # Bound work per poll so output cannot starve timeout checks.
+                chunk = reader.read() if final else reader.read(65536)
+                text = decoder.decode(chunk, final=final)
+                if text:
+                    print(text, end="", flush=True)
+
+        print(f"Starting {relative(log)}", flush=True)
         process = subprocess.Popen(command, cwd=ROOT, env=env, stdout=stream,
                                    stderr=subprocess.STDOUT, start_new_session=True)
         heartbeat = started + 30
         try:
             while process.poll() is None:
+                relay()
                 now = time.monotonic()
                 if timeout and now - started > timeout:
                     raise TimeoutError(f"timeout after {timeout:g}s; see {relative(log)}")
@@ -152,6 +167,8 @@ def run(command: list[str], env: dict[str, str], log: Path, timeout: float) -> d
                 os.killpg(process.pid, signal.SIGKILL)
                 process.wait()
             raise
+        finally:
+            relay(final=True)
     # Machine-specific commands are kept in the local log, not the portable receipt.
     record = {"exit_code": process.returncode, "elapsed_seconds": round(time.monotonic() - started, 3),
               "log": relative(log), "log_sha256": digest(log)}
@@ -540,7 +557,7 @@ def main() -> int:
                              "\n".join(f"#check @{name}\n#print axioms {name}" for name in names) + "\n")
             probe_hash = digest(probe)
             log = run_dir / "theorem_types.log"
-            receipt["canonical_audit"] = run([lake, "env", "lean", "-j2", "-DautoImplicit=false", "-DwarningAsError=true",
+            receipt["canonical_audit"] = run([lake, "env", "lean", "-j1", "-DElab.async=false", "-M30000", "-DautoImplicit=false", "-DwarningAsError=true",
                                                str(probe.relative_to(ROOT))], env, log, args.timeout)
             output = log.read_text()
             require(digest(probe) == probe_hash, "canonical probe changed during checking")
@@ -560,7 +577,7 @@ def main() -> int:
                                      "\n\n" + "\n".join(f"#print {name}" for name in BASELINE_AXIOMS) + "\n")
             premise_hash = digest(premise_probe)
             premise_log = run_dir / "explicit_premises.log"
-            receipt["explicit_premises"] = run([lake, "env", "lean", "-j2", "-DautoImplicit=false", "-DwarningAsError=true",
+            receipt["explicit_premises"] = run([lake, "env", "lean", "-j1", "-DElab.async=false", "-M30000", "-DautoImplicit=false", "-DwarningAsError=true",
                                                  str(premise_probe.relative_to(ROOT))], env, premise_log, args.timeout)
             premise_output = premise_log.read_text()
             require(digest(premise_probe) == premise_hash, "explicit-premise probe changed during checking")
