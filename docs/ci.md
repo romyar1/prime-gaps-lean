@@ -5,6 +5,13 @@ package with `verify.sh --fresh`, rebuilds its proofs, and audits the same
 canonical declarations and explicit hypotheses as local verification. It does
 not change the mathematical sources or dependency pins.
 
+The revised workflow uses the standard public `ubuntu-24.04-arm` image. Its
+published software inventory is smaller than the x64 image's (for example,
+Android SDK and CodeQL are absent), which makes it a candidate for providing
+swap headroom without deleting installed software. This is not a guarantee of
+free space: the workflow checks actual capacity after fetching dependencies.
+Lean `v4.34.0-rc2` provides an official Linux aarch64 release.
+
 The first two hosted attempts at commit `c2f3d7f` ended with runner shutdowns
 and exit code 143, about 51 and 45 minutes into the build. Neither reached the
 180-minute job deadline. The available logs do not establish the shutdown's
@@ -55,4 +62,6 @@ than skipping any audit or reusing unverified project proof objects.
 References: [pinned Lake CLI](https://github.com/leanprover/lean4/blob/v4.34.0-rc2/src/lake/Lake/CLI/Help.lean),
 [elaboration option](https://github.com/leanprover/lean4/blob/v4.34.0-rc2/src/Lean/CoreM.lean),
 [weak arguments](https://github.com/leanprover/lean4/blob/v4.34.0-rc2/src/lake/Lake/Config/LeanConfig.lean),
+[ARM image inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Arm64-Readme.md),
+[pinned Lean release](https://github.com/leanprover/lean4/releases/tag/v4.34.0-rc2),
 and [GitHub runner specifications](https://docs.github.com/en/actions/reference/runners/github-hosted-runners).
