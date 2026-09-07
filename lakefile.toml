@@ -3,7 +3,7 @@ version = "0.1.0"
 keywords = ["math", "number-theory", "prime-gaps"]
 defaultTargets = ["PrimeGapsDevelopment"]
 fixedToolchain = true
-weakLeanArgs = ["-j1", "-DElab.async=false", "-M30000"]
+weakLeanArgs = ["-j1", "-DElab.async=false", "-DmaxHeartbeats=2000000", "-M30000"]
 
 [leanOptions]
 autoImplicit = false

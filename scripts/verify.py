@@ -557,7 +557,7 @@ def main() -> int:
                              "\n".join(f"#check @{name}\n#print axioms {name}" for name in names) + "\n")
             probe_hash = digest(probe)
             log = run_dir / "theorem_types.log"
-            receipt["canonical_audit"] = run([lake, "env", "lean", "-j1", "-DElab.async=false", "-M30000", "-DautoImplicit=false", "-DwarningAsError=true",
+            receipt["canonical_audit"] = run([lake, "env", "lean", "-j1", "-DElab.async=false", "-DmaxHeartbeats=2000000", "-M30000", "-DautoImplicit=false", "-DwarningAsError=true",
                                                str(probe.relative_to(ROOT))], env, log, args.timeout)
             output = log.read_text()
             require(digest(probe) == probe_hash, "canonical probe changed during checking")
@@ -577,7 +577,7 @@ def main() -> int:
                                      "\n\n" + "\n".join(f"#print {name}" for name in BASELINE_AXIOMS) + "\n")
             premise_hash = digest(premise_probe)
             premise_log = run_dir / "explicit_premises.log"
-            receipt["explicit_premises"] = run([lake, "env", "lean", "-j1", "-DElab.async=false", "-M30000", "-DautoImplicit=false", "-DwarningAsError=true",
+            receipt["explicit_premises"] = run([lake, "env", "lean", "-j1", "-DElab.async=false", "-DmaxHeartbeats=2000000", "-M30000", "-DautoImplicit=false", "-DwarningAsError=true",
                                                  str(premise_probe.relative_to(ROOT))], env, premise_log, args.timeout)
             premise_output = premise_log.read_text()
             require(digest(premise_probe) == premise_hash, "explicit-premise probe changed during checking")

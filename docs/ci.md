@@ -25,7 +25,10 @@ confirms that even these reduced concurrency settings need a larger allocation
 budget; it does not prove why GitHub terminated the earlier runners.
 
 The revised resource settings use `LEAN_NUM_THREADS=1` for Lake and
-`weakLeanArgs = ["-j1", "-DElab.async=false", "-M30000"]` for project compilers.
+`weakLeanArgs = ["-j1", "-DElab.async=false", "-DmaxHeartbeats=2000000", "-M30000"]` for project compilers.
+The 200,000-heartbeat default was insufficient for three category-theory
+modules during a local build with synchronous elaboration. Raising this finite
+work budget does not skip proof checking.
 Synchronous elaboration avoids accumulating concurrent theorem elaborations;
 the memory cap requests a Lean error if its allocation limit is reached.
 The direct audit probes use the same limits. The workflow first adds a unique
