@@ -1,0 +1,51 @@
+name: Verify Lean
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    env:
+      # Lake's worker pool; the package weakLeanArgs caps each Lean frontend.
+      LEAN_NUM_THREADS: "2"
+    steps:
+      - name: Check out sources
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install pinned Lean and fetch dependency cache
+        uses: leanprover/lean-action@50fcf42d2e460296f1a34b402e990d1b24f8b596 # v1.6.0
+        with:
+          auto-config: "false"
+          build: "false"
+          test: "false"
+          lint: "false"
+          use-mathlib-cache: "true"
+          use-github-cache: "false"
+
+      - name: Check runtime and unchanged dependency pins
+        run: |
+          python3 -c 'import sys; assert sys.version_info >= (3, 11)'
+          git diff --exit-code -- lean-toolchain lakefile.toml lake-manifest.json
+
+      - name: Rebuild project proofs and audit declarations
+        run: |
+          # Keep fetched dependencies; no root-project proof objects are reused.
+          rm -rf -- .lake/build
+          ./verify.sh --timeout 10800
+
+      - name: Upload verification receipts and logs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: lean-verification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: verification/
+          if-no-files-found: warn

@@ -1,0 +1,17 @@
+# Local dependencies and generated proof objects
+/.lake/
+*.olean
+*.ilean
+*.olean.private
+*.olean.server
+*.ir
+
+# Verification runs are generated locally; compact release records live in provenance/.
+/verification/
+/dist/
+/.tools/
+/research/type_iii/compile_logs/
+/research/type_iii/work_in_progress/
+__pycache__/
+*.py[cod]
+.DS_Store

@@ -1,0 +1,28 @@
+{
+  "status": "EXACT_SELECTED_OPERATOR_WORD_IDENTITIES_ONLY",
+  "four_cycle_fourier_bound_proved": false,
+  "arithmetic": "integer cyclotomic coefficient vectors",
+  "source_sha256": "1f6ef80c8041f4e2e0e1cbed4c7c9a335ac0568c189553dcd615c9fe19c5f651",
+  "records": [
+    {
+      "p": 5,
+      "s": 2,
+      "t_minus_inverse_s": 2,
+      "unit_matrix_entries": 16,
+      "involution": "PASS",
+      "actual_C_normalizations": "PASS",
+      "rank_four_kernel": "PASS",
+      "three_operator_Kl2_word": "PASS"
+    },
+    {
+      "p": 7,
+      "s": 2,
+      "t_minus_inverse_s": 3,
+      "unit_matrix_entries": 36,
+      "involution": "PASS",
+      "actual_C_normalizations": "PASS",
+      "rank_four_kernel": "PASS",
+      "three_operator_Kl2_word": "PASS"
+    }
+  ]
+}

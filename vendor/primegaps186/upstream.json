@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/openai/PrimeGaps186",
+  "commit": "61340d0b74163003b32756bb16e91d9209a5e330",
+  "commit_status": "Source bytes and SHA256 matched the pinned upstream file over HTTPS.",
+  "source": "PrimeGaps186.lean",
+  "source_url": "https://raw.githubusercontent.com/openai/PrimeGaps186/61340d0b74163003b32756bb16e91d9209a5e330/PrimeGaps186.lean",
+  "source_sha256": "fd7d9296871d276f7cd950ebf88d38627ff326abdf214a1facabc52fb6794d27",
+  "source_bytes": 10312565,
+  "source_modified": false,
+  "license": "Apache-2.0",
+  "license_file": "LICENSE"
+}

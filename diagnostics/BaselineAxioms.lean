@@ -1,0 +1,20 @@
+import PrimeGaps186
+
+/-! Audit the actual terminal theorem types and their transitive axioms,
+and the proved analytic interfaces reused by the new development. -/
+
+#check PrimeGap186.dhl_40_2
+#check PrimeGap186.infinite_two_prime_translates_admissibleTuple
+#check PrimeGap186.primeGapLiminf_le_186
+
+#print axioms PrimeGap186.dhl_40_2
+#print axioms PrimeGap186.infinite_two_prime_translates_admissibleTuple
+#print axioms PrimeGap186.primeGapLiminf_le_186
+#print axioms PrimeGap186.unconditional_moebiusCharacterSiegelWalfisz
+#print axioms PrimeGap186.primeIndicator_dyadic_allModuli_bombieriVinogradov
+#print axioms PrimeGap186.sourceTypeI_II_triply_dense_uniform_log_saving_of_deligne
+#print axioms PrimeGap186.typeIII_positive_smooth_convolution_global_log_saving_of_deligne
+#print axioms PrimeGap186.literal_minorant_terminal_coherent_log_saving_of_deligne
+#print axioms PrimeGap186.canonical40_fixed_source_positive_first_moment
+#print axioms PrimeGap186.weighted_prime_detection
+

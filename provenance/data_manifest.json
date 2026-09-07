@@ -1,0 +1,3675 @@
+{
+  "schema_version": 1,
+  "collection": "prime-gaps-182 numerical source records",
+  "source_collection": "analytic-verification input source_certificates collection, 2026-09-04",
+  "normalization": "Only remove the absolute host prefix before prime_gaps_20260903/ in JSON path keys and values; preserve all remaining bytes.",
+  "logical_identifiers_are_filesystem_paths": false,
+  "embedded_hashes_identify": "original source bytes, before path normalization",
+  "canonical_payload_algorithm": "provenance/check_data.py: non_path_payload; SHA256 of compact UTF-8 JSON of logical JSON pointers and typed non-path scalar leaves, traversing objects by sorted logical keys and arrays by index, preserving exact numeric token spellings and all rational or interval strings.",
+  "numerical_premise_count": 262,
+  "numerical_premise_groups": {
+    "cap": 5,
+    "outer_root": 60,
+    "outer_face": 60,
+    "inner_mass": 137
+  },
+  "numerical_premises_discharged": false,
+  "type_iii_proved": false,
+  "integrations_recomputed_during_import": false,
+  "file_count": 16,
+  "original_total_bytes": 59224803,
+  "published_total_bytes": 59200971,
+  "path_prefix_replacements": 662,
+  "files": [
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_n393216.json",
+      "source_relative_path": "experiments/analytic_support/fine_C_low_v3_n393216.json",
+      "published_path": "inputs/source_certificates/experiments/analytic_support/fine_C_low_v3_n393216.json",
+      "original_sha256": "c30f7f0380a6caeba92d68aadcb227b363955c03931fc81ba81e9f0d5be56297",
+      "original_bytes": 1239916,
+      "published_sha256": "c016b129a7a72cbbb22ff7e22981ca4470e9d8d69f7afd02d21dd5959e91406a",
+      "published_bytes": 1237936,
+      "path_prefix_replacements": 55,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "value",
+          "location": "/denominator"
+        },
+        {
+          "kind": "value",
+          "location": "/results/0/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/1/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/2/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/3/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/4/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/5/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/6/kernel_inputs/factory"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_rank_two_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_inner_sources.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_low_inner.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_implementation_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_carry_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_implementation_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_carry.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_low_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1incidence_spline_interval_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_rank_two_face_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_acceleration_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1high_count_term_recurrence_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_v3_independent_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_acceleration_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_v3_independent_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_subtraction_cover.py"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "6651c94cf45b6ae75d2507e4ac6dacc19ca0d52833f47b2ecbd47b0c62d8c8c1",
+      "canonical_non_path_leaf_count": 17374,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_G2_low_v3_bins6_10_n393216.json",
+      "source_relative_path": "experiments/analytic_support/fine_G2_low_v3_bins6_10_n393216.json",
+      "published_path": "inputs/source_certificates/experiments/analytic_support/fine_G2_low_v3_bins6_10_n393216.json",
+      "original_sha256": "82452b44d27e7e53072fd547c2f20f68b67bc1ecf029688abebe55ba951d1aae",
+      "original_bytes": 1594786,
+      "published_sha256": "c421a2aa563148553e443142ce130d609570bf24bd5b60d65c7229361f47edb6",
+      "published_bytes": 1593814,
+      "path_prefix_replacements": 27,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "value",
+          "location": "/denominator"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_harmonic_v3_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "ea6ff3d51b74afd1ec13f839c835ce685a259dd4d2f1140b0dfbe53cace94b62",
+      "canonical_non_path_leaf_count": 23685,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_n393216.json",
+      "source_relative_path": "experiments/analytic_support/fine_coarse_inner_sources_n393216.json",
+      "published_path": "inputs/source_certificates/experiments/analytic_support/fine_coarse_inner_sources_n393216.json",
+      "original_sha256": "a51d1fec993b806c51a26c1a82848d1b7748c0a23d774d8656dab63869f2626a",
+      "original_bytes": 373071,
+      "published_sha256": "7d1c129a8a18e11aad7a62b1b7c55283605c2a1dcda84922cb2e7d27003b83ba",
+      "published_bytes": 371667,
+      "path_prefix_replacements": 39,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_audit.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_rank_two_face_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_inner_sources.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_rank_two_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_subtraction_cover.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_seed.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_seed.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_subtraction_domain_row14.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_enlarged_subtraction.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1flexible_fragment_geometry.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1incidence_fragment_interface.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1certify_incidence_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_multicap_spline_a6_n32768.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_multicap_fixed_a6_cut8_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_multicap_condition_scan_a6_n32768.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_multicap_fixed_a6_cut8_n393216.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1certify_independent_fragment_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1certify_nested_fragment_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_enlarged_subtraction.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "9ddfdf52cdaa4ae731064cffdeffd7c468a7f3284e04dcd7507df98fa673155f",
+      "canonical_non_path_leaf_count": 4852,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.json",
+      "source_relative_path": "experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.json",
+      "published_path": "inputs/source_certificates/experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.json",
+      "original_sha256": "9bc751f0b85f04e891b4352b51a0b12c4a36546ab63c101f1d5e7bf64aecc631",
+      "original_bytes": 21995,
+      "published_sha256": "fec4d98d1dc7fe429323fa1cd75ad78888ae356519abc07e91ab0e840d193315",
+      "published_bytes": 21635,
+      "path_prefix_replacements": 10,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_outer_rank_high_receipt.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine393216_coarse8192_G1_G2_rank_two_roots.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_G1_G2_faces.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine393216_coarse8192_G1_G2_high_sources.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_rank_two_face_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "40e473d8e3e4091a3dd1d3a67a88a836451092c46653ddd73b95e4e15c72575f",
+      "canonical_non_path_leaf_count": 275,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine393216_G4_low_v3.json",
+      "source_relative_path": "experiments/tuple_geometry/fine393216_G4_low_v3.json",
+      "published_path": "inputs/source_certificates/experiments/tuple_geometry/fine393216_G4_low_v3.json",
+      "original_sha256": "bb3f0f0520a9db9d75d0d844c3e1bf3e3cd908801df7b41e9c3397ed410a44a5",
+      "original_bytes": 1494541,
+      "published_sha256": "2c59b37c3cf12a923723c189c379a0bbc1ee3bb9991964123f04bd911eee51a5",
+      "published_bytes": 1492093,
+      "path_prefix_replacements": 68,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "value",
+          "location": "/denominator"
+        },
+        {
+          "kind": "value",
+          "location": "/results/0/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/1/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/2/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/3/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/4/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/5/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/6/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/7/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/8/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/9/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/10/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/11/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/12/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/13/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/14/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/15/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/16/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/17/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/18/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/19/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/20/kernel_inputs/factory"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_rank_two_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_inner_sources.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_low_inner.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_implementation_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_G4_low_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_v3_independent_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1low_kernel_v2_regression.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_carry_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_implementation_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_carry.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_low_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1incidence_spline_interval_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_rank_two_face_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1low_kernel_v2_regression.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_acceleration_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1high_count_term_recurrence_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_v3_independent_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_acceleration_audit.json"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "24c2778f2aa748629d32ad605bb1fd452c72707aeb1a7576f4d7b53c5319ccf8",
+      "canonical_non_path_leaf_count": 22791,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_high_sources.json",
+      "source_relative_path": "experiments/tuple_geometry/fine393216_coarse8192_G1_G2_high_sources.json",
+      "published_path": "inputs/source_certificates/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_high_sources.json",
+      "original_sha256": "94536f4366ad2a5c93a577b24d500c7eda70d3bd81c67e1fd5a1bead7e6e13ab",
+      "original_bytes": 3258287,
+      "published_sha256": "482978d26ede1e62d870e41dd25c66e06721cdb8ea5bb960632306ebe3edfee5",
+      "published_bytes": 3257495,
+      "path_prefix_replacements": 22,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_high_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1certify_incidence_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1partitioned_outer_norm_credit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_high_source_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "269971e521f5dc969d26ad0a27e4f9a965f2ee321d8db27b18393f1fc3ab50cb",
+      "canonical_non_path_leaf_count": 40753,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_rank_two_roots.json",
+      "source_relative_path": "experiments/tuple_geometry/fine393216_coarse8192_G1_G2_rank_two_roots.json",
+      "published_path": "inputs/source_certificates/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_rank_two_roots.json",
+      "original_sha256": "305a476a0c4bc222b1a8f948866df06387f6887a15755677413e2a4168b9d8dd",
+      "original_bytes": 11886281,
+      "published_sha256": "fe5c6f50e1f561ba20df1569edc9b85b42e414008da544e085c23aabf279431f",
+      "published_bytes": 11885777,
+      "path_prefix_replacements": 14,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/results/15/reused_from"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1certify_incidence_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine393216_coarse8192_G2_P2_root.json"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "f1ab3262e009697294ffd8958925ed4004c4bc435ca431652a3c6715947acc57",
+      "canonical_non_path_leaf_count": 158519,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48.json",
+      "source_relative_path": "experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48.json",
+      "published_path": "inputs/source_certificates/experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48.json",
+      "original_sha256": "6c7985091ac01b8cdb62db0b81287df7a4d4f187ca4454dd65c2b0033811af7d",
+      "original_bytes": 3158436,
+      "published_sha256": "ce52bb06015b8c05b344a456e6cbc0e30d0d1cf58ce372ccb2cf94b1399fbd67",
+      "published_bytes": 3155700,
+      "path_prefix_replacements": 76,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "value",
+          "location": "/denominator"
+        },
+        {
+          "kind": "value",
+          "location": "/results/0/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/1/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/2/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/3/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/4/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/5/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/6/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/7/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/8/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/9/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/10/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/11/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/12/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/13/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/14/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/15/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/16/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/17/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/18/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/19/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/20/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/21/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/22/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/23/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/24/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/25/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/26/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/27/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/28/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/29/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/30/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/31/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/32/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/33/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/34/kernel_inputs/factory"
+        },
+        {
+          "kind": "value",
+          "location": "/results/35/kernel_inputs/factory"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_rank_two_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_inner_sources.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_low_inner.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_implementation_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_carry_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_implementation_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_carry.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_low_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1incidence_spline_interval_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_rank_two_face_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_v3_independent_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_acceleration_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_acceleration_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_v3_independent_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "79a315bfc7f4cf97162033ceb4f9facf45f61e6050c7528159ae61c6fb1a8bdd",
+      "canonical_non_path_leaf_count": 48236,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/fine_outer_low_complete_receipt.json",
+      "source_relative_path": "results/fine_outer_low_complete_receipt.json",
+      "published_path": "inputs/source_certificates/results/fine_outer_low_complete_receipt.json",
+      "original_sha256": "831a9f2af1e114a2e377961eb90923871eb2dce6b96a0e3f5af57ea3796e7733",
+      "original_bytes": 41669,
+      "published_sha256": "8af2914f539a5b328cbcc77c0a128868cf07d99154f6ea5886bd41d96a726172",
+      "published_bytes": 39473,
+      "path_prefix_replacements": 61,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/components/0/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/1/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/2/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/3/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/4/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/5/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/6/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/7/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/8/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/9/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/10/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/11/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/12/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/13/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/14/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/15/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/16/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/17/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/18/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/19/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/20/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/21/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/22/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/23/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/24/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/25/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/26/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/27/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/28/input"
+        },
+        {
+          "kind": "value",
+          "location": "/components/29/input"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_harmonic_v3_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_outer_low_receipt.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_G1_all_low.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_G2_low_v3_bins1to5.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_G2_low_v3_bins6_10_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_G2_low_v3_bins11to21.json"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "741680021cc595f76623cf2a62c778d6e8e2f2ee7dc81c74d2ebd9ae4ace9fff",
+      "canonical_non_path_leaf_count": 442,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_G2_low_v3_bins11to21.json",
+      "source_relative_path": "results/multicap_a6_fine393216_G2_low_v3_bins11to21.json",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_G2_low_v3_bins11to21.json",
+      "original_sha256": "c99b8a3a999a5fd08dc2467bc2ab4bcfe6a843fa0e2f59f83caffe725e550f75",
+      "original_bytes": 15369576,
+      "published_sha256": "6c7dde82f75813c2ab30ef076b23a1ea1e5fd51d22803b7ea935fe77d05d69fc",
+      "published_bytes": 15368604,
+      "path_prefix_replacements": 27,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "value",
+          "location": "/denominator"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_harmonic_v3_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "ee5866ddd15fe77b3a5cd41b6662e67cc3ba4769c45f58efa9e2177e246bf8a9",
+      "canonical_non_path_leaf_count": 220233,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_G2_low_v3_bins1to5.json",
+      "source_relative_path": "results/multicap_a6_fine393216_G2_low_v3_bins1to5.json",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_G2_low_v3_bins1to5.json",
+      "original_sha256": "d88d619cb314b86dbd7de63997cf6fdc46374970d2ca1e5f68c28ca3a44b8506",
+      "original_bytes": 902393,
+      "published_sha256": "df062f668fa9476439dfd19cb04bd1b3f038d26d41e1ce970bf8e06b077f7da3",
+      "published_bytes": 901421,
+      "path_prefix_replacements": 27,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "value",
+          "location": "/denominator"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_harmonic_v3_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "f20826eb68c107355227b435e95cd280e6dfe589db4e82f2fbac0e0b5477f821",
+      "canonical_non_path_leaf_count": 13774,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G1_G2_faces.json",
+      "source_relative_path": "results/multicap_a6_fine393216_coarse8192_G1_G2_faces.json",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_coarse8192_G1_G2_faces.json",
+      "original_sha256": "66e027865f79afd86fadea0395f539e5c4c8f445d123ddc8128598afa55489ef",
+      "original_bytes": 3272922,
+      "published_sha256": "277bc03cc5b19eef142c0acf30db2a48eee61a8350d4589d6fad5ed88ba0b964",
+      "published_bytes": 3272382,
+      "path_prefix_replacements": 15,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face_sweep.py"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "b49126b5da9146acfe794e62e6d695d1d4feeb722c8e917493abcef609c17015",
+      "canonical_non_path_leaf_count": 80301,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G1_all_low.json",
+      "source_relative_path": "results/multicap_a6_fine393216_coarse8192_G1_all_low.json",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_coarse8192_G1_all_low.json",
+      "original_sha256": "b1353cd541fc96345335fc2d6cdeb7db6e376af33220e69e89bb3c3ecf9dceba",
+      "original_bytes": 15874601,
+      "published_sha256": "6b17db986def5bf0dd401399721ee8f236b02412aa0cde879f7a10b12eb8c53d",
+      "published_bytes": 15873845,
+      "path_prefix_replacements": 21,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "f31e923247e0e8661d43ded0f81deff46ac7fdc36e7d275baa41e5484fbddad5",
+      "canonical_non_path_leaf_count": 226627,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json",
+      "source_relative_path": "results/multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json",
+      "original_sha256": "e5ca301bbe0ece130efa73d3f71711ea42cfcfceb693bc7b2cbdad1f27e4b213",
+      "original_bytes": 221979,
+      "published_sha256": "0eeaef532f9a57880d2559abc2776e529759e15c027eb41e6dc3b253abce7146",
+      "published_bytes": 221007,
+      "path_prefix_replacements": 27,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/trial"
+        },
+        {
+          "kind": "value",
+          "location": "/affine_cache"
+        },
+        {
+          "kind": "value",
+          "location": "/denominator"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_harmonic_v3_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "b3ad411a88e299adc723a687de81a512e7194a8b78af1166c401e62baf00195e",
+      "canonical_non_path_leaf_count": 3466,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_full_cap_n393216_trial.json",
+      "source_relative_path": "results/multicap_a6_full_cap_n393216_trial.json",
+      "published_path": "inputs/source_certificates/results/multicap_a6_full_cap_n393216_trial.json",
+      "original_sha256": "3ebae41700a7839f2d7a7b3fe068b11ed364a7542aab110173bbcdbd66645952",
+      "original_bytes": 421880,
+      "published_sha256": "fe8180d053e9ec996970e5f5183bc4a735d2bd87a8575fa23ede299d217c6f3f",
+      "published_bytes": 421124,
+      "path_prefix_replacements": 21,
+      "changed_json_locations": [
+        {
+          "kind": "value",
+          "location": "/numerical_origin"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_seed.json"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_seed.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1results~1incidence_subtraction_domain_row14.json"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_enlarged_subtraction.json"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1flexible_fragment_geometry.py"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1incidence_fragment_interface.py"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1certify_incidence_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1results~1incidence_multicap_spline_a6_n32768.json"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1results~1incidence_multicap_fixed_a6_cut8_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1results~1incidence_multicap_condition_scan_a6_n32768.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1results~1incidence_multicap_fixed_a6_cut8_n393216.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1experiments~1variational_routes~1certify_independent_fragment_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1certify_nested_fragment_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/origin_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "value",
+          "location": "/independent_candidate_origin"
+        },
+        {
+          "kind": "value",
+          "location": "/independent_replay_origin"
+        },
+        {
+          "kind": "value",
+          "location": "/independent_vector_archive"
+        },
+        {
+          "kind": "value",
+          "location": "/independent_fixed_archive"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "a492dad963bd99298a27c8e41f9ec71e3dbb73bbb0d438dcf2f7496d2f9b1c6f",
+      "canonical_non_path_leaf_count": 6898,
+      "non_path_payload_unchanged": true
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/prime_gap_182_certificate.json",
+      "source_relative_path": "results/prime_gap_182_certificate.json",
+      "published_path": "inputs/source_certificates/results/prime_gap_182_certificate.json",
+      "original_sha256": "8d4d7f9a01004ad870abc8f2d099bcecbdcdd05dabc2299e50a292638873db1a",
+      "original_bytes": 92470,
+      "published_sha256": "8179bee35c750dfd7fbc0231e12c7c5f64b8ec120b8887a6221de9e48dec9008",
+      "published_bytes": 86998,
+      "path_prefix_replacements": 152,
+      "changed_json_locations": [
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1certify_fine_restored_182.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1outer_low_receipt_review.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_root_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_outer_low_receipt.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1outer_low_receipt_review.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1PrimeGaps186~1prime_gap_186_certificate.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1high_count_term_recurrence_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_acceleration_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_tilted_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel_v2.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel_v3_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_v3_independent_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_acceleration_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_low_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1harmonic_tilted_low_kernel.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1quantized_tilted_low_kernel.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_implementation_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1runtime~1flint~1.dylibs~1libflint.24.0.dylib"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_carry.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_implementation_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1tilted_eulerian_carry_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_low_inner.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1multicap_C_inner_sources.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_rank_two_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1certify_incidence_spline_exact_dickman.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1aggregated_source_jets.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1coarse_affine_envelope.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1validated_fine_source_context.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_rank_two_face_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1incidence_spline_interval_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1multicap_inner_low_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1low_kernel_v3_independent_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_harmonic_v3_composition_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_harmonic_v3_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_harmonic_v3_composition_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1low_kernel_acceleration.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_low_source.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1source_local_operator_count.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1partitioned_outer_norm_credit.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_trial_dhl39_interface_audit.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1hybrid_tail_schur.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1harman_type_ii_addback.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1stadlmann_incidence_source_transfer.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1output~1pdf~1finite_exceptional_type_iii.tex"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1output~1pdf~1incidence_and_many_primes.tex"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1witnesses_verified.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_trial_dhl39_interface_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1sources~1bgp212.txt"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1short_gaps_primary.txt"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1partitioned_outer_norm_credit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_subtraction_cover.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_enlarged_subtraction.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_enlarged_subtraction.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1flexible_fragment_geometry.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1flexible_fragment_geometry.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1incidence_fragment_interface.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1incidence_fragment_interface.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1sharp_pair_weight_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1adaptive_exceptional_square.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1sharp_exceptional_pair_weight.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1harman_type_ii_addback.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1incidence_fragment_interface.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1harman_deficit_integral.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1harman_deficit_integral.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1exact_deficit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1harman_type_ii_addback.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1certify_nested_fragment_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1certify_independent_fragment_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_multicap_fixed_a6_cut8_n393216.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_multicap_condition_scan_a6_n32768.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_multicap_fixed_a6_cut8_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_multicap_spline_a6_n32768.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1certify_incidence_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_enlarged_subtraction.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1incidence_subtraction_domain_row14.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_seed.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_seed.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_trial.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_trial_dhl39_interface_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_all_inner_source_ledger.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine393216_G4_low_v3.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1low_kernel_v2_regression.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1low_kernel_v2_regression.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_G4_low_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.npz"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_affines.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1prepare_fine_source_affines.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_inner_rank_high_normalization.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_receipt.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_audit.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1hybrid_subtraction_cover.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1multicap_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_inner_sources_receipt.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_inner_rank_high_normalization.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3_receipt.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_C_low_v3_receipt.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine393216_G4_low_v3_receipt.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_v3_g3g5g6_n393216_b48_receipt.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_v3_g3g5g6_n393216_b48.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_coarse_inner_low_v3.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_inner_low_v3_receipt.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1fine_all_inner_source_ledger.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1fine_outer_low_complete_receipt.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_G2_low_v3_bins11to21.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_G2_low_v3_bins6_10_n393216.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_G2_low_v3_bins1to5.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_G1_all_low.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_outer_rank_high_receipt.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_rank_two_face_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1independent_multicap_weighted_faces.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_rank_two_face_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1analytic_support~1fine_coarse_rank_two_face_audit.md"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine393216_coarse8192_G1_G2_high_sources.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_high_source_audit.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1multicap_high_source_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_high_source.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_high_source_audit.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine_trial_coarse_rank_two_root_sweep.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_fine393216_coarse8192_G1_G2_faces.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine393216_coarse8192_G1_G2_rank_two_roots.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1tuple_geometry~1fine393216_coarse8192_G2_P2_root.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_coarse_outer_rank_high_receipt.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_cap_certificate_receipt.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1audit_independent_fragment_cap.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1audit_independent_fragment_cap.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1results~1multicap_a6_full_cap_n393216_matched_b30a20.json"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1incidence_spline_ritz.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1incidence_multicap_spline_ritz.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1variational_routes~1independent_fragment_cap_matched_replay.py"
+        },
+        {
+          "kind": "key",
+          "location": "/input_sha256/prime_gaps_20260903~1experiments~1fragment_ritz~1fine_cap_certificate_receipt.py"
+        }
+      ],
+      "canonical_non_path_payload_sha256": "99abb73597928fa6086226f8217e4ccc264fbb22b07f882c1145266746eb8260",
+      "canonical_non_path_leaf_count": 711,
+      "non_path_payload_unchanged": true
+    }
+  ],
+  "source_references": [
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/certify_incidence_spline.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/certify_incidence_spline_exact_dickman.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/exact_deficit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_n393216.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/experiments/analytic_support/fine_C_low_v3_n393216.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_receipt.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_receipt.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_G2_low_v3_bins6_10_n393216.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/experiments/analytic_support/fine_G2_low_v3_bins6_10_n393216.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_audit.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_n393216.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/experiments/analytic_support/fine_coarse_inner_sources_n393216.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_receipt.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_receipt.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_rank_two_face_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_rank_two_face_audit.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_coarse_rank_two_face_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_inner_rank_high_normalization.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_inner_rank_high_normalization.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_trial_dhl39_interface_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_trial_dhl39_interface_audit.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/fine_trial_dhl39_interface_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/harman_deficit_integral.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/harman_deficit_integral.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/harman_type_ii_addback.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/harman_type_ii_addback.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/harman_type_ii_addback.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/hybrid_tail_schur.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/incidence_spline_interval_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/independent_multicap_source.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/independent_multicap_weighted_faces.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/multicap_C_inner_sources.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/multicap_C_low_inner.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/outer_low_receipt_review.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/outer_low_receipt_review.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/sharp_exceptional_pair_weight.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/analytic_support/stadlmann_incidence_source_transfer.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/aggregated_source_jets.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/certify_fine_restored_182.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/certify_incidence_cap.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/coarse_affine_envelope.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_cap_certificate_receipt.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_cap_certificate_receipt.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_harmonic_v3_composition_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_harmonic_v3_composition_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_harmonic_v3_sweep.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_source.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_source.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_source_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_outer_low_receipt.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_rank_two_face.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_rank_two_face_sweep.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/incidence_multicap_spline_ritz.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/incidence_spline_ritz.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/multicap_low_source.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/multicap_rank_two_root_sweep.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/multicap_tilted_low_source.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/prepare_fine_source_affines.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/source_local_operator_count.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/source_local_operator_count.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/fragment_ritz/validated_fine_source_context.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/adaptive_exceptional_square.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/certify_nested_fragment_cap.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine393216_G4_low_v3.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/experiments/tuple_geometry/fine393216_G4_low_v3.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine393216_G4_low_v3_receipt.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_high_sources.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_high_sources.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_rank_two_roots.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_rank_two_roots.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine393216_coarse8192_G2_P2_root.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine_G4_low_v3.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_high_source.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_high_source_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_high_source_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_rank_two_root_sweep.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_root_envelope.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/flexible_fragment_geometry.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/flexible_fragment_geometry.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel_v2.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel_v3.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel_v3_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel_v3_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/hybrid_enlarged_subtraction.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/hybrid_enlarged_subtraction.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/hybrid_enlarged_subtraction.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/hybrid_subtraction_cover.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/hybrid_subtraction_cover.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/incidence_fragment_interface.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/incidence_fragment_interface.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/incidence_fragment_interface.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/low_kernel_acceleration.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/low_kernel_v2_regression.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/low_kernel_v2_regression.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/multicap_high_source_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/partitioned_outer_norm_credit.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/partitioned_outer_norm_credit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/quantized_tilted_low_kernel.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/quantized_tilted_low_kernel_v2.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/sharp_pair_weight_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/short_gaps_primary.txt",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_carry.md",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_carry_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_implementation_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_implementation_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/tuple_geometry/witnesses_verified.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/audit_independent_fragment_cap.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/audit_independent_fragment_cap.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/certify_independent_fragment_cap.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_all_inner_source_ledger.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_all_inner_source_ledger.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_v3.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48_receipt.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/fine_inner_low_v3_receipt.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/high_count_term_recurrence_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/independent_fragment_cap_matched_replay.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/low_kernel_acceleration_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/low_kernel_acceleration_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/low_kernel_v3_independent_audit.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/low_kernel_v3_independent_audit.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/multicap_inner_low_sweep.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/experiments/variational_routes/multicap_inner_rank_two_sweep.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/output/pdf/finite_exceptional_type_iii.tex",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/output/pdf/incidence_and_many_primes.tex",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/fine_outer_low_complete_receipt.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/results/fine_outer_low_complete_receipt.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/incidence_multicap_condition_scan_a6_n32768.npz",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/incidence_multicap_fixed_a6_cut8_n393216.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/incidence_multicap_fixed_a6_cut8_n393216.npz",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/incidence_multicap_spline_a6_n32768.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/incidence_subtraction_domain_row14.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_G2_low_v3_bins11to21.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_G2_low_v3_bins11to21.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_G2_low_v3_bins1to5.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_G2_low_v3_bins1to5.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G1_G2_faces.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_coarse8192_G1_G2_faces.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G1_all_low.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_coarse8192_G1_all_low.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/results/multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_affines.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_affines.npz",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_full_cap_n393216.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_full_cap_n393216_matched_b30a20.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_full_cap_n393216_seed.json",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_full_cap_n393216_seed.npz",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/results/multicap_a6_full_cap_n393216_trial.json",
+      "availability": "included_after_path_normalization",
+      "published_path": "inputs/source_certificates/results/multicap_a6_full_cap_n393216_trial.json"
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/runtime/flint/.dylibs/libflint.24.0.dylib",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/sources/PrimeGaps186/prime_gap_186_certificate.py",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    },
+    {
+      "source_identifier": "prime_gaps_20260903/sources/bgp212.txt",
+      "availability": "provenance_only_not_in_repository",
+      "published_path": null
+    }
+  ]
+}

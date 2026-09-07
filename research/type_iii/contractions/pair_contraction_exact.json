@@ -1,0 +1,72 @@
+{
+  "status": "EXACT_FINITE_CONTRACTION_IDENTITIES_ONLY",
+  "uniform_bound_proved_by_this_script": false,
+  "source_sha256": "e5a50355d17227abac83a1bf05cd01c6e05e49cdac43557f05443fa0d46810d4",
+  "records": [
+    {
+      "p": 2,
+      "arithmetic": "integer cyclotomic coefficient vectors; exact Fraction display",
+      "frequency_coverage": "all c,d in F_p",
+      "contraction_parameter_coverage": "all A,A',beta in F_p^*",
+      "normalization_and_reality_checks": 5,
+      "contraction_checks": 4,
+      "two_factor_origin_checks": 1,
+      "actual_torus_two_factor_origin_checks": 1,
+      "signed_four_cycle_average_checks": 0,
+      "full_unit_matrix_frobenius_square_exact": "1/16",
+      "elapsed_seconds": 8.337502367794514e-05
+    },
+    {
+      "p": 3,
+      "arithmetic": "integer cyclotomic coefficient vectors; exact Fraction display",
+      "frequency_coverage": "all c,d in F_p",
+      "contraction_parameter_coverage": "all A,A',beta in F_p^*",
+      "normalization_and_reality_checks": 22,
+      "contraction_checks": 72,
+      "two_factor_origin_checks": 4,
+      "actual_torus_two_factor_origin_checks": 4,
+      "signed_four_cycle_average_checks": 1,
+      "full_unit_matrix_frobenius_square_exact": "223/81",
+      "elapsed_seconds": 0.0007054590387269855
+    },
+    {
+      "p": 5,
+      "arithmetic": "integer cyclotomic coefficient vectors; exact Fraction display",
+      "frequency_coverage": "all c,d in F_p",
+      "contraction_parameter_coverage": "all A,A',beta in F_p^*",
+      "normalization_and_reality_checks": 116,
+      "contraction_checks": 1600,
+      "two_factor_origin_checks": 16,
+      "actual_torus_two_factor_origin_checks": 16,
+      "signed_four_cycle_average_checks": 3,
+      "full_unit_matrix_frobenius_square_exact": "32461/625",
+      "elapsed_seconds": 0.029879832989536226
+    },
+    {
+      "p": 7,
+      "arithmetic": "integer cyclotomic coefficient vectors; exact Fraction display",
+      "frequency_coverage": "c=d=1",
+      "contraction_parameter_coverage": "all A,A',beta in F_p^*",
+      "normalization_and_reality_checks": 150,
+      "contraction_checks": 216,
+      "two_factor_origin_checks": 36,
+      "actual_torus_two_factor_origin_checks": 0,
+      "signed_four_cycle_average_checks": 5,
+      "full_unit_matrix_frobenius_square_exact": "474531/2401",
+      "elapsed_seconds": 0.028883708058856428
+    },
+    {
+      "p": 11,
+      "arithmetic": "integer cyclotomic coefficient vectors; exact Fraction display",
+      "frequency_coverage": "c=d=1",
+      "contraction_parameter_coverage": "all A,A',beta in F_p^*",
+      "normalization_and_reality_checks": 410,
+      "contraction_checks": 1000,
+      "two_factor_origin_checks": 100,
+      "actual_torus_two_factor_origin_checks": 100,
+      "signed_four_cycle_average_checks": 9,
+      "full_unit_matrix_frobenius_square_exact": "14192839/14641",
+      "elapsed_seconds": 0.5346050839871168
+    }
+  ]
+}

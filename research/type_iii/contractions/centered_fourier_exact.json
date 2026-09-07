@@ -1,0 +1,123 @@
+{
+  "status": "EXACT_SELECTED_CENTERING_IDENTITIES_ONLY",
+  "uniform_four_cycle_bound_proved": false,
+  "arithmetic": "integer cyclotomic coefficient vectors and exact fractions",
+  "source_sha256": "54eedd09796aece46c46b93205dcb06e76310f156a0309c735546d08e062c87d",
+  "helper_source_sha256": "e5a50355d17227abac83a1bf05cd01c6e05e49cdac43557f05443fa0d46810d4",
+  "records": [
+    {
+      "p": 3,
+      "alpha": 1,
+      "m": 1,
+      "m_prime": 2,
+      "n": 1,
+      "n_prime": 2,
+      "row_ratio_a": 2,
+      "column_ratio_b": 2,
+      "cubic_fiber_maximum": 1,
+      "row_mean_checks": 2,
+      "quadratic_kl2_fourier_checks": 3,
+      "full_kl2_fourth_moment_exact": 18,
+      "unit_U_fourth_moment_exact": "881/81",
+      "frequencies": [
+        {
+          "h": 0,
+          "k": 0,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": true
+        },
+        {
+          "h": 1,
+          "k": 0,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": false
+        },
+        {
+          "h": 1,
+          "k": 2,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": false
+        }
+      ]
+    },
+    {
+      "p": 5,
+      "alpha": 2,
+      "m": 1,
+      "m_prime": 2,
+      "n": 1,
+      "n_prime": 3,
+      "row_ratio_a": 3,
+      "column_ratio_b": 2,
+      "cubic_fiber_maximum": 1,
+      "row_mean_checks": 4,
+      "quadratic_kl2_fourier_checks": 5,
+      "full_kl2_fourth_moment_exact": 160,
+      "unit_U_fourth_moment_exact": "109209/625",
+      "frequencies": [
+        {
+          "h": 0,
+          "k": 0,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": true
+        },
+        {
+          "h": 1,
+          "k": 0,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": false
+        },
+        {
+          "h": 1,
+          "k": 2,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": false
+        }
+      ]
+    },
+    {
+      "p": 7,
+      "alpha": 3,
+      "m": 2,
+      "m_prime": 3,
+      "n": 1,
+      "n_prime": 2,
+      "row_ratio_a": 3,
+      "column_ratio_b": 4,
+      "cubic_fiber_maximum": 3,
+      "row_mean_checks": 6,
+      "quadratic_kl2_fourier_checks": 7,
+      "full_kl2_fourth_moment_exact": 518,
+      "unit_U_fourth_moment_exact": "1165541/2401",
+      "frequencies": [
+        {
+          "h": 0,
+          "k": 0,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": false
+        },
+        {
+          "h": 1,
+          "k": 0,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": false
+        },
+        {
+          "h": 1,
+          "k": 2,
+          "physical_fiber_identity": "PASS",
+          "centered_identity": "PASS",
+          "cube_bijective_origin_error_identity": false
+        }
+      ]
+    }
+  ]
+}

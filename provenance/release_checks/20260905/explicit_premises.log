@@ -1,0 +1,183 @@
+structure PrimeGap182.PhysicalCapBounds182 : Prop
+number of parameters: 0
+fields:
+  PrimeGap182.PhysicalCapBounds182.denominator_lower : LE.le.{0} (↑PrimeGap182.trialDenominatorLower)
+      PrimeGap182.trialSquareIntegral
+  PrimeGap182.PhysicalCapBounds182.denominator_upper : LE.le.{0} PrimeGap182.trialSquareIntegral
+      ↑PrimeGap182.trialDenominatorUpper
+  PrimeGap182.PhysicalCapBounds182.base_lower : LE.le.{0} (↑PrimeGap182.trialJ0Lower) PrimeGap182.trialBaseIntegral
+  PrimeGap182.PhysicalCapBounds182.enlargement_lower : LE.le.{0} (↑PrimeGap182.trialJPlusLower)
+      PrimeGap182.trialEnlargementIntegral
+  PrimeGap182.PhysicalCapBounds182.tail_upper : LE.le.{0} PrimeGap182.trialTailIntegral ↑PrimeGap182.trialTailUpper
+constructor:
+  PrimeGap182.PhysicalCapBounds182.mk
+    (denominator_lower : LE.le.{0} (↑PrimeGap182.trialDenominatorLower) PrimeGap182.trialSquareIntegral)
+    (denominator_upper : LE.le.{0} PrimeGap182.trialSquareIntegral ↑PrimeGap182.trialDenominatorUpper)
+    (base_lower : LE.le.{0} (↑PrimeGap182.trialJ0Lower) PrimeGap182.trialBaseIntegral)
+    (enlargement_lower : LE.le.{0} (↑PrimeGap182.trialJPlusLower) PrimeGap182.trialEnlargementIntegral)
+    (tail_upper : LE.le.{0} PrimeGap182.trialTailIntegral ↑PrimeGap182.trialTailUpper) :
+    PrimeGap182.PhysicalCapBounds182
+'PrimeGap182.PhysicalCapBounds182' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+structure PrimeGap182.PhysicalSourceBounds182 : Prop
+number of parameters: 0
+fields:
+  PrimeGap182.PhysicalSourceBounds182.cap : PrimeGap182.PhysicalCapBounds182
+  PrimeGap182.PhysicalSourceBounds182.outerRoot : ∀ (j : Fin 60),
+      LE.le.{0} (PrimeGap182.trialSourceOuterRoot j) ↑(PrimeGap182.trialOuterCertificates j).rootUpper
+  PrimeGap182.PhysicalSourceBounds182.outerFace : ∀ (j : Fin 60),
+      LE.le.{0} (PrimeGap182.trialSourceOuterFace j) ↑(PrimeGap182.trialOuterCertificates j).faceUpper
+  PrimeGap182.PhysicalSourceBounds182.innerMass : ∀ (j : Fin 137),
+      LE.le.{0} (PrimeGap182.trialSourceInnerMass j) ↑(PrimeGap182.trialInnerCertificates j).faceUpper
+constructor:
+  PrimeGap182.PhysicalSourceBounds182.mk (cap : PrimeGap182.PhysicalCapBounds182)
+    (outerRoot :
+      ∀ (j : Fin 60), LE.le.{0} (PrimeGap182.trialSourceOuterRoot j) ↑(PrimeGap182.trialOuterCertificates j).rootUpper)
+    (outerFace :
+      ∀ (j : Fin 60), LE.le.{0} (PrimeGap182.trialSourceOuterFace j) ↑(PrimeGap182.trialOuterCertificates j).faceUpper)
+    (innerMass :
+      ∀ (j : Fin 137),
+        LE.le.{0} (PrimeGap182.trialSourceInnerMass j) ↑(PrimeGap182.trialInnerCertificates j).faceUpper) :
+    PrimeGap182.PhysicalSourceBounds182
+'PrimeGap182.PhysicalSourceBounds182' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182Analytic.PublicPrimeLocalBounds182 : Prop :=
+(∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (c : ZMod p),
+    Ne.{1} c 0 → LE.le.{0} (Norm.norm.{0} (PrimeGap186.normalizedKloosterman3 p c)) 3) ∧
+  ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (A B : ZMod p),
+    Ne.{1} A 0 →
+      Ne.{1} B 0 →
+        LE.le.{0}
+          (Norm.norm.{0}
+            (∑ t,
+              ite.{1} (Ne.{1} t 0 ∧ Ne.{1} t (-1))
+                (HMul.hMul.{0, 0, 0} (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} A t))
+                  (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} B (HAdd.hAdd.{0, 0, 0} t 1))))
+                0))
+          (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 8 ↑p) √↑p)
+'PrimeGap182Analytic.PublicPrimeLocalBounds182' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182Audit.IncidenceRankFourBound : (p : ℕ) → [Fact (Nat.Prime p)] → Prop :=
+fun p [Fact (Nat.Prime p)] =>
+  ∀ (c : ZMod p),
+    Ne.{1} c 0 →
+      LE.le.{0} (Norm.norm.{0} (PrimeGap182Audit.incidenceKloosterman4Raw c))
+        (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 4 ↑p) √↑p)
+'PrimeGap182Audit.IncidenceRankFourBound' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182Audit.AllIncidenceRankFourBounds : Prop :=
+∀ (p : ℕ) [inst : Fact (Nat.Prime p)], PrimeGap182Audit.IncidenceRankFourBound p
+'PrimeGap182Audit.AllIncidenceRankFourBounds' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.BaselineLocalInputs : Prop :=
+(∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (c : ZMod p),
+    Ne.{1} c 0 → LE.le.{0} (Norm.norm.{0} (PrimeGap186.normalizedKloosterman3 p c)) 3) ∧
+  ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (A B : ZMod p),
+    Ne.{1} A 0 →
+      Ne.{1} B 0 →
+        LE.le.{0}
+          (Norm.norm.{0}
+            (∑ t,
+              ite.{1} (Ne.{1} t 0 ∧ Ne.{1} t (-1))
+                (HMul.hMul.{0, 0, 0} (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} A t))
+                  (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} B (HAdd.hAdd.{0, 0, 0} t 1))))
+                0))
+          (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 8 ↑p) √↑p)
+'PrimeGap182.TypeIII.BaselineLocalInputs' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.FiniteExceptionalFourierBound : (p : ℕ) →
+  [Fact (Nat.Prime p)] → ℝ → ℕ → ZMod p → ZMod p → ZMod p → ZMod p → ZMod p → Prop :=
+fun p [Fact (Nat.Prime p)] C D α m m' n n' =>
+  ∃ Z,
+    LE.le.{0} (Finset.card.{0} Z) D ∧
+      ∀ (h k : ZMod p),
+        LE.le.{0} (Norm.norm.{0} (PrimeGap182.TypeIII.fourier₂ p (PrimeGap182.TypeIII.fourCycle p α m m' n n') h k))
+          (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} C (HPow.hPow.{0, 0, 0} (↑p) 3))
+            (HAdd.hAdd.{0, 0, 0} 1
+              (HMul.hMul.{0, 0, 0} (√↑p) (ite.{1} (Membership.mem.{0, 0} Z (Prod.mk.{0, 0} h k)) 1 0))))
+'PrimeGap182.TypeIII.FiniteExceptionalFourierBound' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.CurveExceptionalFourierBound : (p : ℕ) →
+  [Fact (Nat.Prime p)] → ℝ → ℕ → ZMod p → ZMod p → ZMod p → ZMod p → ZMod p → Prop :=
+fun p [Fact (Nat.Prime p)] C D α m m' n n' =>
+  ∃ P,
+    Ne.{1} P 0 ∧
+      LE.le.{0} (MvPolynomial.totalDegree.{0, 0} P) D ∧
+        ∀ (h k : ZMod p),
+          LE.le.{0} (Norm.norm.{0} (PrimeGap182.TypeIII.fourier₂ p (PrimeGap182.TypeIII.fourCycle p α m m' n n') h k))
+            (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} C (HPow.hPow.{0, 0, 0} (↑p) 3))
+              (HAdd.hAdd.{0, 0, 0}
+                (HAdd.hAdd.{0, 0, 0} 1
+                  (HMul.hMul.{0, 0, 0} (√↑p) (ite.{1} (Eq.{1} (PrimeGap182.TypeIII.planeEval p P h k) 0) 1 0)))
+                (HMul.hMul.{0, 0, 0} (↑p) (ite.{1} (Eq.{1} h 0 ∧ Eq.{1} k 0) 1 0))))
+'PrimeGap182.TypeIII.CurveExceptionalFourierBound' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.LocalFourierHypothesis : ℝ → ℕ → ℕ → Prop :=
+fun C D p₀ =>
+  ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+    LT.lt.{0} p₀ p →
+      ∀ (α m m' n n' : ZMod p),
+        Ne.{1} α 0 →
+          Ne.{1} m 0 →
+            Ne.{1} m' 0 →
+              Ne.{1} n 0 →
+                Ne.{1} n' 0 →
+                  (Ne.{1} m m' ∧ Ne.{1} n n' → PrimeGap182.TypeIII.FiniteExceptionalFourierBound p C D α m m' n n') ∧
+                    (Eq.{1} m m' ∨ Eq.{1} n n' → PrimeGap182.TypeIII.CurveExceptionalFourierBound p C D α m m' n n')
+'PrimeGap182.TypeIII.LocalFourierHypothesis' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput : Prop :=
+∃ C, LT.lt.{0} 0 C ∧ ∃ D p₀, PrimeGap182.TypeIII.LocalFourierHypothesis C D p₀
+'PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+axiom PrimeGap186.kloosterman3_bound : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (c : ZMod p),
+  Ne.{1} c 0 → LE.le.{0} (Norm.norm.{0} (PrimeGap186.normalizedKloosterman3 p c)) 3
+axiom PrimeGap186.kloosterman2_correlation_bound : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (A B : ZMod p),
+  Ne.{1} A 0 →
+    Ne.{1} B 0 →
+      LE.le.{0}
+        (Norm.norm.{0}
+          (∑ t,
+            ite.{1} (Ne.{1} t 0 ∧ Ne.{1} t (-1))
+              (HMul.hMul.{0, 0, 0} (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} A t))
+                (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} B (HAdd.hAdd.{0, 0, 0} t 1))))
+              0))
+        (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 8 ↑p) √↑p)
+axiom PrimeGap186.physical_integral_bounds : (∀ (j : Fin (List.length.{0} PrimeGap186.outerOrderTwoBounds)),
+    LE.le.{0}
+        (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceOuterRoot 0 ↑j)
+          (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+        (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.outerOrderTwoBounds j).2.1) (HPow.hPow.{0, 0, 0} 10 18)) ∧
+      LE.le.{0}
+        (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceOuterFace 0 ↑j)
+          (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+        (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.outerOrderTwoBounds j).2.2.1) (HPow.hPow.{0, 0, 0} 10 18))) ∧
+  (∀ (j : Fin (List.length.{0} PrimeGap186.outerOrderFiveHalvesBounds)),
+      LE.le.{0}
+          (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceOuterRoot 1 ↑j)
+            (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+          (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.outerOrderFiveHalvesBounds j).2.1)
+            (HPow.hPow.{0, 0, 0} 10 18)) ∧
+        LE.le.{0}
+          (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceOuterFace 1 ↑j)
+            (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+          (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.outerOrderFiveHalvesBounds j).2.2.1)
+            (HPow.hPow.{0, 0, 0} 10 18))) ∧
+    (∀ (j : Fin (List.length.{0} PrimeGap186.innerBaseOrderTwoBounds)),
+        LE.le.{0}
+          (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceInnerMass 2 ↑j)
+            (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+          (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.innerBaseOrderTwoBounds j).1) (HPow.hPow.{0, 0, 0} 10 18))) ∧
+      (∀ (j : Fin (List.length.{0} PrimeGap186.innerBaseOrderFiveHalvesBounds)),
+          LE.le.{0}
+            (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceInnerMass 3 ↑j)
+              (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+            (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.innerBaseOrderFiveHalvesBounds j).1)
+              (HPow.hPow.{0, 0, 0} 10 18))) ∧
+        (∀ (j : Fin (List.length.{0} PrimeGap186.innerEnlargedOrderTwoBounds)),
+            LE.le.{0}
+              (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceInnerMass 4 ↑j)
+                (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+              (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.innerEnlargedOrderTwoBounds j).1)
+                (HPow.hPow.{0, 0, 0} 10 18))) ∧
+          (∀ (j : Fin (List.length.{0} PrimeGap186.innerEnlargedOrderFiveHalvesBounds)),
+              LE.le.{0}
+                (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceInnerMass 5 ↑j)
+                  (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+                (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.innerEnlargedOrderFiveHalvesBounds j).1)
+                  (HPow.hPow.{0, 0, 0} 10 18))) ∧
+            LE.le.{0} (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)) PrimeGap186.trialIH ∧
+              LE.le.{0} PrimeGap186.trialIH (HDiv.hDiv.{0, 0, 0} 23685317890 (HPow.hPow.{0, 0, 0} 10 24)) ∧
+                LE.le.{0} (HDiv.hDiv.{0, 0, 0} 90248755123 (HPow.hPow.{0, 0, 0} 10 24)) PrimeGap186.trialJLambdaH

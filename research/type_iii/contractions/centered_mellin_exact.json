@@ -1,0 +1,37 @@
+{
+  "status": "EXACT_SELECTED_MELLIN_IDENTITIES_ONLY",
+  "uniform_centered_origin_bound_proved": false,
+  "arithmetic": "integer cyclotomic vectors and exact fractions",
+  "source_sha256": "b968cf5336775e0797c1e84555f35dd4b8e03d1c0a06b3010e30e77dab3c3f68",
+  "p3_full_normalization": {
+    "p": 3,
+    "a": 2,
+    "character_order": 2,
+    "correlation_Mellin_checks": 4,
+    "row_product_Mellin_checks": 2,
+    "Gauss_energy_identity": "PASS",
+    "energy": "98/81",
+    "diagonal_energy": "205/324",
+    "off_diagonal_energy": "187/324",
+    "all_row_ratio_energy": "187/81",
+    "all_ratio_trace_identity": "PASS"
+  },
+  "p5_nonflat_energy_example": [
+    {
+      "p": 5,
+      "a": 2,
+      "character_order": 2,
+      "energy": "40366/625",
+      "diagonal_energy": "1503993/10000",
+      "off_diagonal_energy": "-858137/10000"
+    },
+    {
+      "p": 5,
+      "a": 2,
+      "character_order": 4,
+      "energy": "89216/625",
+      "diagonal_energy": "1503993/10000",
+      "off_diagonal_energy": "-76537/10000"
+    }
+  ]
+}

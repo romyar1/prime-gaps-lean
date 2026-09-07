@@ -1,0 +1,163 @@
+{
+  "status": "EXACT_FINITE_ORIGIN_IDENTITIES_ONLY",
+  "arithmetic": "Python integers and Fraction; no floating-point arithmetic in the certificate",
+  "source_sha256": "8279211c0a6b5e22675665b290a3fe79351e32c60b17d891bc3e3b4b1ba8cb53",
+  "records": [
+    {
+      "p": 5,
+      "rows": [
+        {
+          "m_ratio": 2,
+          "n_ratio": 2,
+          "p8_origin_numerator": 10710681,
+          "origin_exact": "10710681/390625",
+          "reduced_denominator": 390625,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 10449556196,
+          "common_coefficient_at_every_nonzero_exponent": 10438845515,
+          "origin_over_p3": 0.21935474688
+        },
+        {
+          "m_ratio": 2,
+          "n_ratio": 3,
+          "p8_origin_numerator": 10710681,
+          "origin_exact": "10710681/390625",
+          "reduced_denominator": 390625,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 10449556196,
+          "common_coefficient_at_every_nonzero_exponent": 10438845515,
+          "origin_over_p3": 0.21935474688
+        },
+        {
+          "m_ratio": 4,
+          "n_ratio": 4,
+          "p8_origin_numerator": -9242444,
+          "origin_exact": "-9242444/390625",
+          "reduced_denominator": 390625,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 10433593696,
+          "common_coefficient_at_every_nonzero_exponent": 10442836140,
+          "origin_over_p3": -0.18928525312
+        }
+      ],
+      "elapsed_seconds": 0.000554917030967772
+    },
+    {
+      "p": 7,
+      "rows": [
+        {
+          "m_ratio": 2,
+          "n_ratio": 2,
+          "p8_origin_numerator": -663596226,
+          "origin_exact": "-663596226/5764801",
+          "reduced_denominator": 5764801,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 12920766054120,
+          "common_coefficient_at_every_nonzero_exponent": 12921429650346,
+          "origin_over_p3": -0.33560271631849364
+        },
+        {
+          "m_ratio": 2,
+          "n_ratio": 3,
+          "p8_origin_numerator": -960540930,
+          "origin_exact": "-960540930/5764801",
+          "reduced_denominator": 5764801,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 12920511530088,
+          "common_coefficient_at_every_nonzero_exponent": 12921472071018,
+          "origin_over_p3": -0.4857775445562767
+        },
+        {
+          "m_ratio": 6,
+          "n_ratio": 6,
+          "p8_origin_numerator": -9133198500,
+          "origin_exact": "-9133198500/5764801",
+          "reduced_denominator": 5764801,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 12913506395028,
+          "common_coefficient_at_every_nonzero_exponent": 12922639593528,
+          "origin_over_p3": -4.618962714347914
+        }
+      ],
+      "elapsed_seconds": 0.0025904159992933273
+    },
+    {
+      "p": 11,
+      "rows": [
+        {
+          "m_ratio": 2,
+          "n_ratio": 2,
+          "p8_origin_numerator": 10881326908,
+          "origin_exact": "10881326908/214358881",
+          "reduced_denominator": 214358881,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 87291641637755380,
+          "common_coefficient_at_every_nonzero_exponent": 87291630756428472,
+          "origin_over_p3": 0.03813838699516724
+        },
+        {
+          "m_ratio": 2,
+          "n_ratio": 3,
+          "p8_origin_numerator": 27381323960,
+          "origin_exact": "27381323960/214358881",
+          "reduced_denominator": 214358881,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 87291656637752700,
+          "common_coefficient_at_every_nonzero_exponent": 87291629256428740,
+          "origin_over_p3": 0.09596987007703683
+        },
+        {
+          "m_ratio": 10,
+          "n_ratio": 10,
+          "p8_origin_numerator": -894236244560,
+          "origin_exact": "-894236244560/214358881",
+          "reduced_denominator": 214358881,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 87290818803599500,
+          "common_coefficient_at_every_nonzero_exponent": 87291713039844060,
+          "origin_over_p3": -3.1342434841343056
+        }
+      ],
+      "elapsed_seconds": 0.025095999939367175
+    },
+    {
+      "p": 17,
+      "rows": [
+        {
+          "m_ratio": 2,
+          "n_ratio": 2,
+          "p8_origin_numerator": -81239905904680,
+          "origin_exact": "-81239905904680/6975757441",
+          "reduced_denominator": 6975757441,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 273454386364254000768,
+          "common_coefficient_at_every_nonzero_exponent": 273454467604159905448,
+          "origin_over_p3": -2.370452605699158
+        },
+        {
+          "m_ratio": 2,
+          "n_ratio": 3,
+          "p8_origin_numerator": -26947494870529,
+          "origin_exact": "-26947494870529/6975757441",
+          "reduced_denominator": 6975757441,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 273454437462993797616,
+          "common_coefficient_at_every_nonzero_exponent": 273454464410488668145,
+          "origin_over_p3": -0.7862854925984146
+        },
+        {
+          "m_ratio": 16,
+          "n_ratio": 16,
+          "p8_origin_numerator": 11429134191540,
+          "origin_exact": "11429134191540/6975757441",
+          "reduced_denominator": 6975757441,
+          "numerator_mod_p": 1,
+          "coefficient_at_zero": 273454473582174091328,
+          "common_coefficient_at_every_nonzero_exponent": 273454462153039899788,
+          "origin_over_p3": 0.3334841494894029
+        }
+      ],
+      "elapsed_seconds": 0.22748608305118978
+    }
+  ]
+}

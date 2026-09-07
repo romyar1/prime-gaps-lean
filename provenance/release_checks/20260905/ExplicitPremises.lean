@@ -1,0 +1,30 @@
+import PrimeGaps182Analytic
+import TypeIIILocalProgress
+
+set_option pp.fullNames true
+set_option pp.universes true
+
+#print PrimeGap182.PhysicalCapBounds182
+#print axioms PrimeGap182.PhysicalCapBounds182
+#print PrimeGap182.PhysicalSourceBounds182
+#print axioms PrimeGap182.PhysicalSourceBounds182
+#print PrimeGap182Analytic.PublicPrimeLocalBounds182
+#print axioms PrimeGap182Analytic.PublicPrimeLocalBounds182
+#print PrimeGap182Audit.IncidenceRankFourBound
+#print axioms PrimeGap182Audit.IncidenceRankFourBound
+#print PrimeGap182Audit.AllIncidenceRankFourBounds
+#print axioms PrimeGap182Audit.AllIncidenceRankFourBounds
+#print PrimeGap182.TypeIII.BaselineLocalInputs
+#print axioms PrimeGap182.TypeIII.BaselineLocalInputs
+#print PrimeGap182.TypeIII.FiniteExceptionalFourierBound
+#print axioms PrimeGap182.TypeIII.FiniteExceptionalFourierBound
+#print PrimeGap182.TypeIII.CurveExceptionalFourierBound
+#print axioms PrimeGap182.TypeIII.CurveExceptionalFourierBound
+#print PrimeGap182.TypeIII.LocalFourierHypothesis
+#print axioms PrimeGap182.TypeIII.LocalFourierHypothesis
+#print PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput
+#print axioms PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput
+
+#print PrimeGap186.kloosterman3_bound
+#print PrimeGap186.kloosterman2_correlation_bound
+#print PrimeGap186.physical_integral_bounds
