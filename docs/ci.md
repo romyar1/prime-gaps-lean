@@ -5,6 +5,16 @@ package with `verify.sh --fresh`, rebuilds its proofs, and audits the same
 canonical declarations and explicit hypotheses as local verification. It does
 not change the mathematical sources or dependency pins.
 
+[GitHub Actions run 34143288525](https://github.com/romyar1/prime-gaps-lean/actions/runs/34143288525) passed on
+7 September 2026 at 19:16 UTC, for commit
+`73d33fe6451d1054cc569943eadad83c906a9551`. The job took 2h 49m 23s. Its
+receipt records `PASS_CONDITIONAL_DEVELOPMENT_AND_TYPE_III_SUPPORT` and
+`fresh_project_rebuild_requested: true`, with 638 formal modules and 4,916
+audited declarations. All 25 verifier regression tests also passed. The
+run artifact `lean-verification-34143288525-1` contains the receipt, build
+log, theorem-type and explicit-premise audits, and resource measurements.
+The numerical inequalities and Type III hypotheses remain undischarged.
+
 The revised workflow uses the standard public `ubuntu-24.04-arm` image. Its
 published software inventory is smaller than the x64 image's (for example,
 Android SDK and CodeQL are absent), which makes it a candidate for providing
@@ -60,11 +70,12 @@ delete existing dependency artifacts. `--rehash` hashes file contents instead
 of trusting saved `.hash` files. The deliberate package clean is what requires
 fresh project proof objects on CI.
 
-A successful local run does not establish a successful Linux hosted run.
-The revised workflow must complete on GitHub before hosted verification is
-reported as passing. If the compiler reports its memory limit, or the telemetry
-shows excessive total memory, the resource requirement must be addressed rather
-than skipping any audit or reusing unverified project proof objects.
+The successful hosted run rebuilt the public baseline in 4,052 seconds and
+completed the verifier in 2h 47m 9s. GNU time reported maximum process RSS of
+14,057,908 KiB. These are measurements of this run, not a guarantee for every
+runner. If a future compiler reports its memory limit, or telemetry shows
+excessive total memory, address the resource requirement while preserving
+all audits and the fresh project build.
 
 References: [pinned Lake CLI](https://github.com/leanprover/lean4/blob/v4.34.0-rc2/src/lake/Lake/CLI/Help.lean),
 [elaboration option](https://github.com/leanprover/lean4/blob/v4.34.0-rc2/src/Lean/CoreM.lean),

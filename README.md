@@ -83,8 +83,10 @@ See [verification instructions](docs/verification.md) for a fresh project build,
 the exact audit policy and adding new modules. A successful build checks the
 stated implications; it does not remove their hypotheses.
 
-The GitHub workflow runs the same verifier. A successful hosted run has not yet
-been observed; [CI notes](docs/ci.md) record the shutdowns and resource settings.
+The GitHub workflow runs the same verifier. A [fresh hosted verification](https://github.com/romyar1/prime-gaps-lean/actions/runs/34143288525)
+passed on 7 September 2026, checking all 638 modules and 4,916 declarations
+with their explicit hypotheses. [CI notes](docs/ci.md) record the result,
+resource settings and earlier shutdowns.
 
 ## Publishing this snapshot
 

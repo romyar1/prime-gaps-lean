@@ -1,31 +1,34 @@
 # Verification status
 
-The latest audited repository snapshot passed its full verifier on
-**5 September 2026 (UTC)**, with
+The latest audited repository snapshot passed a fresh hosted verification on
+**7 September 2026 (UTC)** at commit
+`73d33fe6451d1054cc569943eadad83c906a9551`, with
 status `PASS_CONDITIONAL_DEVELOPMENT_AND_TYPE_III_SUPPORT`.
 
-- Lake checked and built all 638 development modules in that snapshot and the vendored
-  `PrimeGaps186` baseline, rebuilding changed sources. Pinned dependency
-  objects and valid existing project artifacts were reused.
+- Lake freshly rebuilt all 638 development modules and the vendored
+  `PrimeGaps186` baseline. Pinned dependency objects were reused; project proof
+  objects were rebuilt after cleaning this package.
 - The independent declaration audit checked the full types and axiom sets of
   4,916 distinct declarations. Of these, 4,915 use only standard logical axioms;
   one explicitly identified convenience wrapper uses two public baseline
   estimates. Both conditional 182 endpoints use only standard logical axioms.
 - All 16 supporting numerical-data records passed the provenance and payload
   integrity checks. These checks do not prove the integral inequalities.
-- All 19 focused verifier regression tests passed.
+- All 25 verifier regression tests passed.
 
 The verifier checked that the sources, configuration, dependencies, numerical
 records, and proof artifacts remained unchanged during the audit. See the
 [verification guide](docs/verification.md) for reproduction commands and the
-scope of the checks. A hosted GitHub Actions run is still pending; its resource
-requirements are described in the [CI guide](docs/ci.md).
+scope of the checks. The [successful hosted run](https://github.com/romyar1/prime-gaps-lean/actions/runs/34143288525)
+finished at **19:16:07 UTC**, after 2h 49m 23s. Its artifact
+`lean-verification-34143288525-1` contains the fresh-build receipt and logs.
+Resource settings and measurements are described in the [CI guide](docs/ci.md).
 
-The latest full [receipt](provenance/release_checks/20260905/receipt.json)
-finished at **08:21:25 UTC**. The archive includes the
-[theorem-type audit](provenance/release_checks/20260905/theorem_types.log)
-and [explicit premises](provenance/release_checks/20260905/explicit_premises.log).
-It includes the
+The earlier local [receipt](provenance/release_checks/20260905/receipt.json)
+from 5 September, with its [theorem-type audit](provenance/release_checks/20260905/theorem_types.log)
+and [explicit premises](provenance/release_checks/20260905/explicit_premises.log),
+is retained as historical verification evidence.
+This snapshot includes the
 [derivation from published geometric inputs](research/type_iii/published_inputs/README.md).
 The general trace, weight, perverse-support, Fourier, local-monodromy and
 complexity laws are explicit hypotheses. Lean derives the corrected
