@@ -1,0 +1,89 @@
+[
+  {
+    "name": "check_certificate_runtime",
+    "entry": "experiments/runtime_fix/check_certificate_runtime.py",
+    "output": "experiments/runtime_fix/runtime_check_receipt.json",
+    "arguments": []
+  },
+  {
+    "name": "audit_independent_fragment_cap",
+    "entry": "experiments/variational_routes/audit_independent_fragment_cap.py",
+    "output": "experiments/variational_routes/audit_independent_fragment_cap.json",
+    "arguments": []
+  },
+  {
+    "name": "coarse_affine_envelope_audit",
+    "entry": "experiments/fragment_ritz/coarse_affine_envelope_audit.py",
+    "output": "experiments/fragment_ritz/coarse_affine_envelope_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_coarse_rank_two_face_audit",
+    "entry": "experiments/analytic_support/fine_coarse_rank_two_face_audit.py",
+    "output": "experiments/analytic_support/fine_coarse_rank_two_face_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_trial_coarse_root_envelope_audit",
+    "entry": "experiments/tuple_geometry/fine_trial_coarse_root_envelope_audit.py",
+    "output": "experiments/tuple_geometry/fine_trial_coarse_root_envelope_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_trial_coarse_rank_two_root_sweep_audit",
+    "entry": "experiments/tuple_geometry/fine_trial_coarse_rank_two_root_sweep_audit.py",
+    "output": "experiments/tuple_geometry/fine_trial_coarse_rank_two_root_sweep_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_trial_coarse_high_source_audit",
+    "entry": "experiments/tuple_geometry/fine_trial_coarse_high_source_audit.py",
+    "output": "experiments/tuple_geometry/fine_trial_coarse_high_source_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_coarse_inner_sources_audit",
+    "entry": "experiments/analytic_support/fine_coarse_inner_sources_audit.py",
+    "output": "experiments/analytic_support/fine_coarse_inner_sources_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_coarse_inner_low_audit",
+    "entry": "experiments/variational_routes/fine_coarse_inner_low_audit.py",
+    "output": "experiments/variational_routes/fine_coarse_inner_low_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_C_low_v3_audit",
+    "entry": "experiments/analytic_support/fine_C_low_v3_audit.py",
+    "output": "experiments/analytic_support/fine_C_low_v3_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "low_kernel_v3_independent_audit",
+    "entry": "experiments/variational_routes/low_kernel_v3_independent_audit.py",
+    "output": "experiments/variational_routes/low_kernel_v3_independent_audit.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_cap_certificate_receipt",
+    "entry": "experiments/fragment_ritz/fine_cap_certificate_receipt.py",
+    "output": "experiments/fragment_ritz/fine_cap_certificate_receipt.json",
+    "arguments": []
+  },
+  {
+    "name": "fine_coarse_outer_rank_high_receipt",
+    "entry": "experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.py",
+    "output": "experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.json",
+    "arguments": []
+  },
+  {
+    "name": "certify_fine_restored_182",
+    "entry": "experiments/fragment_ritz/certify_fine_restored_182.py",
+    "output": "rebuilt/aggregate.json",
+    "arguments": [
+      "--output",
+      "rebuilt/aggregate.json"
+    ]
+  }
+]

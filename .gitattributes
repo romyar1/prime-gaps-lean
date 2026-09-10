@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Frozen external evidence and verifier copies have recorded byte hashes.
+research/numerical_182/** -text

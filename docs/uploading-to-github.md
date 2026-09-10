@@ -1,57 +1,64 @@
-# Uploading this project to GitHub
+# Updating the existing GitHub project
 
-You can publish this project while parts of the proof remain unfinished.
-Keep its scope statement, numerical evidence and attribution with the code.
+Use the existing **[romyar1/prime-gaps-lean](https://github.com/romyar1/prime-gaps-lean)**
+repository. The numerical update is distributed with the
+[external-numerics-20260909 release](https://github.com/romyar1/prime-gaps-lean/releases/tag/external-numerics-20260909).
+The following records the source-update and release workflow.
 
-## Using GitHub Desktop
+## Source update
 
-GitHub Desktop provides a graphical way to create, commit and publish a
-repository. It is free. See GitHub's
-[first-repository guide](https://docs.github.com/en/desktop/overview/creating-your-first-repository-using-github-desktop).
+1. In GitHub Desktop, open or clone `romyar1/prime-gaps-lean`, fetch the latest
+   changes, and start a branch such as `numerical-package-20260909`. Use a clean
+   clone separate from ongoing Lean research.
+2. Extract the updated **source** ZIP. Copy the contents of its `prime-gaps-lean/`
+   folder into the clone, including hidden files such as `.github` and
+   `.gitattributes`. Command–Shift–period reveals hidden files on macOS.
+   Do not copy Git history or any build cache.
+3. Review the changes. The base is commit
+   `78e052bd50e64a34f58866b8b306844b72926c60`. Changes should be documentation,
+   numerical verifier/evidence files, integrity tests and workflow, and packaging
+   rules. There should be no changes to `formal/`, existing numerical inputs,
+   dependency pins, or the Lean verifier. If the remote has advanced, apply the
+   accompanying patch to the new head instead of overwriting newer files, and
+   review any conflicts.
+4. Run the inexpensive local checks from the repository root:
 
-1. Unzip the supplied archive. Inside is a `prime-gaps-lean` folder containing
-   `README.md`, `formal`, `docs`, and the other project files.
-2. Install GitHub Desktop and sign in as `romyar1`.
-3. In GitHub Desktop, create a new local repository named `prime-gaps-lean`
-   in a separate empty location. The archive supplies its own README,
-   ignore rules and existing license notices; additional starter files are
-   unnecessary.
-4. Copy the **contents** of the extracted folder into that new repository
-   folder. Include the hidden `.github` folder and `.gitignore` file. On a
-   Mac, Command–Shift–period toggles hidden files in Finder.
-5. Review the files in GitHub Desktop, enter a summary such as
-   `Add conditional prime-gap formalization and numerical evidence`, and
-   click the **Commit** button.
-6. Click **Publish repository**, use your personal account, and clear
-   **Keep this code private** to make it public. GitHub's
-   [publishing instructions](https://docs.github.com/en/desktop/adding-and-cloning-repositories/adding-an-existing-project-to-github-using-github-desktop)
-   describe these controls.
+   ```sh
+   python3 -B scripts/check_external_numerics.py
+   python3 -B provenance/check_data.py
+   python3 -B -m unittest discover -s scripts -p 'test_*.py'
+   ```
 
-If that repository name is already in use, choose another name or add these
-files to the existing repository you intend to use. After publication, the
-repository's Actions tab will show the first hosted verification attempt.
-The package includes the result of its local audit; a successful hosted run
-is a separate check.
+5. Commit with a summary such as `Add verified external numerical package and evidence`.
+   Push the branch to this same repository, review the diff and checks, and
+   merge when ready. The existing Lean workflow and new numerical integrity
+   workflow have different scopes; neither makes the theorem unconditional.
+   The numerical integrity workflow does not rerun the integrals.
 
-## Browser uploads
+The extracted source files belong in Git. Uploading only the source ZIP as a
+repository file would not update the individual sources or workflow.
 
-The GitHub website also accepts folders and files, but it permits at most
-100 files in one upload and 25 MiB per file. This project has hundreds of
-source files, so GitHub Desktop avoids repeated upload batches. See the
-[official upload guide](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
+## Numerical release attachment
 
-Publish the extracted source tree. Keeping only the ZIP as a repository file
-would prevent GitHub from displaying the individual sources and running the
-included workflow.
+The 244,843,318-byte numerical bundle goes in a **GitHub Release**. GitHub blocks
+ordinary Git files over 100 MiB and browser uploads over 25 MiB, and recommends
+releases for large binaries. See
+[GitHub's large-file documentation](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
-## What to share
+1. Open [Releases for this repository](https://github.com/romyar1/prime-gaps-lean/releases)
+   and prepare a release targeting the merged source-update commit. The suggested
+   new tag is `external-numerics-20260909`.
+2. Use the title **External numerical verification for the conditional 182 development**
+   and the prepared [release notes](release-notes-external-numerics-20260909.md).
+   Preserve the proof limitations. When pasting into the release editor, turn
+   relative documentation links into links to those files at the release tag.
+3. Attach `prime-gaps-external-182-verified-20260909.zip` and its `.zip.sha256`
+   companion. Check the name, size and SHA256 against
+   [asset.json](../research/numerical_182/asset.json).
+4. Review the draft and publish when ready. After publication, replace the
+   prepared/unpublished wording in the numerical guide with the actual release
+   link. Keep future corrections in this same repository.
 
-The archive already selects the checked Lean sources, pinned configuration,
-documentation, saved numerical evidence and existing notices. It excludes
-dependency caches, compiled Lean objects, unfinished scratch files and local
-Git history.
-
-The numerical records belong in the repository even though their connection
-to the 262 integral premises is not yet formalized. They are explicitly
-labelled computational evidence. Later commits can add the missing numerical
-programs and Lean proofs without changing what this initial snapshot claims.
+The numerical archive contains its own licenses, original provenance and
+reproduction instructions. Keep it byte-for-byte unchanged so the recorded
+SHA256 and acceptance receipt retain their meaning.

@@ -1,5 +1,29 @@
 # Verification status
 
+## External numerical package update — 9 September 2026
+
+The [external acceptance receipt](research/numerical_182/evidence/verification.json)
+reports `PASS_COMPLETE_EXTERNAL_NUMERICAL_RECOMPUTATION`: all 262 target
+comparisons, 14 production stages, 14 implementation audits and four deliberate
+rejection controls passed. The full production run took approximately 1 hour
+44 minutes with three workers on the tested Apple Silicon Mac. See the
+[package guide](research/numerical_182/README.md) for programs, evidence,
+runtime limitations and reproduction commands.
+
+This source update preserves every Lean source file and dependency pin from
+posted commit `78e052bd50e64a34f58866b8b306844b72926c60`. It adds documentation,
+external numerical tools and evidence, and attachment-integrity checks.
+**No fresh full Lean build is claimed for this documentation/tool update.**
+The hosted Lean verification below applies to the earlier audited snapshot;
+its receipts remain historical records. The new integrity job checks stored
+numerical evidence and target identity without repeating integrations.
+
+**Lean numerical premises discharged: 0. Type III proved: no.** The ordinary
+mathematical reduction from these numerical algorithms to the named integrals
+also remains subject to review. The conditional theorem's scope is unchanged.
+
+## Prior hosted Lean verification
+
 The latest audited repository snapshot passed a fresh hosted verification on
 **7 September 2026 (UTC)** at commit
 `73d33fe6451d1054cc569943eadad83c906a9551`, with
@@ -47,7 +71,8 @@ admissible representation category. These are explicit mathematical inputs,
 separate from the checked consequences.
 The [application bridge](formal/TypeIIIPublishedApplicationBridge.lean) and
 [combined theorem](formal/TypeIIIPublishedTypeIII.lean) record the exact boundary.
-All Type III work is paused while the 262 numerical inequalities are investigated.
+The Type III results described here belong to that audited source snapshot;
+the external numerical update does not add a new Type III proof.
 
 The audited foundational work includes the actual Artin–Schreier character
 sheaf over commutative coefficient rings in which `p` is invertible.

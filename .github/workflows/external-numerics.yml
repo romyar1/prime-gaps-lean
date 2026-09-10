@@ -1,0 +1,32 @@
+name: External numerical package integrity
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/numerical_182/**'
+      - 'scripts/*external_numerics.py'
+      - 'formal/*182.lean'
+      - '.github/workflows/external-numerics.yml'
+  pull_request:
+    paths:
+      - 'research/numerical_182/**'
+      - 'scripts/*external_numerics.py'
+      - 'formal/*182.lean'
+      - '.github/workflows/external-numerics.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - name: Check archived receipt, review files, and current Lean targets
+        run: python3 -B scripts/check_external_numerics.py
+      - name: Test attachment integrity boundaries
+        run: python3 -B -m unittest discover -s scripts -p 'test_external_numerics.py' -v
+
+# This job does not download the release, repeat integrations, or run Lean.

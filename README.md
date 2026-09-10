@@ -18,6 +18,8 @@ unconditional Lean proof of the bound 182.
 - [Verification status](STATUS.md) identifies the checked source snapshot.
 - [Numerical computations and data](docs/numerical-data.md) describes what is
   included and which computations still need a formal connection to the integrals.
+- [Completed external numerical package](research/numerical_182/README.md) supplies
+  the verifier tools, full-run results, and reproduction instructions.
 - [Type III statement and code map](docs/type-iii.md) describes the local target.
 - [Type III from published inputs](research/type_iii/published_inputs/README.md)
   records the precise imported geometric laws and the remaining applications.
@@ -36,8 +38,8 @@ Type III supporting results. The original finite sums and uniform local
 Fourier statement are unchanged. The development includes exact finite-sum
 identities, phase algebra, support arguments, a conditional route using
 published geometric theorems, and a separate partial development of the
-étale and adic foundations. Type III work is currently paused while the
-numerical inequalities are investigated.
+étale and adic foundations. These supporting results leave the Type III
+premise explicit; the new numerical package does not change that boundary.
 
 ## What is included
 
@@ -46,16 +48,23 @@ numerical inequalities are investigated.
 | `formal/` | Lean definitions and checked theorems; every module is in the default build. |
 | `inputs/source_certificates/` | Saved numerical evidence for the integral inequalities; these JSON files are not Lean proofs. |
 | `provenance/` | Source/data fingerprints, the declaration registry, and a data-integrity checker. |
+| `research/numerical_182/` | External numerical verifier drivers, all 262 comparison records, and a pinned full release attachment. |
 | `research/type_iii/` | Mathematical notes and separately labelled finite computational checks. |
 | `docs/` | Explanations of assumptions, verification, numerical data and CI. |
 | `vendor/primegaps186/` | The unchanged public baseline, with its license and source identity. |
 | `diagnostics/` | Optional inspection of the baseline's explicit axioms. |
 | `.github/workflows/` | A workflow that runs the pinned verifier on GitHub. |
 
-The upload archive excludes unfinished working files, generated proof objects,
-dependency caches, local experiment logs and Git history. Saved numerical
-outputs are useful for inspection, but the full set of programs that produced
-the 262 integral bounds has not yet been packaged as a portable recomputation.
+The source archive excludes unfinished working files, generated proof objects,
+dependency caches and Git history. On **9 September 2026**, the full external
+numerical recomputation passed **262 target comparisons, 14 implementation
+audits, and four deliberate rejection tests**. The verified bundle includes
+programs, inputs, the tested runtime, fresh outputs and receipts. Full numerical
+reproduction is tested on Apple Silicon macOS; Linux and Windows are not yet
+tested. See the [package guide](research/numerical_182/README.md).
+
+This is external computational verification. It supplies no new Lean proof
+terms for the integral inequalities and does not prove the Type III premise.
 
 ## Reproduce the Lean checks
 
@@ -88,12 +97,13 @@ passed on 7 September 2026, checking all 638 modules and 4,916 declarations
 with their explicit hypotheses. [CI notes](docs/ci.md) record the result,
 resource settings and earlier shutdowns.
 
-## Publishing this snapshot
+## Updating this repository
 
-See [the upload guide](docs/uploading-to-github.md). Unzip the archive and
-publish its contents as the repository source. Keep the Lean files,
-configuration, documentation, numerical evidence and attribution together.
-You can publish this unfinished formalization and extend it in later commits.
+The full verified numerical bundle and checksum are available in the
+[external-numerics-20260909 release](https://github.com/romyar1/prime-gaps-lean/releases/tag/external-numerics-20260909).
+See [the upload guide](docs/uploading-to-github.md) for the source-update and
+release workflow. Keep the scope and attribution with both the code and
+numerical evidence.
 
 This is a standalone project depending on Mathlib, not a contribution already
 accepted into Mathlib. The public

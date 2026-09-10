@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "negative_denominator",
+      "rejected": true,
+      "reason": "Cap target failed trialDenominatorLower"
+    },
+    {
+      "case": "missing_inner_bin",
+      "rejected": true,
+      "reason": "Incomplete target coverage"
+    },
+    {
+      "case": "changed_trial",
+      "rejected": true,
+      "exit_code": 1,
+      "log": "changed_trial.log"
+    },
+    {
+      "case": "obsolete_fft_runtime",
+      "rejected": true,
+      "exit_code": 1,
+      "log": "obsolete_fft_runtime.log"
+    }
+  ]
+}

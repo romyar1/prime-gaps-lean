@@ -50,6 +50,14 @@ files as proofs of `PhysicalSourceBounds182`. Checking their hashes or their
 arithmetic consistency does not discharge the integral inequalities. See
 [`numerical-data.md`](numerical-data.md) for their provenance and limits.
 
+The [external verification package](../research/numerical_182/README.md)
+completed a fresh run of the numerical programs on 9 September 2026. All 262
+rational target comparisons, 14 implementation audits, and four deliberate
+rejection controls passed. This supports the numerical premises externally;
+it does not replace them with Lean proofs or complete the separate Type III
+argument. The algorithm-to-integral reasoning remains subject to mathematical
+review.
+
 ## The three established finite-field estimates
 
 Write `eₚ` for the standard nontrivial additive character of the prime field.

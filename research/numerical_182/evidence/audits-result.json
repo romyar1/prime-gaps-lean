@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "audits": [
+    {
+      "name": "check_certificate_runtime",
+      "exit_code": 0,
+      "seconds": 7.203050666954368,
+      "entry_sha256": "8574b2eba218cb496766151cebae7c623e8d025e5a8460fc0c94badc5685a999",
+      "status": "PASS",
+      "output_sha256": "a17342f1f65c18947258aab1868400b08be6a2914a258d282a4eaf3f7bac08ae"
+    },
+    {
+      "name": "audit_independent_fragment_cap",
+      "exit_code": 0,
+      "seconds": 0.36856970796361566,
+      "entry_sha256": "970544a4da8596122c562a3cb36b99d21f2a3675871ef0d759e3aac47fbb44bf",
+      "status": "PASS",
+      "output_sha256": "06652c24538c9f329a26ccdb80466cd886694ba6897c80b10ffe04d6f42c5ef4"
+    },
+    {
+      "name": "coarse_affine_envelope_audit",
+      "exit_code": 0,
+      "seconds": 0.21951887500472367,
+      "entry_sha256": "0e4cf02b2d3c4ca56ace59a14841c35d1dd7feac52a471b23dc286409dec0411",
+      "status": "PASS",
+      "output_sha256": "65354098e4e8977a0e575fe62f43972664c28ea8f5818595246623ddc2b719c6"
+    },
+    {
+      "name": "fine_coarse_rank_two_face_audit",
+      "exit_code": 0,
+      "seconds": 0.7684935419820249,
+      "entry_sha256": "5fb34086786661d4ce4d62a4f0fd0fcfeb2e2f5c9978ea6aac5d2e07d8266d62",
+      "status": "PASS",
+      "output_sha256": "e6fbc775e9ac816cc6de09a09edc42031bcf3abbf52d3c3474ecd602d6c31452"
+    },
+    {
+      "name": "fine_trial_coarse_root_envelope_audit",
+      "exit_code": 0,
+      "seconds": 0.3769417089642957,
+      "entry_sha256": "f33e93c033d12f48698905c1e8a3da5b84c7c0eeea1a12bc6784e39276ee60f4",
+      "status": "PASS",
+      "output_sha256": "4ecb4024ba3d204d2123914226a716e6b5d98da42d1329ed7a80262b880173d6"
+    },
+    {
+      "name": "fine_trial_coarse_rank_two_root_sweep_audit",
+      "exit_code": 0,
+      "seconds": 0.2264577079913579,
+      "entry_sha256": "cc72e15530152b22ef94b0ecd8b6b3e836dd80b599dd48b91326a9754d222f1a",
+      "status": "PASS",
+      "output_sha256": "adbe12f28036bf25f9d5ded787c8b5779ea883fdd0848a5e24379d48363ca4c9"
+    },
+    {
+      "name": "fine_trial_coarse_high_source_audit",
+      "exit_code": 0,
+      "seconds": 1.5960785830393434,
+      "entry_sha256": "bec70fe6245300f98774d7b0de72bbcb159228af4b60cf834ea40313cf8208b4",
+      "status": "PASS",
+      "output_sha256": "82d322e891829e9ac0fbaea592c6cac5398ac6bac97da3941aa53698ad19dad4"
+    },
+    {
+      "name": "fine_coarse_inner_sources_audit",
+      "exit_code": 0,
+      "seconds": 0.617617167008575,
+      "entry_sha256": "ba2afa8d31d5f441ba794065624cb42407adb4265601bbf740f56f2c81c5b8aa",
+      "status": "PASS",
+      "output_sha256": "189c20c0241859ddd1cd5a4f3ce175645fec2f15d73aea353208e732b24a69e9"
+    },
+    {
+      "name": "fine_coarse_inner_low_audit",
+      "exit_code": 0,
+      "seconds": 0.5282250000163913,
+      "entry_sha256": "2b003e246465704571454dabdcc6d438384e5f467ddc3389b4d69c082589b20d",
+      "status": "PASS",
+      "output_sha256": "36f47d921de5f696dfe1a06050bba140c9697d0edf813d419bcebcb53fcaaf59"
+    },
+    {
+      "name": "fine_C_low_v3_audit",
+      "exit_code": 0,
+      "seconds": 0.4411147499922663,
+      "entry_sha256": "0e42ab9f2076e1cd8d313d5d7777a19529e625edfee559b9b92593d30c3cc040",
+      "status": "PASS",
+      "output_sha256": "fc19111ae07bcbbe80de62ad807d92f6b79d99e458bd067c9a61cf334608645b"
+    },
+    {
+      "name": "low_kernel_v3_independent_audit",
+      "exit_code": 0,
+      "seconds": 1.244445333024487,
+      "entry_sha256": "c283fa23139f289837a28aaed0fd641bfa7f6f2ba85fe4dd97c2c3c73daaec34",
+      "status": "PASS",
+      "output_sha256": "024e43140554c23ab85ea908907251b34a0ce9aa473815169861565163f3260e"
+    },
+    {
+      "name": "fine_cap_certificate_receipt",
+      "exit_code": 0,
+      "seconds": 0.40470545896096155,
+      "entry_sha256": "04d8bf8ff489b97114882154ae73d56d147b7d42c0c94c0ef6d0af0bdd3bb0bc",
+      "status": "PASS",
+      "output_sha256": "67e62c29385e35ae97240da5f229a89918156f8e5884e84bb8f6f2aa6646f1a7"
+    },
+    {
+      "name": "fine_coarse_outer_rank_high_receipt",
+      "exit_code": 0,
+      "seconds": 3.3735920829931274,
+      "entry_sha256": "1ed69cc056bc63dbce0b559610e84e1ee9fbe3b652007e450b26033d1488eca7",
+      "status": "PASS",
+      "output_sha256": "e2e50ebabd23ba8e5567296263c44ffa4d0f0bb72ee2ece9fc15615d049a51a3"
+    },
+    {
+      "name": "certify_fine_restored_182",
+      "exit_code": 0,
+      "seconds": 1.2624674170510843,
+      "entry_sha256": "d53a37d9478b4c7c641ba645ded3aa57d47e057c30e6d96880b98fbbedc34278",
+      "status": "PASS",
+      "output_sha256": "15f12ca534557fa4647109e50c62901082c1b3e1ade8835d55783dd2c48d1286"
+    }
+  ]
+}

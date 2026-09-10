@@ -1,0 +1,226 @@
+{
+  "cap": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 22,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "affines": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 8,
+    "identical_affine_arrays": 20,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "outer-rank-roots": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 11,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "outer-rank-faces": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 13,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "outer-high": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 20,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "outer-G1-low": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 19,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "outer-G2-low-0": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 24,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "outer-G2-low-1-5": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 24,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "outer-G2-low-6-10": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 24,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "outer-G2-low-11-21": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 24,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "inner-rank-high": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 37,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "inner-G3-G5-G6-low": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 37,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "inner-G4-low": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 44,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  },
+  "inner-C-low": {
+    "status": "PASS",
+    "differences": [],
+    "checked_dependency_hashes": 45,
+    "identical_affine_arrays": 0,
+    "excluded_metadata_keys": [
+      "coefficient_archive_sha256",
+      "implementation_sha256",
+      "input_sha256",
+      "origin_sha256",
+      "reused_from",
+      "runtime",
+      "seconds",
+      "timings"
+    ]
+  }
+}
