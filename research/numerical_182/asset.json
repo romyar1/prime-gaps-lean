@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/romyar1/prime-gaps-lean",
+  "base_commit": "78e052bd50e64a34f58866b8b306844b72926c60",
+  "planned_release_tag": "external-numerics-20260909",
+  "archive": {
+    "name": "prime-gaps-external-182-verified-20260909.zip",
+    "bytes": 244843318,
+    "sha256": "2960729efa8996538731820ce6cadc202831c8e98b2c0bdb14cfd19f33726f3b",
+    "root": "prime-gaps-external-182",
+    "manifest_sha256": "6b39022d68759fd59b5d3535def6132d3f6d639fc6789980022dd70339a51359",
+    "manifest_files": 913
+  },
+  "repository_copies": {
+    "METHOD.md": {
+      "archive_path": "METHOD.md",
+      "sha256": "2ff97a1e82c453ec50c1c5306191ec3ad0093771bd26dccb660bb4f124529b52",
+      "bytes": 2939
+    },
+    "RUNTIME.md": {
+      "archive_path": "RUNTIME.md",
+      "sha256": "de17b9f85078973910e430a91a7dc6889792009c3382e4488b8809e32b343b16",
+      "bytes": 1405
+    },
+    "evidence/audits-result.json": {
+      "archive_path": "evidence/audits-result.json",
+      "sha256": "308940620ed5a075ed0939fa1f692a4bc2f35db82c003a1e2c5eb7b38724b86c",
+      "bytes": 4582
+    },
+    "evidence/coverage.json": {
+      "archive_path": "evidence/coverage.json",
+      "sha256": "ddf0197181f6fa6f24c78b2a96f2ccc0232d9fd3e6cae404e5569bee3358e31f",
+      "bytes": 131192
+    },
+    "evidence/negative-controls.json": {
+      "archive_path": "evidence/negative-controls.json",
+      "sha256": "bd9870f2ab1309cfeaef9b3faf6deddc3811bda756b974a72c4d68c55c3bbd10",
+      "bytes": 550
+    },
+    "evidence/payload-comparisons.json": {
+      "archive_path": "evidence/payload-comparisons.json",
+      "sha256": "01367c2d0584055cbe13b3d083daa7d7b844eb230a0d97d05003d3f5cc1a9c01",
+      "bytes": 5088
+    },
+    "evidence/trial-comparison.json": {
+      "archive_path": "evidence/trial-comparison.json",
+      "sha256": "f15604fae48958c0a4a84780c4f50b7b38b4611c5a0e25bf0e2415c2cf1e1eb4",
+      "bytes": 181
+    },
+    "evidence/verification.json": {
+      "archive_path": "evidence/verification.json",
+      "sha256": "53c2ea0bbde1a2e0834f1933a37ce93ba26086deae25055b7605f4949df4660a",
+      "bytes": 2136
+    },
+    "verifier/audit.py": {
+      "archive_path": "audit.py",
+      "sha256": "5b732753cb2a2fe2972b2c06fba84bc22fa6acdbdbfa01e7c9282207d8434cb1",
+      "bytes": 2296
+    },
+    "verifier/audits.json": {
+      "archive_path": "audits.json",
+      "sha256": "79aab0df9d23980354924eb5edccd450956648672812907bd837613a594aa074",
+      "bytes": 3304
+    },
+    "verifier/bundle.py": {
+      "archive_path": "bundle.py",
+      "sha256": "7db4bfd6bfe07e4190f549340b4c085edcbc2bfdc30fdfd2e6747d69533c319a",
+      "bytes": 2102
+    },
+    "verifier/check_package.py": {
+      "archive_path": "check_package.py",
+      "sha256": "fcc14e17e05578f953ec98bd9d2b23739151f0124a122062736eae71ea51814c",
+      "bytes": 777
+    },
+    "verifier/finish.py": {
+      "archive_path": "finish.py",
+      "sha256": "93b8d103f1b02f0dce27203eaa537946c78feebe809d8cec63b353c8dbb80bde",
+      "bytes": 5953
+    },
+    "verifier/requirements.txt": {
+      "archive_path": "requirements.txt",
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+      "bytes": 13
+    },
+    "verifier/stages.json": {
+      "archive_path": "stages.json",
+      "sha256": "47df632beef9a1d6f82da0e60f7013ef2d798465bf2a225391688974a79c7861",
+      "bytes": 9977
+    },
+    "verifier/test_rejection.py": {
+      "archive_path": "test_rejection.py",
+      "sha256": "c6935d5f4d0ee780c02f9bf00375dae5e32a760b45799d9b12bbc59b9a0a0377",
+      "bytes": 2710
+    },
+    "verifier/tools/compare.py": {
+      "archive_path": "tools/compare.py",
+      "sha256": "9ccd4fd2b14a40955d7dbf17220160fd574a9b1ba2e9ad56d557d5db41b577b6",
+      "bytes": 2973
+    },
+    "verifier/tools/coverage.py": {
+      "archive_path": "tools/coverage.py",
+      "sha256": "093aba05ef31803be6c921d200e25ea8e2a969d9cb51bf490560e8e74f70e533",
+      "bytes": 8485
+    },
+    "verifier/tools/trial.py": {
+      "archive_path": "tools/trial.py",
+      "sha256": "1381ef9e35885ae4187e89b09b645e6f5f09982bd353c13dec01c556cd686270",
+      "bytes": 3058
+    },
+    "verifier/tools/worker.py": {
+      "archive_path": "tools/worker.py",
+      "sha256": "c6555945ef7a9a33a667065ac4ed3de472354fadf95d39c541b288dc5d67afa8",
+      "bytes": 2335
+    },
+    "verifier/verify.py": {
+      "archive_path": "verify.py",
+      "sha256": "ecd4a50599363d7743cfdfd95fa8b9cfee4b12b3092cb85f5685e7209344ec04",
+      "bytes": 6465
+    }
+  }
+}

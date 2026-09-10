@@ -1,0 +1,3657 @@
+{
+  "status": "PASS_COMPLETE_EXTERNAL_NUMERICAL_RECOMPUTATION",
+  "files": {
+    "METHOD.md": {
+      "sha256": "2ff97a1e82c453ec50c1c5306191ec3ad0093771bd26dccb660bb4f124529b52",
+      "bytes": 2939
+    },
+    "README.md": {
+      "sha256": "36e4efd28ba748be8bafde7164a8b16bd22f0a6dc1820df042b1850856676d1d",
+      "bytes": 6819
+    },
+    "RUNTIME.md": {
+      "sha256": "de17b9f85078973910e430a91a7dc6889792009c3382e4488b8809e32b343b16",
+      "bytes": 1405
+    },
+    "assembly.json": {
+      "sha256": "6210ea286ad56a1264f3489aedcb60bfd0ae449d81cdc16d0e7f60b138e846eb",
+      "bytes": 972727
+    },
+    "audit.py": {
+      "sha256": "5b732753cb2a2fe2972b2c06fba84bc22fa6acdbdbfa01e7c9282207d8434cb1",
+      "bytes": 2296
+    },
+    "audits.json": {
+      "sha256": "79aab0df9d23980354924eb5edccd450956648672812907bd837613a594aa074",
+      "bytes": 3304
+    },
+    "bundle.py": {
+      "sha256": "7db4bfd6bfe07e4190f549340b4c085edcbc2bfdc30fdfd2e6747d69533c319a",
+      "bytes": 2102
+    },
+    "check_package.py": {
+      "sha256": "fcc14e17e05578f953ec98bd9d2b23739151f0124a122062736eae71ea51814c",
+      "bytes": 777
+    },
+    "evidence/SHA256.json": {
+      "sha256": "9c2ea5562bdf76db01f0eaecca29f8bd62461e097e91004b54fdf6d3eb38ced3",
+      "bytes": 10214
+    },
+    "evidence/affines-job.json": {
+      "sha256": "aafd65622e353eb9290eeb4e7adafd24826f2c87116020a12bb3dd3403eadbd8",
+      "bytes": 880
+    },
+    "evidence/affines-reads.json": {
+      "sha256": "ec954eef52f5bd3ae247885e32fb7ff6109e2d0cc6fe3af13640e1ebca3cc8df",
+      "bytes": 2701
+    },
+    "evidence/affines.log": {
+      "sha256": "aa9736ac5af82964aac96508c165e66ed220cbaacbff91dcdc42ccf645d643ef",
+      "bytes": 5455
+    },
+    "evidence/audits/audit_independent_fragment_cap.json": {
+      "sha256": "06652c24538c9f329a26ccdb80466cd886694ba6897c80b10ffe04d6f42c5ef4",
+      "bytes": 8347
+    },
+    "evidence/audits/audit_independent_fragment_cap.log": {
+      "sha256": "06652c24538c9f329a26ccdb80466cd886694ba6897c80b10ffe04d6f42c5ef4",
+      "bytes": 8347
+    },
+    "evidence/audits/certify_fine_restored_182.json": {
+      "sha256": "15f12ca534557fa4647109e50c62901082c1b3e1ade8835d55783dd2c48d1286",
+      "bytes": 95966
+    },
+    "evidence/audits/certify_fine_restored_182.log": {
+      "sha256": "deb082a2291e949070d9a7e822879e25d4a5d732ed33c70fcd4ba41c6b3faa04",
+      "bytes": 388
+    },
+    "evidence/audits/check_certificate_runtime.json": {
+      "sha256": "a17342f1f65c18947258aab1868400b08be6a2914a258d282a4eaf3f7bac08ae",
+      "bytes": 1639
+    },
+    "evidence/audits/check_certificate_runtime.log": {
+      "sha256": "a17342f1f65c18947258aab1868400b08be6a2914a258d282a4eaf3f7bac08ae",
+      "bytes": 1639
+    },
+    "evidence/audits/coarse_affine_envelope_audit.json": {
+      "sha256": "65354098e4e8977a0e575fe62f43972664c28ea8f5818595246623ddc2b719c6",
+      "bytes": 2208
+    },
+    "evidence/audits/coarse_affine_envelope_audit.log": {
+      "sha256": "7fff79b7f989675e233fae13c6ed3a30b0ff658db04d43a1541d3b34ed6743fe",
+      "bytes": 2078
+    },
+    "evidence/audits/fine_C_low_v3_audit.json": {
+      "sha256": "fc19111ae07bcbbe80de62ad807d92f6b79d99e458bd067c9a61cf334608645b",
+      "bytes": 8026
+    },
+    "evidence/audits/fine_C_low_v3_audit.log": {
+      "sha256": "fc19111ae07bcbbe80de62ad807d92f6b79d99e458bd067c9a61cf334608645b",
+      "bytes": 8026
+    },
+    "evidence/audits/fine_cap_certificate_receipt.json": {
+      "sha256": "67e62c29385e35ae97240da5f229a89918156f8e5884e84bb8f6f2aa6646f1a7",
+      "bytes": 4321
+    },
+    "evidence/audits/fine_cap_certificate_receipt.log": {
+      "sha256": "37e9f7fecd35eae01c90b3defaafc31957194abe1862720b5eb81904a769fb10",
+      "bytes": 462
+    },
+    "evidence/audits/fine_coarse_inner_low_audit.json": {
+      "sha256": "36f47d921de5f696dfe1a06050bba140c9697d0edf813d419bcebcb53fcaaf59",
+      "bytes": 22911
+    },
+    "evidence/audits/fine_coarse_inner_low_audit.log": {
+      "sha256": "9beea8a61dfe1519b977c1aae292e7941409922cc06de390d3ad8bba432ac062",
+      "bytes": 202
+    },
+    "evidence/audits/fine_coarse_inner_sources_audit.json": {
+      "sha256": "189c20c0241859ddd1cd5a4f3ce175645fec2f15d73aea353208e732b24a69e9",
+      "bytes": 13817
+    },
+    "evidence/audits/fine_coarse_inner_sources_audit.log": {
+      "sha256": "189c20c0241859ddd1cd5a4f3ce175645fec2f15d73aea353208e732b24a69e9",
+      "bytes": 13817
+    },
+    "evidence/audits/fine_coarse_outer_rank_high_receipt.json": {
+      "sha256": "e2e50ebabd23ba8e5567296263c44ffa4d0f0bb72ee2ece9fc15615d049a51a3",
+      "bytes": 22225
+    },
+    "evidence/audits/fine_coarse_outer_rank_high_receipt.log": {
+      "sha256": "0f3346d383bafa7da871cb8f2c988930a7f726b05dee817ccc0659c953ba38ce",
+      "bytes": 211
+    },
+    "evidence/audits/fine_coarse_rank_two_face_audit.json": {
+      "sha256": "e6fbc775e9ac816cc6de09a09edc42031bcf3abbf52d3c3474ecd602d6c31452",
+      "bytes": 10795
+    },
+    "evidence/audits/fine_coarse_rank_two_face_audit.log": {
+      "sha256": "e6fbc775e9ac816cc6de09a09edc42031bcf3abbf52d3c3474ecd602d6c31452",
+      "bytes": 10795
+    },
+    "evidence/audits/fine_trial_coarse_high_source_audit.json": {
+      "sha256": "82d322e891829e9ac0fbaea592c6cac5398ac6bac97da3941aa53698ad19dad4",
+      "bytes": 11358
+    },
+    "evidence/audits/fine_trial_coarse_high_source_audit.log": {
+      "sha256": "dc97b71c811509fd0e22bc3a429f5b6f878fbb3ff9660e3f8ee35c7e77ee42fc",
+      "bytes": 146
+    },
+    "evidence/audits/fine_trial_coarse_rank_two_root_sweep_audit.json": {
+      "sha256": "adbe12f28036bf25f9d5ded787c8b5779ea883fdd0848a5e24379d48363ca4c9",
+      "bytes": 1106
+    },
+    "evidence/audits/fine_trial_coarse_rank_two_root_sweep_audit.log": {
+      "sha256": "ddbaa83c4ace9a3777d659850c553deff944d3ce417cbd72054fdfff177e258b",
+      "bytes": 103
+    },
+    "evidence/audits/fine_trial_coarse_root_envelope_audit.json": {
+      "sha256": "4ecb4024ba3d204d2123914226a716e6b5d98da42d1329ed7a80262b880173d6",
+      "bytes": 3795
+    },
+    "evidence/audits/fine_trial_coarse_root_envelope_audit.log": {
+      "sha256": "8d6226a6588e5129b455563fdcaa71470dcc8632abbd544ee7e23d94972905a2",
+      "bytes": 432
+    },
+    "evidence/audits/low_kernel_v3_independent_audit.json": {
+      "sha256": "024e43140554c23ab85ea908907251b34a0ce9aa473815169861565163f3260e",
+      "bytes": 31381
+    },
+    "evidence/audits/low_kernel_v3_independent_audit.log": {
+      "sha256": "f14f58ea35eec26499bc664d445a30beb7f485a3c9186d2eddb7139368699159",
+      "bytes": 249
+    },
+    "evidence/audits-result.json": {
+      "sha256": "308940620ed5a075ed0939fa1f692a4bc2f35db82c003a1e2c5eb7b38724b86c",
+      "bytes": 4582
+    },
+    "evidence/cap-job.json": {
+      "sha256": "8bf65a9e82c93708ee0f17133008931f5fdf27cbd0303651e556df9b3259a9ff",
+      "bytes": 873
+    },
+    "evidence/cap-reads.json": {
+      "sha256": "4e0d62d15c899866d14f85f00a0470a692cd0ff64ebb79f4a1ee7fda24ecc4a9",
+      "bytes": 2119
+    },
+    "evidence/cap.log": {
+      "sha256": "9621eb6b61e9f7ed5a212cf403751ebff891b2fd3f7c2635d4e606a5f4f0cb8e",
+      "bytes": 4743
+    },
+    "evidence/changed_trial.log": {
+      "sha256": "e14a13a9b016e17d380564e5df7ca1acb940a96c2700b4e9228d6d1e7bf1069d",
+      "bytes": 886
+    },
+    "evidence/coverage.json": {
+      "sha256": "ddf0197181f6fa6f24c78b2a96f2ccc0232d9fd3e6cae404e5569bee3358e31f",
+      "bytes": 131192
+    },
+    "evidence/inner-C-low-job.json": {
+      "sha256": "97b245e3b8057a6e39f199a1333afba492db57bc0aedb2c3377f22b384c92335",
+      "bytes": 2689
+    },
+    "evidence/inner-C-low-reads.json": {
+      "sha256": "c2b4f8b052dce8c8613b6470ab7380e7130c3daaa54261df523b06861fc71c4a",
+      "bytes": 6998
+    },
+    "evidence/inner-C-low.log": {
+      "sha256": "ce0944e715fc2a073e22b924b74a990b86735c935e82a6fbdf1193a90fac584f",
+      "bytes": 21454
+    },
+    "evidence/inner-G3-G5-G6-low-job.json": {
+      "sha256": "550deff282b53fef719c3a87639b030f99c3b52cc6eb67639781cd958587bd84",
+      "bytes": 2881
+    },
+    "evidence/inner-G3-G5-G6-low-reads.json": {
+      "sha256": "4fcf7fd531a7dc4ee529fa648bcb62be2cc58ef85b7f31f0a0f741e506eb7c3f",
+      "bytes": 6352
+    },
+    "evidence/inner-G3-G5-G6-low.log": {
+      "sha256": "3f92f0efa10e99323207a5394ccf9bb32516f2632eb515e0216d23fe35c3df20",
+      "bytes": 130724
+    },
+    "evidence/inner-G4-low-job.json": {
+      "sha256": "468deb9fbc0dee8c9fe8b298c69e025ee3dc0e14e6a0f3a2234abc4b147621a4",
+      "bytes": 2790
+    },
+    "evidence/inner-G4-low-reads.json": {
+      "sha256": "cbf154f6d37f777c1a45a21ba69addbd06da5da6033972b477a3f13939cc6eb6",
+      "bytes": 6801
+    },
+    "evidence/inner-G4-low.log": {
+      "sha256": "b9ddef5ef205bf040953a0a9f3bf4f68016a12c429e9379bfc623e74a6c35977",
+      "bytes": 82297
+    },
+    "evidence/inner-rank-high-job.json": {
+      "sha256": "90158f3fa2421e8e836c18596601c7eeadf3bb956aaec6df6db179d8dbb7a2c7",
+      "bytes": 2667
+    },
+    "evidence/inner-rank-high-reads.json": {
+      "sha256": "b564e45416187412e52befad6892b44cac57cdf342facab20a2b9f33cf96bc39",
+      "bytes": 4978
+    },
+    "evidence/inner-rank-high.log": {
+      "sha256": "fc30eff98d588c807cdb437b3cc6d06648a0a8eed4f32b530dafae3016be7c22",
+      "bytes": 16466
+    },
+    "evidence/negative-controls.json": {
+      "sha256": "bd9870f2ab1309cfeaef9b3faf6deddc3811bda756b974a72c4d68c55c3bbd10",
+      "bytes": 550
+    },
+    "evidence/obsolete_fft_runtime.log": {
+      "sha256": "bddcccbf12c00d6827e9d430759a2180e543f3a8b3e59a18ed124484fefa88ea",
+      "bytes": 851
+    },
+    "evidence/outer-G1-low-job.json": {
+      "sha256": "f77d9695a1f27aefcceba790feba1032189683e43019f4c00ad54c31d67f25e2",
+      "bytes": 2673
+    },
+    "evidence/outer-G1-low-reads.json": {
+      "sha256": "c4b77caa01eb0e4caffe340e81586e142d68f51e3066aa77ed93afc5a392a381",
+      "bytes": 4349
+    },
+    "evidence/outer-G1-low.log": {
+      "sha256": "57a0b6f0858feacde50164295ddc4bfcc3852433259a1b263571df3cfb7a4318",
+      "bytes": 11156
+    },
+    "evidence/outer-G2-low-0-job.json": {
+      "sha256": "45eddba5c1b6d2c3a56af2bc1a1530422bdf3918181e641148fd114b980031e3",
+      "bytes": 2818
+    },
+    "evidence/outer-G2-low-0-reads.json": {
+      "sha256": "05633b5ff81bee88be5abab27e1758dd78c58e71b830b53af68d292ae6721c67",
+      "bytes": 5021
+    },
+    "evidence/outer-G2-low-0.log": {
+      "sha256": "7275bb0fc541909ad43e720d0441d2a883b1516d93952a3636b43437ab3e7a15",
+      "bytes": 12370
+    },
+    "evidence/outer-G2-low-1-5-job.json": {
+      "sha256": "73dc20f46bd0b15865e22f9c62b09e3a12554b339fc1a276d85dde60bed5519b",
+      "bytes": 2883
+    },
+    "evidence/outer-G2-low-1-5-reads.json": {
+      "sha256": "05633b5ff81bee88be5abab27e1758dd78c58e71b830b53af68d292ae6721c67",
+      "bytes": 5021
+    },
+    "evidence/outer-G2-low-1-5.log": {
+      "sha256": "0483a378de67a5a625e8b624d5007eed610e3f546373052ba6af656c75cb3a58",
+      "bytes": 60951
+    },
+    "evidence/outer-G2-low-11-21-job.json": {
+      "sha256": "0254c3759928d1a0775501c689849ccab7aa72c3cf4dc7ab22d6955133744322",
+      "bytes": 3072
+    },
+    "evidence/outer-G2-low-11-21-reads.json": {
+      "sha256": "05633b5ff81bee88be5abab27e1758dd78c58e71b830b53af68d292ae6721c67",
+      "bytes": 5021
+    },
+    "evidence/outer-G2-low-11-21.log": {
+      "sha256": "9d8125cf41a244b36b633cf0c4de20875dbfc685568a235b9f03be64bab0797a",
+      "bytes": 81897
+    },
+    "evidence/outer-G2-low-6-10-job.json": {
+      "sha256": "edc5073b8fdff39d0f6c298e8467d3bff240c9c825541b7403b1cfec06367491",
+      "bytes": 2919
+    },
+    "evidence/outer-G2-low-6-10-reads.json": {
+      "sha256": "05633b5ff81bee88be5abab27e1758dd78c58e71b830b53af68d292ae6721c67",
+      "bytes": 5021
+    },
+    "evidence/outer-G2-low-6-10.log": {
+      "sha256": "bdeaa1a682ce564db3fd8f6cf18f2ee935044971d9818505d55b479ce2aea74b",
+      "bytes": 60705
+    },
+    "evidence/outer-high-job.json": {
+      "sha256": "f75a37ba48941e1b148f78c600313f2902c35964e1cb9019f550765ab569db85",
+      "bytes": 2674
+    },
+    "evidence/outer-high-reads.json": {
+      "sha256": "d1891328bb8a32de19f0c51eccb90efaf21d8a7c13722de9fd9cced8a511d294",
+      "bytes": 4523
+    },
+    "evidence/outer-high.log": {
+      "sha256": "763da0278d4a80fe2d42440ff99b3e10ea4910c412044784b5df819a88acced9",
+      "bytes": 3415
+    },
+    "evidence/outer-rank-faces-job.json": {
+      "sha256": "361ee98b6b9ee2b85a2bcd0b3853a7c8b647ad3ffc747312e092d4fa726caea1",
+      "bytes": 2645
+    },
+    "evidence/outer-rank-faces-reads.json": {
+      "sha256": "67adc9da2a3015ff8fddf764665e1a6ded1fd81fdef03a210d30d60b469f0951",
+      "bytes": 3872
+    },
+    "evidence/outer-rank-faces.log": {
+      "sha256": "2abaaae98574c1133d668605889e215cc6b677ccaa910e8a86fe2ddbef4b7c8a",
+      "bytes": 10119
+    },
+    "evidence/outer-rank-roots-job.json": {
+      "sha256": "1190d49123fd689eec06675c0b223ac3ed6aca1fd17703f7141c6aba2117b071",
+      "bytes": 2637
+    },
+    "evidence/outer-rank-roots-reads.json": {
+      "sha256": "95e2f323c4b335512075d67e33b9f277ec0d57f8579876da04093a87220c1f9f",
+      "bytes": 2481
+    },
+    "evidence/outer-rank-roots.log": {
+      "sha256": "e64d67d793b640e65370d699890e682389fbcd7f7db5d56ea7a73a81f4f27bd1",
+      "bytes": 9634
+    },
+    "evidence/payload-comparisons.json": {
+      "sha256": "01367c2d0584055cbe13b3d083daa7d7b844eb230a0d97d05003d3f5cc1a9c01",
+      "bytes": 5088
+    },
+    "evidence/rebuilt/experiments/analytic_support/fine_C_low_v3_n393216.json": {
+      "sha256": "94788210762c3d61458be7bd1f0dcd49595d6592cc11129a9591196cb3ee6172",
+      "bytes": 1240785
+    },
+    "evidence/rebuilt/experiments/analytic_support/fine_G2_low_v3_bins6_10_n393216.json": {
+      "sha256": "4946241b4ee461b0f46eeec434c85e308fa4a27288a9ab115146bf759c6553b2",
+      "bytes": 1595233
+    },
+    "evidence/rebuilt/experiments/analytic_support/fine_coarse_inner_sources_n393216.json": {
+      "sha256": "e90fe3b63d709da21c63a2cb2a96eca5b81605117dde444c0adbc2e943f14b87",
+      "bytes": 373675
+    },
+    "evidence/rebuilt/experiments/tuple_geometry/fine393216_G4_low_v3.json": {
+      "sha256": "d620ac65121326cb932a60249891a0169f6c951b1cab930ede8967c94e235cef",
+      "bytes": 1495641
+    },
+    "evidence/rebuilt/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_high_sources.json": {
+      "sha256": "5ac58c5248cf43f85b976fafb48f2344a37b81c87b99fdfb71e2bc687f436840",
+      "bytes": 3258649
+    },
+    "evidence/rebuilt/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_rank_two_roots.json": {
+      "sha256": "83a28134fe86dc795f741d2dc5231f6cef6e66d598f3eac34fa4d3e503fb9e21",
+      "bytes": 11886132
+    },
+    "evidence/rebuilt/experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48.json": {
+      "sha256": "48b11effd8c6562980a9c0981d94ec196576fe30f21ca561810d01106a8c946a",
+      "bytes": 3159669
+    },
+    "evidence/rebuilt/results/multicap_a6_fine393216_G2_low_v3_bins11to21.json": {
+      "sha256": "5a2ca3c8fa24ac86f3d8d69ffc5cac33b8071a0be9b4f3ffa3a0109ed1f91c92",
+      "bytes": 15370060
+    },
+    "evidence/rebuilt/results/multicap_a6_fine393216_G2_low_v3_bins1to5.json": {
+      "sha256": "ed8962673cd9ef5636b2fd21b708ff509263a48e8dd0fd5099a12557018d89ad",
+      "bytes": 902840
+    },
+    "evidence/rebuilt/results/multicap_a6_fine393216_coarse8192_G1_G2_faces.json": {
+      "sha256": "80146a88a58daa3fcf0f62bd9fc583400624919204154e2f531afe1157708d96",
+      "bytes": 3273180
+    },
+    "evidence/rebuilt/results/multicap_a6_fine393216_coarse8192_G1_all_low.json": {
+      "sha256": "cac6363a4902a2a026687f39893600c8318ead1843f960d5f1106578b99445a6",
+      "bytes": 15874943
+    },
+    "evidence/rebuilt/results/multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json": {
+      "sha256": "36635d711da28e0a4a441e96ab0c503bfba483d8d80574058137cb319f1caee8",
+      "bytes": 222418
+    },
+    "evidence/rebuilt/results/multicap_a6_fine393216_coarse8192_affines.json": {
+      "sha256": "d11f7846b176ad7559b25f50f264a2eaaac2ab82b0b09ca7c5c8e59dbb66debc",
+      "bytes": 22928
+    },
+    "evidence/rebuilt/results/multicap_a6_fine393216_coarse8192_affines.npz": {
+      "sha256": "acc96f128343f00b1d2a2f9d73e19bfa47ccc6664f78bf5a2df733ec10822719",
+      "bytes": 64524372
+    },
+    "evidence/rebuilt/results/multicap_a6_full_cap_n393216.json": {
+      "sha256": "860812d70217d54f4064956148013260f9c5e62e86856daa9c59533f572706d0",
+      "bytes": 10448
+    },
+    "evidence/run.json": {
+      "sha256": "920ce89f5bbf4f3cf8fed721380e5219c5623d792d0a27c19b3d75b67859221b",
+      "bytes": 7521
+    },
+    "evidence/trial-comparison.json": {
+      "sha256": "f15604fae48958c0a4a84780c4f50b7b38b4611c5a0e25bf0e2415c2cf1e1eb4",
+      "bytes": 181
+    },
+    "evidence/verification.json": {
+      "sha256": "53c2ea0bbde1a2e0834f1933a37ce93ba26086deae25055b7605f4949df4660a",
+      "bytes": 2136
+    },
+    "finish.py": {
+      "sha256": "93b8d103f1b02f0dce27203eaa537946c78feebe809d8cec63b353c8dbb80bde",
+      "bytes": 5953
+    },
+    "published-data-manifest.json": {
+      "sha256": "00eaa90ee98e77965e80592d33f6850a2ece8f099a49c68d9614b552ff6075a9",
+      "bytes": 148137
+    },
+    "requirements.txt": {
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7",
+      "bytes": 13
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/cap_multiplier_source_reuse.json": {
+      "sha256": "7624ba1ee4617d13d1c869f322e00e3f5631734100ae971c17dd635eb5b55cbd",
+      "bytes": 13858
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/cap_multiplier_source_reuse.md": {
+      "sha256": "59f0f21ac2dc303e3408caf8ce6a29e3d217db61e95d8035e116934f74738e00",
+      "bytes": 5101
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/cap_multiplier_source_reuse.py": {
+      "sha256": "72361ba082011a9ff1d3dedf738b103b960b5b4fef58a3d1d0207c27ed5b7d48",
+      "bytes": 8580
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/certify_incidence_spline.py": {
+      "sha256": "caebe8861621633bb2c2b22be7dfb210c11a826cc1e7d40bc5f67434d0f49fad",
+      "bytes": 27054
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/certify_incidence_spline_exact_dickman.py": {
+      "sha256": "5532b023a281b534a190668828dc93242df090adf7685e14daeec389255a9f34",
+      "bytes": 5723
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/check_improved_margin.py": {
+      "sha256": "c018ba7eee41ae2e56dc7313be283ed5d26de803b8f24aa99115df93de0d0379",
+      "bytes": 5277
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/check_source_geometry.py": {
+      "sha256": "4abe533165a9c12a3fcf4ed77a36b19a6e6e42b2ed6efcc7af68e8f30d00484a",
+      "bytes": 8691
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/conditional_finite_type_iii_transfer.md": {
+      "sha256": "705437c76a00e0b82c69c3a7081de7c875c4ba7ae3479f28b9389a0c7c4aa11b",
+      "bytes": 14558
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/conditional_finite_type_iii_transfer.py": {
+      "sha256": "990dabd633894adfeab280a162d09d42a63d58f4ca8a74cd2e50cbafe2932c6f",
+      "bytes": 10294
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/conditional_type_iii_frontier.json": {
+      "sha256": "2da8d9ccb9b10219b8875096abd5b8931117a90b9459511cc2d370683ce380e7",
+      "bytes": 7006
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/conditional_type_iii_frontier.py": {
+      "sha256": "bf6cec50be18ee990f813f11ebd1f07770399cf11668c97b1212c83605c79a25",
+      "bytes": 7897
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/correlation_fourier_screen.json": {
+      "sha256": "afe55206201388295b1649f5676d2d68091c8040e1ded91e341a58524966cc95",
+      "bytes": 117340
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/correlation_fourier_screen.py": {
+      "sha256": "384bbe1bb23b3e6db68a2637011b374dfad6671f0e085fa6e38ed3fb4cf30f53",
+      "bytes": 8805
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/correlation_kernel_exponents.json": {
+      "sha256": "95dff0a353c1a8ae31aecaa19be5665ab350e3376b9f17d8d1bc7b3d7365ed0c",
+      "bytes": 1852
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/correlation_kernel_exponents.py": {
+      "sha256": "4b0c0328c72513570c27d2ad53c057592d1f60c8dcb5ec8b78cabd1bcd13817f",
+      "bytes": 2176
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/correlation_operator_screen.json": {
+      "sha256": "451100ae040c338cd82476ac695c95ea4d83d3adf8c3e726c53253c56dedd6bc",
+      "bytes": 5763
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/correlation_operator_screen.py": {
+      "sha256": "7b56dc9789738e90bdc8cef280b23661d81485e231185736eb59dbc4d1ad7e1d",
+      "bytes": 2729
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/exact_deficit.py": {
+      "sha256": "94ba658ca316d7f28652e377ab530d6071c6ea1d4f9d47d48fa726acb0b6fb79",
+      "bytes": 4207
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/exact_deficit_receipt.json": {
+      "sha256": "b9688cf116f5fff5e7f22813370071e241a41597280bd6d4df141600433d6c3d",
+      "bytes": 892
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/factor_pattern_incidence.py": {
+      "sha256": "15b224105ffcdabb0065b2460372dee1b5949b7dfd779477a052123c103596cf",
+      "bytes": 10734
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/factor_pattern_incidence_receipt.json": {
+      "sha256": "c2d35f3248a13bab60d4f6bc7c1f884be2e0c4f54c8411c8dc17e30204248445",
+      "bytes": 8445
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/factor_pattern_lp.py": {
+      "sha256": "2f44462f253a45f5384e00d47935be131a9372fa4a54d2a6089d18d84777fc67",
+      "bytes": 12969
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/farey_kernel_fourier_screen.py": {
+      "sha256": "d50d71bfe60d3b50064ddc865d96966110dcdbd921889d7153a5a50cce610438",
+      "bytes": 2867
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3.py": {
+      "sha256": "80eaa9956c8280a2d0c734821e6f00d53f8ccc7a78b44961ed9de30d78ea63e4",
+      "bytes": 10536
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_audit.json": {
+      "sha256": "63ba6198d10e57405f96d7c573965c767fd2522be5cee1aacac0994d8f22a796",
+      "bytes": 7612
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_audit.py": {
+      "sha256": "0e42ab9f2076e1cd8d313d5d7777a19529e625edfee559b9b92593d30c3cc040",
+      "bytes": 5786
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_n393216.json": {
+      "sha256": "c30f7f0380a6caeba92d68aadcb227b363955c03931fc81ba81e9f0d5be56297",
+      "bytes": 1239916
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_receipt.json": {
+      "sha256": "f13a69510178405739fd6712dd705a442cd6665aa50218e12356de72eb3d37a1",
+      "bytes": 17078
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_C_low_v3_receipt.py": {
+      "sha256": "9f3bd1a87a8a1e25b49dd5fd9c54be05be0d9e765367ef9bab18858dbd621b75",
+      "bytes": 11622
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_G2_low_v3_bins6_10_n393216.json": {
+      "sha256": "82452b44d27e7e53072fd547c2f20f68b67bc1ecf029688abebe55ba951d1aae",
+      "bytes": 1594786
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_G2_low_v3_bins6_10_receipt.py": {
+      "sha256": "84145e41141470004e905bf8805a67d2498d8aafda10efea1ede05bb18eff91c",
+      "bytes": 15304
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources.py": {
+      "sha256": "49b95f3ad3219eabf06691768fe33fc48831b3879f9898390e1ec09d80262139",
+      "bytes": 16291
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_audit.json": {
+      "sha256": "20ecd35e3e90e4c97e8d8a317a16e02dab743c5e128fcfda5184c72b256cb061",
+      "bytes": 13403
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_audit.md": {
+      "sha256": "a28be8cdffad3d59707bb4aac1287fe25832737b19325e5c64c7e94d08ae7363",
+      "bytes": 5682
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_audit.py": {
+      "sha256": "ba2afa8d31d5f441ba794065624cb42407adb4265601bbf740f56f2c81c5b8aa",
+      "bytes": 8680
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_n393216.json": {
+      "sha256": "a51d1fec993b806c51a26c1a82848d1b7748c0a23d774d8656dab63869f2626a",
+      "bytes": 373071
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_receipt.json": {
+      "sha256": "7700ce4b5c35acff099a8d4a37a17f2fba87e6e769c6f8084e22a51ddb9f7b3b",
+      "bytes": 13652
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_inner_sources_receipt.py": {
+      "sha256": "28a45c6d81b9ec9a1faf1b21ebee04713bb98f3d7578f6d902be9d3b827f0b55",
+      "bytes": 10902
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_rank_two_face_audit.json": {
+      "sha256": "cf56275c19589492589be64bb10a548612f12e3787b1d606600d3040bf09871b",
+      "bytes": 10335
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_rank_two_face_audit.md": {
+      "sha256": "50a39524f18a0e6a9ab1e53d4d3a1c4501985be766389a9b0e5d9f4381e5e1d4",
+      "bytes": 10393
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_coarse_rank_two_face_audit.py": {
+      "sha256": "5fb34086786661d4ce4d62a4f0fd0fcfeb2e2f5c9978ea6aac5d2e07d8266d62",
+      "bytes": 26438
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_inner_low_window_review.py": {
+      "sha256": "13c4088d4a1acad537a10130b49fc17c297651d8a4570c74237fc64561933833",
+      "bytes": 3874
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_inner_rank_high_normalization.json": {
+      "sha256": "db21557ecd0dd9270382fa729b03bdcd6b2aa5efed726da359645c548cc1ac65",
+      "bytes": 6489
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_inner_rank_high_normalization.py": {
+      "sha256": "168f5ddf3427844b31ada9dba1d4515262fc03a09e700d3c8e28281d2edb2524",
+      "bytes": 5246
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_trial_dhl39_interface_audit.json": {
+      "sha256": "0fd9853162ec26c27c7b31d1a1e6e26e993ff65058617d3255ed0d061477dd70",
+      "bytes": 43995
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_trial_dhl39_interface_audit.md": {
+      "sha256": "f04968f4f5131c46bd0b28dabbddd67cb80f08ed947cdca999256964ca9ae7dd",
+      "bytes": 13354
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/fine_trial_dhl39_interface_audit.py": {
+      "sha256": "be171578b348438c3c5d0cb2f29d594551a5cac50d6c336b9b8290e05483a8cf",
+      "bytes": 14276
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/harman_deficit_integral.json": {
+      "sha256": "46d878a4dbfc8d316bf2e96abfce3bae9e8e7562c26db2072b0360fcaf48104d",
+      "bytes": 21115
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/harman_deficit_integral.md": {
+      "sha256": "58ff75e7fb5c1bc98e6663074897178bf3e64d7a8b0150941772126b98941259",
+      "bytes": 4930
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/harman_deficit_integral.py": {
+      "sha256": "b131fd9d9ac8112c8e20c2768618c1acdc524bb3ade7d994252507fe0bb4b443",
+      "bytes": 10224
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/harman_type_ii_addback.json": {
+      "sha256": "d413154914fd4f9b523b889e5757dd01d9f93eefabf9165c6e93c9b04d06e555",
+      "bytes": 18083
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/harman_type_ii_addback.md": {
+      "sha256": "841bb3a5b94fc55cdc1a8a22d2ce2958067eda4095ed2d93dfd8f89be3e019cb",
+      "bytes": 12353
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/harman_type_ii_addback.py": {
+      "sha256": "6edb015a451f07189c646e40fa03dc61e93a3230f536994c3ef426aa29d1826f",
+      "bytes": 13003
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/hybrid_enlarged_subtraction_audit.json": {
+      "sha256": "f7671898587385773a3d061d4a927a4ffe95ba93eaaeace41365284ded5c59d7",
+      "bytes": 34401
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/hybrid_enlarged_subtraction_audit.md": {
+      "sha256": "fd04c2b2bb6daf5e76e1da8d11bc973b08b5e32bf73d5d680c9a34d1c4060c7e",
+      "bytes": 7500
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/hybrid_enlarged_subtraction_audit.py": {
+      "sha256": "bf3848fd2cecee09d2ef7ea0043b070a9894ec2b3c89b319106c99062a5c2fe9",
+      "bytes": 17016
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/hybrid_tail_schur.json": {
+      "sha256": "7ac2a4f8836635d19d446e4db4aaf14a907f3e84f80dfb4cbaf853e42a83f167",
+      "bytes": 9260
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/hybrid_tail_schur.md": {
+      "sha256": "a2693fec720a8f0166c90ac1bb62380d27bcfe5e841f49ed2183c59525de7c08",
+      "bytes": 19657
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/hybrid_tail_schur.py": {
+      "sha256": "680ee86055a6bc8c5898d3f5eabb99311d3a121dd4ede2efea5941df415c75fc",
+      "bytes": 10890
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/hybrid_transfer.py": {
+      "sha256": "036dd8ea170022af164cf867fe13f2704aecd28fa5707246b598788918fb458b",
+      "bytes": 2248
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/hybrid_transfer_receipt.json": {
+      "sha256": "88ff78b31e30aba8a73ad062326678b8a5e3b416097b49d16ea4440567629e90",
+      "bytes": 3498
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/improved_margin_receipt.json": {
+      "sha256": "02f7288f5e8faa9dee5e6c80433beb6a60862443426250d171bb292076de5f3f",
+      "bytes": 6115
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_cap_adapter_audit.py": {
+      "sha256": "fa479d3f73435825f21e79471fa4a41102ff304af85c54186b00f05a050dd63c",
+      "bytes": 16187
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_many_primes_main_audit.md": {
+      "sha256": "5d2b38da76fd45bc19da3fde2eb6c1c3a250ec142eae7e5a2ef4c191f0de0211",
+      "bytes": 7304
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_many_primes_main_audit.py": {
+      "sha256": "51b3143a9959cf1e3654bc48f75159cdd87c52c5896b053472a6400327b754ac",
+      "bytes": 11451
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_many_primes_parameters.json": {
+      "sha256": "198f0c378a04cd3d22265f85d9a42b3fa40acc4c11a20dde5c44dd23a77d7f23",
+      "bytes": 6599
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_many_primes_parameters.py": {
+      "sha256": "dc23c140fa44cef8c6750d541e0eecc34e3e0038a5f3efef092a831248e49e69",
+      "bytes": 6121
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_rank_two_prefix.md": {
+      "sha256": "3231958feb8b6b1af4ab967dca3f8f026f04fe2e52f210e68f48a102769e3a43",
+      "bytes": 3465
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_rank_two_prefix.py": {
+      "sha256": "040edca081ddb9985437b9f9cf63b77baa7992297a4830908e19f84acdcc1845",
+      "bytes": 8062
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_rank_two_prefix_audit.json": {
+      "sha256": "1336e74de541ea1f09e46d682f27e2850cfe0c375ddb62f19c325ff764a848aa",
+      "bytes": 3625
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_rank_two_prefix_audit.py": {
+      "sha256": "87f4f0186ac45f0ac4368a5bf9667b6a7b5c053ecedb7a8ec763181bc539dac1",
+      "bytes": 3120
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_rank_two_prefix_geometry.json": {
+      "sha256": "f7369c17913b90521d09a7451346e0526d002c363fa9827be96545f6c5c699e8",
+      "bytes": 13717
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_rank_two_prefix_geometry.py": {
+      "sha256": "640c203058091ff2772c1a42645f44a572b6571ddfca20da2fd15cbee87d394d",
+      "bytes": 3599
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_cap_pilot_n4096.json": {
+      "sha256": "52f9187bef0562411e2d580a9ddef9c3990b3c9652a50af07eb77629b948f652",
+      "bytes": 7165
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_exact_cap_pilot_n4096.json": {
+      "sha256": "80d59991aa6044c08893d6b87ae0881ad8164151f5c3fbae2a7a2e2d91d0e8e1",
+      "bytes": 7664
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_exact_dickman_audit.json": {
+      "sha256": "446ac1bf440bf1f2ab652d70b92a9a7a71c2b25ca6c6d56b37fa12b31fae9e76",
+      "bytes": 15329
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_exact_dickman_audit.py": {
+      "sha256": "39685a741791d274a0a57c08db710119694a7425c80bb4e837ccd7e696e634fb",
+      "bytes": 4020
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_interval.md": {
+      "sha256": "8bff739ecc7d6156e6ecbea2de5ca95506beebadd985abdaee24566072eff9ad",
+      "bytes": 11167
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_interval_audit.json": {
+      "sha256": "b5bc223d7170a099cf4fb4878baf23e40f16c9d2c1c9e99e1648cce5438c22b9",
+      "bytes": 16940
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_interval_audit.py": {
+      "sha256": "470cf4af42c190565bdc543c0cf90c9b1e836fefd905f4360084ee68b6be8104",
+      "bytes": 17525
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_interval_receipt.py": {
+      "sha256": "6955eb4ec2e50f373204a25e18564d4196da367c623302a8dd27d7c7e6759663",
+      "bytes": 8883
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_pilot_compare.json": {
+      "sha256": "29e14adbe9fed50695091091a614187b9fc1155fcf2ab50eddd6208d3b69634d",
+      "bytes": 2846
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_pilot_compare.py": {
+      "sha256": "1133dcd19d3a6dabd9293f7afa759cb3ded1ec98f22474d4c89f67a8bc7593c7",
+      "bytes": 4094
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_root_G2_P2_n8192.json": {
+      "sha256": "74245c7a6be02d0223fd7eddeeaab40598a3d54808b9d4b0b9870bb9c83ff181",
+      "bytes": 4604
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_root_forecast.py": {
+      "sha256": "c96a323846e721e8f083ba76640bfc355aad087f84cf6e4689d37e9bffc986e0",
+      "bytes": 4404
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_source_G2_P2_n32768.json": {
+      "sha256": "c8a9de6cc7d3a29b0cbcc01b1221e795d9119f585abb26878f585de8a0bc7450",
+      "bytes": 45839
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_source_forecast.md": {
+      "sha256": "00aa804c447b7c2ea4d6a674ffc5b91f92062552ce7fb50d4981c77827a71778",
+      "bytes": 4893
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_source_forecast.py": {
+      "sha256": "2b638e332d26636be09598efbe379f5e5e0f3e09c19ac4fa534e26e82ec8e6fa",
+      "bytes": 8962
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_source_root_only.json": {
+      "sha256": "917a03b4954a19c1fdd381156a288909cad4de47998f7a1639dd144de6d4958c",
+      "bytes": 1617
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_source_root_only.py": {
+      "sha256": "b133dbf644bb853b218a8ebc6a8e389feae8eb2949cedb2f2c0821640c90cb5d",
+      "bytes": 4503
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_trial_k39_n32768.json": {
+      "sha256": "df9c06e84a3660e4687529ed70b1cd087f53cefeea02a81e741e5d0d6a0afd18",
+      "bytes": 392303
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_trial_k39_n4096.json": {
+      "sha256": "964bd488312bd6e0e6b503a0563555f0b92dee552a9bd96c29d7398850eefafd",
+      "bytes": 382485
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/incidence_spline_trial_k39_n8192.json": {
+      "sha256": "f0f1dc4048f25e7acc2bfedd28db80b7fa1bd582a804573b7455ced19e615347",
+      "bytes": 384878
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_G1_faces.py": {
+      "sha256": "94fb9243ec42c337dacec07a8cd71cb344393ca622460fc736514e7b9d96acfc",
+      "bytes": 9559
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_G1_faces_n8192.json": {
+      "sha256": "86a708d5204b86d6bcaf7847d05649b7f62032f740c4ee68c894542be81cf926",
+      "bytes": 187032
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_G1_faces_n8192_partial.json": {
+      "sha256": "6b654748bb992093fce68720c7170b9db73d9715c8ae1447e0e9c334a89334ed",
+      "bytes": 153962
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_G1_faces_receipt.py": {
+      "sha256": "46272719da3c41ace1ac5e9fec96612f42884eed550f7a3dc444b43aba310e39",
+      "bytes": 6125
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_G2_faces.py": {
+      "sha256": "2075d33c00497294fd09f8c66003eb6f2e2e9b5a7322b51124cad7a783a7ddf8",
+      "bytes": 9453
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_G2_faces_n8192.json": {
+      "sha256": "58688cb58d3c212aaa066ff197beb1662bd96a4504cb917c675c4f9c95ad332f",
+      "bytes": 123448
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_G2_faces_n8192_partial.json": {
+      "sha256": "bc507aae625e773145b5203a1c6bd240894412a2428d8aded7121cced221d744",
+      "bytes": 76309
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_G2_faces_receipt.py": {
+      "sha256": "145baa6e30b53364316068b0e4883ddcee0cdc267187db515a4b67fe10046d7c",
+      "bytes": 6126
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_source.md": {
+      "sha256": "dc378a7cea9d89337535c243d830300fca77cc1167419554dab438378d23d7cb",
+      "bytes": 8425
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_source.py": {
+      "sha256": "d2e446edfccf9e8e88a6e116a15880fd13d1c9d8a93d31b0c791f32c59ffc7de",
+      "bytes": 16145
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_source_G2_P2_n8192.json": {
+      "sha256": "318b208d72310e6b88d0df93408d3565fd65ab4b7334fc7e5b555a6c99ce3c70",
+      "bytes": 45978
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_source_audit.json": {
+      "sha256": "73398073b0d5d3022da735bd92f78d7f3c54d9611f815c20013525538307453c",
+      "bytes": 4530
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_source_audit.py": {
+      "sha256": "923ce12b1ea68aa59419ef782a30b557c9f132214e6344306c59e82526968e5f",
+      "bytes": 11695
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_source_forecast.py": {
+      "sha256": "014a5113bc7a0627dd1f42ebbba62999cb756a28c8b475096326eabc5feef120",
+      "bytes": 5951
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_source_receipt.json": {
+      "sha256": "5e4524b051ffb4c99b85c9b831b20ff53fffd9aa92527ac98ac6af57793f8b49",
+      "bytes": 5295
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_source_receipt.py": {
+      "sha256": "a275c8412b23bcdba87f100ebfd1fd437404852efc578b1165e5c1a8762ea315",
+      "bytes": 3889
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_weighted_faces.md": {
+      "sha256": "00fabbc091dfd94dbfbe5d2a93eba203001879a4b052fe273afa87749097de01",
+      "bytes": 5930
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_weighted_faces.py": {
+      "sha256": "80f02a63d1c92511c4751ca22e6739edcc35633ac3be54de3ca336c9b2d4b9b9",
+      "bytes": 5741
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_weighted_faces_audit.json": {
+      "sha256": "32c68f7b7cf8918bc8137ed2c5aa01fa9c5868744ba55038713647dae465ef50",
+      "bytes": 3655
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/independent_multicap_weighted_faces_audit.py": {
+      "sha256": "061e4e527588de58007e54edca97dc4dab7e819e83d8874fb89e7b1ed5039fc8",
+      "bytes": 3401
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/many_primes_parameters.py": {
+      "sha256": "4975e53b6636b4e8a1b7efa71f439a183909fb221f076dcc1401d7383c5e5d3a",
+      "bytes": 4536
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/modulus_average_geometry.md": {
+      "sha256": "f28ddd2ca774bee0933dc276aa4d17c3d392110bf7751bb3748ae419dc73ee01",
+      "bytes": 19901
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/modulus_average_geometry_checks.py": {
+      "sha256": "33ced77afbc681ab482119bfa0ed9120cfa55b49fedcec05161df575f0de3118",
+      "bytes": 2576
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_inner_sources.md": {
+      "sha256": "7adeefae8f8dd41a898940ee0f55776318bd25dd098fbd01518e9961aeb291d3",
+      "bytes": 5670
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_inner_sources.py": {
+      "sha256": "fb7f269c4e7e78973542961a28265151f0fa634823d64d12f3943d956e7ba555",
+      "bytes": 12963
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_inner_sources_audit.json": {
+      "sha256": "b75ce17cee3baffcf3584f36d5fcc8ad3cf08c5c234dedc69ef187875a6655cf",
+      "bytes": 19561
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_inner_sources_audit.py": {
+      "sha256": "cf7098e0f5c702c288f99d93e77b83c49522ea7a2290444807a8f8036816d1a7",
+      "bytes": 9265
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_inner_sources_n8192.json": {
+      "sha256": "1df119bb03ec7756384839e4cdaf86fae5661ceae8678d24751871560c48136e",
+      "bytes": 52831
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_inner_sources_receipt.json": {
+      "sha256": "d01d7d0d2afad3e9fe1f3c0a53401325a757da3d06ac0fc5c0200ae169d10ae7",
+      "bytes": 9131
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_inner_sources_receipt.py": {
+      "sha256": "4261d85ebc92b72495f19b95a60136f4bb79f47c08726ef1104f335565cc7b1d",
+      "bytes": 5141
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_low_inner.md": {
+      "sha256": "97bca9a9b277e42cfa8bcfe1cb6e76a9ea4c806775efe79e74889298cb567618",
+      "bytes": 4904
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_low_inner.py": {
+      "sha256": "368ff3cadbd69893adb666d192f63f21b0d24ac7f2a4e0a2120fd675bf79be55",
+      "bytes": 10777
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_low_inner_audit.json": {
+      "sha256": "5eb8229f77ae1bbfc175c1e3433ba6f39da5c162bc85750633062951d333ed6d",
+      "bytes": 14325
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_low_inner_audit.py": {
+      "sha256": "dd91b32e3eb7e946a268cdab54fdcd1622ec37273ed115c03816b2a07ec8c538",
+      "bytes": 7959
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_low_inner_n8192.json": {
+      "sha256": "7f02786ed61cc07bc26003fa44ad92cd10df661c38cc4143e9d0b13aff97f1b6",
+      "bytes": 83893
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_C_low_inner_receipt.py": {
+      "sha256": "20b16d42bbe7bd0f171372eb701b71a3aa4c49d6774f01497cbf43137f2075e4",
+      "bytes": 6103
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_a6_exact_sum_trial_n8192.json": {
+      "sha256": "7a108eab596e9379d6fcfc51046d0942c5539fbc5ee361060150d5c7474d2f9f",
+      "bytes": 358243
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_a6_root_G2_P2_n8192.json": {
+      "sha256": "2dd053d8b6b4401987917ca29a00d040b4aba86175d6bdf79f1823e23993e318",
+      "bytes": 7773
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_a6_root_forecast.md": {
+      "sha256": "83546d12b1e03451ec992d3e9ae736f16385405314e999724879802f9e9f2722",
+      "bytes": 3576
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_a6_root_forecast.py": {
+      "sha256": "e3e75ab10f65d9d0c1232fee35e750fed969c4ab2d10500062a4929cd5747b0f",
+      "bytes": 7806
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_a6_root_receipt.py": {
+      "sha256": "0fba86b5211770b6c96c5f9f9f0e0cef11cacd651ab400dcbb125d16f157c19a",
+      "bytes": 3347
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/multicap_low_source_independent_audit.py": {
+      "sha256": "3accac05d5ca3304aa7bc4e38e635f8d3551cddc094ecb232fc2cd4746b689db",
+      "bytes": 8296
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/nested_fragment_adapter_read_audit.py": {
+      "sha256": "3984d921c3305b63a72aad88affaf526b282eee466ca2827aabce54924f5e693",
+      "bytes": 2722
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/new_frontier_fixed_trial.json": {
+      "sha256": "c3f8fc36d7b33a11c2bd75f1ba84d2ec2c66299065f2614e87a13972f5d4307e",
+      "bytes": 1146
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/new_frontier_fixed_trial.py": {
+      "sha256": "8aa5f754ddff380d0630439e09a95f08f3797373bc7995045883dcba03f68059",
+      "bytes": 2010
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/optimistic_three_prime_cap_curve.json": {
+      "sha256": "4bab9cfa13629d923c635dd2c83e588780b2b3bbbff7887270d222f2a832f781",
+      "bytes": 3735
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/optimistic_three_prime_cap_curve.py": {
+      "sha256": "d8e8992719c62490c9d7407e1e390b20c38c4a6304599aaf7b5aa06d8808dede",
+      "bytes": 4785
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/outer_low_receipt_review.json": {
+      "sha256": "25c8dfd7977a82434d815d14f0087ba9e6b9c8e7342949340088836c9044e64b",
+      "bytes": 1336
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/outer_low_receipt_review.py": {
+      "sha256": "ff675109ee25a3c81d4e39ff0a57a6d0a37a420fb5714c9eae9f9be97fb33ab6",
+      "bytes": 3722
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/parameter_average_source_targets.py": {
+      "sha256": "fc150534579bb8ec0930f304b7d02ec1ac25a5b3ec9babaa5954ffdb8b16a007",
+      "bytes": 4161
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/prime_box_projection.py": {
+      "sha256": "1fce012ad776271a6c48d83588f3c312955597e412444d2865372eda77f8abde",
+      "bytes": 5796
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/prime_box_projection_receipt.json": {
+      "sha256": "65385e4e78160a80a8ea8c68be54798b38075b51b683e2510844ed67fe1c3563",
+      "bytes": 12107
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/sharp_exceptional_pair_weight.json": {
+      "sha256": "246d15f4c80be7be63242bac69ace063e8377f7e04c701c08525e3f963aa93c5",
+      "bytes": 229205
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/sharp_exceptional_pair_weight.md": {
+      "sha256": "de4a221b1ff3b0b2529a53a03733b198b7c9f469847711dc4755f50d755a33b1",
+      "bytes": 8426
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/sharp_exceptional_pair_weight.py": {
+      "sha256": "305e07b8e13decfadaa510aa53ac4406f46e0f73add1363c429c3324f3008667",
+      "bytes": 8872
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/sharp_minorant_level_table.json": {
+      "sha256": "0ccd9030b73907740cb957088687b8a22b1b19e3e16f91d6130de8f953874d44",
+      "bytes": 76830
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/sharp_minorant_level_table.py": {
+      "sha256": "ba0a2d67a7b6377950c766734a85f0e2f1d8470cea01c411bd10c326d265bddf",
+      "bytes": 9462
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/short_trace_frontier.py": {
+      "sha256": "b5063d311ee8c18a509ff16fa458f382ce8a18d990edfa0f9d8178ac66b34e10",
+      "bytes": 3552
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/signed_hb_corner.py": {
+      "sha256": "e87e342b8edacebe0200d50d206ba53b429cfd813a618a0da27f779cd7877770",
+      "bytes": 7282
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/signed_hb_corner_receipt.json": {
+      "sha256": "cafb89dc868b1725d06a84adf7c5a903ff9ad642553fc37b96deaf9468f1fd46",
+      "bytes": 12859
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/source_geometry_receipt.json": {
+      "sha256": "5f89d3be11ae754fbaeb2f9d327acf422663af4060f341a0d51deb150be69fc4",
+      "bytes": 256744
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/squarefree_average_exponents.py": {
+      "sha256": "9b26b6160a40e8d76b4d41f9342664fc7bce08d3fe28bfefe03c82476d946c70",
+      "bytes": 4046
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/squarefree_modulus_average.md": {
+      "sha256": "aba93dbcce69291046aaa6ea3854f0ab04831b58a93efc8befd90a84ea3a1709",
+      "bytes": 14624
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_dd_ancestry.json": {
+      "sha256": "1671c944a79e3d9a7140ceb3f25a7e59ea3a504fab7bfceb586841f82cd2d4ca",
+      "bytes": 9817
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_dd_ancestry.md": {
+      "sha256": "f5234e2aefbcafdbd5c27aae20dfe0f8392f18d0c4e727e21ebe1b10e0f7c826",
+      "bytes": 14520
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_dd_ancestry.py": {
+      "sha256": "a79112459ebbc436e53aaf8de0ac78301eedc16907bd475c66fc859cc34a1d4e",
+      "bytes": 9826
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_incidence_band_screen.json": {
+      "sha256": "f551e12510bd65da8020e9e37e5d8d1645cc14d33de61137c0377cc163637c39",
+      "bytes": 223527
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_incidence_band_screen.py": {
+      "sha256": "2bbc4cb54bece17af24253c394bf22bc0ca22052d549e5cc9ba2b70701f31752",
+      "bytes": 3738
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_incidence_operator.json": {
+      "sha256": "e6b5498c538e8961d449b08a67a19ab733b923a604a284867cafa7cd2025fdcb",
+      "bytes": 4892
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_incidence_operator.md": {
+      "sha256": "c966c4514c2f99619d9b3e85628b14d2ce817366b1bbbccfbb2c9dea9455f022",
+      "bytes": 13234
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_incidence_operator.py": {
+      "sha256": "9975bd1a497aacf8dfdccb818ca8d1396454e57a6397a3dfa6b50b8e18d2babb",
+      "bytes": 10094
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_incidence_source_transfer.md": {
+      "sha256": "3a9d682a35a45ef2096fc54562ded3a767e849ce495971c592eeb8b346dd551c",
+      "bytes": 20754
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_incidence_source_transfer.py": {
+      "sha256": "7cad8aa1078b1fe20cf48d49e43177f78b9bca36534c530efe1c360e313df143",
+      "bytes": 8458
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_lattice_average.py": {
+      "sha256": "5fbaf776a63d538d3e493a4c89c112d8ad34ed7f7a956423633bc974d45a3c4f",
+      "bytes": 6574
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_numerator_family.py": {
+      "sha256": "bbf28b243b0092c2b0b9f125e0ab6588cc3341aab3dce8f7be3a1100b9e11abe",
+      "bytes": 6023
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_positive_gram.json": {
+      "sha256": "980890ae6806fd5d995cf35fa5f6f06d496d99593c680405806d48de6ad67885",
+      "bytes": 6351
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_positive_gram.md": {
+      "sha256": "0c0fc16d0d5ee38effb351d2562fdd798f177be883314a589afec949b83c7e80",
+      "bytes": 12247
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_positive_gram.py": {
+      "sha256": "046931f85ee6454b23202ec19af7940593fc5fe171a323dff313cc9b5abcf0ba",
+      "bytes": 9394
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/stadlmann_source_transfer.py": {
+      "sha256": "22d2e6cbc0f8a0c54aaed9b1bddd9b3a57ecc1307b21c63c55acd15c1f0e0a44",
+      "bytes": 8107
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/three_prime_barrier.py": {
+      "sha256": "7a172d86c33b619a50dd2b781b8b7cfaf7d888ff83dd794ca73229ec1601d9f6",
+      "bytes": 1977
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/three_prime_barrier_receipt.json": {
+      "sha256": "c110ef65aaf4662219f1c4c82ce4a22d6c8c35676bc6229ed3257a5ed5dc14e0",
+      "bytes": 2678
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/type_ii_32_wall.json": {
+      "sha256": "fd59442e1883058b0fd9d2e1d79691b1e5cc2d2e607da26714f0921255b8bc28",
+      "bytes": 5063
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/type_ii_32_wall.py": {
+      "sha256": "7bbca4fe7d6c67dd79e51bdaca58ae1fcbe15a92c15dc60aa9f6d8fd074a76e7",
+      "bytes": 5667
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/type_iii_trace_diagnostic.py": {
+      "sha256": "63de82a7a2028c60a10b24a6e6678787e07f845781302c11d36f1e6deeadcb3c",
+      "bytes": 6429
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/type_iii_trace_diagnostic_receipt.json": {
+      "sha256": "b72f46d38aaded836ae7cb04368df7963e7ff459adbd1a6eaec90606b23ba714",
+      "bytes": 19782
+    },
+    "snapshot/prime_gaps_20260903/experiments/analytic_support/zero_frequency_direct.md": {
+      "sha256": "3c90a3209c886ba04cbf68d150e5e575c685da0f4f60182c41d5bb6bd3189c3b",
+      "bytes": 4010
+    },
+    "snapshot/prime_gaps_20260903/experiments/build_finite_type_iii.py": {
+      "sha256": "c74a7e6b598c7621f0e5b80dcbd1fe22615d2212e97120f3e38490a2edfea427",
+      "bytes": 18429
+    },
+    "snapshot/prime_gaps_20260903/experiments/build_incidence_many_primes.py": {
+      "sha256": "d133acc0553b0dbbf1ad930b9665502286e25e48c119c0ea7dffae8f79083af2",
+      "bytes": 22293
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/aggregated_source_jets.py": {
+      "sha256": "33f07de1f629eb2e84e6752b02250254b53efe8a0d3bdfe984a773f0302da5c2",
+      "bytes": 5439
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/aggregated_source_jets_audit.py": {
+      "sha256": "40dce7a74e264e968b67462fbb453085011ffc563dfad0edbd4951e7e452acbc",
+      "bytes": 5089
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/certify_fine_restored_182.py": {
+      "sha256": "d53a37d9478b4c7c641ba645ded3aa57d47e057c30e6d96880b98fbbedc34278",
+      "bytes": 15530
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/certify_incidence_cap.py": {
+      "sha256": "5254accd5e57cbf967049be60d71362bf26afcb78af9355bbe6d4fac7b04a8c4",
+      "bytes": 15840
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/coarse_affine_envelope.py": {
+      "sha256": "82657b41ddbc6fd61ead538ed5df4157f0cb19ba494596c20940a2de655ac240",
+      "bytes": 8248
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/coarse_affine_envelope_audit.json": {
+      "sha256": "04ae4a1f89edc717832275442b32725656b39685412a269a1cfd27d137c8ef47",
+      "bytes": 2116
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/coarse_affine_envelope_audit.py": {
+      "sha256": "0e4cf02b2d3c4ca56ace59a14841c35d1dd7feac52a471b23dc286409dec0411",
+      "bytes": 5707
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fast_fragment_ritz.py": {
+      "sha256": "8c7b0376776e7a03eceb5fd540a781c3f0c18845b43a661af33fff82e55d9545",
+      "bytes": 15349
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_cap_certificate_receipt.json": {
+      "sha256": "4d0841ab7998b50e8b5bd79734232afba39ec9127a42d058001f67cadf85b192",
+      "bytes": 4137
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_cap_certificate_receipt.py": {
+      "sha256": "04d8bf8ff489b97114882154ae73d56d147b7d42c0c94c0ef6d0af0bdd3bb0bc",
+      "bytes": 9826
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_harmonic_sweep.py": {
+      "sha256": "d4c5b7b06622bef6a0c28531b762ec9bf5b852b41f4930519f2eaa94f5ac3cb1",
+      "bytes": 9913
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_harmonic_v3_composition_audit.json": {
+      "sha256": "e178221a223d59588a2319b65460716159198a22e5a2f24f67c8d658a28e74cc",
+      "bytes": 6633
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_harmonic_v3_composition_audit.py": {
+      "sha256": "e5825f7cfbbeb421c64ae36671dd654e2e2e525a0573743e53ce649c8616cb7f",
+      "bytes": 3636
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_harmonic_v3_sweep.py": {
+      "sha256": "c67c256a847516e31a45dfa3888104120233b67832b6d80f1f8ed3f9767bfec9",
+      "bytes": 10123
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_merged_prefix.py": {
+      "sha256": "88713122b322393ac9fc7b178b3d3c0c97648fced66c534610596276aa6b0ffe",
+      "bytes": 4958
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_source.md": {
+      "sha256": "c10a21888ac5dd417282c49f1851ed8c9edc7d6b448b0394ca52037508eb8e0c",
+      "bytes": 4359
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_source.py": {
+      "sha256": "62e7084d0b727ff595f62f6a3c2221099fab2f229b4e056c2144398b03d92e03",
+      "bytes": 15756
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_source_audit.json": {
+      "sha256": "a26c9774867c364b4c516fd88073a33ca0a78494f561dd526a01bcc7756dde7b",
+      "bytes": 6237
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_low_source_audit.py": {
+      "sha256": "2fce81f4d80cc7fd74b0ab89acef02e82b793dc9f704877d89b9f719c73bc0d9",
+      "bytes": 8115
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_outer_low_receipt.py": {
+      "sha256": "081c1fd529c637134c46be1f8dd0c4f1aa6a57cf3fd92d60a28f98952c3e801d",
+      "bytes": 14996
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.json": {
+      "sha256": "9bc751f0b85f04e891b4352b51a0b12c4a36546ab63c101f1d5e7bf64aecc631",
+      "bytes": 21995
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_outer_rank_high_receipt.py": {
+      "sha256": "1ed69cc056bc63dbce0b559610e84e1ee9fbe3b652007e450b26033d1488eca7",
+      "bytes": 7790
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_rank_two_face.py": {
+      "sha256": "f4519f760d5b58c63d8491ef9e2d457e094bbb8e4a6e88673ec345a70b182afb",
+      "bytes": 11841
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_coarse_rank_two_face_sweep.py": {
+      "sha256": "551e30b36ae1775b74cc09c1b52246a667d7adc4b7cee18d66ebb8d7dca39338",
+      "bytes": 4686
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/fine_restoration_target_budget.py": {
+      "sha256": "acb144c7e5b73a77d9ecd93e965a92f250f186e9b6cea03fa99c5416872f80f2",
+      "bytes": 3984
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/generalized_ritz.py": {
+      "sha256": "ae1fe7b05f486e1e2e9c3b321620e52dd08c7ff495ed7b151365349ab4604689",
+      "bytes": 8047
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_count_spline_ritz.py": {
+      "sha256": "6cc4d9733d366ac8d49a7bb1c981614ade643f233e4b442b37e5a416a82477b1",
+      "bytes": 10887
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_fragment_cap_fixed.py": {
+      "sha256": "56160f503b2e03dcabfb85c1d0ca046fba8f749769a905c56a254f43524fde8e",
+      "bytes": 5639
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_fragment_cap_radial_ritz.py": {
+      "sha256": "dd982fc00dbd4ac108b0636e744f23d23bc76344102247615ae64975dd1afb3b",
+      "bytes": 8062
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_fragment_cap_ritz.py": {
+      "sha256": "2f49529254f61c68743fd7d1e00765d13500b932d98b7a29cd6a6c67fbac1c16",
+      "bytes": 7827
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_generic_ritz.py": {
+      "sha256": "f51d7b137893ce57796e3d6827af3477afcfddcd7fbc63b543299c337518b32d",
+      "bytes": 2243
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_hinge_threshold_scan.py": {
+      "sha256": "a31bfb3908b11fcbaee15894329de6bdd3388b229a251ca8f1e6038c42f760ec",
+      "bytes": 5353
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_level_relaxation.py": {
+      "sha256": "189dae73c4e5804ac2efd7f918a635ca6069dea12cf518d63cfe368281c00033",
+      "bytes": 4207
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_marked_deterministic.py": {
+      "sha256": "de8149b012dd8fd69ca4d679c046ae95d09bbeff238ac8f291edb0d3db26e3d4",
+      "bytes": 14385
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_multicap_canonical_ritz.py": {
+      "sha256": "1a2b0c1c8e383d2d3ead6417fb937aebe195081abac45c1f3f973bd02a21ce26",
+      "bytes": 6415
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_multicap_fixed.py": {
+      "sha256": "f7a3e9152c5be013ed121c195dc4fa0767225401e29b6ab456592839dea12bf6",
+      "bytes": 3361
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_multicap_spline_ritz.py": {
+      "sha256": "ef8c10f26f16a9e8a50cff5f77ffee6836ac5bf738ea8eec2ed9c8769ef39745",
+      "bytes": 8519
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_owner_scan.py": {
+      "sha256": "d300b0344f6de3b03d6f4e9e32b1fd027595df43e8e5ef372bc67283581f42a1",
+      "bytes": 9448
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_parametric_spline.py": {
+      "sha256": "76d37fbde8ae7565f3d18428046c6897da811e1a31cea37161000037a5057d93",
+      "bytes": 7372
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_rational_spline_ritz.py": {
+      "sha256": "6f8c8591b93b174def233d13551edce11c06a0bf445a60e4b8c71a261c8eee82",
+      "bytes": 5617
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_rough_cap_relaxation.py": {
+      "sha256": "c03df1be4d1815cbdd47a4b3c666df17594825228d2bfa3efd56c0c25696fa87",
+      "bytes": 4370
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_source_cap_ritz.py": {
+      "sha256": "fcef92a7efd71b46a3bbeee194f008aa454ca3a7f51fe4477346ec30c7a8718e",
+      "bytes": 10073
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_spline_fixed_scan.py": {
+      "sha256": "cb9ad8c1da469e77e13a9d3d7a6dc48439508068088e3280a312f959100c91b3",
+      "bytes": 2218
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_spline_ritz.py": {
+      "sha256": "47f6555ae52582d4269fd1b1da04fbe4e69b5d6430185cda72639550d894abf2",
+      "bytes": 14692
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_spline_ritz_initial_035.py": {
+      "sha256": "c258a72700f0ead49f558aa12b5a3b9893c282b536d7ee0dbe5c279ee7d16b83",
+      "bytes": 14665
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_spline_tail_ritz.py": {
+      "sha256": "3eeee879177ca2b4995813e2328b7c48fe216b1db67abdd0b6309aa9fda12bb0",
+      "bytes": 10074
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_subtraction_tail_scan.py": {
+      "sha256": "2680be03ff9bbe2ca6f6d7206621ba9ed1bf852685e78d44b35cfc39b04fbb61",
+      "bytes": 5343
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/incidence_symmetric_pair_ritz.py": {
+      "sha256": "8da29097e3e542493de8376386a1643546f113c96ecc8272cf04a2fde5632f73",
+      "bytes": 6780
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/multicap_low_source.py": {
+      "sha256": "ef1353bd0b6d1aa9ec09e662c88f8aa84c473fd9fa6c3fe39f89aee68b6284fc",
+      "bytes": 12400
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/multicap_low_source_audit.py": {
+      "sha256": "5cbfb3f841ca5c113df49f1b7a64ac30067c643d99ee5919ad8a48d64fe4b79c",
+      "bytes": 6815
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/multicap_rank_two_root_sweep.py": {
+      "sha256": "fbbc5b711ca843d2dd5d73cf6223cf2425fdc0adefbaae81ea9355fb2c6e6ef2",
+      "bytes": 9106
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/multicap_tilted_low_source.py": {
+      "sha256": "012230b86cb714d167aad6b5a5eb6c15b75fdc3df91f7030003c2971a0d18c42",
+      "bytes": 10210
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/outer_norm_credit_restoration.md": {
+      "sha256": "f5a8966f349ced0ae72e28a60a651ec51b70a1777bec03fb895f45fb04ff8583",
+      "bytes": 3543
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/outer_norm_credit_restoration.py": {
+      "sha256": "358160eb474c364257da4072f9f5013e2b70bfa1731804de0719d796a43dfd92",
+      "bytes": 3857
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/prepare_fine_source_affines.py": {
+      "sha256": "5082a3d2811a2da06f9b1b0d1f9644afd76e39eb0e533f8720dc1196a2025b0b",
+      "bytes": 5745
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/profile_search.py": {
+      "sha256": "ee4da534f32dbe880f815986e01b4d15a515bad48f338bd7b027c634f374ea18",
+      "bytes": 1893
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/source_local_operator_count.md": {
+      "sha256": "7e55ad0b629a6a10a79061ea86cb10075e5263c366292b8c885d455c5be79a0e",
+      "bytes": 4581
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/source_local_operator_count.py": {
+      "sha256": "56c4707332929b3294e7dbc0a17b4672441193db27daff5e74bff69bc1aca6bc",
+      "bytes": 8825
+    },
+    "snapshot/prime_gaps_20260903/experiments/fragment_ritz/validated_fine_source_context.py": {
+      "sha256": "1044237ebde48e6256d7d0a31288dffcb3930ca76b142e8965e5a4cfeeb1041f",
+      "bytes": 5180
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/7ad753d.patch": {
+      "sha256": "333788fe3d7fe1c24ca10e5ef33f492eae68de6202568e75e18e1bcd7bfb71ff",
+      "bytes": 4299
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/assemble_exact_refinement.py": {
+      "sha256": "22be5647c45b2c8fee61356f8fd6745347910892c9a081047244f57104e6bbfe",
+      "bytes": 2979
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/build_local_flint.py": {
+      "sha256": "0234b28479ebc575ad292efdbeab1d31c77ba5c89b2d607e658754f55e025043",
+      "bytes": 4683
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/check_certificate_runtime.py": {
+      "sha256": "8574b2eba218cb496766151cebae7c623e8d025e5a8460fc0c94badc5685a999",
+      "bytes": 2370
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/codesign.log": {
+      "sha256": "f2780af9bf2b673d7a441ce49307a032c55934158e8c5062616647e4ade95f68",
+      "bytes": 137
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/exact_binary64_sum.py": {
+      "sha256": "f14e81051711f79dabc1bd848d0bdcbc27afc993ec83a0a6f6166acddf192990",
+      "bytes": 3332
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/exact_binary64_sum_check.json": {
+      "sha256": "5b1e16eb896127921cbf90a8a93e63fb0ae4f1cd03c7d200590922bf00cdcfaf",
+      "bytes": 352
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint-3.6.0/VERSION": {
+      "sha256": "2825c0070d83b0f42dfd83d39a0f96183cd72aed6f7342b23dde1f3c4133d48e",
+      "bytes": 5
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint-3.6.0/doc/source/_static/default.css": {
+      "sha256": "b90485878fc8ea790a8bb6296e8ab74934375487ec02322e525770803be5489c",
+      "bytes": 407
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint-3.6.0/doc/source/conf.py": {
+      "sha256": "7846df0e26ecd8a8642f4df030388ea2a5eb88c4dee917ffc6ad3f0d2e1bbcfe",
+      "bytes": 5756
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint-3.6.0/src/python/CCmath.py": {
+      "sha256": "0bec335efb3ece2f46c459f207a76b49c2b3deeb75870e4c6571070757eaeff6",
+      "bytes": 197
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint-3.6.0/src/python/RRmath.py": {
+      "sha256": "18ad22eccfc079db1387552ad593c9af1d0815d6e916fc16e889cc65ded3c3f9",
+      "bytes": 197
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint-3.6.0/src/python/flint2.py": {
+      "sha256": "6bfa42fd78ffbc8324e4ce7faa031efe9ac7650df0a273ad667ea09b6599a6a9",
+      "bytes": 28
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint-3.6.0/src/python/flint_ctypes.py": {
+      "sha256": "2d4c5760d2851f8cc72c45ed69917aa1497b493d3f4f02ddeb4de9cc40ae5e66",
+      "bytes": 378024
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint-3.6.0/src/python/mpmath2.py": {
+      "sha256": "77c6a6b08c5cfe3da4e98aafe9f8beaa1556ca59175a7ac45df6800d66018b7d",
+      "bytes": 12896
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint_build.log": {
+      "sha256": "bacc5de9f07d41780f8ba1a15a248365025fabc5e16b5fb543ecf7d22bf6d920",
+      "bytes": 156980
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint_configure.log": {
+      "sha256": "497a45277f6e7c937b5e3cafaedd48e6e214a4b351de501bc881ab30fc42eff9",
+      "bytes": 8949
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint_install.log": {
+      "sha256": "3a98b17d5488f173843f4b487ad632db91cf419b971234b66bdcf9a41e56d9b9",
+      "bytes": 21336
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/flint_tests.log": {
+      "sha256": "7ecee2a2c4c08fc3d638170e47c1caa06909c2bec656a38af413bf93757db793",
+      "bytes": 23515
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/gmp_configure.log": {
+      "sha256": "da03386e3d2e9337ae4791391a56b3d784b06a8ab11f5632984586142e7c53f6",
+      "bytes": 29064
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/install_name_tool.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/library_deployment.json": {
+      "sha256": "6d826bb2c80c78c3172cf7c878b6755fe8aad93366c2ff432f7853ef4a983015",
+      "bytes": 897
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/mpfr-4.2.2/src/mpfr.h": {
+      "sha256": "588c2bd606cba060afb49cd024f9119e996089a341a99d1dc7e0367622335a13",
+      "bytes": 57588
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/original_libflint.24.0.dylib": {
+      "sha256": "9c257de62afab11ce51b94658faf6d9fd08a062809e86e117ccb8c8b8eea7d03",
+      "bytes": 10505360
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/rerun_high_component_exact_sum.py": {
+      "sha256": "0c1469e60d10d2d4ed2d9e1cd1b8d1ec373b0f4f111b85782b8ecd15d071a2a1",
+      "bytes": 7344
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/run_exact_reducer_refinement.py": {
+      "sha256": "08e5ebdeba8617cbab4705479b6bfc9e780da9ed8dbdefbfc731f154fd647de7",
+      "bytes": 1288
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/run_unchanged_certificate.py": {
+      "sha256": "93ea56f75b6f70938626c7ce0820dfa1bdc4c14a7a6bef0b8716d8b666443971",
+      "bytes": 1328
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/runtime_check_receipt.json": {
+      "sha256": "9bc56741223f0a406134dfde6503fe4c25c259aa2922654b759baaf8ce1f06ac",
+      "bytes": 1524
+    },
+    "snapshot/prime_gaps_20260903/experiments/runtime_fix/snapshot_certificate_progress.py": {
+      "sha256": "f784e040bc81e16ac83996f557e04410f2db1c2c973dec5b2984be2fb03db18f",
+      "bytes": 1759
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/adaptive_exceptional_square.md": {
+      "sha256": "0975b78f78441d2c32393ebc8ca0d42dcb7da4ac6d6ad38742bbb836120fbadf",
+      "bytes": 8999
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/annihilator_cells.py": {
+      "sha256": "67e8774f62e67b3174c9a6e5dd0565a9bb92acd2d6041191cdcfc6e35d6672d8",
+      "bytes": 4013
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/certify_nested_fragment_cap.py": {
+      "sha256": "52ae0e6f3ee7dd7d68aa7275a831591f03700bbb74963e8d9e02382994b0e958",
+      "bytes": 22516
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/check_composite_mark_packing.py": {
+      "sha256": "418e413c65405663fd863d3adbf6321ea3a8269fa8cc1a359bc3653671c89c6b",
+      "bytes": 2552
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/composite_mark_packing_verified.json": {
+      "sha256": "0b3cfef38730aae8e38e28f627b59d9717022484da5e59309021f2f9b19b89c5",
+      "bytes": 224
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/count_spline_independent_audit.json": {
+      "sha256": "825be982f128230ebe34a03c7bffc95a1d4b0f1314fd054aefd1dda654da3f71",
+      "bytes": 2216
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/count_spline_independent_audit.py": {
+      "sha256": "d9e87ae3eecb633167462ce0cc68819b6e083749bbf187cd9ac76fb96be8c808",
+      "bytes": 14335
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/crt_monomial_schatten_audit.json": {
+      "sha256": "9532c02c565bcda0aa5bb48f2cd971bc0f86927f8222b5a065cc651fc5d7e00d",
+      "bytes": 4193
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/crt_monomial_schatten_audit.py": {
+      "sha256": "01ef616ab3d545376ecdaec8e750542dff384c3e71ae1414c346d44b78270e2b",
+      "bytes": 4762
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/farey_parameter_majorant.json": {
+      "sha256": "0bdf54bb7bb188eb2df2460d2b975186940c0e3f3d7842915030b75b51d6af60",
+      "bytes": 3833
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/farey_parameter_majorant.py": {
+      "sha256": "3746f2aa1be821e41c3f7db5404efb3e69b63f13067b38e40479523e40ca544a",
+      "bytes": 7812
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/final_norm_credit_independent.json": {
+      "sha256": "87fedb7e4f15dd2823d424b7f6c45a920abafb2dbef5b6c032e5edb337f71c35",
+      "bytes": 195967
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/final_norm_credit_independent.md": {
+      "sha256": "1d058fc8c7e7b84dca89e0278800ea8fd091324214f59ad1b2f6a440f0ba746b",
+      "bytes": 5857
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/final_norm_credit_independent.py": {
+      "sha256": "c0ef7c513ea00e3a7151c180b991df47ce76649d7ca2396e50a8780619c25d6e",
+      "bytes": 37907
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/final_norm_credit_independent_comparison.py": {
+      "sha256": "2afc6e235236ed7bead3957dce1f34b1d45216345288a1791174f1234c80d12f",
+      "bytes": 2747
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine393216_G4_low_v3.json": {
+      "sha256": "bb3f0f0520a9db9d75d0d844c3e1bf3e3cd908801df7b41e9c3397ed410a44a5",
+      "bytes": 1494541
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine393216_G4_low_v3_conservative_normalization.json": {
+      "sha256": "d93851374a9f5ae47d8b481d8d4d311daecca5ce23d16b612239c99a33c6fc6b",
+      "bytes": 20254
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine393216_G4_low_v3_receipt.json": {
+      "sha256": "1a985c47516a94fdbae5b0a4176497cf8ead285845112e20224eb35e74cdca9b",
+      "bytes": 9594
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_high_sources.json": {
+      "sha256": "94536f4366ad2a5c93a577b24d500c7eda70d3bd81c67e1fd5a1bead7e6e13ab",
+      "bytes": 3258287
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine393216_coarse8192_G1_G2_rank_two_roots.json": {
+      "sha256": "305a476a0c4bc222b1a8f948866df06387f6887a15755677413e2a4168b9d8dd",
+      "bytes": 11886281
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine393216_coarse8192_G2_P2_root.json": {
+      "sha256": "b54852fff274e801508d1f5134650696f0e4f4ea0e99bf205a532f48092c0b33",
+      "bytes": 369482
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_G4_low_conservative_normalization.py": {
+      "sha256": "33437cc819b9db1e1bb3b61cc38bb39d780d101403259bbf9a155cac3a92ab5e",
+      "bytes": 2098
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_G4_low_v3.py": {
+      "sha256": "0ee88860edab2164add81f8163d0852df2bbd84de3dbb2c7e383bb8242eede9a",
+      "bytes": 9632
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_G4_low_v3_receipt.py": {
+      "sha256": "5336f196f7d407d46d4a9d018ae91e66867193a71144467b99b72402740a9fe0",
+      "bytes": 9728
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_high_receipt.py": {
+      "sha256": "5c0cd6a84f9d5367d925345a4bc4762b35ba58bf552bf28613f42ad36b09fcc3",
+      "bytes": 9433
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_high_source.py": {
+      "sha256": "44a8734056c74833649c82276dbb2148f5f9eaf9d8626614b27e906e9f7bfcfc",
+      "bytes": 16124
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_high_source_audit.json": {
+      "sha256": "40fbdb67498dea056b60ac1d008d66fb82d7507a3f6055a61c567bc5623c4e08",
+      "bytes": 11105
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_high_source_audit.py": {
+      "sha256": "bec70fe6245300f98774d7b0de72bbcb159228af4b60cf834ea40313cf8208b4",
+      "bytes": 12264
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_rank_two_root_sweep.py": {
+      "sha256": "5248725fb3cad56f658a23a7b8d91c9ee557aaa419f5af2fcf4190bb7bc6d0d1",
+      "bytes": 14045
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_rank_two_root_sweep_audit.json": {
+      "sha256": "c244443e99a4baf2c56122b05963a8a17f3644fe60aaf55b42d7c0c6e46bad52",
+      "bytes": 1037
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_rank_two_root_sweep_audit.py": {
+      "sha256": "cc72e15530152b22ef94b0ecd8b6b3e836dd80b599dd48b91326a9754d222f1a",
+      "bytes": 3320
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_root_envelope.py": {
+      "sha256": "126b2304a41d18cff86a0a554bd78aeb1a86835bc600fcc6064c915630f883d6",
+      "bytes": 16289
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_root_envelope_audit.json": {
+      "sha256": "35d777a05090712e2d249e1ad03d9c70392091c8d16c1a1e240464d915b11ec6",
+      "bytes": 3680
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_root_envelope_audit.py": {
+      "sha256": "f33e93c033d12f48698905c1e8a3da5b84c7c0eeea1a12bc6784e39276ee60f4",
+      "bytes": 9110
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fine_trial_coarse_root_receipt.py": {
+      "sha256": "6de9d240818e158cce4c17f62d20277872fdfe7a6d729bffccfa1a49400b0b0c",
+      "bytes": 6699
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/flexible_fragment_geometry.md": {
+      "sha256": "44995bb487d490a9b332721a5be35d81552833690bd8b4d26c031b5d480963d8",
+      "bytes": 10351
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/flexible_fragment_geometry.py": {
+      "sha256": "84c6c7d2c2c866e4d7feec8956a0fd9739b93f056aa5da4f9f0a5804ed3c40b7",
+      "bytes": 18975
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/flexible_fragment_geometry_check.py": {
+      "sha256": "759753e8eae841eb297211d9c8f68269ac8a4692c2bfea3e96d4c76b7c41092a",
+      "bytes": 9503
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/flexible_fragment_geometry_checks.json": {
+      "sha256": "3a1926716c64e55abe6ddd930f47258362857069b04f2e52d396b9713de371f5",
+      "bytes": 21616
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/flexible_fragment_geometry_shift006.json": {
+      "sha256": "4aa4980426a05dd78e8104a9b8c2d8c32f4dbfeee8ae27d97913045a519b711f",
+      "bytes": 298379
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fragment_geometry_directions.json": {
+      "sha256": "157610a6d403065c43088409cddcbf8c4e6b287e03350c7c3ff06828e14efb6b",
+      "bytes": 32110
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/fragment_geometry_directions.py": {
+      "sha256": "b8c31ec7b76d88d2df6c75f1e5c6c152b2f10c6f32f589df59f13565ab0e99cc",
+      "bytes": 5433
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/genuine_prime_auxiliary_capacity.json": {
+      "sha256": "c22b20b9b2bf4b9a0a3f1127982b054805e1bdae301b8dbf7d4b30c9db63bd2a",
+      "bytes": 9344
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/genuine_prime_auxiliary_capacity.py": {
+      "sha256": "933ce1a52a9203a7ede7db617b36b55abb9260fb969479791d3489bb214df06d",
+      "bytes": 7287
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/global_bad_pair_table_verified.json": {
+      "sha256": "b182c1aef74f5c17bcd0c46589a9b4da7a88630daafa563c62aacd099022d66e",
+      "bytes": 56234
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/harman_minorant_audit.json": {
+      "sha256": "c90328a2709b1e900536f8a662e50417e28f3bb5c889845b70624ffe5150290a",
+      "bytes": 5766
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/harman_minorant_audit.py": {
+      "sha256": "28bbfbb87d1c5919dcb414445c22629a3726d744dc1b9465799bd772b5e061d0",
+      "bytes": 9465
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel.py": {
+      "sha256": "97d8aa5bab19094f2c689bc4fa035bc6b06557fb5ebe85e89e063088c29d61c5",
+      "bytes": 7155
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel_v2.py": {
+      "sha256": "cd9e3d323970106e45b943148cc9dc3e5654531f34dfb04c74f1dd3af0206830",
+      "bytes": 7300
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel_v3.py": {
+      "sha256": "70e117633415565de0327641a35b26c516e87a30a004390057d6134e99e5d6d4",
+      "bytes": 9127
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel_v3_audit.json": {
+      "sha256": "fa0f17ed4343abcd0e8f87c29be47235d2d3c3f571ad081d9ac05885c3531322",
+      "bytes": 4551
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/harmonic_tilted_low_kernel_v3_audit.py": {
+      "sha256": "b801065c59241c9cad901e1c0b626cfca90e4beaaf50837875ef912c207979a2",
+      "bytes": 6735
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/hybrid_enlarged_subtraction.json": {
+      "sha256": "7bcb7053ee6003e18a136cf378e42224001008ab1778f29ae8d71364e0acc992",
+      "bytes": 112433
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/hybrid_enlarged_subtraction.md": {
+      "sha256": "be5cda6fa572100b7856851dfafc04cc67a3c5e16eb91223802a8e1417cc0a96",
+      "bytes": 8224
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/hybrid_enlarged_subtraction.py": {
+      "sha256": "c5fcb4983d5e60f839eaeaffb5a6f60b79e23057f7f8c87c28a3c84ca1b2c2ca",
+      "bytes": 10338
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/hybrid_subtraction_cover.json": {
+      "sha256": "3c16489c253dbdddc996af788dcb2430d01c8ae01f43860872732b7a8bb95979",
+      "bytes": 195923
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/hybrid_subtraction_cover.md": {
+      "sha256": "b1b5f5c178e5111e9541a956a0d1563d8de2e6da2be534eea8382053588dac57",
+      "bytes": 5915
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/hybrid_subtraction_cover.py": {
+      "sha256": "b1153fbbf16c855f402cc2bf5be07eacd93b58b92c6e27e9c0a8866c574c17b2",
+      "bytes": 7605
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/hybrid_tail_schur_audit.json": {
+      "sha256": "59661bb2fb6e463da7561529f85288fdef5ed37b403046522216d1da20be1f20",
+      "bytes": 1300
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/hybrid_tail_schur_audit.py": {
+      "sha256": "9f82b5c4c9dfeabdd200a1875fc6bdac269f54e8b12e9249f014aacdd12c7182",
+      "bytes": 3577
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/incidence_fragment_interface.json": {
+      "sha256": "c564c13380c74e220b08e53ccfce3e241013cda1a7540b9269d2f766d68300b0",
+      "bytes": 145807
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/incidence_fragment_interface.md": {
+      "sha256": "38ea7545fc30ea4a4a5ff190747c4d012f3649644b7dfa3f36ca88530e48327e",
+      "bytes": 16061
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/incidence_fragment_interface.py": {
+      "sha256": "33df33907e01a59da1f6ed1477cb439e7c4472a2663daa5ba2520a1b9ad46970",
+      "bytes": 11349
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/incidence_window_farey_audit.json": {
+      "sha256": "24d551e309aa506b10a2e916adb0305dd3ad476d935f2810a66f391ce41b543f",
+      "bytes": 4554
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/incidence_window_farey_audit.md": {
+      "sha256": "e4cdd9b95b67ad77ef07c38e9e6b02f970bb4378c9d39b0c46b99f558c7596ca",
+      "bytes": 15481
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/incidence_window_farey_audit.py": {
+      "sha256": "dda48bb9a1ee3931fa59d822689b000a0938af220389a5683e875eeb79016a2d",
+      "bytes": 6489
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/independent_small_prime_check.json": {
+      "sha256": "0d58cfb1795ec926bd6e096ca9b1186d7ef2b6306d8d4eca45062ab268f249f4",
+      "bytes": 78053
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/independent_small_prime_check.py": {
+      "sha256": "5da6a58559e5fbdf3be7e15e273c2f6f2f3999abfa0bf3477d425db4cbf6fbbc",
+      "bytes": 1734
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/kl3_crt_audit.json": {
+      "sha256": "950e45f53f5581cd1ce8fdd9587e88654aa2ee3d9f1fdcf37777307d50eef204",
+      "bytes": 8716
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/kl3_crt_audit.py": {
+      "sha256": "e9d5cdc2a8061c0ff82de9b4e77031d830d7c73fb211e2d3d095531d46697801",
+      "bytes": 10981
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/linked_tuple_models.py": {
+      "sha256": "91e994386dbc00cbccb97c0c261d5f61c5e0f87698c4d1dda15e6f9a1f2bed3a",
+      "bytes": 4286
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/linked_tuple_models_verified.json": {
+      "sha256": "0bd81d8fe8cb8ed7934c7d39ffd050f311023417884d3847e115ffd70066fab2",
+      "bytes": 268077
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/low_kernel_acceleration.md": {
+      "sha256": "4e0f72df5141782238596e5f62877ccf2ce95a095b884106c1c91e945fc81c26",
+      "bytes": 10394
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/low_kernel_radial_budget.json": {
+      "sha256": "b09166db85f8becd788388c7e32f4e21c62bab88093d6809cc4571d8c30e26c8",
+      "bytes": 28700
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/low_kernel_radial_budget.py": {
+      "sha256": "ac4ab6605f1190e9e69bff854d7014f824859bf9487edaddb7c877bd5b5335ff",
+      "bytes": 4360
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/low_kernel_v2_regression.json": {
+      "sha256": "fd11780387d3661249afe0b30d39c800e05217714b222f9a5b76183b70a969ab",
+      "bytes": 2609
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/low_kernel_v2_regression.py": {
+      "sha256": "f52af25b34a6a94dba0952c823806a5e2904add9c4b9f69b1d994f55a7ed5d33",
+      "bytes": 5355
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/manuscript_lattice_many_primes_audit.py": {
+      "sha256": "68d98fa636f482f7598476b6bfc950bd0c54c50cbb489591b83b6d472ee11695",
+      "bytes": 3630
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/minimize_bad_pairs.py": {
+      "sha256": "b5da02f99155cd304a39c0ea85b40022dbab4562e8269da34e07c143b41f39f2",
+      "bytes": 2592
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/multicap_high_G1_G2_n8192.json": {
+      "sha256": "2e5193b76ed6ca20404e77cb3b1695b7e28d9b561dceddabc17aa0e257514c4e",
+      "bytes": 93711
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/multicap_high_source.md": {
+      "sha256": "e033d75711e5ef61694bbf217a3eabf1e12b77ca3aab29be8b78d127915e6a6b",
+      "bytes": 6051
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/multicap_high_source.py": {
+      "sha256": "52355c53f266d57c6ff42250317b50af8f20cfeba55d82b607a552ea8aa921e0",
+      "bytes": 15204
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/multicap_high_source_audit.json": {
+      "sha256": "f2fb11a0cff71781ec611a6046e3dc0367230c0a6a0a2621e79e57de6851077c",
+      "bytes": 2030
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/multicap_high_source_audit.py": {
+      "sha256": "3c1248c4f6a32160417182585649fa6afdb2b36bdeb47a3bc43e08ad4d2fba64",
+      "bytes": 6580
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/multicap_spline_independent_audit.py": {
+      "sha256": "a725f0e8de5ab208031b488f0e7797f81efe3123a97f728a59e564224807c2be",
+      "bytes": 13339
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_cap_independent_audit.json": {
+      "sha256": "8c7ff13143eb5533227b6071cf3b96adee3b83beb2fd3b77410f25bb36149c8e",
+      "bytes": 2067
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_cap_independent_audit.py": {
+      "sha256": "c7b8d5da65cf24053f7ff0a0dc4d46cad34ec52e53cc50f0eeeba3acda4c8542",
+      "bytes": 7175
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_cap_matched_n4096.json": {
+      "sha256": "0433a525ee1639a5b89174e9956406735bce23673e08510eff3e0f196462810f",
+      "bytes": 1093
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_cap_matched_n4096.log": {
+      "sha256": "c1d13190c753cf12f3f69545705d8f050fea8ab58bde969734a5b96761321a7b",
+      "bytes": 3951
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_cap_pilot_comparison_n4096.json": {
+      "sha256": "333228f3cdddfcb47a0404719b58c7ded712c3403b8187b38cf087f465c47314",
+      "bytes": 3443
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_cap_pilot_n4096.json": {
+      "sha256": "93684edab56b903716b013818ce19f7608350530d75f852695930762835c91de",
+      "bytes": 9038
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_cap_pilot_n4096.log": {
+      "sha256": "92427679b24a92ef3597b01addf1a94c59a2652dbc4a388743173cb7ce9f5a69",
+      "bytes": 6053
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_cap_trial_n4096.json": {
+      "sha256": "2d489a572588b2aebe6b5d6c738dcf9dcd68d334d3807c2ae90b2a3cc314a56c",
+      "bytes": 386266
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_interval.md": {
+      "sha256": "5ab2de5e2aa824488202085bada3c244fe8a826886775862e8002f4b5c06f1ad",
+      "bytes": 11777
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_interval_audit.json": {
+      "sha256": "8204d1e3e8d20eb7109f4b8dbec3cd1dbf591530b795fe6fecd5a81c283c3842",
+      "bytes": 15052
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_interval_audit.log": {
+      "sha256": "2430e6960c4f257b43ea543096208fd2c40464029d29181ad2b312cd1b0be3c7",
+      "bytes": 162
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_interval_audit.py": {
+      "sha256": "7f022aab166072323c90c9d5fcc5c11ed538749cd6c3bad037018bc09b9f5a45",
+      "bytes": 11869
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_interval_final_receipt.json": {
+      "sha256": "53f2ba448c83359381a59d83a93825d7f79b61b453ef0d9f6d17dc905335ccb4",
+      "bytes": 6857
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_interval_manifest.py": {
+      "sha256": "a64b3ffca8e2f77f06139dc67e31f56256b62288063315e51b73e8dc076aa35f",
+      "bytes": 3822
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_matched_replay.py": {
+      "sha256": "fa02d304386a4cd498776d297fb41e1281a37b3016cfb2b6fe37bff10a9e0907",
+      "bytes": 7674
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_pilot_receipt.py": {
+      "sha256": "9e7469b36accf4d77fbb63637e25ce896f10fec4c915f48bccc24568b3584cf6",
+      "bytes": 2859
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_radial_matched_n4096.json": {
+      "sha256": "1a1d7efc3a8cda236b899ebf4f9c39e8a39f3dd5a6718d8ab101474bd949d346",
+      "bytes": 1090
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_radial_matched_n4096.log": {
+      "sha256": "754b829353c013c24d026f61b3c02ca9bfcbb998e1e262c39703010f71e9e627",
+      "bytes": 2511
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_radial_pilot_comparison_n4096.json": {
+      "sha256": "12a5a5a87295a2f137d985f7e6df8956b9c4e213d039b01ac96dc98133ac5c32",
+      "bytes": 3443
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_radial_pilot_n4096.json": {
+      "sha256": "1e3c27a39e94b401576f553bafc61d587224d67e8cd70c08db38e66c9ff4c22b",
+      "bytes": 9050
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_radial_pilot_n4096.log": {
+      "sha256": "17e1a4b2150f03907c27cebebd6d489c5da30482e4288c3ab6630cc148dd03bc",
+      "bytes": 3567
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/nested_fragment_radial_trial_n4096.json": {
+      "sha256": "4a14df708a5811ad597cea6ca3d2ffee24c446a85cdf5a4b8a470d69a3a004e9",
+      "bytes": 390566
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/numerator_family_variance.json": {
+      "sha256": "7fb01411d660225635cc8ffe367dc0bdc1cd0fdb5bcc80cdd7742b9bad36ef81",
+      "bytes": 3508
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/numerator_family_variance.py": {
+      "sha256": "9a11decb5c263d5ce3a6a65881549bc62d86d61c4af533cf6fb392d0ae139f80",
+      "bytes": 9571
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/optimal_binary_mark_polynomial.py": {
+      "sha256": "71a8aa954acb5047b1dc15de8dde295a04b23b9ebbe409a9dc0f2793ca04b791",
+      "bytes": 4094
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/optimal_binary_mark_polynomial_verified.json": {
+      "sha256": "5991729e8d40232df5cc19f3c232fb86d077bd032e44635fb035b00f3f40f95f",
+      "bytes": 8642
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/parametric_fragment_geometry.py": {
+      "sha256": "69aaa4c4402f03c78765a0faab0fa67dc6d3cdc640bb75a6d31b1607c2ab8e2c",
+      "bytes": 6895
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/parametric_fragment_geometry_check.py": {
+      "sha256": "858cf521ab0a5bd60dfa915a3c8c1ce261433df5664ae0a520de186d67b16f34",
+      "bytes": 4548
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/parametric_fragment_geometry_checks.json": {
+      "sha256": "7fdd097f00f56a04ad4809a448e3df147cd57d1ce92b9988e0762e40ddac1e3a",
+      "bytes": 35277
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/partitioned_outer_norm_credit.md": {
+      "sha256": "25686914d3df2beb952eec62ea5bc8ed38dd4c329e233560f41880438e00a21a",
+      "bytes": 9828
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/partitioned_outer_norm_credit.py": {
+      "sha256": "182f5ae1f445f576baeef08ec8f0862f8ff701f73c9f4d0629f8bae691d3aa0b",
+      "bytes": 10232
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/partitioned_outer_norm_credit_audit.json": {
+      "sha256": "ae1895d29225ec9ac9fc5265b1bc955c0f0209fd55e2fbbc8594adf41468f800",
+      "bytes": 9889
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/partitioned_outer_norm_credit_audit.py": {
+      "sha256": "9b555efaece96817e40ac58174cd54daa1a71e281c755183fc691b6546e83911",
+      "bytes": 14685
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/profile_low_kernel_variants.py": {
+      "sha256": "8064b65e9b0772bb369dcd54ef5a0bc4d09bb0e94b0f39a1e1ea895fd2f1c27f",
+      "bytes": 4808
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/profile_low_kernel_variants_v2.py": {
+      "sha256": "4db09a6ac952a353c59da92510dc9c450dce7358d6728152bc140be7b18e3587",
+      "bytes": 4814
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/profile_low_kernel_variants_v3.py": {
+      "sha256": "56d1f91e48ae3ee3c99aed92117679ef0ccf1906c146f6d89188a9775dc6d706",
+      "bytes": 4844
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/profile_tilted_low_kernel.py": {
+      "sha256": "b64160fb6ddc8515277a7ff1c0ef8c3fbc470de7b8ce9e856cdf33d4cf075367",
+      "bytes": 4483
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/quantized_tilted_low_kernel.py": {
+      "sha256": "7453dc039db0961e3925de980a8cb79ec4740cc923445cd3e3f3326b6cb22565",
+      "bytes": 5148
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/quantized_tilted_low_kernel_v2.py": {
+      "sha256": "cb563021f128f312a6327e1ec7b36c93edca7a98603937a93aa74c6b0078e69d",
+      "bytes": 5392
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/ritz_residual_restoration.json": {
+      "sha256": "95a5b30149c75c9656cdfd0940edf3a99f4957f4f7507e336a10d2290cc712be",
+      "bytes": 2224
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/ritz_residual_restoration.md": {
+      "sha256": "af8e8d21a8cf0958b4874b09681024c1ec6fdb9edc9b9e72deddb7ded206030d",
+      "bytes": 12419
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/ritz_residual_restoration.py": {
+      "sha256": "add050b276746b9811d37c703416854d35f2ee1c1b2247e5cc922b5453cd811c",
+      "bytes": 6280
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/sharp_pair_weight_audit.json": {
+      "sha256": "3fb6dd77fd9588bcbab2377bf71474405ee2698e3f210d1eb6029d8a348c2a37",
+      "bytes": 11861
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/sharp_pair_weight_audit.py": {
+      "sha256": "0e260033e655b24f0af9014ce350d4a953a7c44b4b900e39d5516e9201ec2072",
+      "bytes": 3255
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/short_gaps_primary.pdf": {
+      "sha256": "456f05e0a3ef589ebb0e9abcfd31f140f3c945adbf6950e00ef371a3c88b0930",
+      "bytes": 369949
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/short_gaps_primary.txt": {
+      "sha256": "7ffe9de64343119fd10a7e6f9d108a4b7a25ca6c5e92a88a4b6e7b433902021f",
+      "bytes": 113384
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/source_local_operator_count_independent_audit.json": {
+      "sha256": "e1810aa6f0bc8a7492caf4f682af1127eb76d57676b565e7611ce4a62b1c0955",
+      "bytes": 8786
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/source_local_operator_count_independent_audit.md": {
+      "sha256": "07d4d9b0fa29f54f4c2e8593949ec5c0b7399d90631327ddbee63c96742fb4ef",
+      "bytes": 5026
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/source_local_operator_count_independent_audit.py": {
+      "sha256": "0ed55eb89fc7f48ce3fc26c1e9e180a18d55dacb810e5d5cc00505b694127e24",
+      "bytes": 9358
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/squarefree_completion_audit.py": {
+      "sha256": "e4482dc9384b447ab5926150db1b9020fd910427ab54172643a92c071c7058df",
+      "bytes": 5397
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_2309.00425v3.pdf": {
+      "sha256": "d356514b423fbd799642e53ed92cad434b084da3630f444a2cc90c084e9ea399",
+      "bytes": 668988
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_dual_local_audit.json": {
+      "sha256": "c7c9910e6e9233f1d81938cfb3b1bc70df34ade6ec06d3c650c7418b9e6d2381",
+      "bytes": 1401
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_dual_local_audit.py": {
+      "sha256": "e7b8f3403e7dbf439b8e301efe743d31065c27810bc9aca417622cf05e980d0a",
+      "bytes": 7906
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_early_modulus_gram.json": {
+      "sha256": "588d38ea8bb2f83640a19bf3eeab109b2254160ec9df46c38191a445c79b3e0b",
+      "bytes": 2871
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_early_modulus_gram.py": {
+      "sha256": "1a8383322058b308a7cd980d55a05d9f8a60f398c6d3964d7d44b6d8338cb1aa",
+      "bytes": 8549
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_source_mask_audit.json": {
+      "sha256": "a9865f33e24a924266fbd0683e71b1c0600a099634576c24770b40343ac28718",
+      "bytes": 1857
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_source_mask_audit.py": {
+      "sha256": "f1cf189bb6d54f12ce06f8de5c9e4b893742dff9575dea0b58c11c20b2f49743",
+      "bytes": 6511
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_three_variable_audit.json": {
+      "sha256": "fba618ede05859de8d36ff70590d1844bd68b26bbdd1160151c932b50c367ddc",
+      "bytes": 5120
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/stadlmann_three_variable_audit.py": {
+      "sha256": "5ef991459814b4e88597fed7df3e47efa8af0903e68ff4e275fc7dab8119fa01",
+      "bytes": 12175
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/subtraction_from_geometry.py": {
+      "sha256": "65bd048cb7673f1c638cbdaedb9a67bd924d4872ac1d1cf1ebfd721a793c963f",
+      "bytes": 12285
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/subtraction_from_geometry_checks.json": {
+      "sha256": "a318ac599b425acbf1bd3a68c31e8d6a0e12dc7403b78ded175e655890360f87",
+      "bytes": 55034
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/subtraction_from_geometry_checks.py": {
+      "sha256": "39ab0d61485ee9f890dd7e38e9494ee20de0ecdb6d2950c235728c8fee298a98",
+      "bytes": 6903
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_carry.md": {
+      "sha256": "1dde8349af18b9a4a389ab8f888a26590e773fbf2dda4696ad08d088bbfb2272",
+      "bytes": 7622
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_carry_audit.json": {
+      "sha256": "717b84ba487b118cc560e3e678bd57287d6ec0fa7529d7f532b3bf9d2d057692",
+      "bytes": 7284
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_carry_audit.py": {
+      "sha256": "dcea4b9f4580b101d18d9558f673c27332bd4727d4a73c3944493ecd0a1d78b9",
+      "bytes": 9852
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_implementation_audit.json": {
+      "sha256": "1707a00735a176a690a948335750006d5932eafd8dbf9a51e29b0b079465d8b0",
+      "bytes": 3322
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/tilted_eulerian_implementation_audit.py": {
+      "sha256": "40e553b9bc7068fc32fd191f7c4ab7261e21b30127e3553538afeeafca9fabad",
+      "bytes": 13346
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/type_iii_b1_transfer_audit.md": {
+      "sha256": "c68a03e9972788616da84fdf39bbf53e955843ff20205b3a93acdf78613742d7",
+      "bytes": 13112
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/type_iii_b1_transfer_audit.py": {
+      "sha256": "93bf6719a1b35dfe51427dbe259903a88db05c5d0ba8949b8ad5188c1ae7b640",
+      "bytes": 3812
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/verify_global_bad_pair_table.py": {
+      "sha256": "8f0d65b2491625b0b06eb8bfe02ecdfa3e53bd6acd6e6add8c2fe7022a1bc971",
+      "bytes": 2516
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/verify_tuple_diameter.py": {
+      "sha256": "b89ed56d68da284f95e272fb2529330676404e8bc075f567be9f9e34d69e7b49",
+      "bytes": 3125
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/verify_witnesses.py": {
+      "sha256": "9d02625a36805b975f8f120f9d7b390cd1f3e752d5853433f08c5f61524ce0c4",
+      "bytes": 1384
+    },
+    "snapshot/prime_gaps_20260903/experiments/tuple_geometry/witnesses_verified.json": {
+      "sha256": "1547015df2edbe2bcf6eec92674d79dfcb2682c613aca629175a6b2bd072c671",
+      "bytes": 4497
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/adaptive_exceptional_square_audit.json": {
+      "sha256": "28e9fd29a6246b1244c7a26cfeb50af7a42ef9dedcfd336a7b8ea597f77fd7e8",
+      "bytes": 1407
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/adaptive_exceptional_square_audit.py": {
+      "sha256": "8ab60014ff73d57a0c14243c18872ffbff6a0af36b329a5a78f9b271712318a4",
+      "bytes": 4393
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/audit_fragment_cap_radial.json": {
+      "sha256": "53bb0b27df0d0cad84cefb1c07be4b69a624e93a0fe99fd85a5d2cb4631140bb",
+      "bytes": 3929
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/audit_fragment_cap_radial.py": {
+      "sha256": "8d8df326ed9c888717140cfa63808e1d34934af8eecb114b0c9dc371c478b348",
+      "bytes": 10220
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/audit_independent_fragment_cap.json": {
+      "sha256": "b998e7c98c49b3b2fed972cd7d7e42af66872f1702dfaa2af70cf06cb9e16156",
+      "bytes": 8163
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/audit_independent_fragment_cap.py": {
+      "sha256": "970544a4da8596122c562a3cb36b99d21f2a3675871ef0d759e3aac47fbb44bf",
+      "bytes": 8955
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/baker_irving_1505_01815.txt": {
+      "sha256": "f06ff7d54e43abf2304b8902dbe4c200e637a6adf2c5a5c331a46cee63f6a1af",
+      "bytes": 36779
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/cap_radial_full_operator.py": {
+      "sha256": "2f3095144719645ba8de6fee8d6307588540dca588c8d9f7a164b9295e7e4e8c",
+      "bytes": 9835
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/certify_independent_fragment_cap.py": {
+      "sha256": "61627f8236a2a769d49930dce15ce5275df15f132a2543b28750e0b0549aa42e",
+      "bytes": 21826
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_cap_radial_full_operator.json": {
+      "sha256": "354c165dc7b1855e3574053cf9e577f050d446663f6e5db361a69b1f90a14418",
+      "bytes": 969
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_cap_radial_full_operator.py": {
+      "sha256": "f0d30dad5f673380d0fd5ac23472a3234e2523783d57dbc15c681ff9ffc69f58",
+      "bytes": 2984
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_endpoint_pair.py": {
+      "sha256": "b6e86e4bc36b2ee9185fd24a13795f1c392d84cce4ddcf5f15d116a9ac89d451",
+      "bytes": 3056
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_incidence_marked_endpoint.py": {
+      "sha256": "be2fcfd4a94ff532f499abdf1bcbe504e55f278a9e52df7fbcfa83b0028fc975",
+      "bytes": 3085
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_localized_endpoint.json": {
+      "sha256": "580c582ed74a0ff2561851cb9e16e6c151a075f617c9b44137fa12ee9650f65d",
+      "bytes": 511
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_localized_endpoint.py": {
+      "sha256": "789ed467153d17812d97c492252a7406d08216adaea58bfc616f02cfe9bdc35e",
+      "bytes": 5117
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_marked_endpoint.py": {
+      "sha256": "f04ff95b31658b45a356928367dab8c6cbb9e8451e541e5c633a472a0c4f90b9",
+      "bytes": 3014
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_marked_fixed_subtraction.json": {
+      "sha256": "71efac4241f73c23177463aa27bcd89a3258fdbe0a312058aba66dbd957cc13a",
+      "bytes": 2582
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_marked_fixed_subtraction.py": {
+      "sha256": "6fefb85bba09f06be18accef350ac2688550be98578a3badb8aea433009fb170",
+      "bytes": 3658
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_marked_hb.py": {
+      "sha256": "470f7a30b6db18bf6a8052f867c0d6498cc1c531927046c3965c990735481000",
+      "bytes": 4282
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_spline_cap_operator_residual.json": {
+      "sha256": "0b820f140b512815b2ab8d42f2edf522b1237415fd92d947b33e532285d27249",
+      "bytes": 1378
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_spline_cap_operator_residual.py": {
+      "sha256": "8b98cbd7b003d69a0d585fa0ba7aa3fa1cb7d6e8b717df35abac54bd3e3f9888",
+      "bytes": 6066
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_spline_residual_schur_envelope.json": {
+      "sha256": "170768493c7978a0668fc253c0e7ba10284bc064d57eea40e44f627e71dff025",
+      "bytes": 1213
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/check_spline_residual_schur_envelope.py": {
+      "sha256": "ca8540621322cbe3dee989b703a4d6f80c094e230b43e7f63f9a8eddd7320ab1",
+      "bytes": 4782
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/closed_dickman_spline_audit.json": {
+      "sha256": "c2b6226425d8d84925258255c5d77ff8393add324122d59eea16b235b493c2dd",
+      "bytes": 1176
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/closed_dickman_spline_audit.md": {
+      "sha256": "163c6cd12722306853f78fa7e8ccb0318d6af46b9fa7f84590d4265ef64f8f2d",
+      "bytes": 2470
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/coarse_affine_envelope_review.py": {
+      "sha256": "6bc7e9bb7f0d1c149ed58ead66166c154ab92986d2ea8b8aa274fe3759398a3e",
+      "bytes": 10493
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/coarse_source_domination.md": {
+      "sha256": "b52b084936670245924a60c0f72603ff4aa9fa2aba88981887d9f1ff4b26425c",
+      "bytes": 10204
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/coarse_source_domination_audit.py": {
+      "sha256": "ef9e372916504dfe3235323de864bbbd6473d1abb4143703a139b03e1b09856a",
+      "bytes": 14980
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/coarse_source_window_api.py": {
+      "sha256": "a91a16e786310c67daaf4833cbdd667ec1ee7e28dec721291ae99e6c7a32be6d",
+      "bytes": 10712
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/compare_receipt_to_lean.py": {
+      "sha256": "bd7ea4e227a039c5f55357dd335fc4c710ecbfac725bcbeec9c0165dba153940",
+      "bytes": 3539
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/endpoint_k41_n98304.npz": {
+      "sha256": "07a10595d24dbc3af18e74f2715ce4353a259ba3d4f73f825c611246a92a4036",
+      "bytes": 175046
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/endpoint_mixture_normalization_check.json": {
+      "sha256": "f8b7228aa2cf75c7e951737ef3daecb4fcd2e929c460ba87b4ad23ff597aa041",
+      "bytes": 1534
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/endpoint_mixture_normalization_check.py": {
+      "sha256": "d46b37ce1d290098b0dc410355621ed1d0740d57f91d840246f05aca5d2b59b9",
+      "bytes": 1687
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/endpoint_pair_ritz.py": {
+      "sha256": "5e024a092b75b7cd6ac9f01e8f27e410834b5e663c39f6726cfb5282f7689cb9",
+      "bytes": 7694
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/farey_kernel_algebra.py": {
+      "sha256": "58489921b29116721585f8f0f419f195873db78c6a3c2f420e93b27771ce5392",
+      "bytes": 7962
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_all_inner_source_ledger.json": {
+      "sha256": "72a8b0b23c70c594997f8cdb55eeb9d97c5faad93a44368a020adb2de5abf3a4",
+      "bytes": 4417
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_all_inner_source_ledger.py": {
+      "sha256": "478fb8ec8efbd6b688a1d543821eea879c196ba07c160c6ca1e0a2b53b31d65d",
+      "bytes": 7358
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low.md": {
+      "sha256": "0c2fc118ffc92ce1df7ada16443644b4e369ecf77b0d36b206c38269ce695ddc",
+      "bytes": 5848
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low.py": {
+      "sha256": "a7018c12b1e52355829ee0fdc49dfa34648b412d1b5a7744b32df04212fd8a74",
+      "bytes": 18416
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_audit.json": {
+      "sha256": "e282133cd12effe3ca05d7db3df47c688914b1bb95a584079e6e672009e10992",
+      "bytes": 22384
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_audit.py": {
+      "sha256": "2b003e246465704571454dabdcc6d438384e5f467ddc3389b4d69c082589b20d",
+      "bytes": 11944
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_fast.py": {
+      "sha256": "63b22068a252dc8066dc9a8f8d679f4fd64eec4167faa17e005daa226935263e",
+      "bytes": 10403
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_receipt.py": {
+      "sha256": "f1ae6bc350bcb82e26d11ecd477302dff77d23c587fd7e9e5ed6ecff3c3e7517",
+      "bytes": 6952
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_v3.py": {
+      "sha256": "67a71bf6a7dbd521355721cc60fffb869722c09aea1305d28ea9974994600180",
+      "bytes": 10561
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48.json": {
+      "sha256": "6c7985091ac01b8cdb62db0b81287df7a4d4f187ca4454dd65c2b0033811af7d",
+      "bytes": 3158436
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_coarse_inner_low_v3_g3g5g6_n393216_b48_receipt.json": {
+      "sha256": "95ea8c3f0bf0adc3fb069b51a0e15a82b1ae91212dd55939d409facb436f936f",
+      "bytes": 26431
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_inner_low_v3_receipt.py": {
+      "sha256": "0f44f6d3e26145923ac4f47c486d2f95370545515a4e39e05caad20888e271e9",
+      "bytes": 10100
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fine_restored_182_interface_review.py": {
+      "sha256": "3b3e834351dd9968fd81d91e12f1b94986c6f4f4c0e10ceb107772ebb5e7a138",
+      "bytes": 16514
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/finite_exceptional_type_iii_transfer_audit.py": {
+      "sha256": "46558590ff1271bce2711eac159ab3c744c5f71443154ab1a60374ad432f4f30",
+      "bytes": 12224
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fourier_finite_exception_independent_audit.py": {
+      "sha256": "6343e334dfc467a4779d4212779d87f12222a2d97732fcab8516305e6a1c565e",
+      "bytes": 8001
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fragment_k39_krylov2_n98304.json": {
+      "sha256": "2ae8d0fe04e9c8f6d2f654b5cd3172c7113c4c8c96fcdba34e60a97e65a0d19c",
+      "bytes": 8983
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fragment_k39_krylov2_summary.json": {
+      "sha256": "8db10068bd328a031d5b29364628ea554dbbfe3acf29fa07700ee740844a9d43",
+      "bytes": 5730
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fragment_k39_krylov2_untruncated.json": {
+      "sha256": "c94d110cefc020653172abc303821b7a33acfc3d05b1c79d1f4b0c4e7dc17b57",
+      "bytes": 4089
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fragment_k39_operator_n98304.npz": {
+      "sha256": "6733c8d484e88d0a8459f91d93cd5955d74f5012e4c291c591efd1cf55007b79",
+      "bytes": 2785
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fragment_krylov2_qmc.py": {
+      "sha256": "13e23aa8b360b940c31b9a58d0c3647aff9e8ac466eee0f9a684532992591b66",
+      "bytes": 14014
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/fragment_operator_qmc.py": {
+      "sha256": "b46c964e6c7f79a5799b74758f5f5049956d1827fcc337cb9469fddb14ce5720",
+      "bytes": 15375
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/harman_deficit_integral_audit.json": {
+      "sha256": "e2ea4464e5f16b84c1909848d68dc0edf16c36255cb0844e6ca89f29fd5325e6",
+      "bytes": 4753
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/harman_deficit_integral_audit.py": {
+      "sha256": "15578ad3d956c1b9b8d508b8a4ab25e6a8789c0397d262f20244b65f30252161",
+      "bytes": 4376
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/harman_type_ii_addback_audit.json": {
+      "sha256": "d414a2297c4d4ccdc4b898bc0005314bf0b1c622e11efd9d4414ab41fb188a25",
+      "bytes": 3041
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/harman_type_ii_addback_audit.py": {
+      "sha256": "9a05e01dfdaac821da38339c21699fa1469c70c347c914248720722dd14a309f",
+      "bytes": 5902
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/high_count_term_recurrence_audit.py": {
+      "sha256": "b7bbb5505e9e8e62860572a8a9f997c794b5a1d53a23be4c8c6cba8174a17eaf",
+      "bytes": 5090
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_level_relaxation_audit.json": {
+      "sha256": "fd843a8ceaf5d924e7e94f9c1049a3cfa743f777f1eb6439b03e728087161ee9",
+      "bytes": 14161
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_level_relaxation_audit.py": {
+      "sha256": "fe38f4053d902e98adeb360bb557525e1d869a8f0e9415371bde275a2fb72102",
+      "bytes": 13574
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_combined_seed531_532.npz": {
+      "sha256": "38bf59358100ebc4b0e16a4fa00db8631aa95d1ab3ccd8e744ea0ae85f63bd1c",
+      "bytes": 51336
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_cross_validation.json": {
+      "sha256": "879bb33a320d55e699767beeacef9e2f370cff7bea4747f9c1a5b0140b5b1c88",
+      "bytes": 5241
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_cross_validation.py": {
+      "sha256": "11821c142033e7ad850486b0c087facff0eb9559e82d8549f96f3e2a60b397a1",
+      "bytes": 3285
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_deterministic_audit.json": {
+      "sha256": "ebea24dbebd56b1977b3f28c239a7222941531a0edc88bbd4ca8c17d7f780653",
+      "bytes": 5105
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_deterministic_audit.md": {
+      "sha256": "e1903531d0ad7e36400651ec350b4c599888c517e4d970ce982f528314d41353",
+      "bytes": 6585
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_deterministic_audit.py": {
+      "sha256": "09622e2aef94fe89fbb75743973949588928d00a1f271c4c888f0b0c0003297f",
+      "bytes": 12689
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_endpoint_qmc.py": {
+      "sha256": "d361843dd94eb12c794e6df0d5617990833dfa5531c4eaadca5729a6113a48b4",
+      "bytes": 19481
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_heavy_validation.json": {
+      "sha256": "7ba5a2989c6bca5ca595f281682b8ac6da9a6a8e9b360af6cdcbc93108ec2c8d",
+      "bytes": 5333
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_heavy_validation.py": {
+      "sha256": "53bed081cfc9de66b7d50176fc350d45ef19f172c4ef54eb21b38d695e91e9dc",
+      "bytes": 4136
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_k40_d4r2_heavy_seed541.json": {
+      "sha256": "8e9d018ce9998b074aa7555cebe6d634d19f523b5558da8627a75c4beb7a38ba",
+      "bytes": 313744
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_k40_d4r2_heavy_seed541.npz": {
+      "sha256": "6431e3ce6a7e5e8f82e33a63e3ab2a9c892c666aaaa9f70365f1f0c5c0971c6d",
+      "bytes": 38434494
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_k40_d4r2_seed531.json": {
+      "sha256": "c9b7662441099b8e317090108ce32a0814520ba5303cea897e0767e10593c372",
+      "bytes": 315324
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_k40_d4r2_seed531.npz": {
+      "sha256": "f8ba7d7766187c8d1a4a67faacf1ab706c4a5079e51784ab4b2d09f35ffd78ac",
+      "bytes": 9652939
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_k40_d4r2_seed532.json": {
+      "sha256": "e67ebbcdf5601a2be9e03b5069ef86fee87e771f4766b47d51539e69923fc906",
+      "bytes": 315322
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_marked_k40_d4r2_seed532.npz": {
+      "sha256": "0e12b96ed2be6516750088fa30f20ee48be67c840deb04bc3973cc8f350d4956",
+      "bytes": 9656923
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_source_transfer_audit.md": {
+      "sha256": "f08cc9dd24845a93aab4f7313ee9b740e303c09173a6b4df52ad7e4ba51ccc31",
+      "bytes": 16907
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/incidence_source_transfer_audit.py": {
+      "sha256": "7d2d53ee06bacc5d474f270d692353d36ef80afc0dad85eab10ac681bf30192b",
+      "bytes": 14249
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/independent_cap_a6_cut8_pilot_n4096.json": {
+      "sha256": "2c0363793db9008476d6b2c22caac53ef96963e2753cd4342f2b9d4b6bbd0d7d",
+      "bytes": 10408
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/independent_cap_a6_cut8_seed.json": {
+      "sha256": "ee15e52a1f4c37f51cbcd32e2a2177a2053eecaf4bdbc26fbb8c4e82ccf2c83b",
+      "bytes": 1476
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/independent_cap_a6_cut8_seed.npz": {
+      "sha256": "544346bcea24f088dbc2dedaae4c1bfd6f5be684d9d4ea270c4622848d3b970f",
+      "bytes": 2136
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/independent_cap_a6_cut8_trial_n4096.json": {
+      "sha256": "a7e32eee79d5b907ade274da01a1d579cdde3388a8288228c558fe491885f448",
+      "bytes": 396190
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/independent_fragment_cap_interval.md": {
+      "sha256": "7d6d94cb1c11f3323e6d8592d7e2fc3a17b16e42addac8a4377f71632b5cb547",
+      "bytes": 5832
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/independent_fragment_cap_matched_replay.py": {
+      "sha256": "820f7e94152b20d0696b67fb79ad1e219f225e68810627e946d347fa8e69b2a4",
+      "bytes": 6211
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/independent_fragment_cap_receipt.py": {
+      "sha256": "e384cf308962f451b293898b78c182094ca28c3618628ac7dfc5cead7bba0342",
+      "bytes": 4141
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/kl3_affine_audit.json": {
+      "sha256": "1d2f26977faaa70fb3f6641125a235ae58aa9b0751d4fc73cf35437a35c1b8f4",
+      "bytes": 16889
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/kl3_affine_audit.py": {
+      "sha256": "6c7d6a0f6988742a0a8dda7b533e5eb901858bfd06208783ee17cd3245951a92",
+      "bytes": 11062
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/kl3_critical_geometry.md": {
+      "sha256": "66edf0f088de3d3b99f3c83a74027092b7a105dd77f5e0019b90df1f5ac30591",
+      "bytes": 15308
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/kl3_critical_geometry.py": {
+      "sha256": "f31707e7271add7577c1d7556e7122c38d522ea9aba6a2268a9868b4b9b106a6",
+      "bytes": 8245
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/kl3_square_moments.py": {
+      "sha256": "4dfc09f1aef3cde32662b6d13b386d8064b3c5ffd6ad2a8ac494736cb4abff54",
+      "bytes": 7973
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/krylov_qmc.py": {
+      "sha256": "dfb1ff6674350fc67b45d6143a2ecb184cb3db4aa0bd3ffe7b27c11261747e07",
+      "bytes": 8029
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/localized_endpoint_qmc.py": {
+      "sha256": "903a10a82b0e3ca19cc0ebcc7a41b64cef4f6cf2e93eb06f548a3457a34d3ee3",
+      "bytes": 18105
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/low_kernel_acceleration_audit.json": {
+      "sha256": "605d9f5d526b60af7d660575c82a8641efd5ecfe5f1d748dbdba4392a62615f9",
+      "bytes": 21661
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/low_kernel_acceleration_audit.py": {
+      "sha256": "0e73cf147a39da0eef672e9c429cb1d2d6e7a9aeb0418213e3a1f83679488585",
+      "bytes": 11334
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/low_kernel_dyadic_conversion_audit.py": {
+      "sha256": "a8c473522d677ef3a7de3c15746b625de0ffa33ca087434d0ec685acce7269ba",
+      "bytes": 3135
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/low_kernel_v3_independent_audit.json": {
+      "sha256": "b60ea139821c77cf4ed7a6c423afe8a4baf81a566f9870f1760008237d1951ce",
+      "bytes": 31059
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/low_kernel_v3_independent_audit.py": {
+      "sha256": "c283fa23139f289837a28aaed0fd641bfa7f6f2ba85fe4dd97c2c3c73daaec34",
+      "bytes": 11981
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/many_primes_transfer.py": {
+      "sha256": "d687337b53ded316a5d98664fcf4547058c1c4695161f581bb22021747060a72",
+      "bytes": 7231
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/marked_endpoint_qmc.py": {
+      "sha256": "f341e789abd457b0103bb4d9a7a71cc22537c92c031e32e01f4e33f8fcc1d2e0",
+      "bytes": 16578
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/marked_fixed_subtraction.py": {
+      "sha256": "64dd0db30ae63583c62f636d6057a97089505077db73b850ec186a793cd4c23a",
+      "bytes": 16499
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/marked_hb_suppression.py": {
+      "sha256": "1b87ce305ca55d7d97e7a4504d7161d77d23eb2d63d1bf99902e7baea9d178e9",
+      "bytes": 9946
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/marked_subtraction_schur.py": {
+      "sha256": "f491071b97c607f5b1cf6761ae40366f03929fe9c3cf057c7abef5610acc1d0a",
+      "bytes": 3277
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/modulus_average_screen.py": {
+      "sha256": "eec3e90867d2afb23168530b1bc8a516d789efc16802483933d2018724ef02ee",
+      "bytes": 7426
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_high.md": {
+      "sha256": "3b5727d0d53da03d0dea7b9d59be7fefdc0e67744bac4b6c9e709c37bcd87a5d",
+      "bytes": 5140
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_high_audit.json": {
+      "sha256": "67d98fc0529c8f08074250e33cc316b15300fd86aeecfc4e025c49d4b78f8673",
+      "bytes": 4326
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_high_n8192.json": {
+      "sha256": "78eec16b91f473b5bd1ce66903a78fd9c483aa41565e6ba143f736fab6ff89a2",
+      "bytes": 65990
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_high_receipt.json": {
+      "sha256": "f6dae9ee1400228211fd38a0578409f1d943cd106f5aba34d975d7608b011145",
+      "bytes": 12762
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_high_receipt.py": {
+      "sha256": "4782b1aff069a8c11a2f630d8085eec9e87841c73a6ae9cee8a03852ef7fcb47",
+      "bytes": 7980
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_high_sweep.py": {
+      "sha256": "043b275b3056580939583f1e1da3c73742ab58121a8a00aff7349059983defbb",
+      "bytes": 10342
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_low.md": {
+      "sha256": "3dd58bfadcc30f1389fef8b1d7c81a3bf42327290296a99ab0b05b376686d97b",
+      "bytes": 5488
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_low_audit.json": {
+      "sha256": "2e4d3ade6718ec81e0d0ecf83cb470e04c606c73e339ce75e59e9a4b9d6f531f",
+      "bytes": 9723
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_low_n8192.json": {
+      "sha256": "b3b53ac5b467cef7f5daf816c29ea3cb0b6fa3226a53c721c45ddb6aaa7265e7",
+      "bytes": 699010
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_low_receipt.py": {
+      "sha256": "48a29a4ce255e4e31e6d62f2e360c51f635b1fccf757b6ab325b767e573a2951",
+      "bytes": 10871
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_low_sweep.py": {
+      "sha256": "b8a6f8880c8bb8f614372470a995959f70e8cbb2d1d07d2219a2f4db95cda4cd",
+      "bytes": 15243
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_rank_two.md": {
+      "sha256": "df32294bdb7b3a30c263a113f075214dc9dbea830e9ebc4f5c56075f91bc3cf3",
+      "bytes": 5628
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_rank_two_audit.json": {
+      "sha256": "101143877a72b361e8007570677d68413b69fc2e44664c6ca4591ec9191c01c2",
+      "bytes": 4233
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_rank_two_n8192.json": {
+      "sha256": "079955e8c10955ca6ac7c88af840878ae3d686549fe261827249bb758503ad3b",
+      "bytes": 141607
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_rank_two_receipt.json": {
+      "sha256": "d91e5136d21fe951192838a1467d6c1da2c5ebfecc4e910c32271384542994f9",
+      "bytes": 9255
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_rank_two_receipt.py": {
+      "sha256": "184fb7aee6f0cec3c904cafc08bb10cf994628dda6b51b61a8fcdc57571636a2",
+      "bytes": 6153
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/multicap_inner_rank_two_sweep.py": {
+      "sha256": "3d53105200ee34c15e498fcb85162d53bc2c7d066bfb04b943d2f37b78c3125d",
+      "bytes": 16667
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/nested_shell_completion.json": {
+      "sha256": "a1faea1df07fd3ed4154c04792732fbc687b4a2e6a552bafbf7ce97afdf3acdf",
+      "bytes": 52876
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/nested_shell_completion.py": {
+      "sha256": "3e1f3857f482344cd6560bbcc9e0502b4a63ee7b76be133b68a2ee7520fa201b",
+      "bytes": 10392
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/nonunit_schur_transfer.py": {
+      "sha256": "f36d13d35132315e9734e852ff7e2b0b1cb7bbeafbeea50c2ff8ffce6cbf8ff2",
+      "bytes": 4405
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/optimize_vector_effects.py": {
+      "sha256": "b04dd57e0b570e7fce75e790c60cf1333c6cda8d26f6b889f36eed241613a10b",
+      "bytes": 4371
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/outer_norm_credit_restoration_audit.md": {
+      "sha256": "5d493624790bc4f0f69e067c74d68c3890cad047305f35cb734a7ecb1518ce31",
+      "bytes": 5629
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/outer_norm_credit_restoration_audit.py": {
+      "sha256": "4fb7da1ad67b0e27d8d343ae1a29935ff2006cb4d2c4740eafbb2a8604120004",
+      "bytes": 10999
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/pair_transfer_finite_check.json": {
+      "sha256": "7e7f5b5af265c5b6ee1ac2bb2861f8c4218dcc9f15f4a25fc43d8e2626978a87",
+      "bytes": 1055
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/pair_transfer_finite_check.py": {
+      "sha256": "b20c357bd805685dce5f403dd7faf04bd8124e355fe55c1353dd3315fe04ca28",
+      "bytes": 8957
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/polymath_1402_0811.txt": {
+      "sha256": "ddc8ea25624ee71f294b3bdd94d1009f89f56577433716a2fab9a2720c745af2",
+      "bytes": 241589
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/polynomial_low_total_truncation.json": {
+      "sha256": "27b352c35863fb96fc551a5e9154c3528d6db5717758cb07800e133c78e1d364",
+      "bytes": 5024
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/polynomial_low_total_truncation.py": {
+      "sha256": "0e8a4e2b5b6dcd6ecb4aced19bd956cbb5be41bdcabbe712408996d5225cae49",
+      "bytes": 3542
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/product_basis_qmc.py": {
+      "sha256": "844a7c3719e484fc276ca52c66a09c75961c355d60c3df6b784f2b35645388ea",
+      "bytes": 8149
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_basis_audit.json": {
+      "sha256": "3de4b78e8e7d372609813a8d63bfed415920bfa99d85bbaa3b6f129fb86e30cb",
+      "bytes": 25002
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_basis_audit.npz": {
+      "sha256": "dc928fd3490279d452e89bd544906cb4e772d29ab4975eed7ff31cfc23e5a524",
+      "bytes": 60725
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_basis_audit.py": {
+      "sha256": "b2673030928eddea017f94fa02681f0a3be46568cdc8ff2407563fc4919677de",
+      "bytes": 10269
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_conditioning_audit.json": {
+      "sha256": "9857205d1d458f1c14b7a757ee8713529c1e64a48e598edc8b228253ef06cf94",
+      "bytes": 4697
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_conditioning_audit.md": {
+      "sha256": "57c6ffcd84d2b87a46cc37da6b17956e4e42107dccfb9cacbcbffdd755a03bfa",
+      "bytes": 8728
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_conditioning_audit.py": {
+      "sha256": "42a5a9323e251809a98030aba2458bf34c4cedfd9d104eb0656fb658c49bd996",
+      "bytes": 3783
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_cross_grid_audit.json": {
+      "sha256": "d15e1618f0746d2e584b5ad4c0231957d971e0626173d729b1c8f7066ba37693",
+      "bytes": 10644
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_cross_grid_audit.npz": {
+      "sha256": "7d7cbf36193818a05bdb08b1086a968d30ee2700fae890749c340ed70b09ce26",
+      "bytes": 31648
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_cross_grid_audit.py": {
+      "sha256": "1d523ec1994bf9553509a1097ca0d212ee532bc1a63b2c1e1dccc5642199504d",
+      "bytes": 3472
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_fiber_tilt_audit.json": {
+      "sha256": "bf5062d0fa52aa8dcb6606c4fda4b9d6f92dc02b49b623c24f3cf9c10a0c4b3e",
+      "bytes": 3793
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_fiber_tilt_audit.py": {
+      "sha256": "16a0edac52a0eea05863c98dd277374fa85cbf4aa8fe71816ce1846510151670",
+      "bytes": 4594
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_fiber_tilt_fine_audit.json": {
+      "sha256": "a857f1eeeae36aebe992b24e7982f58a36b90df80bfae0e3d292b9ab5ebc1449",
+      "bytes": 2335
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_stable_a10r10_n32768.json": {
+      "sha256": "74b11a7533f935e1a27af304a4deaf44c2daa81b1e73a3f1e631ba752ef979ff",
+      "bytes": 6866
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_stable_a10r10_n32768.npz": {
+      "sha256": "d5b11e29af19d087a8f8f104c26a8fa643e143d837cba4d2dd05051ecf25dcd5",
+      "bytes": 8482880
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_stable_cross_grid_audit.json": {
+      "sha256": "c23e099900cb30870e92a74b2ba9c690838f69c1a6a515a88623cba723e60126",
+      "bytes": 2882
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_stable_cross_grid_audit.py": {
+      "sha256": "15338e1c59f712b1206dadd0b2e24a216c5b7146e0f0f69bc54ef76c7c615781",
+      "bytes": 2293
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_stable_matrix_audit.py": {
+      "sha256": "95f99b4bda811f51c11a5614ef617f1fc52c1f4da5363206bb8c84166b34020f",
+      "bytes": 4323
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_stable_nested_audit.json": {
+      "sha256": "98828b49c903b78de0acba5ce0185b633d59d7e88750437f5abbd0c6303d70a0",
+      "bytes": 5283
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_stable_nested_audit.py": {
+      "sha256": "92cd49e25066cedb2f9b764e134b4f50e42967cadd4e8013e5c7172f9da7de04",
+      "bytes": 1256
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_tilt_audit.json": {
+      "sha256": "e6288bdb886273ef78f5a917b00074ff8ebd536ae98858b2fe9a1f6239be0a72",
+      "bytes": 3027
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_tilt_audit.py": {
+      "sha256": "de47ee298ad5bb2f9ad001fb1a0e3a257d221898eb487c41bbb25909248afc84",
+      "bytes": 2672
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_tilt_fine_audit.json": {
+      "sha256": "883087dace8dcaf30d033406212444863716c1bd14c40be1a759a26066a1de25",
+      "bytes": 2985
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/source_cap_tilt_high_audit.json": {
+      "sha256": "f3bfa25067c6f1f63077d546f526d8171d5a591b80969e48cb31d6ffbea3884b",
+      "bytes": 2187
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/spline_cap_operator_residual.py": {
+      "sha256": "f55d631b0da498090514b22a501a49a444a2051dbd89484c5a848bd2d552b242",
+      "bytes": 17020
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/spline_cap_residual_strata.py": {
+      "sha256": "8a786105d88eb8dea148bd8d2bcd5baeddfee0003e6be23cda2bd90c9195c638",
+      "bytes": 7056
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/spline_fragment_category_residual.py": {
+      "sha256": "88736515b19a31204806955574ad492e118fdf0dc1a25afd2feeae784d3ac99d",
+      "bytes": 7486
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/spline_fragment_owner_eligibility.py": {
+      "sha256": "4287efea989cdfd91bc409e37306ce1624b456f604012ce3a58fd393652933af",
+      "bytes": 3418
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/spline_residual_schur_envelope.py": {
+      "sha256": "029fbb7de40463f65496aa795a50e211932dc57f62c59d74ac2c16d528039567",
+      "bytes": 7048
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stable_source_cap_ritz.py": {
+      "sha256": "7c7357fb8f22e00b714a71c0d313e117bba7aff8a5eae4f1b8c8587f1bddbdf7",
+      "bytes": 4265
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stable_source_cap_ritz_test.json": {
+      "sha256": "1b2cb0982fd6994978e816b4a914142f89eda26955823ccb9e341f2403ba5936",
+      "bytes": 812
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stable_source_cap_ritz_test.py": {
+      "sha256": "b2c672aed55ce77e195b943eb154bb979de304e40be2d4bd24996a42ffc4d076",
+      "bytes": 3010
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stadlmann_2309_00425v3.txt": {
+      "sha256": "2eddcaccc2c768c67ee3cf5d45beb87f16034718bc63f12ad5b499db4cd7851c",
+      "bytes": 153696
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stadlmann_dd_two_split_audit.py": {
+      "sha256": "cb8f2aef0730c8d6b08a09bff9be93f7023248b69c3a8e49dcc56fb56acfa852",
+      "bytes": 11452
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stadlmann_dual_boundary.md": {
+      "sha256": "e11cb28d276c90f28f2aa2ff6efca4352b43986588ce3e68d23351ee4dd96470",
+      "bytes": 19686
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stadlmann_dual_boundary.py": {
+      "sha256": "c614b51a8126db1270964d4eaf1b841ad70e6875e1f8087b3a1fea47e8702063",
+      "bytes": 8810
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stadlmann_fourier_coefficients.py": {
+      "sha256": "dc44e899f800b4620aaa91f851228f36367114d19f5c645babcead328ab48cf2",
+      "bytes": 10992
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stadlmann_gram_moment_obstruction.py": {
+      "sha256": "0efafb47f60f3356a1f407eff249fb3b3651566e1824a30de782c61b33ba27f5",
+      "bytes": 7322
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/stadlmann_lattice_original.py": {
+      "sha256": "ec5c03e47318c459a3860cca2e29026d4884a721782ed03612a15a6cf1eeed7e",
+      "bytes": 5602
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/summarize_fragment_krylov2.py": {
+      "sha256": "e7a43ac2561d5532bb81355cb84f29cceac09bc3acab77f3918fbcab2fdb1185",
+      "bytes": 3871
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/type_iii_b_extraction_transfer.md": {
+      "sha256": "6bfb3a314adde9f290fb14c23570fc37171ae08b557bdb9c6dc969ee64d23512",
+      "bytes": 19812
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/type_iii_b_extraction_transfer.py": {
+      "sha256": "5e203ae11a00bcfb78681b0d33a87754cf95f1ef2e6df1b8687c8991e3a3cf83",
+      "bytes": 7544
+    },
+    "snapshot/prime_gaps_20260903/experiments/variational_routes/vector_endpoint_qmc.py": {
+      "sha256": "8497264f4a3e4107da1e3c3dc1e62b1a8590a1115b45f71ae8b3d2172d284c7c",
+      "bytes": 11790
+    },
+    "snapshot/prime_gaps_20260903/output/pdf/finite_exceptional_type_iii.tex": {
+      "sha256": "adb6aff6a48a2b84793912b8eb4235fd51014c5ea2f5db72986a1342606e6196",
+      "bytes": 36265
+    },
+    "snapshot/prime_gaps_20260903/output/pdf/incidence_and_many_primes.tex": {
+      "sha256": "af66fbad6ef996365c6eeeba47c9b4c096da3cfb583dd8de7c39a52fda374037",
+      "bytes": 33312
+    },
+    "snapshot/prime_gaps_20260903/output/pdf/lattice_averaging_many_primes.tex": {
+      "sha256": "078163f11351515c37c14bbada000b6aece49c1147f556f9227ab6014633d8bf",
+      "bytes": 30447
+    },
+    "snapshot/prime_gaps_20260903/results/fine_outer_low_complete_receipt.json": {
+      "sha256": "831a9f2af1e114a2e377961eb90923871eb2dce6b96a0e3f5af57ea3796e7733",
+      "bytes": 41669
+    },
+    "snapshot/prime_gaps_20260903/results/fragment_k39_a8r8_n16384.npz": {
+      "sha256": "c222639bc4f130b3c8fce02d6ecf70be39cd2ed94263d02aaf21bd586c9df4d4",
+      "bytes": 915661
+    },
+    "snapshot/prime_gaps_20260903/results/fragment_k39_ideal_level_budget.json": {
+      "sha256": "f8bbb8ebbb8474a6e4c7a1f5caa7f2f71c3a7acbf0e62af7afed72edc568f7c3",
+      "bytes": 2437
+    },
+    "snapshot/prime_gaps_20260903/results/fragment_k39_profile_search.json": {
+      "sha256": "0add9367c36ae532895f6cd8a4763abcc26e2ac433011e4a6126983a772b79b4",
+      "bytes": 22153
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_cap_trial_k39_a10r10_n32768.json": {
+      "sha256": "4ee946c0b6057ea0455d1f88ab4f9e929664c7a0578a875a5bd0a798e418bb00",
+      "bytes": 58176
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_fragment_cap_radial_b9c3_n32768.json": {
+      "sha256": "2239a485e549ce6b3d042667c7f026dad6ddeac660805ce2d4ed875d275d39f5",
+      "bytes": 9054
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_fragment_cap_radial_b9c3_n32768.npz": {
+      "sha256": "6210989e99907caef6c1b5cd2c7a7c80129c0770360a64b96b09a65899bb0a60",
+      "bytes": 12198
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_fragment_cap_ritz_n98304.json": {
+      "sha256": "e3f181085753c59202447d97bd6b65d97a411524dd96e3790c32692745d76443",
+      "bytes": 6025
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_fragment_cap_ritz_n98304.npz": {
+      "sha256": "260ff35e8e7aa6813a78e73fa26046fa6c45e92f5acf2e50b1aaa8cb9cef30cd",
+      "bytes": 2157
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_level_relaxation_k39_n16384.json": {
+      "sha256": "3ededf3be236e843f840f85fa9f8abae6208c375cc43e574bd06dafe4a3b0799",
+      "bytes": 2217
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_level_relaxation_k39_n16384.npz": {
+      "sha256": "584b324955a9c558ed03debae7f81ed919fa06bb2e6680a980906562c21a2758",
+      "bytes": 351147
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_level_relaxation_k39_n196608.json": {
+      "sha256": "15f2045d92a0042548e34c318453e96300af4a8f17c6aa7b2e0c4b23cdea5ca9",
+      "bytes": 2000
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_level_relaxation_k39_n196608.npz": {
+      "sha256": "8f999efe238fcb83e7e0da10c9b681f76d0330836baa4084fce0f397ddf33a65",
+      "bytes": 351196
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_level_relaxation_k39_n98304.json": {
+      "sha256": "95e3f962f4d5ee57826c5d2b6625d769fb26ea247ab84a3d1d7cb8b94e6aa389",
+      "bytes": 1991
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_level_relaxation_k39_n98304.npz": {
+      "sha256": "18d83a02a5d0b0df97f2e331dd5ef11304fad38f188eb0c919b6818eac71992f",
+      "bytes": 351201
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_marked_deterministic_d4r2_n98304.npz": {
+      "sha256": "651d4bdd86f9e3cf3752f09b237567b87deaac15f59c24020bc396675d38faaa",
+      "bytes": 44648
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_multicap_condition_scan_a6_n32768.npz": {
+      "sha256": "5b679bc2083aae6c1ff301aa1fded7a6f47ba8e304b4b9a84b8a6a21b7d9af78",
+      "bytes": 28795
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_multicap_fixed_a6_cut8_n393216.json": {
+      "sha256": "72c9aa6628ff188c37dfc498ad6af588cd066046937c06644b28b8af6021e1d7",
+      "bytes": 3362
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_multicap_fixed_a6_cut8_n393216.npz": {
+      "sha256": "ec45fbb2e26c8e44a77702e2885fcd9636889221bdaa48db8d02c79626f6e364",
+      "bytes": 7962
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_multicap_fixed_a6_cut8_n98304.json": {
+      "sha256": "8b7ea4b3a35cee761e4b814495ec981d7099b047e44b56a1b0193a0397b171f5",
+      "bytes": 3359
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_multicap_fixed_a6_cut8_n98304.npz": {
+      "sha256": "ec45fbb2e26c8e44a77702e2885fcd9636889221bdaa48db8d02c79626f6e364",
+      "bytes": 7962
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_multicap_spline_a6_n32768.json": {
+      "sha256": "7894a6c2f7f242dde24e9f456d7c0a6a04230936eaa78e3ad0fab9d30454bbf0",
+      "bytes": 5630
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_source_k39_a10r10_shift006_n32768.json": {
+      "sha256": "db8a5058744e8039a2946ecaaf9857a2f14ae0792246249b6a0ac6408f3b00c8",
+      "bytes": 3797
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_source_k39_a10r10_shift006_n32768_case0.npz": {
+      "sha256": "4e3f48c4e1b00ea591ab6e92a924be6c4fd6b3ce451ae6cc8e03f253e2fa548f",
+      "bytes": 8479632
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_source_k39_a10r10_shift006_n98304_case0.npz": {
+      "sha256": "31b846cd45487fa1a19de9044eb65dc9592a1ac1ef9e0baaf03586ddbfeab0d3",
+      "bytes": 8479211
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_spline_k39_a8_cubic_low015_n32768.json": {
+      "sha256": "16e555fbee3367d16b5ec73c9d16077227d2f459e01467dfdece907b3e1475ac",
+      "bytes": 300825
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_spline_tail_ritz_a8_n98304.json": {
+      "sha256": "9d5865c3c2b42705db8c0f30e9a421ea6f31efd68f32b980a255c2fe26579d96",
+      "bytes": 5844
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_spline_tail_ritz_a8_n98304.npz": {
+      "sha256": "49283f2645322a554cc099fc0eb11ccdf8673b2052d9bf61e1e3c1933971633d",
+      "bytes": 5804001
+    },
+    "snapshot/prime_gaps_20260903/results/incidence_subtraction_domain_row14.json": {
+      "sha256": "6eaa8ceacd4f75a3ffdc8a933b5354d758bae450a9728231d39d21315a2b6b1e",
+      "bytes": 400
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G1_rank_two_roots_n8192.json": {
+      "sha256": "3f0290fe1e947f690010d213a25c48f35a8c34aded51a01c823b3206769563dd",
+      "bytes": 40941
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G1_rank_two_roots_n8192_active_0_1_2.json": {
+      "sha256": "7945f2c54c8bbe287b4d4e7aaca365c0fa715389e5779c1888b986f2f4ad57ef",
+      "bytes": 362114
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G1_rank_two_roots_n8192_active_1_2.json": {
+      "sha256": "decd2eda787f27fa778e9459a91b567d6522f75ee2e496208cef8c4567289b83",
+      "bytes": 362013
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G1_rank_two_roots_n8192_active_2.json": {
+      "sha256": "c89cb0e1d1ca7018d1081a48f430c0c7dcff96e5a280859fe1988e9610f389aa",
+      "bytes": 361901
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G1_rank_two_roots_n8192_seed.json": {
+      "sha256": "ee15e52a1f4c37f51cbcd32e2a2177a2053eecaf4bdbc26fbb8c4e82ccf2c83b",
+      "bytes": 1476
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G1_rank_two_roots_n8192_seed.npz": {
+      "sha256": "544346bcea24f088dbc2dedaae4c1bfd6f5be684d9d4ea270c4622848d3b970f",
+      "bytes": 2136
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G1_rank_two_roots_n8192_trial.json": {
+      "sha256": "ce14d6fc39d8be7a416c7f525e961c7908c4a7bbd8934b05673edcab1c7fd150",
+      "bytes": 398550
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G2_local_operator_counts_n8192.json": {
+      "sha256": "a0f0556afb5b138872b36555e19bc469cba5e06e30293eae6af7be5a33270a8c",
+      "bytes": 26198
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G2_rank_two_roots_n8192.json": {
+      "sha256": "6130dbe7668a693192ec922fc38c213ee83078808ca78c925af5d6ed300c173d",
+      "bytes": 55311
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G2_rank_two_roots_n8192_active_0_1_2.json": {
+      "sha256": "78d201711f06193a5496157d0692ef6680c6d98eccefdebbe35d4302d19c5f0d",
+      "bytes": 362114
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G2_rank_two_roots_n8192_active_1_2.json": {
+      "sha256": "28547b402f60e04178cb4fde4814ecf6b53eb924a9cb402c23c25b6eb1e6e19a",
+      "bytes": 362013
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G2_rank_two_roots_n8192_active_2.json": {
+      "sha256": "a87b8288d573f831f0cfa7fc457753bbd61eb12c52d591ebe64291ec5f9b4a06",
+      "bytes": 361901
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G2_rank_two_roots_n8192_seed.json": {
+      "sha256": "ee15e52a1f4c37f51cbcd32e2a2177a2053eecaf4bdbc26fbb8c4e82ccf2c83b",
+      "bytes": 1476
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G2_rank_two_roots_n8192_seed.npz": {
+      "sha256": "544346bcea24f088dbc2dedaae4c1bfd6f5be684d9d4ea270c4622848d3b970f",
+      "bytes": 2136
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_G2_rank_two_roots_n8192_trial.json": {
+      "sha256": "795ade444ce9091cb588c1f7e4ca35f2167f7aec04fa81502ac27dd45f273162",
+      "bytes": 398550
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_fine393216_G2_low_v3_bins11to21.json": {
+      "sha256": "c99b8a3a999a5fd08dc2467bc2ab4bcfe6a843fa0e2f59f83caffe725e550f75",
+      "bytes": 15369576
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_fine393216_G2_low_v3_bins1to5.json": {
+      "sha256": "d88d619cb314b86dbd7de63997cf6fdc46374970d2ca1e5f68c28ca3a44b8506",
+      "bytes": 902393
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G1_G2_faces.json": {
+      "sha256": "66e027865f79afd86fadea0395f539e5c4c8f445d123ddc8128598afa55489ef",
+      "bytes": 3272922
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G1_all_low.json": {
+      "sha256": "b1353cd541fc96345335fc2d6cdeb7db6e376af33220e69e89bb3c3ecf9dceba",
+      "bytes": 15874601
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G2_P2_face.json": {
+      "sha256": "2378f6c46a21649ed42d946a91d3687e32d1dd02219bdb0afed613bcf578ae79",
+      "bytes": 135353
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_G2_first_low_harmonic_v3.json": {
+      "sha256": "e5ca301bbe0ece130efa73d3f71711ea42cfcfceb693bc7b2cbdad1f27e4b213",
+      "bytes": 221979
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_affines.json": {
+      "sha256": "197ce415f9c811c7a87282d98317a18e3d0699f39d168a6e838ab28ab4daebfb",
+      "bytes": 22765
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_fine393216_coarse8192_affines.npz": {
+      "sha256": "acc96f128343f00b1d2a2f9d73e19bfa47ccc6664f78bf5a2df733ec10822719",
+      "bytes": 64524372
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_full_cap_n393216.json": {
+      "sha256": "fc21956dacc276cc3af4cf02070ce0596c61820dc6f04dcd00b33a6d4295085e",
+      "bytes": 10088
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_full_cap_n393216_matched_b30a20.json": {
+      "sha256": "b78be74072c85815333f17bd8690bce50a409d0b4f4c54d02ed77862fa1c7816",
+      "bytes": 2768
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_full_cap_n393216_seed.json": {
+      "sha256": "ee15e52a1f4c37f51cbcd32e2a2177a2053eecaf4bdbc26fbb8c4e82ccf2c83b",
+      "bytes": 1476
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_full_cap_n393216_seed.npz": {
+      "sha256": "544346bcea24f088dbc2dedaae4c1bfd6f5be684d9d4ea270c4622848d3b970f",
+      "bytes": 2136
+    },
+    "snapshot/prime_gaps_20260903/results/multicap_a6_full_cap_n393216_trial.json": {
+      "sha256": "3ebae41700a7839f2d7a7b3fe068b11ed364a7542aab110173bbcdbd66645952",
+      "bytes": 421880
+    },
+    "snapshot/prime_gaps_20260903/results/prime_gap_182_certificate.json": {
+      "sha256": "8d4d7f9a01004ad870abc8f2d099bcecbdcdd05dabc2299e50a292638873db1a",
+      "bytes": 92470
+    },
+    "snapshot/prime_gaps_20260903/results/prime_gap_186_cap_fresh.json": {
+      "sha256": "4998e35aa2417f1535ff3f68a967f276dca06ea0406ce5d83288192f00b9e3ca",
+      "bytes": 2807
+    },
+    "snapshot/prime_gaps_20260903/results/prime_gap_186_fresh.json": {
+      "sha256": "61f564d4f03ce369245d52a6c371ff5f64e9ecf51a4e7921497ada7571f04f33",
+      "bytes": 115422
+    },
+    "snapshot/prime_gaps_20260903/results/prime_gap_186_fresh.log": {
+      "sha256": "de9f7d6775e844190ab076f4193e291c28e8e1c100f35b31ae2c0e4e8bdf39fb",
+      "bytes": 101287
+    },
+    "snapshot/prime_gaps_20260903/results/prime_gap_186_lean_comparison.json": {
+      "sha256": "c90ad163bf48ae0a377158a029d861821ff142c1025b5fec155d581961be1a19",
+      "bytes": 73164
+    },
+    "snapshot/prime_gaps_20260903/results/prime_gap_186_outer_h25_high_exact_sum.json": {
+      "sha256": "18fc75dd4cf4ef0265e0fd1ce152c58bfdee6d466bac7ea94fe4b30dd74fbb15",
+      "bytes": 7560
+    },
+    "snapshot/prime_gaps_20260903/results/prime_gap_186_outer_h25_high_exact_sum.log": {
+      "sha256": "12cefffaa45a155501311bb7267c8594c36434d902a6ec5af65b682b74378b19",
+      "bytes": 5062
+    },
+    "snapshot/prime_gaps_20260903/results/prime_gap_186_refined_receipt.json": {
+      "sha256": "35b48ba03622d8f4c4ec98d51d4662d6afe321e3cb940058864f5853d5031ec5",
+      "bytes": 116915
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/.dylibs/libflint.24.0.dylib": {
+      "sha256": "0658f28b8b28dcf7f58c5204492709feb755dafe047430d007837eccee2fdd39",
+      "bytes": 9797072
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/.dylibs/libgmp.10.dylib": {
+      "sha256": "f5b67752db8791d7979ebfba705f7c452b72047f9cd5fe02411a103cb0ddfa94",
+      "bytes": 468768
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/.dylibs/libmpfr.6.dylib": {
+      "sha256": "eefed865a4cc0665a45ab9dbc5f27911fc8d50a3f9a6f6c02566bfe1fd70242f",
+      "bytes": 469216
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/__init__.py": {
+      "sha256": "2e5f8f1768d14eccd7961353c635195bd557f297edff8b8de09e2d211f03ec2d",
+      "bytes": 2714
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/flint_base/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/flint_base/flint_base.abi3.so": {
+      "sha256": "d0534d19f95d0950f5bf679ada6b3533586ae76fda4662523c6df4638d1d171d",
+      "bytes": 365312
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/flint_base/flint_base.pyi": {
+      "sha256": "cba7dec7d9623523a5a509f641c4016a8aec13c89bed152169b40d24cac3b5f7",
+      "bytes": 8844
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/flint_base/flint_context.abi3.so": {
+      "sha256": "042aed3880669ff8d84f5d55d82b26f935ac4811b589e053272f3b5009c7f67d",
+      "bytes": 154832
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/flint_base/flint_context.pyi": {
+      "sha256": "91b0e810255e4bc2447a90271f309c08ea6e0b08a068b63b063a8bdb4012806e",
+      "bytes": 1287
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/functions/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/functions/showgood.abi3.so": {
+      "sha256": "35fd6b5fe985bb09c704359e126e4a8dc6a8dcc098d9dacde037d3be2270819e",
+      "bytes": 152512
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/py.typed": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/pyflint.abi3.so": {
+      "sha256": "3e7aa11ae59ce23f84d0769ee476d212a67cdc0216d563b193a437fc0f42a00e",
+      "bytes": 55488
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/pyflint.pyi": {
+      "sha256": "bb28837aced3f6ff1b51d1db0fc95b4d96f70354124bd84265a5953c88bdcc80",
+      "bytes": 71
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/__main__.py": {
+      "sha256": "403e682cbc000691cb046ed00b1e2544fc6809d187195edb803dd6ca51795589",
+      "bytes": 4464
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/helpers.py": {
+      "sha256": "726ce284b0bb09af6b84956f9995ff61d46c644d4283797ca3c82882b77967b4",
+      "bytes": 4845
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_acb.py": {
+      "sha256": "da176698e959d36424335352f643f8ed8bc6906e8fda10e4580a80f4b022bf4d",
+      "bytes": 24291
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_acb_mat.py": {
+      "sha256": "37a7812f87ca8aa7fc206d4a11ae67cfb2d9dcee89feef1c02ee39f1f002d11d",
+      "bytes": 12168
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_acb_poly.py": {
+      "sha256": "27831f19bfe89298c2e180f468143a4cd65de8a349fd9a0d3c96d6aed2fc353c",
+      "bytes": 9626
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_acb_series.py": {
+      "sha256": "f346a6fc158a10ed3cff48e883be56c4d8245a575a97a085cf111082828752f3",
+      "bytes": 11014
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_acb_theta.py": {
+      "sha256": "ef0451b4183054e26dc6f9edd0e9d0e6ed8abf171e9ef0ae4b20e422b1655046",
+      "bytes": 1796
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_all.py": {
+      "sha256": "081b8c33a20ac8e0098ea53b973bae05ebc47db22423a115778ee3d2248b377d",
+      "bytes": 214467
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_arb.py": {
+      "sha256": "a785e4bc0f08079a9038a57f7ac7ee1cc5e3c836d260138dc22384ebfd20cfe3",
+      "bytes": 30130
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_arb_mat.py": {
+      "sha256": "b42ad42d6f22a0a96fb483a6e82437b6bdb50dbb9e17a4baa2c16ca022864c85",
+      "bytes": 9826
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_arb_poly.py": {
+      "sha256": "8bc98893c15b2144521371913bd0d271dd78cd55a0fffc0d15d844f9cdb61265",
+      "bytes": 8065
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_arb_series.py": {
+      "sha256": "0fa517c981dc60357f813ee0b357ada4204b806c93acd5574af4ebeeb94295c2",
+      "bytes": 11295
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_dirichlet.py": {
+      "sha256": "9b7fcbf0419bb41cdaab0c0dd748a500fbaf3cdcefdcf76e83be1417e3453db0",
+      "bytes": 2327
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_docstrings.py": {
+      "sha256": "ab40b0397d4423896ca0968ac3743d9a0742ed5e959e0f4ef71f8b0c391f805e",
+      "bytes": 3449
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_fmpq_vec.py": {
+      "sha256": "5180c7639fedfc16f23cc1ac2d404d6ab21af288ad3ec9f89d16143811f1a7f0",
+      "bytes": 1566
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/test/test_fmpz_vec.py": {
+      "sha256": "c0fae98f1cd049c32da3f06c1b0e106ebd52e12ebd9b6c753611c3837a174e16",
+      "bytes": 2034
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/_gr.abi3.so": {
+      "sha256": "60ddff20da61ac31bc3c67f87b79283e1630f6e2b1c491c41db4e5924b192478",
+      "bytes": 516224
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb.abi3.so": {
+      "sha256": "73aad6c4cdf2338d8f6533f9f653b7d7bad5c67a0e557eac5024bc1497f8f1f0",
+      "bytes": 465360
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb.pyi": {
+      "sha256": "4c34a226aa10d9d9603d3695959f115e40ee4e431f4114d9bd6cf75cb9d6068a",
+      "bytes": 10048
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb_mat.abi3.so": {
+      "sha256": "203ec5797a73470918fef61b4f2d018fade675e5f6a86f9b019f09a64c4665df",
+      "bytes": 207264
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb_mat.pyi": {
+      "sha256": "864b6dc987e9c36b57b857794dacd7eabea09ad4387208038a505f4cdc8cd865",
+      "bytes": 3840
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb_poly.abi3.so": {
+      "sha256": "46626a5239a3b19231a7ccc5183406cde3513a7c579f465e11b2402af308bd9d",
+      "bytes": 173488
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb_poly.pyi": {
+      "sha256": "107369f5b20d311f329049b961f41db7420a733bf70c346e9988aacb1bf3b5b1",
+      "bytes": 2971
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb_series.abi3.so": {
+      "sha256": "03bac94e664a92a7fa7fbfaa87890a65dde8644f1cdd127f3d06e73295b398b8",
+      "bytes": 232112
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb_series.pyi": {
+      "sha256": "9aed1b6aa42173afbad9e55696db3228078e5c6a7ea89eca88c79dc5b1d93f3f",
+      "bytes": 5228
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb_theta.abi3.so": {
+      "sha256": "f881bbdf75b9aebd15365aba035559499c648149cf6b395b4457dd9e9e45ff70",
+      "bytes": 113824
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/acb_theta.pyi": {
+      "sha256": "a29cc1b0714a105c5e71c682e996710a977064380e4590d313848812cdfac5d4",
+      "bytes": 419
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arb.abi3.so": {
+      "sha256": "a06a5d1afc2c1d70bf9cf8a7085951261c975691bd8c618d3001f4bf7852294c",
+      "bytes": 431344
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arb.pyi": {
+      "sha256": "0711ee7d5bcb5fcb563f9033245329dd26c118a98efb44365dfe1621a5415020",
+      "bytes": 9248
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arb_mat.abi3.so": {
+      "sha256": "775c7d853a801fab2a7d871513a0a9eefe226e6b58d1d9ea79267e5ddb2579ff",
+      "bytes": 189600
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arb_mat.pyi": {
+      "sha256": "e8978a6d0bcb7102199804c7d8245994104e66529c61187cd0a3d48766b136ba",
+      "bytes": 3921
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arb_poly.abi3.so": {
+      "sha256": "39437fe5d3817866779101dea5b150f9bfe63e3483414eb8413edae5411698f7",
+      "bytes": 172304
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arb_poly.pyi": {
+      "sha256": "59695b020c670d73cf360c7fe5035d32cc248bbd85d5074610aa4052cfa6f1e2",
+      "bytes": 4086
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arb_series.abi3.so": {
+      "sha256": "3700eb0f5f86f885b9c05a238f3cf67a00183b29bda2cea91c1a621e55c33f70",
+      "bytes": 232608
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arb_series.pyi": {
+      "sha256": "a9dd8dbd100998dd4bdfeafc0f8a8ab8fbaa6958708f7dab4a720aaa43d0c249",
+      "bytes": 5836
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arf.abi3.so": {
+      "sha256": "5609d684618bea3905755101faca13595e7051848949682c8d738f3b3a07bd1f",
+      "bytes": 153184
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/arf.pyi": {
+      "sha256": "ad37761bb8ebbb668cc9556cf95ebc9f29b5d452eb8142845c151269770cc5fe",
+      "bytes": 1843
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/dirichlet.abi3.so": {
+      "sha256": "0e75d8fc001e7b1365e57dda3c75a6430457239d35de0aa5d9e35829cb51a063",
+      "bytes": 136608
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/dirichlet.pyi": {
+      "sha256": "f6a736594809c3ea573bfeaa68f7b8c7b4d0cbc88c739082f587385871ea179f",
+      "bytes": 1297
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq.abi3.so": {
+      "sha256": "50aa1517d028bc149255f0f06f966b7549e91892e3045f292940984d8ec55574",
+      "bytes": 170672
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq.pyi": {
+      "sha256": "494d0521854ab045ec3354f6ed99bff26f5be6295597afe1859746ec3bbd42cb",
+      "bytes": 2822
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_mat.abi3.so": {
+      "sha256": "e6f58a9418e837e5b870ddf8b9bbb91ec26df88529a80c387c551e9cab330fd0",
+      "bytes": 154496
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_mat.pyi": {
+      "sha256": "ed18508ad7cfe335774f7777817131bd867cecfa317fd6410a2f7bae0e89ccfc",
+      "bytes": 2378
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_mpoly.abi3.so": {
+      "sha256": "6cbd287b2ca6465543251ecf47356cb9a4773bc1b924c503efbbfcce443f0c95",
+      "bytes": 290400
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_mpoly.pyi": {
+      "sha256": "ec4664d9aa7a727c980fc357a3399bb7e7d4af6cf205c30d92b406983d1a398b",
+      "bytes": 5054
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_poly.abi3.so": {
+      "sha256": "bcc58dda0f9cb4570911e25e0e3b0a677f837f07b1aebc0bd757e8926716f392",
+      "bytes": 211104
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_poly.pyi": {
+      "sha256": "8ad0dda94918ce42da558d8285adf85ad7d5561703fe4dea9a97c3d200f94a20",
+      "bytes": 3734
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_series.abi3.so": {
+      "sha256": "89d86843ef01deb6e380173e4b4fee4df1e886a5656cd9ba5fb8f95c619fb034",
+      "bytes": 174832
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_series.pyi": {
+      "sha256": "8dd64c878beeaa4d5699e791fdddac24051de068193b00d9bc63e554d5f2b019",
+      "bytes": 2764
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_vec.abi3.so": {
+      "sha256": "af23559b9c8bd3d940a482a80f4bb20d546f7da9fef64241d448f63af604e7a4",
+      "bytes": 135344
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpq_vec.pyi": {
+      "sha256": "1bbc9de9ff3113b33ca05aa67b8a81ba673ea48be439cbb5a7a839a3c28d13a7",
+      "bytes": 609
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz.abi3.so": {
+      "sha256": "68ff75b6bb3a8556560e8612ca6013356071df893ebf42131b89a9279a1ee48c",
+      "bytes": 211136
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz.pyi": {
+      "sha256": "efee53246aa7fbfc8982ee7b827f7e79883065158b5e88eedbfe904adc1e6dd3",
+      "bytes": 4160
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mat.abi3.so": {
+      "sha256": "75309ae6e57f7d7260607a76185e2ff504a11024955e55eec4bec5fea54f5216",
+      "bytes": 208992
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mat.pyi": {
+      "sha256": "6bf5ea731aeb3a1b41097150042fde31389fa08587cfbd64e99e826765bee5fd",
+      "bytes": 4173
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mod.abi3.so": {
+      "sha256": "afc2003bf7fb490cbf7da0d92aeda05edb1f6466d0dc959e48791483b062cd2c",
+      "bytes": 154848
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mod.pyi": {
+      "sha256": "fe86814eaf00f0c0dd7d7aa7854681469cb18d6fde2c869baaed78e195a33de2",
+      "bytes": 1958
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mod_mat.abi3.so": {
+      "sha256": "122b8e115e1ac47aebd71c27c12406a6dc7483ccece8f80dd3bac48d5479db39",
+      "bytes": 194432
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mod_mat.pyi": {
+      "sha256": "cc947bc4921b964f120c908a9c693f33fc17dc809be98510d42d5ab77aef6b5a",
+      "bytes": 2578
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mod_mpoly.abi3.so": {
+      "sha256": "8d276b7f887e406246c4ed774a20487c04793fd9306bff946a4fd8661b3b4747",
+      "bytes": 291360
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mod_mpoly.pyi": {
+      "sha256": "77c031beee69be147124ada5ca859f209a7f505e7416d690e99abfee93e94cf7",
+      "bytes": 5611
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mod_poly.abi3.so": {
+      "sha256": "e755f085a00957f8392c6f7f311992f568c6e5df9137d3bfb3f60e8c64a39784",
+      "bytes": 305664
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mod_poly.pyi": {
+      "sha256": "a380cb85f3012f1bdc1fbc0918da126b98db2720d9c6f060bb775e06a4af79ec",
+      "bytes": 6915
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mpoly.abi3.so": {
+      "sha256": "8ea913f61b1e89575129180ea37d7e607b516718b5cdce1de9b26ab1b85d4f84",
+      "bytes": 309296
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_mpoly.pyi": {
+      "sha256": "48583624b438ab1c87f4e790bef7f7ebac48f3f6af06dce842e1629e4fddda6b",
+      "bytes": 5587
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_poly.abi3.so": {
+      "sha256": "43219bcfb0f8092aa3078e7b0a4b440801e11c199f63c663b799f6cc64a604dc",
+      "bytes": 214016
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_poly.pyi": {
+      "sha256": "1f82b372326e14de2a237faad14104ac2a5a088d275f5b85b0cf58e2f6a6573c",
+      "bytes": 4131
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_series.abi3.so": {
+      "sha256": "2189a7d77a1916a89989d8b2a3903f0c828653ad1f167e864fce730131c86c67",
+      "bytes": 153088
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_series.pyi": {
+      "sha256": "9931112df1d6a98008ab35b6b874e89218769b723363e37a9f2ca2e4124f29ac",
+      "bytes": 1626
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_vec.abi3.so": {
+      "sha256": "39d19c4936d6e9a84f50c989b73c3e6c7d58a40a9387877067a5ea17df80f408",
+      "bytes": 135792
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fmpz_vec.pyi": {
+      "sha256": "acc7219503a54f90c491207eaa023f1dd23d95e829396428431948bcb02c38d0",
+      "bytes": 653
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fq_default.abi3.so": {
+      "sha256": "a41015245e31f270689024d281ca8da98d02563fce4c542bb6ca434cd616a76d",
+      "bytes": 211008
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fq_default.pyi": {
+      "sha256": "eaa31dec2e8a5ab93d823c149805bb88402677160eaba581e46ac496659bf288",
+      "bytes": 2781
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fq_default_poly.abi3.so": {
+      "sha256": "b4b4b1f5ff968f19841aeedef03eb5822e3ed2420c8d75ac76f12aa3f489d1f7",
+      "bytes": 324160
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/fq_default_poly.pyi": {
+      "sha256": "412abe1dc606b56200eac384b3726ea5ff252562ce6fc3fc54862a512fe89b17",
+      "bytes": 6402
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod.abi3.so": {
+      "sha256": "b211904309c9ce56b3c0d645375dad25ce9551126d4ee2154f707585210ee14b",
+      "bytes": 134304
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod.pyi": {
+      "sha256": "8499b57e0c9963a6edd5e6cdf0e429a4b4d995ea9e5d46cf1b072026ef5051b9",
+      "bytes": 1126
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod_mat.abi3.so": {
+      "sha256": "2439bf171172b47838cb0b5c59db6f1e439e8b80505beae4ff2054ab9c9ccd74",
+      "bytes": 171584
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod_mat.pyi": {
+      "sha256": "201e31204813ceced9fce1e3487c6a081f0b715ea3c0b3249672f54d3807b071",
+      "bytes": 2562
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod_mpoly.abi3.so": {
+      "sha256": "060db327914f0b08fe56e958b4d7ed372d235e460023c539fc990670ced05cd2",
+      "bytes": 289392
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod_mpoly.pyi": {
+      "sha256": "732c48002771bb9b5d22f6d3e6869164163bd94142d6b019343b08a3e13240de",
+      "bytes": 5190
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod_poly.abi3.so": {
+      "sha256": "514ea1fb4ca23576e8546dbbfb8c9acb1a73e29a517deb6e81ee8e09e9f8087c",
+      "bytes": 232704
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod_poly.pyi": {
+      "sha256": "aac3af236628231cb963a3bfa4ea6cd192e702e19de4aeda7a477aeafa6e9cfa",
+      "bytes": 3603
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/types/nmod_series.abi3.so": {
+      "sha256": "8a7a303c11c2bd3352ad2e24168dd5dc4de01511d7d7cc95dcf1ba48448653b7",
+      "bytes": 95024
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/typing.py": {
+      "sha256": "684827de51b142f46ea13db0342094f5672ea55685de0df28be04f686ff7a201",
+      "bytes": 12070
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/utils/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "snapshot/prime_gaps_20260903/runtime/flint/utils/flint_exceptions.py": {
+      "sha256": "4ee9e74f1529883e68eb7281ee219d5d338d83d81b5d4c81c4af5dc05a067401",
+      "bytes": 752
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/INSTALLER": {
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+      "bytes": 4
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/METADATA": {
+      "sha256": "11a4b12677ac9762cb5741d077c22312cf901fb5f3a67cd167a8ffe265f7ef87",
+      "bytes": 23908
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/RECORD": {
+      "sha256": "27b8b5793fb8dfc3b2671c466256f9e2491ac819738e2c5e90c2a974b80e125b",
+      "bytes": 11383
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/REQUESTED": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/WHEEL": {
+      "sha256": "5e85f16eb39183bc0f47cbc85cbdff9484f475a7c7906dd9bb8ff577c273d987",
+      "bytes": 121
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/licenses/LICENSE": {
+      "sha256": "957fd166a6e2395fa52d8fc3474b531b4d22d7d8b84fb4cfc1b7ad4ad09a413d",
+      "bytes": 1080
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/licenses/python-flint.libs/flint-3.6.0/COPYING": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/licenses/python-flint.libs/flint-3.6.0/COPYING.LESSER": {
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "bytes": 7652
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/licenses/python-flint.libs/gmp-6.3.0/COPYING": {
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "bytes": 35147
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/licenses/python-flint.libs/gmp-6.3.0/COPYING.LESSERv3": {
+      "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+      "bytes": 7639
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/licenses/python-flint.libs/mpfr-4.2.2/COPYING": {
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149
+    },
+    "snapshot/prime_gaps_20260903/runtime/python_flint-0.9.0.dist-info/licenses/python-flint.libs/mpfr-4.2.2/COPYING.LESSER": {
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "bytes": 7652
+    },
+    "snapshot/prime_gaps_20260903/sources/PrimeGaps186/LICENSE": {
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    "snapshot/prime_gaps_20260903/sources/PrimeGaps186/README.md": {
+      "sha256": "be1e3ec09817391ee634f23c624b498fc0e5563f1c30ad1fbfadf57ae4bacb3b",
+      "bytes": 4762
+    },
+    "snapshot/prime_gaps_20260903/sources/PrimeGaps186/lean-toolchain": {
+      "sha256": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
+      "bytes": 29
+    },
+    "snapshot/prime_gaps_20260903/sources/PrimeGaps186/prime_gap_186_certificate.py": {
+      "sha256": "7f71bdefcfe3bb5ca76a143929b3cb3f4156c21dc483253cda3077420f1e5de4",
+      "bytes": 112171
+    },
+    "snapshot/prime_gaps_20260903/sources/PrimeGaps186/short_gaps_numerics.pdf": {
+      "sha256": "79190b2ca18cb8aca0645a7bf97c1fb48e8984af4785cf18079d9b4f74c90031",
+      "bytes": 218865
+    },
+    "snapshot/prime_gaps_20260903/sources/PrimeGaps186/short_gaps_numerics.txt": {
+      "sha256": "a6c2ff76f753e74416afdb36839683ad703bd197fdad407af99ce3bee6d3d6ad",
+      "bytes": 59141
+    },
+    "snapshot/prime_gaps_20260903/sources/bgp212.txt": {
+      "sha256": "2f86ef805115fc4fa6b7cd7a0930a9fff41cb965c65893f7eae8cfcbe9c8c063",
+      "bytes": 144579
+    },
+    "stages.json": {
+      "sha256": "47df632beef9a1d6f82da0e60f7013ef2d798465bf2a225391688974a79c7861",
+      "bytes": 9977
+    },
+    "target/PhysicalTrial182.lean": {
+      "sha256": "80799589f5df9fc346c4e4a034476aa99dc2593aa849fcb4802c38c318eac4ca",
+      "bytes": 20142
+    },
+    "target/SourceBounds182.lean": {
+      "sha256": "4aeea0eeb4668b51a307bd915858a1eb65f332f5d45c6f3d4b73c7e1f70988e0",
+      "bytes": 12258
+    },
+    "target/SourceData182.lean": {
+      "sha256": "17cfa9f265299944b8f8755343494499bc2a90414751824bc6041832bc4d055c",
+      "bytes": 357070
+    },
+    "target/SourceKernels182.lean": {
+      "sha256": "58114ac378e534692724d433cb5e2cc5b564163a259a2ae1399e444987738e47",
+      "bytes": 10610
+    },
+    "target/TrialData182.lean": {
+      "sha256": "3407df88c46cf5dce72bb5e1aadea6746f1a266fdcda4f12ed852b64c5b5482b",
+      "bytes": 120716
+    },
+    "target/reference-coverage.json": {
+      "sha256": "27eee4dd90343c2bc97142ab5670cf6006a4257f385c1177d01aeb7d10ed2d54",
+      "bytes": 131193
+    },
+    "target/source.json": {
+      "sha256": "b61edf4b4e7d052cf1eec0b5fb2d6d16df62e279e103677abf3fe312eaffc3e7",
+      "bytes": 650
+    },
+    "test_rejection.py": {
+      "sha256": "c6935d5f4d0ee780c02f9bf00375dae5e32a760b45799d9b12bbc59b9a0a0377",
+      "bytes": 2710
+    },
+    "tools/compare.py": {
+      "sha256": "9ccd4fd2b14a40955d7dbf17220160fd574a9b1ba2e9ad56d557d5db41b577b6",
+      "bytes": 2973
+    },
+    "tools/coverage.py": {
+      "sha256": "093aba05ef31803be6c921d200e25ea8e2a969d9cb51bf490560e8e74f70e533",
+      "bytes": 8485
+    },
+    "tools/trial.py": {
+      "sha256": "1381ef9e35885ae4187e89b09b645e6f5f09982bd353c13dec01c556cd686270",
+      "bytes": 3058
+    },
+    "tools/worker.py": {
+      "sha256": "c6555945ef7a9a33a667065ac4ed3de472354fadf95d39c541b288dc5d67afa8",
+      "bytes": 2335
+    },
+    "verify.py": {
+      "sha256": "ecd4a50599363d7743cfdfd95fa8b9cfee4b12b3092cb85f5685e7209344ec04",
+      "bytes": 6465
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS_COMPLETE_EXTERNAL_NUMERICAL_RECOMPUTATION",
+  "completed_utc": "2026-09-09T07:57:38.380626+00:00",
+  "production_stages": 14,
+  "audit_stages": 14,
+  "target_inequalities": 262,
+  "source_geometry_equalities": 328936,
+  "all_262_recomputed": true,
+  "lean_numerical_premises_discharged": 0,
+  "type_iii_proved": false,
+  "historical_production_outputs_read": false,
+  "fresh_affine_arrays_equal": 20,
+  "mathematical_payloads_match_reference": true,
+  "recorded_production_seconds": 12670.522153040045,
+  "scope": "External interval/finite verification of the frozen numerical certificate. The 262 analytic bounds remain explicit hypotheses in the posted Lean development; Type III is separate. Finite implementation audits do not constitute an independent review of every analytic reduction.",
+  "target_files": {
+    "SourceData182.lean": "17cfa9f265299944b8f8755343494499bc2a90414751824bc6041832bc4d055c",
+    "SourceBounds182.lean": "4aeea0eeb4668b51a307bd915858a1eb65f332f5d45c6f3d4b73c7e1f70988e0",
+    "SourceKernels182.lean": "58114ac378e534692724d433cb5e2cc5b564163a259a2ae1399e444987738e47",
+    "PhysicalTrial182.lean": "80799589f5df9fc346c4e4a034476aa99dc2593aa849fcb4802c38c318eac4ca",
+    "TrialData182.lean": "3407df88c46cf5dce72bb5e1aadea6746f1a266fdcda4f12ed852b64c5b5482b"
+  },
+  "package_tools": {
+    "verify.py": "ecd4a50599363d7743cfdfd95fa8b9cfee4b12b3092cb85f5685e7209344ec04",
+    "audit.py": "5b732753cb2a2fe2972b2c06fba84bc22fa6acdbdbfa01e7c9282207d8434cb1",
+    "finish.py": "93b8d103f1b02f0dce27203eaa537946c78feebe809d8cec63b353c8dbb80bde",
+    "stages.json": "47df632beef9a1d6f82da0e60f7013ef2d798465bf2a225391688974a79c7861",
+    "audits.json": "79aab0df9d23980354924eb5edccd450956648672812907bd837613a594aa074",
+    "tools/compare.py": "9ccd4fd2b14a40955d7dbf17220160fd574a9b1ba2e9ad56d557d5db41b577b6",
+    "tools/coverage.py": "093aba05ef31803be6c921d200e25ea8e2a969d9cb51bf490560e8e74f70e533",
+    "tools/trial.py": "1381ef9e35885ae4187e89b09b645e6f5f09982bd353c13dec01c556cd686270",
+    "tools/worker.py": "c6555945ef7a9a33a667065ac4ed3de472354fadf95d39c541b288dc5d67afa8"
+  }
+}

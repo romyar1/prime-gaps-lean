@@ -15,13 +15,14 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 PASS = "PASS_CONDITIONAL_DEVELOPMENT_AND_TYPE_III_SUPPORT"
 PATTERNS = (
-    "README.md", "STATUS.md", "CITATION.md", "NOTICE.md", ".gitignore",
+    "README.md", "STATUS.md", "CITATION.md", "NOTICE.md", ".gitignore", ".gitattributes",
     "lean-toolchain", "lakefile.toml", "lake-manifest.json", "verify.sh",
     ".github/workflows/*.yml", "docs/*.md", "formal/*.lean", "formal/LICENSE",
     "diagnostics/*.lean", "scripts/*.py", "scripts/ci_verify.sh",
     "scripts/ci_prepare_memory.sh", "provenance/*.json",
     "provenance/check_data.py", "provenance/release_checks/**/*",
     "vendor/primegaps186/*", "inputs/source_certificates/**/*.json",
+    "research/numerical_182/**/*",
     "research/type_iii/geometry/*.md", "research/type_iii/published_inputs/*.md",
     "research/type_iii/contractions/*.md", "research/type_iii/contractions/*.py",
     "research/type_iii/contractions/*.json", "research/type_iii/numerics/*.md",

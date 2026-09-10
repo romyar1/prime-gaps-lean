@@ -21,7 +21,10 @@ This repository's [assumptions guide](assumptions.md) gives the exact list.
 The 262 numerical premises are inequalities for specific mathematical
 integrals. Their definitions already exist in Lean. Saved JSON files contain
 supporting calculations, but Lean currently does not derive the integral
-inequalities from those files.
+inequalities from those files. A full external recomputation has now passed
+all 262 target comparisons, 14 audits and four deliberate rejection tests.
+That gives reproducible computational evidence; the three formal proof steps
+below are still needed to discharge the Lean premises.
 
 ## What a certificate needs
 
@@ -52,8 +55,9 @@ publish a standalone Lean project.
 
 This package keeps the checked sources in `formal/` and the saved integral
 calculations in `inputs/source_certificates/`. The
-[numerical-data guide](numerical-data.md) describes the remaining reproducibility
-limitations. Small finite experiments in `research/type_iii/` are separate
+[numerical-data guide](numerical-data.md) explains the unchanged provenance
+records, while the [external package](../research/numerical_182/README.md)
+provides full-run receipts and reproduction commands for its tested macOS runtime. Small finite experiments in `research/type_iii/` are separate
 from the integral certificates and from the Lean proof.
 
 ## Interpreting a successful build

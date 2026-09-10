@@ -8,16 +8,26 @@ interval string, count, bound, warning, and embedded digest is preserved.
 
 These files support the 262 integral inequalities listed in
 [`assumptions.md`](assumptions.md). They do not discharge those Lean premises.
-The collection is not a complete portable implementation of the numerical
-integration engines: some references identify source scripts, arrays, runtime
-libraries, and other records that are not included here. Rebuilding the Lean
-project neither reruns those integrations nor converts the JSON records into
-kernel-checked proofs of the integral bounds.
+The original 16-record collection is supplemented by the
+[completed external numerical package](../research/numerical_182/README.md).
+Its full rerun passed all 262 target comparisons on 9 September 2026, with
+14 implementation audits and four deliberate rejection tests. The source
+repository includes the verifier drivers and compact evidence; the pinned
+release attachment includes all source programs, arrays, runtime libraries,
+fresh production outputs and full receipts. Its tested numerical runtime is
+Apple Silicon macOS, Python 3.12 and NumPy 2.3.5.
 
-This repository import checks data integrity and the path-only transformation;
-it performs no new numerical integration, including any of the 197 source
-components. Status and scope fields inside the JSON files describe their
-individual computations, not an unconditional proof of the prime-gap claim.
+Rebuilding Lean does not rerun those integrations or convert JSON records into
+kernel-checked proofs. The original `provenance/check_data.py` remains a
+collection-integrity and path-normalization check; it performs no integration.
+Use the external package's production and acceptance commands for a new run.
+Its acceptance receipt covers all 262 comparisons, including both bounds for
+each of the 60 outer components and the 137 inner components.
+
+The full archive preserves original bytes and embedded dependency hashes.
+These existing normalized repository records remain unchanged. The external
+verification does not alter their provenance or remove the remaining
+mathematical review of the algorithms and their connection to the integrals.
 
 ## Portable source identifiers
 

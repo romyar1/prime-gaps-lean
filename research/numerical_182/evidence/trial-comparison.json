@@ -1,0 +1,9 @@
+{
+  "status": "PASS_EXACT_LEAN_TRIAL_LITERALS",
+  "coefficients": 726,
+  "knots": 26,
+  "angular_signatures": 11,
+  "component_caps": 3,
+  "shells": 12,
+  "scalar_parameters": 13
+}
