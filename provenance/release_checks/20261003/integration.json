@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "status": "PASS_CONDITIONAL_DEVELOPMENT_AND_TYPE_III_SUPPORT",
+  "date_local": "2026-10-03",
+  "finished_utc": "2026-10-04T05:40:19.057027+00:00",
+  "platform": "Apple Silicon macOS",
+  "base_commit": "1b0d80979f154107e88588738416798d1c305609",
+  "source_packet_archive_sha256": "0340152a1db948616dde11e7d924ef53628e92bcef8bcecf9d5e0bab40f341d5",
+  "added_formal_modules": 280,
+  "replaced_existing_formal_modules": 1,
+  "formal_module_count": 918,
+  "freshly_built_project_and_baseline_modules": 919,
+  "distinct_audited_declarations": 6128,
+  "standard_only_declarations": 6127,
+  "approved_baseline_wrapper_declarations": 1,
+  "terminal_declarations_standard_only": true,
+  "final_typeiii_source_sha256": "581a0b6c0142bd3910b36c0c4396369b49498a64f43882c96f3b4af53b968850",
+  "receipt": "receipt.json",
+  "receipt_sha256": "ed2b279b3bc6a7ff4d7d05b301494e1832cf4bb9538f37d7c052dad83ce85612",
+  "command": [
+    "./verify.sh",
+    "--refresh-manifests",
+    "--timeout",
+    "14400"
+  ],
+  "environment_overrides": {
+    "LEAN_NUM_THREADS": "1",
+    "PRIME_GAPS_LIVE_LOGS": "1"
+  },
+  "project_cache_initially_absent": true,
+  "dependency_artifacts_reused": true,
+  "regression_tests_passed": 30,
+  "external_numerical_attachment_integrity_passed": true,
+  "original_numerical_inputs_integrity_passed": 16,
+  "new_linux_or_GitHub_CI_run": false,
+  "published": false,
+  "numerical_premises_discharged": false,
+  "unconditional_182_formalization": false,
+  "joint_continuous_adic_interpretation_remains_external": true,
+  "source_compatibility_edits": [
+    {
+      "path": "formal/TypeIIIActualRelativeFourierKernelExtensionFromPublishedOpenTheorems.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 5,
+      "before_sha256": "9311b406687f7e898ba2f6d3cb8c0cb768338fcb8dd5b3208afec507e9d4be80",
+      "after_sha256": "b37f323b6cae14d695c5c63fc2cb82d1e04b052f97a8cefd145bea9688ef7931"
+    },
+    {
+      "path": "formal/TypeIIIBoundedCompactRealizationFromSameOperations.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 8,
+      "before_sha256": "2318b8747909902e4d183f3efbf247f531f2b72dbac577a21f910d7fa8853387",
+      "after_sha256": "c0297294b757c51f90f7ef344b7fc42c5a3a28469316c51eeca27273a2ed7fd6"
+    },
+    {
+      "path": "formal/TypeIIIFourierSourceOpenCartesianFromLaurentLocalization.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 7,
+      "before_sha256": "5faa5ff0dbd2b7b6bb657bb19f480feff19037c24a20692544f60c3a2cc5834a",
+      "after_sha256": "60de425c45071a853d46c20c3396bd83d9dd5c5c3922cc8bd86807e320b7f875"
+    },
+    {
+      "path": "formal/TypeIIIFullFourierCoreFromNativeBoundedOperations.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 49,
+      "before_sha256": "cc18bae818ec020adc4f3b1018f711f44c23476a57b5bb1dfc8c0b89cc245eb6",
+      "after_sha256": "6f12f5ce7de26b4fd517970759e001038bf491be64eb2440939442d4cb53f24f"
+    },
+    {
+      "path": "formal/TypeIIIFullFourierSourceProjectionSmoothFromPolynomialCoordinates.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 4,
+      "before_sha256": "6d369d379e53ee3590f4ca806a33dbb6a17b480b3d4c338d8f67dba72508a082",
+      "after_sha256": "bc5cd4d20739933ee294067cf02cdba67517b68ad8067a6500fc8c3943c50c96"
+    },
+    {
+      "path": "formal/TypeIIIFullFourierTargetCartesianFromLaurentLocalization.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 14,
+      "before_sha256": "f2cc64bafdd47ad125150bc0de2f40efb137b54fd0083a468dbc52a43b7ad6cb",
+      "after_sha256": "25720cf5dbd993c01cff0e1644a460c802c83e83c33c158cc1526ebdc5707845"
+    },
+    {
+      "path": "formal/TypeIIIFullFourierTargetChartFromRelativeAffineCoordinates.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 11,
+      "before_sha256": "c5194393c89d497e5d0f0a8ea4a774fa4eeca1314adbd42b675dc63c564eb402",
+      "after_sha256": "87f2152cfc4b339071748c1160d727f9f17b906182215c67a954d6d53dd60cc9"
+    },
+    {
+      "path": "formal/TypeIIIMiddleInfinityFromActualOrdinaryOpenAndPerverseCohomology.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 20,
+      "before_sha256": "c617b355e87dce92c33b0aa97a92903f8d1f74d7cbb1e40df13b62d2411a798d",
+      "after_sha256": "612a0f1842a8b83810badd814810f3d3701b59e59eaabe59a29fa39f96b6dfb1"
+    },
+    {
+      "path": "formal/TypeIIINativePunctualZeroPhaseFromActualPointWitnesses.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 3,
+      "before_sha256": "084b03346541e3f5441c89f7e28546c6b862962bf094f1a62226bb0c7dc7e64b",
+      "after_sha256": "c5df7c1c80248c2f43c237db1db3eeaa3fa06ce48a0148433db2c605f292550d"
+    },
+    {
+      "path": "formal/TypeIIIOrdinaryFourierKernelExtensionFromGeneralSmoothBaseChange.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 4,
+      "before_sha256": "52d3380a5d0e7eac88a2d2ac6acce0b4f657f46f12db9a4d624dce3aa68f7e7c",
+      "after_sha256": "e993b92442d1b34a344407db2c1c385cf60a3abfa7333019f857bea90123b83e"
+    },
+    {
+      "path": "formal/TypeIIIPrimitiveRankPurityFromGeneralKatzTheory.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 23,
+      "before_sha256": "6f709abc8a9b08ac2a6f17544235449f813c0c5eedf2d1499db93f9647289fe8",
+      "after_sha256": "f05a987e0929be5970d2670d90cba95f902c501509cd91d57841d045c748a2bc"
+    },
+    {
+      "path": "formal/TypeIIIPrimitiveTracesFromGeneralKatzArtinSchreierFormulas.lean",
+      "kind": "self-check replaced with standard axiom reports",
+      "added_axiom_requests": 17,
+      "before_sha256": "9f3ea763863df1a7b3698fb9a799d2d71637306b2b65860ba9866c2eac0489fa",
+      "after_sha256": "8c0a311e98c0cffff92edb6d180191e1cc8c8665c391a51165331fc8597b226a"
+    },
+    {
+      "path": "formal/TypeIIIQSTPerverseBackgroundFromUniversalHeart.lean",
+      "kind": "local elaborator expanded to explicit record constructor",
+      "before_sha256": "b481bcb4eb7faf13425069eee15eb57d35489b0b70fec78b8453a1662f975319",
+      "after_sha256": "2273542aa17f8768bf2474281441274772b7ea9cf0c9637b88c90e34112ef3a8"
+    },
+    {
+      "path": "formal/TypeIIIQSTBoundedTensorFromUniversalDerivedMonoidal.lean",
+      "kind": "local elaborator expanded to explicit record constructor",
+      "before_sha256": "cc42453bebfcaabc9225769458e3ca6626fe3e63da40495367b07d5034fdd9df",
+      "after_sha256": "1afaeab848ec25f4895b39ff231229a23bc927bb7c40f9f2c653753f7b55053a"
+    }
+  ],
+  "evidence_files": {
+    "receipt.json": {
+      "sha256": "ed2b279b3bc6a7ff4d7d05b301494e1832cf4bb9538f37d7c052dad83ce85612",
+      "bytes": 4776698
+    },
+    "build.log": {
+      "sha256": "fd19b69fffbaf37cf90eeb24a35b21fe8b6773fe0c13e77982461fd5af04cea0",
+      "bytes": 1216172
+    },
+    "data_integrity.log": {
+      "sha256": "a5f87709f522987594d1aa9d6d3602ad3ddf6f296a01cd2d40e39ae2f80d9d53",
+      "bytes": 209
+    },
+    "TheoremTypes.lean": {
+      "sha256": "767604e578f0f10c30b83df91caefa2dc924443432c221295a67d61cbbb5ed82",
+      "bytes": 943685
+    },
+    "theorem_types.log": {
+      "sha256": "a982fa673d16af6820ae904a6ab4145bc33bc62445fce8378fe48dd13795b82c",
+      "bytes": 8683834
+    },
+    "ExplicitPremises.lean": {
+      "sha256": "732cf19bb1ddf6bdeb0b4a0282b43f7b68a8da4265a9508138e5f2b974d40c1e",
+      "bytes": 2533
+    },
+    "explicit_premises.log": {
+      "sha256": "56b190cc88590edeee18a9887b9176f6824e3f9473293103bb456be2b9c20f34",
+      "bytes": 96909
+    },
+    "regression-tests.log": {
+      "sha256": "5f1fcca450c6a202cc255d915152ca5a2cb6aa37f7900f2142618f97eaa58fea",
+      "bytes": 129
+    },
+    "external-numerics-integrity.log": {
+      "sha256": "827cafdf1d205b40e3e0c273065df9c3ed31bd1a2412c5456915628431ecb6d1",
+      "bytes": 196
+    },
+    "supplementary-checks.json": {
+      "sha256": "6e5ef4aa4fb06906ba28233311b16ec0845a901a055fdfeb450838cd10f9d2a3",
+      "bytes": 785
+    }
+  }
+}

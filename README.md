@@ -10,6 +10,13 @@ integral inequalities, three established finite-field estimates, and the
 Type III local Fourier proposition. The repository does not contain an
 unconditional Lean proof of the bound 182.
 
+The September 18 Type III derivation supplies that local Fourier input from
+precisely stated published general theorem interfaces on one common adic
+theory. The joint interpretation of those interfaces remains external; the
+262 numerical inequalities remain hypotheses. See the
+[cited derivation](docs/type-iii-published-general-application.md) and
+[verification status](STATUS.md).
+
 ## Start here
 
 - [Reading this project](docs/reading-this-project.md) explains proofs,
@@ -21,8 +28,10 @@ unconditional Lean proof of the bound 182.
 - [Completed external numerical package](research/numerical_182/README.md) supplies
   the verifier tools, full-run results, and reproduction instructions.
 - [Type III statement and code map](docs/type-iii.md) describes the local target.
-- [Type III from published inputs](research/type_iii/published_inputs/README.md)
-  records the precise imported geometric laws and the remaining applications.
+- [Type III from published general theorems](docs/type-iii-published-general-application.md)
+  records the September 18 derivation and its exact common-theory assumptions.
+- [Earlier published-input route](research/type_iii/published_inputs/README.md)
+  explains the support and trace arguments used in that derivation.
 - [Citation](CITATION.md) and [attribution](NOTICE.md) preserve the authorship
   and existing notices of this project and its dependencies.
 
@@ -38,8 +47,12 @@ Type III supporting results. The original finite sums and uniform local
 Fourier statement are unchanged. The development includes exact finite-sum
 identities, phase algebra, support arguments, a conditional route using
 published geometric theorems, and a separate partial development of the
-étale and adic foundations. These supporting results leave the Type III
-premise explicit; the new numerical package does not change that boundary.
+étale and adic foundations. The September 18 entry
+[TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03.lean](formal/TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03.lean)
+constructs `HasFiniteExceptionalTypeIIIInput` from the common general-theorem
+interfaces, with uniform constants chosen before the prime. It does not prove
+the existence or adic interpretation of that common theory. The numerical
+package supplies computational evidence for the separate integral premises.
 
 ## What is included
 
@@ -91,6 +104,10 @@ lake build PrimeGapsDevelopment
 See [verification instructions](docs/verification.md) for a fresh project build,
 the exact audit policy and adding new modules. A successful build checks the
 stated implications; it does not remove their hypotheses.
+
+The integrated September 18 sources passed full local verification on
+3 October 2026: 918 development modules and 6,128 audited declarations, plus
+30 regression tests. See the [current evidence](provenance/release_checks/20261003/README.md).
 
 The GitHub workflow runs the same verifier. A [fresh hosted verification](https://github.com/romyar1/prime-gaps-lean/actions/runs/34143288525)
 passed on 7 September 2026, checking all 638 modules and 4,916 declarations

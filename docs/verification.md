@@ -64,12 +64,13 @@ labeled `PASS_CONDITIONAL_DEVELOPMENT_AND_TYPE_III_SUPPORT`.
 - Every source `#print axioms` request resolves to its recorded canonical
   declaration in the current build. An independent generated Lean file imports
   all project modules and prints each declaration's full type and axiom set.
-  The final 182 declarations must use only `propext`, `Classical.choice`, and
-  `Quot.sound`. The one documented nonterminal baseline convenience wrapper
+  The final 182 declarations and the September 18 `computedTypeIIIInput`
+  declaration must use only `propext`, `Classical.choice`, and `Quot.sound`. The one documented nonterminal baseline convenience wrapper
   receives its own exact axiom classification.
 - The premise definitions are printed separately, including the numerical
   inequalities, established finite-field estimates, and the full uniform
-  quantifiers in `LocalFourierHypothesis`.
+  quantifiers in `LocalFourierHypothesis`, together with the five general-theorem
+  interface records used by the September 18 Type III application.
 - `provenance/check_data.py` checks all published numerical source records,
   their inventory, numeric payload fingerprints, and the limited provenance
   path normalization. The checker, manifests, numerical records, Lean sources,

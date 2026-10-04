@@ -74,7 +74,7 @@ structure CurveRules {Input : Type u} {Point : Type v}
     D.Pure (D.tensor A B) (a + b)
   dual_lisse : ∀ A, D.Lisse A → D.Lisse (D.dual A)
   dual_rank : ∀ A, D.Lisse A → D.rank (D.dual A) = D.rank A
-  dual_pure : ∀ A a, D.Pure A a → D.Pure (D.dual A) (-a)
+  dual_pure : ∀ A a, D.Lisse A → D.Pure A a → D.Pure (D.dual A) (-a)
   tensor_tame : ∀ A B, D.TameZero A → D.TameZero B → D.TameZero (D.tensor A B)
   dual_tame : ∀ A, D.TameZero A → D.TameZero (D.dual A)
   tensor_breaks : ∀ A B r, D.BreaksLE A r → D.BreaksLE B r →
@@ -133,7 +133,7 @@ theorem input_rank : D.rank K.input = 9 := by
 
 theorem input_pure : D.Pure K.input 0 := by
   have hd : D.Pure (D.dual K.second) 0 := by
-    simpa only [neg_zero] using R.dual_pure _ 0 K.second_pure
+    simpa only [neg_zero] using R.dual_pure _ 0 K.second_lisse K.second_pure
   simpa only [input, add_zero] using R.tensor_pure _ _ (0 + 0) 0
     (R.tensor_pure _ _ 0 0 K.first_pure hd) K.additive_pure
 
@@ -223,7 +223,8 @@ structure CohomologyRules {Input : Type u} {Point : Type v}
       P.Pure (parabolicCore H A) (a + 1)
   signed_lisse : ∀ A, P.Lisse A → P.Lisse (P.signed A)
   signed_pure : ∀ A a, P.Pure A a → P.Pure (P.signed A) a
-  dualTate_pure : ∀ A a, P.Pure A a → P.Pure (P.dualTateMinusOne A) (2 - a)
+  dualTate_pure : ∀ A a, P.Lisse A → P.Pure A a →
+    P.Pure (P.dualTateMinusOne A) (2 - a)
 
 section CoreGeometry
 
@@ -266,7 +267,7 @@ one.  The ordinary dual alone would have weight -1. -/
 theorem conjugate_signed_core_pure :
     P.Pure (P.dualTateMinusOne (P.signed (parabolicCore H K.input))) 1 := by
   simpa only [show (2 : ℝ) - 1 = 1 by norm_num] using
-    G.dualTate_pure _ 1 (signed_core_pure K R G)
+    G.dualTate_pure _ 1 (signed_core_lisse K R G) (signed_core_pure K R G)
 
 end CoreGeometry
 
@@ -383,7 +384,7 @@ structure CurveFiberRules (T : CurveTraceData D L) : Prop where
     LinearMap.trace ℂ (F.obj (H.compact A)) (Fr.app (H.compact A)).hom =
       -∑ x : Lˣ, T.trace A x
   tensor_trace : ∀ A B x, T.trace (D.tensor A B) x = T.trace A x * T.trace B x
-  dual_weight_zero_trace : ∀ A, D.Pure A 0 → ∀ x,
+  dual_weight_zero_trace : ∀ A, D.Lisse A → D.Pure A 0 → ∀ x,
     T.trace (D.dual A) x = star (T.trace A x)
 
 /-- Arithmetic trace of the original three factors.  The data assert
@@ -418,7 +419,8 @@ theorem input_point_sum (ψ : AddChar L ℂ) (lambda xi : Lˣ)
   unfold KloostermanInputData.input FiniteFieldSums.parabolicInputSum
   apply Finset.sum_congr rfl
   intro x _
-  rw [V.tensor_trace, V.tensor_trace, V.dual_weight_zero_trace _ K.second_pure,
+  rw [V.tensor_trace, V.tensor_trace,
+    V.dual_weight_zero_trace _ K.second_lisse K.second_pure,
     A.first_trace, A.second_trace, A.additive_trace]
 
 omit [Abelian C] in
@@ -485,13 +487,15 @@ structure BoundaryCohomologyData where
   toCompact : ∀ A, space A →ₗ[ℂ] F.obj (H.compact A)
   frobenius : ∀ A, space A →ₗ[ℂ] space A
 
-/-- The generic beginning of the boundary cohomology exact sequence
-when the curve input has no global invariants, as follows here from
-positive slopes at infinity.  Naturality gives the Frobenius square. -/
+/-- Positive slope at infinity kills global invariants and gives the
+boundary injection. Exactness in the stalk of the relative ordinary
+cohomology additionally uses tame ramification at zero: together with
+slope one and constant rank, this is the constant-conductor class for
+whole-base ordinary base change. Naturality gives the Frobenius square. -/
 structure BoundaryCohomologyRules (B : BoundaryCohomologyData H F) : Prop where
   injective : ∀ A, D.Lisse A → D.Isoclinic A 1 →
     Function.Injective (B.toCompact A)
-  exact : ∀ A, D.Lisse A → D.Isoclinic A 1 →
+  exact : ∀ A, D.Lisse A → D.TameZero A → D.Isoclinic A 1 →
     LinearMap.range (B.toCompact A) = LinearMap.ker (F.map (H.comparison A)).hom
   frobenius : ∀ A, (Fr.app (H.compact A)).hom.comp (B.toCompact A) =
     (B.toCompact A).comp (B.frobenius A)
@@ -522,7 +526,7 @@ def originBoundaryModel : OriginBoundaryModel H F K.input Fr q hq where
     J.identification.injective
   exact := by
     rw [LinearMap.range_comp, LinearEquiv.range, Submodule.map_top]
-    exact BR.exact _ (K.input_lisse R) (K.input_slope_one R)
+    exact BR.exact _ (K.input_lisse R) (K.input_tame R) (K.input_slope_one R)
   frobenius := by
     rw [← LinearMap.comp_assoc, BR.frobenius, LinearMap.comp_assoc,
       J.frobenius, ← LinearMap.comp_assoc]
@@ -777,11 +781,13 @@ theorem entryObjects_pure (α m m' n n' : (ZMod p)ˣ) (i : Fin 4) :
   · exact pulledEntry_pure K R G O T TR _ _ _
   · change P.Pure (P.dualTateMinusOne (pulledEntry (H := H) (P := P) K O α m' n)) 1
     simpa only [show (2 : ℝ) - 1 = 1 by norm_num] using
-      G.dualTate_pure _ 1 (pulledEntry_pure K R G O T TR _ _ _)
+      G.dualTate_pure _ 1 (pulledEntry_lisse K R G O T TR _ _ _)
+        (pulledEntry_pure K R G O T TR _ _ _)
   · exact pulledEntry_pure K R G O T TR _ _ _
   · change P.Pure (P.dualTateMinusOne (pulledEntry (H := H) (P := P) K O α m n')) 1
     simpa only [show (2 : ℝ) - 1 = 1 by norm_num] using
-      G.dualTate_pure _ 1 (pulledEntry_pure K R G O T TR _ _ _)
+      G.dualTate_pure _ 1 (pulledEntry_lisse K R G O T TR _ _ _)
+        (pulledEntry_pure K R G O T TR _ _ _)
 
 include R G TR M in
 theorem entryObjects_trace (α m m' n n' : (ZMod p)ˣ) (L : Type) [Field L] [Fintype L]

@@ -1,5 +1,39 @@
 # Verification status
 
+## September 18 Type III integration — 3 October 2026
+
+The September 18 source packet has been integrated into this existing
+repository: 280 new formal modules and one updated existing module, for
+918 development modules. The entry
+[`computedTypeIIIInput`](formal/TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03.lean)
+derives the original `HasFiniteExceptionalTypeIIIInput` from the explicit
+common general-theorem interfaces described in the
+[cited derivation](docs/type-iii-published-general-application.md).
+
+**Full local verification passed**, with status
+`PASS_CONDITIONAL_DEVELOPMENT_AND_TYPE_III_SUPPORT`: all 918 development
+modules and the unchanged baseline were freshly compiled, and 6,128 distinct
+declarations were audited. All seven required terminal declarations, including
+`computedTypeIIIInput`, use only standard logical axioms. One documented
+nonterminal convenience wrapper retains its approved baseline estimates.
+
+All 30 regression tests, the 16 numerical-input integrity checks, and the
+external numerical-package attachment checks passed. The complete local run
+took about 91 minutes. The [verification evidence](provenance/release_checks/20261003/README.md),
+[full receipt](provenance/release_checks/20261003/receipt.json), and
+[explicit premises](provenance/release_checks/20261003/explicit_premises.log)
+are retained in the repository.
+
+This verifies an identical isolated build copy on Apple Silicon macOS. The
+refreshed source and declaration manifests are integrated here. No new hosted
+Linux/GitHub Actions verification result is claimed by this local receipt.
+The earlier receipts below remain historical.
+
+The common continuous-adic interpretation and applicability of the published
+theorem interfaces remain external mathematical inputs. The 262 numerical
+inequalities and the three established finite-field estimates remain explicit
+premises. This update does not claim an unconditional Lean proof of 182.
+
 ## External numerical package update — 9 September 2026
 
 The [external acceptance receipt](research/numerical_182/evidence/verification.json)
@@ -24,7 +58,7 @@ also remains subject to review. The conditional theorem's scope is unchanged.
 
 ## Prior hosted Lean verification
 
-The latest audited repository snapshot passed a fresh hosted verification on
+The prior hosted repository snapshot passed a fresh verification on
 **7 September 2026 (UTC)** at commit
 `73d33fe6451d1054cc569943eadad83c906a9551`, with
 status `PASS_CONDITIONAL_DEVELOPMENT_AND_TYPE_III_SUPPORT`.
@@ -260,14 +294,14 @@ not prove a theorem's mathematical premises.
 
 - Lean: `leanprover/lean4:v4.34.0-rc2`.
 - Mathlib: `bbcd1968ee6950abe88b85dba6995da346c4b2a8`.
-- Audited development: 638 Lean modules, plus the vendored `PrimeGaps186` baseline.
+- Current audited development: 918 Lean modules, plus the vendored `PrimeGaps186` baseline.
 - Diagnostics: two separate baseline inspection modules.
 - Supporting numerical data: 16 JSON records, with original and published
   hashes and a canonical check of the preserved non-path payload.
 
-The target `PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput` now has a
-conditional proof in `PublishedTypeIII.UniformApplications`, with the
-published-rule interfaces, uniform application data and baseline estimates
-explicit. There is no closed proof of that target in this development.
-See the [published-input guide](research/type_iii/published_inputs/README.md)
+The current target `PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput` is
+derived by `CoherentUniformApplicationsFromGeneralStandardTheory03.computedTypeIIIInput`
+from the common general-theorem interfaces. The joint continuous-adic
+interpretation remains external, so this is a conditional derivation.
+See the [cited derivation](docs/type-iii-published-general-application.md)
 and [Type III progress map](docs/type-iii.md) for the exact scope.

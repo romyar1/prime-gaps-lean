@@ -12,7 +12,7 @@ intervening prime.
 | `PhysicalSourceBounds182` | 262 fixed integral inequalities | Explicit numerical premises |
 | `PublicPrimeLocalBounds182` | Two established finite-field estimates, at every prime | Explicit premises |
 | `AllIncidenceRankFourBounds` | The established scalar rank-four Kloosterman estimate, at every prime | Explicit premise |
-| `0 ≤ C` and `TypeIII.LocalFourierHypothesis C D p₀` | The Type III estimates with constants uniform in primes and parameters | Novel proposition, not proved in this repository |
+| `0 ≤ C` and `TypeIII.LocalFourierHypothesis C D p₀` | The Type III estimates with constants uniform in primes and parameters | Supplied by the September 18 conditional derivation from common published-theorem interfaces; no closed proof |
 
 No global bilinear, distribution, support, or sieve-moment estimate is supplied
 as an additional hypothesis of this endpoint. The repository formalizes those
@@ -101,15 +101,20 @@ bounded finite exceptional set; the repeated-index branch has a bounded-degree
 exceptional curve and a separate origin term. See
 [`type-iii.md`](type-iii.md) for the statement and progress map.
 
-The [published-input route](../research/type_iii/published_inputs/README.md)
-now derives that original statement from explicit general geometric laws and
-separate uniform actual-family realization data. It proves the proper-support
-exclusion and both trace bounds, and derives the phase and covariance inputs
-from supplied local maps and all-extension traces. The remaining cohomological
-identifications, lissity/purity applications and uniform complexity witnesses
-are still mathematical premises. Thus this conditional derivation does not yet
-remove the Type III premise from the prime-gap theorem.
+The [September 18 derivation](type-iii-published-general-application.md)
+constructs this exact Type III input from precisely stated general-theorem
+interfaces. The ordinary, derived and perverse categories, inverse images,
+primitive objects, cohomology, local observers and arithmetic lifts must belong
+to one common theory fixed before the prime. The source derives the actual
+family applications and uniform constants from those interfaces, instead of
+assuming a finished Type III application.
 
+The existence and joint continuous-adic interpretation of that theory and the
+applicability of the cited results remain external mathematical inputs. The
+prime-gap theorem retains its original Type III argument, which can be supplied
+by this conditional derivation once those inputs are provided. Full local
+verification of the integrated snapshot passed; its evidence and exact scope
+are recorded in [STATUS.md](../STATUS.md).
 A standard-only `#print axioms` result for a conditional theorem says that its
 proof term uses only the permitted logical axioms. The mathematical premises
 remain arguments to that theorem. Consequently, a successful build and axiom

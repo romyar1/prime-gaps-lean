@@ -1,13 +1,22 @@
 # Type III: statement and formalization map
 
-**The local Fourier proposition has no closed proof in this development.**
-The entry [`TypeIIILocalProgress.lean`](../formal/TypeIIILocalProgress.lean)
-now includes a conditional derivation of the original statement from generic
-published geometric laws and separate uniform family-realization data. The
-[published-input guide](../research/type_iii/published_inputs/README.md) explains
-the current route, checked support exclusion and trace assembly, precise
-sources, and remaining application obligations. Further construction of the
-étale and adic foundations is paused; its proved results remain available below.
+The September 18 entry
+[`TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03.lean`](../formal/TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03.lean)
+derives the exact original `HasFiniteExceptionalTypeIIIInput` from general
+published-theorem interfaces on one common theory. Its `computedTypeIIIInput`
+theorem constructs the uniform constants and the applications to the original
+family. See the [cited derivation](type-iii-published-general-application.md)
+for the precise operators, diagrams, theorem inputs and cutoff.
+
+The existence and joint continuous-adic interpretation of that common theory
+remain external. The result is conditional on these explicit interfaces;
+it is not a closed proof of the Type III proposition. The numerical integral
+inequalities remain separate hypotheses. [STATUS.md](../STATUS.md) distinguishes
+the current integration checks from prior full verification runs.
+
+[`TypeIIILocalProgress.lean`](../formal/TypeIIILocalProgress.lean) remains the
+entry for earlier supporting results. The component map below includes the
+retained partial reconstruction of the étale and adic foundations.
 
 ## The unchanged target
 

@@ -1,19 +1,20 @@
 # Checking Type III from published results
 
-The present route treats established geometric theorems as explicit Lean
-hypotheses and checks their consequences for the original Type III estimate.
-It does not continue the construction of the full étale and adic foundations.
-Type III work is paused at the upload snapshot while the numerical integral
-premises are investigated.
-The original finite sums and the original `LocalFourierHypothesis` are unchanged.
+The current entry is the [September 18 cited derivation](../../../docs/type-iii-published-general-application.md)
+and its [`computedTypeIIIInput`](../../../formal/TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03.lean)
+theorem. It derives the original Type III input from precisely stated general
+theorem interfaces on one common theory, including the application to the
+original family and constants uniform in the prime.
 
-The support exclusion and the passage from stalks to the two Fourier estimates
-are formal deductions. The physical construction also derives the rank-six
-image, purity and corrected trace from explicit general cohomological laws
-and the rank-three arithmetic local model. **A deduction from published
-theorems alone is not yet complete:** the source recipe, its uniform complexity,
-and the identification of the local representations with that same physical
-family remain application obligations.
+The joint continuous-adic interpretation and existence of that common theory
+remain external. Numerical integral inequalities remain hypotheses supported
+by the reproducible certificates. The original finite sums and
+`LocalFourierHypothesis` are unchanged. See [verification status](../../../STATUS.md)
+for the current integrated snapshot.
+
+The sections below explain the earlier support-exclusion and trace-assembly
+route used by this derivation. Historical application obligations in those
+notes should be read together with the current cited derivation above.
 
 Every imported rule is an ordinary parameter of a Lean theorem or structure.
 There are no new global axioms. An axiom audit using only `propext`,

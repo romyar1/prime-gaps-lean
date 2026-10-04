@@ -1,0 +1,1462 @@
+structure PrimeGap182.PhysicalCapBounds182 : Prop
+number of parameters: 0
+fields:
+  PrimeGap182.PhysicalCapBounds182.denominator_lower : LE.le.{0} (↑PrimeGap182.trialDenominatorLower)
+      PrimeGap182.trialSquareIntegral
+  PrimeGap182.PhysicalCapBounds182.denominator_upper : LE.le.{0} PrimeGap182.trialSquareIntegral
+      ↑PrimeGap182.trialDenominatorUpper
+  PrimeGap182.PhysicalCapBounds182.base_lower : LE.le.{0} (↑PrimeGap182.trialJ0Lower) PrimeGap182.trialBaseIntegral
+  PrimeGap182.PhysicalCapBounds182.enlargement_lower : LE.le.{0} (↑PrimeGap182.trialJPlusLower)
+      PrimeGap182.trialEnlargementIntegral
+  PrimeGap182.PhysicalCapBounds182.tail_upper : LE.le.{0} PrimeGap182.trialTailIntegral ↑PrimeGap182.trialTailUpper
+constructor:
+  PrimeGap182.PhysicalCapBounds182.mk
+    (denominator_lower : LE.le.{0} (↑PrimeGap182.trialDenominatorLower) PrimeGap182.trialSquareIntegral)
+    (denominator_upper : LE.le.{0} PrimeGap182.trialSquareIntegral ↑PrimeGap182.trialDenominatorUpper)
+    (base_lower : LE.le.{0} (↑PrimeGap182.trialJ0Lower) PrimeGap182.trialBaseIntegral)
+    (enlargement_lower : LE.le.{0} (↑PrimeGap182.trialJPlusLower) PrimeGap182.trialEnlargementIntegral)
+    (tail_upper : LE.le.{0} PrimeGap182.trialTailIntegral ↑PrimeGap182.trialTailUpper) :
+    PrimeGap182.PhysicalCapBounds182
+'PrimeGap182.PhysicalCapBounds182' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+structure PrimeGap182.PhysicalSourceBounds182 : Prop
+number of parameters: 0
+fields:
+  PrimeGap182.PhysicalSourceBounds182.cap : PrimeGap182.PhysicalCapBounds182
+  PrimeGap182.PhysicalSourceBounds182.outerRoot : ∀ (j : Fin 60),
+      LE.le.{0} (PrimeGap182.trialSourceOuterRoot j) ↑(PrimeGap182.trialOuterCertificates j).rootUpper
+  PrimeGap182.PhysicalSourceBounds182.outerFace : ∀ (j : Fin 60),
+      LE.le.{0} (PrimeGap182.trialSourceOuterFace j) ↑(PrimeGap182.trialOuterCertificates j).faceUpper
+  PrimeGap182.PhysicalSourceBounds182.innerMass : ∀ (j : Fin 137),
+      LE.le.{0} (PrimeGap182.trialSourceInnerMass j) ↑(PrimeGap182.trialInnerCertificates j).faceUpper
+constructor:
+  PrimeGap182.PhysicalSourceBounds182.mk (cap : PrimeGap182.PhysicalCapBounds182)
+    (outerRoot :
+      ∀ (j : Fin 60), LE.le.{0} (PrimeGap182.trialSourceOuterRoot j) ↑(PrimeGap182.trialOuterCertificates j).rootUpper)
+    (outerFace :
+      ∀ (j : Fin 60), LE.le.{0} (PrimeGap182.trialSourceOuterFace j) ↑(PrimeGap182.trialOuterCertificates j).faceUpper)
+    (innerMass :
+      ∀ (j : Fin 137),
+        LE.le.{0} (PrimeGap182.trialSourceInnerMass j) ↑(PrimeGap182.trialInnerCertificates j).faceUpper) :
+    PrimeGap182.PhysicalSourceBounds182
+'PrimeGap182.PhysicalSourceBounds182' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182Analytic.PublicPrimeLocalBounds182 : Prop :=
+(∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (c : ZMod p),
+    Ne.{1} c 0 → LE.le.{0} (Norm.norm.{0} (PrimeGap186.normalizedKloosterman3 p c)) 3) ∧
+  ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (A B : ZMod p),
+    Ne.{1} A 0 →
+      Ne.{1} B 0 →
+        LE.le.{0}
+          (Norm.norm.{0}
+            (∑ t,
+              ite.{1} (Ne.{1} t 0 ∧ Ne.{1} t (-1))
+                (HMul.hMul.{0, 0, 0} (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} A t))
+                  (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} B (HAdd.hAdd.{0, 0, 0} t 1))))
+                0))
+          (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 8 ↑p) √↑p)
+'PrimeGap182Analytic.PublicPrimeLocalBounds182' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182Audit.IncidenceRankFourBound : (p : ℕ) → [Fact (Nat.Prime p)] → Prop :=
+fun p [Fact (Nat.Prime p)] =>
+  ∀ (c : ZMod p),
+    Ne.{1} c 0 →
+      LE.le.{0} (Norm.norm.{0} (PrimeGap182Audit.incidenceKloosterman4Raw c))
+        (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 4 ↑p) √↑p)
+'PrimeGap182Audit.IncidenceRankFourBound' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182Audit.AllIncidenceRankFourBounds : Prop :=
+∀ (p : ℕ) [inst : Fact (Nat.Prime p)], PrimeGap182Audit.IncidenceRankFourBound p
+'PrimeGap182Audit.AllIncidenceRankFourBounds' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.BaselineLocalInputs : Prop :=
+(∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (c : ZMod p),
+    Ne.{1} c 0 → LE.le.{0} (Norm.norm.{0} (PrimeGap186.normalizedKloosterman3 p c)) 3) ∧
+  ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (A B : ZMod p),
+    Ne.{1} A 0 →
+      Ne.{1} B 0 →
+        LE.le.{0}
+          (Norm.norm.{0}
+            (∑ t,
+              ite.{1} (Ne.{1} t 0 ∧ Ne.{1} t (-1))
+                (HMul.hMul.{0, 0, 0} (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} A t))
+                  (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} B (HAdd.hAdd.{0, 0, 0} t 1))))
+                0))
+          (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 8 ↑p) √↑p)
+'PrimeGap182.TypeIII.BaselineLocalInputs' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.FiniteExceptionalFourierBound : (p : ℕ) →
+  [Fact (Nat.Prime p)] → ℝ → ℕ → ZMod p → ZMod p → ZMod p → ZMod p → ZMod p → Prop :=
+fun p [Fact (Nat.Prime p)] C D α m m' n n' =>
+  ∃ Z,
+    LE.le.{0} (Finset.card.{0} Z) D ∧
+      ∀ (h k : ZMod p),
+        LE.le.{0} (Norm.norm.{0} (PrimeGap182.TypeIII.fourier₂ p (PrimeGap182.TypeIII.fourCycle p α m m' n n') h k))
+          (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} C (HPow.hPow.{0, 0, 0} (↑p) 3))
+            (HAdd.hAdd.{0, 0, 0} 1
+              (HMul.hMul.{0, 0, 0} (√↑p) (ite.{1} (Membership.mem.{0, 0} Z (Prod.mk.{0, 0} h k)) 1 0))))
+'PrimeGap182.TypeIII.FiniteExceptionalFourierBound' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.CurveExceptionalFourierBound : (p : ℕ) →
+  [Fact (Nat.Prime p)] → ℝ → ℕ → ZMod p → ZMod p → ZMod p → ZMod p → ZMod p → Prop :=
+fun p [Fact (Nat.Prime p)] C D α m m' n n' =>
+  ∃ P,
+    Ne.{1} P 0 ∧
+      LE.le.{0} (MvPolynomial.totalDegree.{0, 0} P) D ∧
+        ∀ (h k : ZMod p),
+          LE.le.{0} (Norm.norm.{0} (PrimeGap182.TypeIII.fourier₂ p (PrimeGap182.TypeIII.fourCycle p α m m' n n') h k))
+            (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} C (HPow.hPow.{0, 0, 0} (↑p) 3))
+              (HAdd.hAdd.{0, 0, 0}
+                (HAdd.hAdd.{0, 0, 0} 1
+                  (HMul.hMul.{0, 0, 0} (√↑p) (ite.{1} (Eq.{1} (PrimeGap182.TypeIII.planeEval p P h k) 0) 1 0)))
+                (HMul.hMul.{0, 0, 0} (↑p) (ite.{1} (Eq.{1} h 0 ∧ Eq.{1} k 0) 1 0))))
+'PrimeGap182.TypeIII.CurveExceptionalFourierBound' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.LocalFourierHypothesis : ℝ → ℕ → ℕ → Prop :=
+fun C D p₀ =>
+  ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+    LT.lt.{0} p₀ p →
+      ∀ (α m m' n n' : ZMod p),
+        Ne.{1} α 0 →
+          Ne.{1} m 0 →
+            Ne.{1} m' 0 →
+              Ne.{1} n 0 →
+                Ne.{1} n' 0 →
+                  (Ne.{1} m m' ∧ Ne.{1} n n' → PrimeGap182.TypeIII.FiniteExceptionalFourierBound p C D α m m' n n') ∧
+                    (Eq.{1} m m' ∨ Eq.{1} n n' → PrimeGap182.TypeIII.CurveExceptionalFourierBound p C D α m m' n n')
+'PrimeGap182.TypeIII.LocalFourierHypothesis' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+def PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput : Prop :=
+∃ C, LT.lt.{0} 0 C ∧ ∃ D p₀, PrimeGap182.TypeIII.LocalFourierHypothesis C D p₀
+'PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+structure PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems.{plane,
+    curve}
+  (C : AlgebraicGeometry.Scheme.{0} → Type) [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalClosed.{0, 0} (C X)]
+  (U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C)
+  [{X Y : AlgebraicGeometry.Scheme.{0}} →
+      (f : Quiver.Hom.{0, 1} X Y) →
+        CategoryTheory.Functor.Monoidal.{0, 0, 0, 0}
+          (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)]
+  (AF : PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.ArithmeticFibers.{0} C)
+  (M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C)
+  (DO : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.{0} C)
+  (signed :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+          (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))))
+  (PlaneObj : ℕ → Type plane) (CurveObj : ℕ → Type curve)
+  (planeTheory :
+    PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.{plane,
+        curve}
+      PlaneObj CurveObj)
+  (planeOps :
+    PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.{plane} C PlaneObj
+      (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+          curve}
+        planeTheory)
+      (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+          curve}
+        planeTheory))
+  (traceData :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        PrimeGap182.TypeIII.PublishedCovarianceRules.TraceData.{plane} p
+          (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+              curve}
+            planeTheory p))
+  (PD :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseData.{0, 0, 0} (ZMod p) ℂ
+          (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+            (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p))))
+  (radialLaws :
+    ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        PrimeGap182.TypeIII.PublishedFourierRules.LocalRules.{0, plane, curve}
+          (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+              curve}
+            planeTheory p)
+          (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.coefficient.{plane,
+              curve}
+            planeTheory p)
+          (PrimeGap182.TypeIII.CoherentComputedRadialProjection01.computedFourierData.{plane, curve, 0, 0}
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.fourier.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.ConstantFieldLocalData.phaseData.{0, 0, 0, 0} (ZMod p) (AlgebraicClosure.{0} (ZMod p))
+              (PD p))
+            (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.nativeRadial.{0, plane} C M PlaneObj
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                  curve}
+                planeTheory)
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+                  curve}
+                planeTheory)
+              planeOps p))) :
+  Prop
+number of parameters: 18
+fields:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems.pure.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : LT.lt.{0} 3 p)
+      (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) (a : ℝ),
+      PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Lisse.{0}
+          (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO signed
+            p)
+          A →
+        PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Pure.{0}
+            (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+              signed p)
+            A a →
+          PrimeGap182.TypeIII.PublishedStalkCertificate.TraceWeightRules.PureOfWeight.{plane}
+            (PrimeGap182.TypeIII.PublishedTypeIII.Theory.traceWeights.{plane, curve}
+              (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.actualTheory.{plane, curve} C
+                M PlaneObj CurveObj planeTheory planeOps PD radialLaws p hp))
+            (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.wholeWeil.{plane}
+              planeOps p A)
+            (HAdd.hAdd.{0, 0, 0} a 2)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems.full.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        ∀ (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) (a : ℝ),
+          PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Lisse.{0}
+              (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                signed p)
+              A →
+            PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Pure.{0}
+                (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                  signed p)
+                A a →
+              PrimeGap182.TypeIII.PublishedSupportRules.SurfaceData.NoProperConstituents.{0, plane}
+                (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                    curve}
+                  planeTheory p)
+                (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.middle.{plane}
+                  planeOps p A)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems.torusIC.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        ∀ (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) (a : ℝ),
+          PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Lisse.{0}
+              (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                signed p)
+              A →
+            PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Pure.{0}
+                (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                  signed p)
+                A a →
+              PrimeGap182.TypeIII.PublishedCovarianceRules.TraceData.TorusIC.{plane} (traceData p)
+                (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.middle.{plane}
+                  planeOps p A)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems.trace.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        ∀ (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))),
+          PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Lisse.{0}
+              (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                signed p)
+              A →
+            ∀ (E : Type) [inst_1 : Field.{0} E] [inst_2 : Fintype.{0} E] [inst_3 : Algebra.{0, 0} (ZMod p) E]
+              (x y : Units.{0} E),
+              Eq.{1}
+                (PrimeGap182.TypeIII.PublishedCovarianceRules.TraceData.trace.{plane} (traceData p) E
+                  (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.wholeWeil.{plane}
+                    planeOps p A)
+                  ↑x ↑y)
+                (PrimeGap182.TypeIII.PublishedPhysicalConstruction.TorusArithmeticData.trace.{0, 0}
+                  (PrimeGap182.TypeIII.RationalPointStalks.Data.torusArithmetic.{0}
+                    (PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.pointStalks.{0} C U AF p))
+                  E A x y)
+constructor:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems.mk.{plane, curve}
+    {C : AlgebraicGeometry.Scheme.{0} → Type}
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalClosed.{0, 0} (C X)]
+    {U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C}
+    [{X Y : AlgebraicGeometry.Scheme.{0}} →
+        (f : Quiver.Hom.{0, 1} X Y) →
+          CategoryTheory.Functor.Monoidal.{0, 0, 0, 0}
+            (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)]
+    {AF : PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.ArithmeticFibers.{0} C}
+    {M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C}
+    {DO : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.{0} C}
+    {signed :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+            (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))}
+    {PlaneObj : ℕ → Type plane} {CurveObj : ℕ → Type curve}
+    {planeTheory :
+      PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.{plane,
+          curve}
+        PlaneObj CurveObj}
+    {planeOps :
+      PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.{plane} C PlaneObj
+        (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+            curve}
+          planeTheory)
+        (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+            curve}
+          planeTheory)}
+    {traceData :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          PrimeGap182.TypeIII.PublishedCovarianceRules.TraceData.{plane} p
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+                curve}
+              planeTheory p)}
+    {PD :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseData.{0, 0, 0} (ZMod p) ℂ
+            (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+              (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p)))}
+    {radialLaws :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          PrimeGap182.TypeIII.PublishedFourierRules.LocalRules.{0, plane, curve}
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.coefficient.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.CoherentComputedRadialProjection01.computedFourierData.{plane, curve, 0, 0}
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.fourier.{plane,
+                  curve}
+                planeTheory p)
+              (PrimeGap182.TypeIII.ConstantFieldLocalData.phaseData.{0, 0, 0, 0} (ZMod p)
+                (AlgebraicClosure.{0} (ZMod p)) (PD p))
+              (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.nativeRadial.{0, plane} C M
+                PlaneObj
+                (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                    curve}
+                  planeTheory)
+                (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+                    curve}
+                  planeTheory)
+                planeOps p))}
+    (pure :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : LT.lt.{0} 3 p)
+        (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) (a : ℝ),
+        PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Lisse.{0}
+            (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+              signed p)
+            A →
+          PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Pure.{0}
+              (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                signed p)
+              A a →
+            PrimeGap182.TypeIII.PublishedStalkCertificate.TraceWeightRules.PureOfWeight.{plane}
+              (PrimeGap182.TypeIII.PublishedTypeIII.Theory.traceWeights.{plane, curve}
+                (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.actualTheory.{plane, curve}
+                  C M PlaneObj CurveObj planeTheory planeOps PD radialLaws p hp))
+              (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.wholeWeil.{plane}
+                planeOps p A)
+              (HAdd.hAdd.{0, 0, 0} a 2))
+    (full :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          ∀ (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) (a : ℝ),
+            PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Lisse.{0}
+                (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                  signed p)
+                A →
+              PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Pure.{0}
+                  (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF
+                    DO signed p)
+                  A a →
+                PrimeGap182.TypeIII.PublishedSupportRules.SurfaceData.NoProperConstituents.{0, plane}
+                  (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                      curve}
+                    planeTheory p)
+                  (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.middle.{plane}
+                    planeOps p A))
+    (torusIC :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          ∀ (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) (a : ℝ),
+            PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Lisse.{0}
+                (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                  signed p)
+                A →
+              PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Pure.{0}
+                  (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF
+                    DO signed p)
+                  A a →
+                PrimeGap182.TypeIII.PublishedCovarianceRules.TraceData.TorusIC.{plane} (traceData p)
+                  (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.middle.{plane}
+                    planeOps p A))
+    (trace :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          ∀ (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))),
+            PrimeGap182.TypeIII.PublishedPhysicalConstruction.ParameterData.Lisse.{0}
+                (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+                  signed p)
+                A →
+              ∀ (E : Type) [inst_1 : Field.{0} E] [inst_2 : Fintype.{0} E] [inst_3 : Algebra.{0, 0} (ZMod p) E]
+                (x y : Units.{0} E),
+                Eq.{1}
+                  (PrimeGap182.TypeIII.PublishedCovarianceRules.TraceData.trace.{plane} (traceData p) E
+                    (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.wholeWeil.{plane}
+                      planeOps p A)
+                    ↑x ↑y)
+                  (PrimeGap182.TypeIII.PublishedPhysicalConstruction.TorusArithmeticData.trace.{0, 0}
+                    (PrimeGap182.TypeIII.RationalPointStalks.Data.torusArithmetic.{0}
+                      (PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.pointStalks.{0} C U AF p))
+                    E A x y)) :
+    PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems.{plane, curve}
+      C U AF M DO signed PlaneObj CurveObj planeTheory planeOps traceData PD radialLaws
+'PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+structure PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.{plane,
+    curve}
+  (C : AlgebraicGeometry.Scheme.{0} → Type) [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalClosed.{0, 0} (C X)]
+  (U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C)
+  [{X Y : AlgebraicGeometry.Scheme.{0}} →
+      (f : Quiver.Hom.{0, 1} X Y) →
+        CategoryTheory.Functor.Monoidal.{0, 0, 0, 0}
+          (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)]
+  (AF : PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.ArithmeticFibers.{0} C)
+  (primitive : PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.Constructions.{0} C)
+  (G : PrimeGap182.TypeIII.NativePointFiberFromUniversalGeometricFibers.GeometricFibers.{0} C)
+  (M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C)
+  (DO : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.{0} C)
+  (profiles : PrimeGap182.TypeIII.UniformSourceLocalObservablesFromParameterFibers.OriginProfiles.{0} C M)
+  (compact : PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Operations.{0} C)
+  (sourceCompactification :
+    (K : Type) →
+      [inst : Field.{0} K] →
+        PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Compactification
+          (PrimeGap182.TypeIII.SourceProjectionForQST.projection.{0} K))
+  (signed :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+          (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))))
+  (PlaneObj : ℕ → Type plane) (CurveObj : ℕ → Type curve)
+  (planeTheory :
+    PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.{plane,
+        curve}
+      PlaneObj CurveObj)
+  (planeOps :
+    PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.{plane} C PlaneObj
+      (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+          curve}
+        planeTheory)
+      (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+          curve}
+        planeTheory))
+  (PD :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseData.{0, 0, 0} (ZMod p) ℂ
+          (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+            (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p))))
+  (radialLaws :
+    ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        PrimeGap182.TypeIII.PublishedFourierRules.LocalRules.{0, plane, curve}
+          (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+              curve}
+            planeTheory p)
+          (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.coefficient.{plane,
+              curve}
+            planeTheory p)
+          (PrimeGap182.TypeIII.CoherentComputedRadialProjection01.computedFourierData.{plane, curve, 0, 0}
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.fourier.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.ConstantFieldLocalData.phaseData.{0, 0, 0, 0} (ZMod p) (AlgebraicClosure.{0} (ZMod p))
+              (PD p))
+            (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.nativeRadial.{0, plane} C M PlaneObj
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                  curve}
+                planeTheory)
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+                  curve}
+                planeTheory)
+              planeOps p)))
+  (boundFn : ℕ → ℕ) (sourceCap0 unitCap : ℕ) (bnd : PrimeGap182.TypeIII.PublishedUniformComplexity.Bounds)
+  (inputComplexity :
+    (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.StartingSourceMaps.sourceScheme.{0} K) → ℕ)
+  (parameterComplexity :
+    (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} K) → ℕ)
+  (lineComplexity : (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.StartingSourceMaps.affineLine.{0} K) → ℕ)
+  (sourceMorphismComplexity :
+    (K : Type) → [inst : Field.{0} K] → PrimeGap182.TypeIII.StartingSourceMaps.MorphismComplexity.{0} K)
+  (torusMorphismComplexity :
+    (K : Type) →
+      [inst : Field.{0} K] → PrimeGap182.TypeIII.PublishedPolynomialComplexity.TorusMorphismComplexity.{0} K) :
+  Prop
+number of parameters: 31
+fields:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.operation.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        PrimeGap182.TypeIII.PublishedConstructionComplexity.OperationBounds.{0, 1, 0, 0, plane} boundFn unitCap
+          (inputComplexity (ZMod p)) (parameterComplexity (ZMod p)) (torusMorphismComplexity (ZMod p))
+          (PrimeGap182.TypeIII.SourceInverseImageSystem.System.torusOperations.{0, 0}
+            (PrimeGap182.TypeIII.CanonicalPrimeFramework.primeSource.{0} C U p))
+          (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.actualIC.{plane, curve} C PlaneObj
+            CurveObj planeTheory planeOps p)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.torusPolynomial.{plane,
+    curve} : ∀ (K : Type) [inst : Field.{0} K],
+      PrimeGap182.TypeIII.PublishedPolynomialComplexity.TorusPolynomialRules.{0} (torusMorphismComplexity K)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.source.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : LT.lt.{0} 3 p),
+      PrimeGap182.TypeIII.StartingSourceComplexity.Bounds.{0, 0, 0}
+        (PrimeGap182.TypeIII.FourierSourcePullbacks.originalPullbackData.{0, 0, 0, 0, 0, 0, 0} (ZMod p)
+          (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.primePulls C U p))
+        (PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.primitiveClasses.{0} C primitive (ZMod p) ⋯)
+        boundFn sourceCap0 (lineComplexity (ZMod p)) (inputComplexity (ZMod p)) (sourceMorphismComplexity (ZMod p))
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.sourcePolynomial.{plane,
+    curve} : ∀ (K : Type) [inst : Field.{0} K],
+      PrimeGap182.TypeIII.StartingSourceMaps.PolynomialRules.{0} K (sourceMorphismComplexity K)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.uniform.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : LT.lt.{0} 3 p),
+      PrimeGap182.TypeIII.PublishedUniformComplexity.Rules.{plane, curve} bnd
+        (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.actualTheory.{plane, curve} C M
+          PlaneObj CurveObj planeTheory planeOps PD radialLaws p hp)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.torus.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        PrimeGap182.TypeIII.PublishedPhysicalConstruction.TorusRules.{0, 0}
+          (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO signed
+            p)
+          (PrimeGap182.TypeIII.SourceInverseImageSystem.System.torusOperations.{0, 0}
+            (PrimeGap182.TypeIII.CanonicalPrimeFramework.primeSource.{0} C U p))
+          (PrimeGap182.TypeIII.RationalPointStalks.Data.torusArithmetic.{0}
+            (PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.pointStalks.{0} C U AF p))
+constructor:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.mk.{plane, curve}
+    {C : AlgebraicGeometry.Scheme.{0} → Type}
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalClosed.{0, 0} (C X)]
+    {U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C}
+    [{X Y : AlgebraicGeometry.Scheme.{0}} →
+        (f : Quiver.Hom.{0, 1} X Y) →
+          CategoryTheory.Functor.Monoidal.{0, 0, 0, 0}
+            (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)]
+    {AF : PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.ArithmeticFibers.{0} C}
+    {primitive : PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.Constructions.{0} C}
+    {G : PrimeGap182.TypeIII.NativePointFiberFromUniversalGeometricFibers.GeometricFibers.{0} C}
+    {M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C}
+    {DO : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.{0} C}
+    {profiles : PrimeGap182.TypeIII.UniformSourceLocalObservablesFromParameterFibers.OriginProfiles.{0} C M}
+    {compact : PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Operations.{0} C}
+    {sourceCompactification :
+      (K : Type) →
+        [inst : Field.{0} K] →
+          PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Compactification
+            (PrimeGap182.TypeIII.SourceProjectionForQST.projection.{0} K)}
+    {signed :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+            (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))}
+    {PlaneObj : ℕ → Type plane} {CurveObj : ℕ → Type curve}
+    {planeTheory :
+      PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.{plane,
+          curve}
+        PlaneObj CurveObj}
+    {planeOps :
+      PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.{plane} C PlaneObj
+        (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+            curve}
+          planeTheory)
+        (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+            curve}
+          planeTheory)}
+    {PD :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseData.{0, 0, 0} (ZMod p) ℂ
+            (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+              (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p)))}
+    {radialLaws :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          PrimeGap182.TypeIII.PublishedFourierRules.LocalRules.{0, plane, curve}
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.coefficient.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.CoherentComputedRadialProjection01.computedFourierData.{plane, curve, 0, 0}
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.fourier.{plane,
+                  curve}
+                planeTheory p)
+              (PrimeGap182.TypeIII.ConstantFieldLocalData.phaseData.{0, 0, 0, 0} (ZMod p)
+                (AlgebraicClosure.{0} (ZMod p)) (PD p))
+              (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.nativeRadial.{0, plane} C M
+                PlaneObj
+                (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                    curve}
+                  planeTheory)
+                (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+                    curve}
+                  planeTheory)
+                planeOps p))}
+    {boundFn : ℕ → ℕ} {sourceCap0 unitCap : ℕ} {bnd : PrimeGap182.TypeIII.PublishedUniformComplexity.Bounds}
+    {inputComplexity :
+      (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.StartingSourceMaps.sourceScheme.{0} K) → ℕ}
+    {parameterComplexity :
+      (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} K) → ℕ}
+    {lineComplexity :
+      (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.StartingSourceMaps.affineLine.{0} K) → ℕ}
+    {sourceMorphismComplexity :
+      (K : Type) → [inst : Field.{0} K] → PrimeGap182.TypeIII.StartingSourceMaps.MorphismComplexity.{0} K}
+    {torusMorphismComplexity :
+      (K : Type) →
+        [inst : Field.{0} K] → PrimeGap182.TypeIII.PublishedPolynomialComplexity.TorusMorphismComplexity.{0} K}
+    (operation :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          PrimeGap182.TypeIII.PublishedConstructionComplexity.OperationBounds.{0, 1, 0, 0, plane} boundFn unitCap
+            (inputComplexity (ZMod p)) (parameterComplexity (ZMod p)) (torusMorphismComplexity (ZMod p))
+            (PrimeGap182.TypeIII.SourceInverseImageSystem.System.torusOperations.{0, 0}
+              (PrimeGap182.TypeIII.CanonicalPrimeFramework.primeSource.{0} C U p))
+            (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.actualIC.{plane, curve} C
+              PlaneObj CurveObj planeTheory planeOps p))
+    (torusPolynomial :
+      ∀ (K : Type) [inst : Field.{0} K],
+        PrimeGap182.TypeIII.PublishedPolynomialComplexity.TorusPolynomialRules.{0} (torusMorphismComplexity K))
+    (source :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : LT.lt.{0} 3 p),
+        PrimeGap182.TypeIII.StartingSourceComplexity.Bounds.{0, 0, 0}
+          (PrimeGap182.TypeIII.FourierSourcePullbacks.originalPullbackData.{0, 0, 0, 0, 0, 0, 0} (ZMod p)
+            (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.primePulls C U p))
+          (PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.primitiveClasses.{0} C primitive (ZMod p)
+            ⋯)
+          boundFn sourceCap0 (lineComplexity (ZMod p)) (inputComplexity (ZMod p)) (sourceMorphismComplexity (ZMod p)))
+    (sourcePolynomial :
+      ∀ (K : Type) [inst : Field.{0} K],
+        PrimeGap182.TypeIII.StartingSourceMaps.PolynomialRules.{0} K (sourceMorphismComplexity K))
+    (uniform :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : LT.lt.{0} 3 p),
+        PrimeGap182.TypeIII.PublishedUniformComplexity.Rules.{plane, curve} bnd
+          (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.actualTheory.{plane, curve} C M
+            PlaneObj CurveObj planeTheory planeOps PD radialLaws p hp))
+    (torus :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          PrimeGap182.TypeIII.PublishedPhysicalConstruction.TorusRules.{0, 0}
+            (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalParameter C U AF DO
+              signed p)
+            (PrimeGap182.TypeIII.SourceInverseImageSystem.System.torusOperations.{0, 0}
+              (PrimeGap182.TypeIII.CanonicalPrimeFramework.primeSource.{0} C U p))
+            (PrimeGap182.TypeIII.RationalPointStalks.Data.torusArithmetic.{0}
+              (PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.pointStalks.{0} C U AF p))) :
+    PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.{plane, curve}
+      C U AF primitive G M DO profiles compact sourceCompactification signed PlaneObj CurveObj planeTheory planeOps PD
+      radialLaws boundFn sourceCap0 unitCap bnd inputComplexity parameterComplexity lineComplexity
+      sourceMorphismComplexity torusMorphismComplexity
+'PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+structure PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.{nu,
+    g, ps, pt, gi}
+  (C : AlgebraicGeometry.Scheme.{0} → Type) [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalClosed.{0, 0} (C X)]
+  (U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C)
+  [{X Y : AlgebraicGeometry.Scheme.{0}} →
+      (f : Quiver.Hom.{0, 1} X Y) →
+        CategoryTheory.Functor.Monoidal.{0, 0, 0, 0}
+          (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)]
+  (AF : PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.ArithmeticFibers.{0} C)
+  (primitive : PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.Constructions.{0} C)
+  (G : PrimeGap182.TypeIII.NativePointFiberFromUniversalGeometricFibers.GeometricFibers.{0} C)
+  (M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C)
+  (DO : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.{0} C)
+  [∀ (X : AlgebraicGeometry.Scheme.{0}),
+      CategoryTheory.ObjectProperty.IsClosedUnderIsomorphisms.{0, 0}
+        (PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.globalLisse.{0} DO X)]
+  (profiles : PrimeGap182.TypeIII.UniformSourceLocalObservablesFromParameterFibers.OriginProfiles.{0} C M)
+  (compact : PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Operations.{0} C)
+  (geometricPure : (X : AlgebraicGeometry.Scheme.{0}) → C X → ℝ → Prop)
+  (genericCompactification :
+    (K : Type) →
+      [inst : Field.{0} K] →
+        PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Compactification
+          (PrimeGap182.TypeIII.GenericCurvePullback.genericProjection.{0} K))
+  (nativeCompact :
+    (E : Type) →
+      [inst : Field.{0} E] →
+        [Fintype.{0} E] →
+          Ne.{1} 2 0 →
+            Fin 3 →
+              CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.ArithmeticSourceMaps.fiberScheme E))
+                (C (AlgebraicGeometry.Spec.{0} (CommRingCat.of.{0} E))))
+  {baseStd : PrimeGap182.TypeIII.StandardGmTraceFromFaithfulArithmeticOperations.StandardGmPrimitives.{nu}}
+  (B : PrimeGap182.TypeIII.StandardP1BoundaryPrimitives.Primitives.{nu, 0, 0} baseStd)
+  (AR :
+    PrimeGap182.TypeIII.StandardGmTraceFromFaithfulArithmeticOperations.FaithfulArithmeticOperations.{nu, 0} C U AF
+      nativeCompact baseStd)
+  (originTrait : PrimeGap182.TypeIII.NativeCommonArithmeticTraitWeilCone.OriginTraitDictionary.{nu} baseStd B)
+  (originGeneral :
+    PrimeGap182.TypeIII.AllPrimeOriginInputsFromGeneralOperationFamilies05.GeneralSharedOriginTheory.{0, nu, g, ps, pt}
+      C U AF primitive G (PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.globalLisse.{0} DO)
+      nativeCompact B AR originTrait M)
+  [realizationMonoidal :
+    (E : Type) →
+      [inst : Field.{0} E] →
+        [inst_1 : Fintype.{0} E] →
+          (hE : Ne.{1} 2 0) →
+            CategoryTheory.Functor.Monoidal.{0, nu, 0, 0}
+              (PrimeGap182.TypeIII.StandardGmTraceFromFaithfulArithmeticOperations.FaithfulArithmeticOperations.curveRealization.{nu,
+                  0}
+                AR E hE)]
+  (sourceCompactification :
+    (K : Type) →
+      [inst : Field.{0} K] →
+        PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Compactification
+          (PrimeGap182.TypeIII.SourceProjectionForQST.projection.{0} K))
+  (signed :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+          (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))))
+  (InfinityGroup : ℕ → Type gi) [(p : ℕ) → Group.{gi} (InfinityGroup p)]
+  (arithmeticGeneral :
+    PrimeGap182.TypeIII.AllPrimeArithmeticFromGeneralStandardOperationTheorems08.GeneralArithmeticOperationTheorems.{nu,
+        g, pt, ps, gi}
+      C U AF primitive G M DO profiles nativeCompact B AR originTrait originGeneral compact sourceCompactification
+      signed InfinityGroup)
+  (geometry : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.LaurentTorusGeometry)
+  (standardP1 : PrimeGap182.TypeIII.OriginalGoodSourceGeometryFromThinGeneralLaurent03.UniversalGoodLaurentGeometry)
+  (guardedFamily :
+    PrimeGap182.TypeIII.CoherentSourceGlobalCohomologyFromGuardedLaurent04.GeneralGuardedFamilyLaws.{0} C U
+      (PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.globalLisse.{0} DO) G M profiles compact
+      (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.actualParameterOperations C DO signed)
+      fun p [Fact (Nat.Prime p)] =>
+      PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.pointStalks.{0} C U AF p) :
+  Type 1
+number of parameters: 32
+fields:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.originalDuality.{nu,
+    g, ps, pt,
+    gi} : (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        LT.lt.{0} 3 p →
+          PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.RelativeDuality.{0, 1, 0, 0}
+            (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.originalCurve C U AF G M DO profiles
+              p)
+            (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalDualTate C DO p)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.genericLissity.{nu,
+    g, ps, pt,
+    gi} : ∀ (K : Type) [inst : Field.{0} K],
+      Ne.{1} 2 0 →
+        PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.CompactLissityRules.{0, 1, 0, 0}
+          (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.genericCurve C U G M DO profiles
+            geometricPure K)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.genericDuality.{nu,
+    g, ps, pt,
+    gi} : (K : Type) →
+      [inst : Field.{0} K] →
+        Ne.{1} 2 0 →
+          PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.RelativeDuality.{0, 1, 0, 0}
+            (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.genericCurve C U G M DO profiles
+              geometricPure K)
+            (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.genericDualTate C DO K)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.curveBaseChange.{nu,
+    g, ps, pt,
+    gi} : (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        LT.lt.{0} 3 p →
+          (f :
+              Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericCurvePullback.parameterScheme.{0} (ZMod p))
+                (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) →
+            (g :
+                Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericSourceSpecialization.genericScheme.{0} (ZMod p))
+                  (PrimeGap182.TypeIII.StartingSourceMaps.sourceScheme.{0} (ZMod p))) →
+              PrimeGap182.TypeIII.GenericCurvePullback.CoordinateBaseChange.{0} (ZMod p) g f →
+                PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.CompactBaseChange.{0, 1, 0, 0, 0, 1, 0, 0, 0}
+                  (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.originalCurve C U AF G M DO
+                    profiles p)
+                  (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalDualTate C DO p)
+                  (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.genericCurve C U G M DO
+                    profiles geometricPure (ZMod p))
+                  (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.genericDualTate C DO
+                    (ZMod p))
+                  (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)
+                  (CategoryTheory.Functor.obj.{0, 0, 0, 0}
+                    (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U g))
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.pairing.{nu,
+    g, ps, pt,
+    gi} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : LT.lt.{0} 3 p)
+      (f :
+        Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericCurvePullback.parameterScheme.{0} (ZMod p))
+          (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+      (g :
+        Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericSourceSpecialization.genericScheme.{0} (ZMod p))
+          (PrimeGap182.TypeIII.StartingSourceMaps.sourceScheme.{0} (ZMod p)))
+      (sq : PrimeGap182.TypeIII.GenericCurvePullback.CoordinateBaseChange.{0} (ZMod p) g f),
+      PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.CompactPairingBaseChange.{0, 1, 0, 0, 0, 1, 0, 0, 0}
+        (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.originalCurve C U AF G M DO profiles p)
+        ⋯ ⋯ (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalDualTate C DO p)
+        (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.originalDuality.{nu,
+            g, ps, pt, gi}
+          self p hp)
+        (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.genericCurve C U G M DO profiles
+          geometricPure (ZMod p))
+        (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.genericDualTate C DO (ZMod p))
+        (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.genericDuality.{nu,
+            g, ps, pt, gi}
+          self (ZMod p) ⋯)
+        (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)
+        (CategoryTheory.Functor.obj.{0, 0, 0, 0}
+          (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U g))
+        (PrimeGap182.TypeIII.OriginalCoreFourierStalk.realizedCompactFunctor.{0, 0, 0, 0}
+          (PrimeGap182.TypeIII.PublishedCohomologyFunctor.Data.functorial.{0, 0, 0, 0}
+            (PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.cohomologyData.{0} C compact
+              (genericCompactification (ZMod p)) 1)))
+        (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.curveBaseChange.{nu,
+            g, ps, pt, gi}
+          self p hp f g sq)
+constructor:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.mk.{nu,
+      g, ps, pt, gi}
+    {C : AlgebraicGeometry.Scheme.{0} → Type}
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalClosed.{0, 0} (C X)]
+    {U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C}
+    [{X Y : AlgebraicGeometry.Scheme.{0}} →
+        (f : Quiver.Hom.{0, 1} X Y) →
+          CategoryTheory.Functor.Monoidal.{0, 0, 0, 0}
+            (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)]
+    {AF : PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.ArithmeticFibers.{0} C}
+    {primitive : PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.Constructions.{0} C}
+    {G : PrimeGap182.TypeIII.NativePointFiberFromUniversalGeometricFibers.GeometricFibers.{0} C}
+    {M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C}
+    {DO : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.{0} C}
+    [∀ (X : AlgebraicGeometry.Scheme.{0}),
+        CategoryTheory.ObjectProperty.IsClosedUnderIsomorphisms.{0, 0}
+          (PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.globalLisse.{0} DO X)]
+    {profiles : PrimeGap182.TypeIII.UniformSourceLocalObservablesFromParameterFibers.OriginProfiles.{0} C M}
+    {compact : PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Operations.{0} C}
+    {geometricPure : (X : AlgebraicGeometry.Scheme.{0}) → C X → ℝ → Prop}
+    {genericCompactification :
+      (K : Type) →
+        [inst : Field.{0} K] →
+          PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Compactification
+            (PrimeGap182.TypeIII.GenericCurvePullback.genericProjection.{0} K)}
+    {nativeCompact :
+      (E : Type) →
+        [inst : Field.{0} E] →
+          [Fintype.{0} E] →
+            Ne.{1} 2 0 →
+              Fin 3 →
+                CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.ArithmeticSourceMaps.fiberScheme E))
+                  (C (AlgebraicGeometry.Spec.{0} (CommRingCat.of.{0} E)))}
+    {baseStd : PrimeGap182.TypeIII.StandardGmTraceFromFaithfulArithmeticOperations.StandardGmPrimitives.{nu}}
+    {B : PrimeGap182.TypeIII.StandardP1BoundaryPrimitives.Primitives.{nu, 0, 0} baseStd}
+    {AR :
+      PrimeGap182.TypeIII.StandardGmTraceFromFaithfulArithmeticOperations.FaithfulArithmeticOperations.{nu, 0} C U AF
+        nativeCompact baseStd}
+    {originTrait : PrimeGap182.TypeIII.NativeCommonArithmeticTraitWeilCone.OriginTraitDictionary.{nu} baseStd B}
+    {originGeneral :
+      PrimeGap182.TypeIII.AllPrimeOriginInputsFromGeneralOperationFamilies05.GeneralSharedOriginTheory.{0, nu, g, ps,
+          pt}
+        C U AF primitive G (PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.globalLisse.{0} DO)
+        nativeCompact B AR originTrait M}
+    [realizationMonoidal :
+      (E : Type) →
+        [inst : Field.{0} E] →
+          [inst_1 : Fintype.{0} E] →
+            (hE : Ne.{1} 2 0) →
+              CategoryTheory.Functor.Monoidal.{0, nu, 0, 0}
+                (PrimeGap182.TypeIII.StandardGmTraceFromFaithfulArithmeticOperations.FaithfulArithmeticOperations.curveRealization.{nu,
+                    0}
+                  AR E hE)]
+    {sourceCompactification :
+      (K : Type) →
+        [inst : Field.{0} K] →
+          PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Compactification
+            (PrimeGap182.TypeIII.SourceProjectionForQST.projection.{0} K)}
+    {signed :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+            (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))}
+    {InfinityGroup : ℕ → Type gi} [(p : ℕ) → Group.{gi} (InfinityGroup p)]
+    {arithmeticGeneral :
+      PrimeGap182.TypeIII.AllPrimeArithmeticFromGeneralStandardOperationTheorems08.GeneralArithmeticOperationTheorems.{nu,
+          g, pt, ps, gi}
+        C U AF primitive G M DO profiles nativeCompact B AR originTrait originGeneral compact sourceCompactification
+        signed InfinityGroup}
+    {geometry : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.LaurentTorusGeometry}
+    {standardP1 : PrimeGap182.TypeIII.OriginalGoodSourceGeometryFromThinGeneralLaurent03.UniversalGoodLaurentGeometry}
+    {guardedFamily :
+      PrimeGap182.TypeIII.CoherentSourceGlobalCohomologyFromGuardedLaurent04.GeneralGuardedFamilyLaws.{0} C U
+        (PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.globalLisse.{0} DO) G M profiles compact
+        (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.actualParameterOperations C DO
+          signed)
+        fun p [Fact (Nat.Prime p)] =>
+        PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.pointStalks.{0} C U AF p}
+    (originalDuality :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          LT.lt.{0} 3 p →
+            PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.RelativeDuality.{0, 1, 0, 0}
+              (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.originalCurve C U AF G M DO
+                profiles p)
+              (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalDualTate C DO p))
+    (genericLissity :
+      ∀ (K : Type) [inst : Field.{0} K],
+        Ne.{1} 2 0 →
+          PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.CompactLissityRules.{0, 1, 0, 0}
+            (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.genericCurve C U G M DO profiles
+              geometricPure K))
+    (genericDuality :
+      (K : Type) →
+        [inst : Field.{0} K] →
+          Ne.{1} 2 0 →
+            PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.RelativeDuality.{0, 1, 0, 0}
+              (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.genericCurve C U G M DO profiles
+                geometricPure K)
+              (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.genericDualTate C DO K))
+    (curveBaseChange :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          LT.lt.{0} 3 p →
+            (f :
+                Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericCurvePullback.parameterScheme.{0} (ZMod p))
+                  (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) →
+              (g :
+                  Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericSourceSpecialization.genericScheme.{0} (ZMod p))
+                    (PrimeGap182.TypeIII.StartingSourceMaps.sourceScheme.{0} (ZMod p))) →
+                PrimeGap182.TypeIII.GenericCurvePullback.CoordinateBaseChange.{0} (ZMod p) g f →
+                  PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.CompactBaseChange.{0, 1, 0, 0, 0, 1, 0, 0, 0}
+                    (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.originalCurve C U AF G M DO
+                      profiles p)
+                    (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalDualTate C DO p)
+                    (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.genericCurve C U G M DO
+                      profiles geometricPure (ZMod p))
+                    (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.genericDualTate C DO
+                      (ZMod p))
+                    (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)
+                    (CategoryTheory.Functor.obj.{0, 0, 0, 0}
+                      (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U g)))
+    (pairing :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (hp : LT.lt.{0} 3 p)
+        (f :
+          Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericCurvePullback.parameterScheme.{0} (ZMod p))
+            (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+        (g :
+          Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericSourceSpecialization.genericScheme.{0} (ZMod p))
+            (PrimeGap182.TypeIII.StartingSourceMaps.sourceScheme.{0} (ZMod p)))
+        (sq : PrimeGap182.TypeIII.GenericCurvePullback.CoordinateBaseChange.{0} (ZMod p) g f),
+        PrimeGap182.TypeIII.OrdinaryBaseChangeFromDuality.CompactPairingBaseChange.{0, 1, 0, 0, 0, 1, 0, 0, 0}
+          (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.originalCurve C U AF G M DO profiles
+            p)
+          ⋯ ⋯ (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.originalDualTate C DO p)
+          (originalDuality p hp)
+          (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.genericCurve C U G M DO profiles
+            geometricPure (ZMod p))
+          (PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.genericDualTate C DO (ZMod p))
+          (genericDuality (ZMod p) ⋯)
+          (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)
+          (CategoryTheory.Functor.obj.{0, 0, 0, 0}
+            (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U g))
+          (PrimeGap182.TypeIII.OriginalCoreFourierStalk.realizedCompactFunctor.{0, 0, 0, 0}
+            (PrimeGap182.TypeIII.PublishedCohomologyFunctor.Data.functorial.{0, 0, 0, 0}
+              (PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.cohomologyData.{0} C compact
+                (genericCompactification (ZMod p)) 1)))
+          (curveBaseChange p hp f g sq)) :
+    PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems.{nu, g,
+        ps, pt, gi}
+      C U AF primitive G M DO profiles compact geometricPure genericCompactification nativeCompact B AR originTrait
+      originGeneral sourceCompactification signed InfinityGroup arithmeticGeneral geometry standardP1 guardedFamily
+'PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+structure PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralSignTheorems
+  (C : AlgebraicGeometry.Scheme.{0} → Type) [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+  (U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C)
+  (M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C)
+  (signed :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+          (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))))
+  (signLine :
+    (p : ℕ) → [inst : Fact (Nat.Prime p)] → C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) :
+  Type
+number of parameters: 8
+fields:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralSignTheorems.tensor : (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        LT.lt.{0} 3 p →
+          (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) →
+            CategoryTheory.Iso.{0, 0} (CategoryTheory.Functor.obj.{0, 0, 0, 0} (signed p) A)
+              (CategoryTheory.MonoidalCategoryStruct.tensorObj.{0, 0} (signLine p) A)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralSignTheorems.rank : ∀ (p : ℕ)
+      [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        ∀
+          (f :
+            Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericCurvePullback.parameterScheme.{0} (ZMod p))
+              (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))),
+          Eq.{1}
+            (Module.finrank.{0, 0} ℂ
+              ↑(Action.V.{0, 1, 0}
+                  (CategoryTheory.Functor.obj.{0, 0, 0, 1}
+                    (CategoryTheory.Functor.comp.{0, 0, 0, 0, 0, 1}
+                      (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)
+                      (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.observer C M (ZMod p)))
+                    (signLine p))))
+            1
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralSignTheorems.action : ∀ (p : ℕ)
+      [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        ∀
+          (f :
+            Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericCurvePullback.parameterScheme.{0} (ZMod p))
+              (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+          (g :
+            PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+              (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p))),
+          Eq.{1}
+            ((FDRep.ρ.{0, 0}
+                (CategoryTheory.Functor.obj.{0, 0, 0, 1}
+                  (CategoryTheory.Functor.comp.{0, 0, 0, 0, 0, 1}
+                    (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)
+                    (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.observer C M (ZMod p)))
+                  (signLine p)))
+              g)
+            1
+constructor:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralSignTheorems.mk
+    {C : AlgebraicGeometry.Scheme.{0} → Type}
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+    {U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C}
+    {M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C}
+    {signed :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+            (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))}
+    {signLine :
+      (p : ℕ) → [inst : Fact (Nat.Prime p)] → C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))}
+    (tensor :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          LT.lt.{0} 3 p →
+            (A : C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))) →
+              CategoryTheory.Iso.{0, 0} (CategoryTheory.Functor.obj.{0, 0, 0, 0} (signed p) A)
+                (CategoryTheory.MonoidalCategoryStruct.tensorObj.{0, 0} (signLine p) A))
+    (rank :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          ∀
+            (f :
+              Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericCurvePullback.parameterScheme.{0} (ZMod p))
+                (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))),
+            Eq.{1}
+              (Module.finrank.{0, 0} ℂ
+                ↑(Action.V.{0, 1, 0}
+                    (CategoryTheory.Functor.obj.{0, 0, 0, 1}
+                      (CategoryTheory.Functor.comp.{0, 0, 0, 0, 0, 1}
+                        (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)
+                        (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.observer C M (ZMod p)))
+                      (signLine p))))
+              1)
+    (action :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          ∀
+            (f :
+              Quiver.Hom.{0, 1} (PrimeGap182.TypeIII.GenericCurvePullback.parameterScheme.{0} (ZMod p))
+                (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+            (g :
+              PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+                (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p))),
+            Eq.{1}
+              ((FDRep.ρ.{0, 0}
+                  (CategoryTheory.Functor.obj.{0, 0, 0, 1}
+                    (CategoryTheory.Functor.comp.{0, 0, 0, 0, 0, 1}
+                      (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)
+                      (PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.observer C M (ZMod p)))
+                    (signLine p)))
+                g)
+              1) :
+    PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralSignTheorems C U M signed signLine
+'PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralSignTheorems' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+structure PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems.{plane,
+    curve}
+  (C : AlgebraicGeometry.Scheme.{0} → Type) [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+  [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalClosed.{0, 0} (C X)]
+  (U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C)
+  [{X Y : AlgebraicGeometry.Scheme.{0}} →
+      (f : Quiver.Hom.{0, 1} X Y) →
+        CategoryTheory.Functor.Monoidal.{0, 0, 0, 0}
+          (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)]
+  (AF : PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.ArithmeticFibers.{0} C)
+  (primitive : PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.Constructions.{0} C)
+  (G : PrimeGap182.TypeIII.NativePointFiberFromUniversalGeometricFibers.GeometricFibers.{0} C)
+  (M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C)
+  (DO : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.{0} C)
+  (profiles : PrimeGap182.TypeIII.UniformSourceLocalObservablesFromParameterFibers.OriginProfiles.{0} C M)
+  (compact : PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Operations.{0} C)
+  (Open : PrimeGap182.TypeIII.OrdinaryOpenExtensionsFromAdjunctions.OrdinaryOpenFamily.{0} C U)
+  (LF :
+    (K : Type) →
+      [inst : Field.{0} K] →
+        [Fintype.{0} K] →
+          Ne.{1} 2 0 →
+            (ψ : AddChar.{0, 0} K (PadicAlgCl 2)) →
+              Ne.{1} ψ 1 →
+                PrimeGap182.TypeIII.PublishedLocalConstruction.LocalFourierData.{0, 0, 0, 0} K ℂ
+                  (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.infinityGroup.{0} M
+                    (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} K))
+                  (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+                    (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} K)))
+  (Cover : (E : Type) → [Field.{0} E] → ℕ → Type plane)
+  [(E : Type) → [inst : Field.{0} E] → (n : ℕ) → Group.{plane} (Cover E n)]
+  (fu :
+    PrimeGap182.TypeIII.GeneralFuPrimitiveInfinityApplication03.GeneralFuInfinityClauses.{0, plane} C U M primitive
+      Cover)
+  (covers :
+    PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.GeneralCoverOperationTheorems.{plane} C U
+      primitive M Open LF Cover fu)
+  (sourceCompactification :
+    (K : Type) →
+      [inst : Field.{0} K] →
+        PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Compactification
+          (PrimeGap182.TypeIII.SourceProjectionForQST.projection.{0} K))
+  (signed :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+          (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p))))
+  (PlaneObj : ℕ → Type plane) (CurveObj : ℕ → Type curve)
+  (planeTheory :
+    PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.{plane,
+        curve}
+      PlaneObj CurveObj)
+  (planeOps :
+    PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.{plane} C PlaneObj
+      (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+          curve}
+        planeTheory)
+      (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+          curve}
+        planeTheory))
+  (traceData :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        PrimeGap182.TypeIII.PublishedCovarianceRules.TraceData.{plane} p
+          (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+              curve}
+            planeTheory p))
+  (PD :
+    (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseData.{0, 0, 0} (ZMod p) ℂ
+          (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+            (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p))))
+  (radialLaws :
+    ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p →
+        PrimeGap182.TypeIII.PublishedFourierRules.LocalRules.{0, plane, curve}
+          (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+              curve}
+            planeTheory p)
+          (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.coefficient.{plane,
+              curve}
+            planeTheory p)
+          (PrimeGap182.TypeIII.CoherentComputedRadialProjection01.computedFourierData.{plane, curve, 0, 0}
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.fourier.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.ConstantFieldLocalData.phaseData.{0, 0, 0, 0} (ZMod p) (AlgebraicClosure.{0} (ZMod p))
+              (PD p))
+            (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.nativeRadial.{0, plane} C M PlaneObj
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                  curve}
+                planeTheory)
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+                  curve}
+                planeTheory)
+              planeOps p)))
+  (boundFn : ℕ → ℕ) (sourceCap0 unitCap : ℕ) (bnd : PrimeGap182.TypeIII.PublishedUniformComplexity.Bounds)
+  (inputComplexity :
+    (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.StartingSourceMaps.sourceScheme.{0} K) → ℕ)
+  (parameterComplexity :
+    (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} K) → ℕ)
+  (lineComplexity : (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.StartingSourceMaps.affineLine.{0} K) → ℕ)
+  (sourceMorphismComplexity :
+    (K : Type) → [inst : Field.{0} K] → PrimeGap182.TypeIII.StartingSourceMaps.MorphismComplexity.{0} K)
+  (torusMorphismComplexity :
+    (K : Type) → [inst : Field.{0} K] → PrimeGap182.TypeIII.PublishedPolynomialComplexity.TorusMorphismComplexity.{0} K)
+  (complexity :
+    PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.{plane, curve}
+      C U AF primitive G M DO profiles compact sourceCompactification signed PlaneObj CurveObj planeTheory planeOps PD
+      radialLaws boundFn sourceCap0 unitCap bnd inputComplexity parameterComplexity lineComplexity
+      sourceMorphismComplexity torusMorphismComplexity) :
+  Type (plane + 1)
+number of parameters: 39
+fields:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems.phase.{plane,
+    curve} : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+      LT.lt.{0} 3 p → PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseRules.{0, 0, 0} (PD p)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems.monomialFourier.{plane,
+    curve} : (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        (hp : LT.lt.{0} 3 p) →
+          PrimeGap182.TypeIII.FuFromQuadraticPullback.Inputs.{0, 0, 0, plane} p (PD p)
+            (PrimeGap182.TypeIII.PublishedLocalConstruction.cubicFourierData.{0, 0, 0, plane, 0}
+              (PrimeGap182.TypeIII.GeneralFuPrimitiveInfinityApplication03.cubicCover.{0, plane} C U M primitive Cover
+                fu p (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p)) ⋯ hp)
+              (PrimeGap182.TypeIII.GeneralFuPrimitiveInfinityApplication03.GeneralFuInfinityClauses.linearKernel.{0,
+                  plane}
+                fu (ZMod p) (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p)) 3
+                (PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.Constructions.artinSchreier.{0}
+                  primitive (ZMod p) ⋯ (PrimeGap182.TypeIII.CanonicalSourceCharacter.prime p)))
+              (LF (ZMod p) ⋯ (PrimeGap182.TypeIII.CanonicalSourceCharacter.prime p) ⋯) ⋯)
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems.coefficient.{plane,
+    curve} : (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        (hp : LT.lt.{0} 3 p) →
+          PrimeGap182.TypeIII.CoefficientTraceTransport.Rules.{plane, 0} (traceData p)
+            (AlgEquiv.toRingEquiv.{0, 0, 0} (PrimeGap182.TypeIII.CanonicalCoefficients.tau p hp))
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems.fourier.{plane,
+    curve} : (p : ℕ) →
+      [inst : Fact (Nat.Prime p)] →
+        (hp : LT.lt.{0} 3 p) →
+          PrimeGap182.TypeIII.PublishedCovarianceRules.FourierCovarianceRules.{plane, curve} (Units.mk0.{0} 2 ⋯)
+constructor:
+  PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems.mk.{plane,
+      curve}
+    {C : AlgebraicGeometry.Scheme.{0} → Type}
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Category.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.Abelian.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalCategory.{0, 0} (C X)]
+    [(X : AlgebraicGeometry.Scheme.{0}) → CategoryTheory.MonoidalClosed.{0, 0} (C X)]
+    {U : PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.{0, 0, 1, 0} (fun X => X) C}
+    [{X Y : AlgebraicGeometry.Scheme.{0}} →
+        (f : Quiver.Hom.{0, 1} X Y) →
+          CategoryTheory.Functor.Monoidal.{0, 0, 0, 0}
+            (PrimeGap182.TypeIII.ExactInverseImagesToDerived.OrdinarySystem.pull.{0, 0, 1, 0} U f)]
+    {AF : PrimeGap182.TypeIII.RationalPointStalksFromUniversalFiber.ArithmeticFibers.{0} C}
+    {primitive : PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.Constructions.{0} C}
+    {G : PrimeGap182.TypeIII.NativePointFiberFromUniversalGeometricFibers.GeometricFibers.{0} C}
+    {M : PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.{0} C}
+    {DO : PrimeGap182.TypeIII.QSTDualityBridgesFromSmoothLisseVerdier.Operations.{0} C}
+    {profiles : PrimeGap182.TypeIII.UniformSourceLocalObservablesFromParameterFibers.OriginProfiles.{0} C M}
+    {compact : PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Operations.{0} C}
+    {Open : PrimeGap182.TypeIII.OrdinaryOpenExtensionsFromAdjunctions.OrdinaryOpenFamily.{0} C U}
+    {LF :
+      (K : Type) →
+        [inst : Field.{0} K] →
+          [Fintype.{0} K] →
+            Ne.{1} 2 0 →
+              (ψ : AddChar.{0, 0} K (PadicAlgCl 2)) →
+                Ne.{1} ψ 1 →
+                  PrimeGap182.TypeIII.PublishedLocalConstruction.LocalFourierData.{0, 0, 0, 0} K ℂ
+                    (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.infinityGroup.{0} M
+                      (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} K))
+                    (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+                      (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} K))}
+    {Cover : (E : Type) → [Field.{0} E] → ℕ → Type plane}
+    [(E : Type) → [inst : Field.{0} E] → (n : ℕ) → Group.{plane} (Cover E n)]
+    {fu :
+      PrimeGap182.TypeIII.GeneralFuPrimitiveInfinityApplication03.GeneralFuInfinityClauses.{0, plane} C U M primitive
+        Cover}
+    {covers :
+      PrimeGap182.TypeIII.CoherentGenericCoreFromGeneralStandardOperations06.GeneralCoverOperationTheorems.{plane} C U
+        primitive M Open LF Cover fu}
+    {sourceCompactification :
+      (K : Type) →
+        [inst : Field.{0} K] →
+          PrimeGap182.TypeIII.QSTCompactBridgeFromCompactifiedDerivedPushforward.Compactification
+            (PrimeGap182.TypeIII.SourceProjectionForQST.projection.{0} K)}
+    {signed :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          CategoryTheory.Functor.{0, 0, 0, 0} (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))
+            (C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} (ZMod p)))}
+    {PlaneObj : ℕ → Type plane} {CurveObj : ℕ → Type curve}
+    {planeTheory :
+      PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.{plane,
+          curve}
+        PlaneObj CurveObj}
+    {planeOps :
+      PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.PlaneOperations.{plane} C PlaneObj
+        (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+            curve}
+          planeTheory)
+        (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+            curve}
+          planeTheory)}
+    {traceData :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          PrimeGap182.TypeIII.PublishedCovarianceRules.TraceData.{plane} p
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+                curve}
+              planeTheory p)}
+    {PD :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseData.{0, 0, 0} (ZMod p) ℂ
+            (PrimeGap182.TypeIII.PrimitiveRamificationFromGeneralKatzTheory.LocalRealization.originGroup.{0} M
+              (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p)))}
+    {radialLaws :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p →
+          PrimeGap182.TypeIII.PublishedFourierRules.LocalRules.{0, plane, curve}
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.coefficient.{plane,
+                curve}
+              planeTheory p)
+            (PrimeGap182.TypeIII.CoherentComputedRadialProjection01.computedFourierData.{plane, curve, 0, 0}
+              (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.fourier.{plane,
+                  curve}
+                planeTheory p)
+              (PrimeGap182.TypeIII.ConstantFieldLocalData.phaseData.{0, 0, 0, 0} (ZMod p)
+                (AlgebraicClosure.{0} (ZMod p)) (PD p))
+              (PrimeGap182.TypeIII.SameICRadialFromGeneralRestrictionEvaluationHELD04.nativeRadial.{0, plane} C M
+                PlaneObj
+                (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.surface.{plane,
+                    curve}
+                  planeTheory)
+                (PrimeGap182.TypeIII.PlaneGeneralTheoryFromSharedOperationsBeforePrime03.GeneralPlaneOperationsAndPublishedTheorems.realization.{plane,
+                    curve}
+                  planeTheory)
+                planeOps p))}
+    {boundFn : ℕ → ℕ} {sourceCap0 unitCap : ℕ} {bnd : PrimeGap182.TypeIII.PublishedUniformComplexity.Bounds}
+    {inputComplexity :
+      (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.StartingSourceMaps.sourceScheme.{0} K) → ℕ}
+    {parameterComplexity :
+      (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.PhysicalTorusMorphism.torusScheme.{0} K) → ℕ}
+    {lineComplexity :
+      (K : Type) → [inst : Field.{0} K] → C (PrimeGap182.TypeIII.StartingSourceMaps.affineLine.{0} K) → ℕ}
+    {sourceMorphismComplexity :
+      (K : Type) → [inst : Field.{0} K] → PrimeGap182.TypeIII.StartingSourceMaps.MorphismComplexity.{0} K}
+    {torusMorphismComplexity :
+      (K : Type) →
+        [inst : Field.{0} K] → PrimeGap182.TypeIII.PublishedPolynomialComplexity.TorusMorphismComplexity.{0} K}
+    {complexity :
+      PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems.{plane,
+          curve}
+        C U AF primitive G M DO profiles compact sourceCompactification signed PlaneObj CurveObj planeTheory planeOps PD
+        radialLaws boundFn sourceCap0 unitCap bnd inputComplexity parameterComplexity lineComplexity
+        sourceMorphismComplexity torusMorphismComplexity}
+    (phase :
+      ∀ (p : ℕ) [inst : Fact (Nat.Prime p)],
+        LT.lt.{0} 3 p → PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseRules.{0, 0, 0} (PD p))
+    (monomialFourier :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          (hp : LT.lt.{0} 3 p) →
+            PrimeGap182.TypeIII.FuFromQuadraticPullback.Inputs.{0, 0, 0, plane} p (PD p)
+              (PrimeGap182.TypeIII.PublishedLocalConstruction.cubicFourierData.{0, 0, 0, plane, 0}
+                (PrimeGap182.TypeIII.GeneralFuPrimitiveInfinityApplication03.cubicCover.{0, plane} C U M primitive Cover
+                  fu p (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p)) ⋯ hp)
+                (PrimeGap182.TypeIII.GeneralFuPrimitiveInfinityApplication03.GeneralFuInfinityClauses.linearKernel.{0,
+                    plane}
+                  fu (ZMod p) (PrimeGap182.TypeIII.PublishedPhaseApplication.PhaseField.{0} (ZMod p)) 3
+                  (PrimeGap182.TypeIII.QSTPrimitiveBridgesFromCommonKatzConstruction.Constructions.artinSchreier.{0}
+                    primitive (ZMod p) ⋯ (PrimeGap182.TypeIII.CanonicalSourceCharacter.prime p)))
+                (LF (ZMod p) ⋯ (PrimeGap182.TypeIII.CanonicalSourceCharacter.prime p) ⋯) ⋯))
+    (coefficient :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          (hp : LT.lt.{0} 3 p) →
+            PrimeGap182.TypeIII.CoefficientTraceTransport.Rules.{plane, 0} (traceData p)
+              (AlgEquiv.toRingEquiv.{0, 0, 0} (PrimeGap182.TypeIII.CanonicalCoefficients.tau p hp)))
+    (fourier :
+      (p : ℕ) →
+        [inst : Fact (Nat.Prime p)] →
+          (hp : LT.lt.{0} 3 p) →
+            PrimeGap182.TypeIII.PublishedCovarianceRules.FourierCovarianceRules.{plane, curve} (Units.mk0.{0} 2 ⋯)) :
+    PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems.{plane,
+        curve}
+      C U AF primitive G M DO profiles compact Open LF Cover fu covers sourceCompactification signed PlaneObj CurveObj
+      planeTheory planeOps traceData PD radialLaws boundFn sourceCap0 unitCap bnd inputComplexity parameterComplexity
+      lineComplexity sourceMorphismComplexity torusMorphismComplexity complexity
+'PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+axiom PrimeGap186.kloosterman3_bound : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (c : ZMod p),
+  Ne.{1} c 0 → LE.le.{0} (Norm.norm.{0} (PrimeGap186.normalizedKloosterman3 p c)) 3
+axiom PrimeGap186.kloosterman2_correlation_bound : ∀ (p : ℕ) [inst : Fact (Nat.Prime p)] (A B : ZMod p),
+  Ne.{1} A 0 →
+    Ne.{1} B 0 →
+      LE.le.{0}
+        (Norm.norm.{0}
+          (∑ t,
+            ite.{1} (Ne.{1} t 0 ∧ Ne.{1} t (-1))
+              (HMul.hMul.{0, 0, 0} (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} A t))
+                (PrimeGap186.unnormalizedKloosterman2 p (HDiv.hDiv.{0, 0, 0} B (HAdd.hAdd.{0, 0, 0} t 1))))
+              0))
+        (HMul.hMul.{0, 0, 0} (HMul.hMul.{0, 0, 0} 8 ↑p) √↑p)
+axiom PrimeGap186.physical_integral_bounds : (∀ (j : Fin (List.length.{0} PrimeGap186.outerOrderTwoBounds)),
+    LE.le.{0}
+        (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceOuterRoot 0 ↑j)
+          (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+        (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.outerOrderTwoBounds j).2.1) (HPow.hPow.{0, 0, 0} 10 18)) ∧
+      LE.le.{0}
+        (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceOuterFace 0 ↑j)
+          (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+        (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.outerOrderTwoBounds j).2.2.1) (HPow.hPow.{0, 0, 0} 10 18))) ∧
+  (∀ (j : Fin (List.length.{0} PrimeGap186.outerOrderFiveHalvesBounds)),
+      LE.le.{0}
+          (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceOuterRoot 1 ↑j)
+            (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+          (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.outerOrderFiveHalvesBounds j).2.1)
+            (HPow.hPow.{0, 0, 0} 10 18)) ∧
+        LE.le.{0}
+          (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceOuterFace 1 ↑j)
+            (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+          (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.outerOrderFiveHalvesBounds j).2.2.1)
+            (HPow.hPow.{0, 0, 0} 10 18))) ∧
+    (∀ (j : Fin (List.length.{0} PrimeGap186.innerBaseOrderTwoBounds)),
+        LE.le.{0}
+          (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceInnerMass 2 ↑j)
+            (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+          (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.innerBaseOrderTwoBounds j).1) (HPow.hPow.{0, 0, 0} 10 18))) ∧
+      (∀ (j : Fin (List.length.{0} PrimeGap186.innerBaseOrderFiveHalvesBounds)),
+          LE.le.{0}
+            (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceInnerMass 3 ↑j)
+              (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+            (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.innerBaseOrderFiveHalvesBounds j).1)
+              (HPow.hPow.{0, 0, 0} 10 18))) ∧
+        (∀ (j : Fin (List.length.{0} PrimeGap186.innerEnlargedOrderTwoBounds)),
+            LE.le.{0}
+              (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceInnerMass 4 ↑j)
+                (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+              (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.innerEnlargedOrderTwoBounds j).1)
+                (HPow.hPow.{0, 0, 0} 10 18))) ∧
+          (∀ (j : Fin (List.length.{0} PrimeGap186.innerEnlargedOrderFiveHalvesBounds)),
+              LE.le.{0}
+                (HDiv.hDiv.{0, 0, 0} (PrimeGap186.physicalSourceInnerMass 5 ↑j)
+                  (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)))
+                (HDiv.hDiv.{0, 0, 0} (↑(List.get.{0} PrimeGap186.innerEnlargedOrderFiveHalvesBounds j).1)
+                  (HPow.hPow.{0, 0, 0} 10 18))) ∧
+            LE.le.{0} (HDiv.hDiv.{0, 0, 0} 23685317816 (HPow.hPow.{0, 0, 0} 10 24)) PrimeGap186.trialIH ∧
+              LE.le.{0} PrimeGap186.trialIH (HDiv.hDiv.{0, 0, 0} 23685317890 (HPow.hPow.{0, 0, 0} 10 24)) ∧
+                LE.le.{0} (HDiv.hDiv.{0, 0, 0} 90248755123 (HPow.hPow.{0, 0, 0} 10 24)) PrimeGap186.trialJLambdaH

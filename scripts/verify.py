@@ -52,6 +52,7 @@ TERMINALS = (
     "PrimeGap182.primeGapLiminf_le_182_of_local_inputs",
     "PrimeGap182.infinite_integer_translates182_of_local_inputs",
     "PrimeGap182.infinite_consecutive_prime_pairs182_of_local_inputs",
+    "PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.computedTypeIIIInput",
 )
 PREMISES = (
     "PrimeGap182.PhysicalCapBounds182",
@@ -64,6 +65,11 @@ PREMISES = (
     "PrimeGap182.TypeIII.CurveExceptionalFourierBound",
     "PrimeGap182.TypeIII.LocalFourierHypothesis",
     "PrimeGap182.TypeIII.HasFiniteExceptionalTypeIIIInput",
+    "PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralEligibleICTheorems",
+    "PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralComplexityTheorems",
+    "PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralRelativeCohomologyTheorems",
+    "PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralSignTheorems",
+    "PrimeGap182.TypeIII.CoherentUniformApplicationsFromGeneralStandardTheory03.GeneralPhaseAndCoefficientTheorems",
 )
 
 
@@ -571,7 +577,8 @@ def main() -> int:
                                               declarations=names, reports=reports,
                                               distinct_declarations=len(names), terminal_reports=terminals)
             premise_probe = run_dir / "ExplicitPremises.lean"
-            premise_probe.write_text("import PrimeGaps182Analytic\nimport TypeIIILocalProgress\n\n"
+            premise_probe.write_text("import PrimeGaps182Analytic\nimport TypeIIILocalProgress\n"
+                                     "import TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03\n\n"
                                      "set_option pp.fullNames true\nset_option pp.universes true\n\n" +
                                      "\n".join(f"#print {name}\n#print axioms {name}" for name in PREMISES) +
                                      "\n\n" + "\n".join(f"#print {name}" for name in BASELINE_AXIOMS) + "\n")

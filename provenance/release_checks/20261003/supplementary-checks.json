@@ -1,0 +1,32 @@
+[
+  {
+    "name": "regression-tests",
+    "exit_code": 0,
+    "elapsed_seconds": 4.823,
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "scripts",
+      "-p",
+      "test_*.py"
+    ],
+    "log": "verification/runs/20261004T040927Z_22919/regression-tests.log",
+    "log_sha256": "5f1fcca450c6a202cc255d915152ca5a2cb6aa37f7900f2142618f97eaa58fea"
+  },
+  {
+    "name": "external-numerics-integrity",
+    "exit_code": 0,
+    "elapsed_seconds": 0.043,
+    "command": [
+      "python3",
+      "-B",
+      "scripts/check_external_numerics.py"
+    ],
+    "log": "verification/runs/20261004T040927Z_22919/external-numerics-integrity.log",
+    "log_sha256": "827cafdf1d205b40e3e0c273065df9c3ed31bd1a2412c5456915628431ecb6d1"
+  }
+]

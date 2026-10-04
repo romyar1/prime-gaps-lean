@@ -3,7 +3,7 @@
   "created_utc": "2026-09-04T19:10:19.374053+00:00",
   "scope": "Current working sources. Original provenance fingerprints are retained when sources change; verification is recorded separately.",
   "type_iii_proposition_proved": false,
-  "formal_module_count": 638,
+  "formal_module_count": 918,
   "prior_audit_groups": {
     "analytic": [
       "IncidenceZeroMode",
@@ -3477,6 +3477,24 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIIActualRelativeFourierKernelExtensionFromPublishedOpenTheorems",
+      "path": "formal/TypeIIIActualRelativeFourierKernelExtensionFromPublishedOpenTheorems.lean",
+      "sha256": "b37f323b6cae14d695c5c63fc2cb82d1e04b052f97a8cefd145bea9688ef7931",
+      "bytes": 5672,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIActualRelativeFourierKernelExtensionFromPublishedOpenTheorems.lean"
+    },
+    {
+      "module": "TypeIIIActualTraitGroupFromCoefficientRingEquiv02",
+      "path": "formal/TypeIIIActualTraitGroupFromCoefficientRingEquiv02.lean",
+      "sha256": "310fa1e327283e69ba42f8467bb4c70b922121c08f4f726a74938170cf834533",
+      "bytes": 7540,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIActualTraitGroupFromCoefficientRingEquiv02.lean"
+    },
+    {
       "module": "TypeIIIAcyclicResolutionComparison",
       "path": "formal/TypeIIIAcyclicResolutionComparison.lean",
       "sha256": "14d18c23d68224ad298954348b7ae8bc60f188686f9a45f7ff73813066ed8685",
@@ -3484,6 +3502,15 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIAcyclicResolutionComparison.lean"
+    },
+    {
+      "module": "TypeIIIAdicCoefficientAutomorphism",
+      "path": "formal/TypeIIIAdicCoefficientAutomorphism.lean",
+      "sha256": "21f108a9ab70da48d91830aa652aeb05d68170eeaa769c1453c2bfd5c8f64993",
+      "bytes": 5226,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIAdicCoefficientAutomorphism.lean"
     },
     {
       "module": "TypeIIIAdicCompatibleSystem",
@@ -3522,6 +3549,24 @@
       "source_path": "formal/TypeIIIAffineLimitIdempotentDescent.lean"
     },
     {
+      "module": "TypeIIIAlgebraicCoefficientAutomorphism",
+      "path": "formal/TypeIIIAlgebraicCoefficientAutomorphism.lean",
+      "sha256": "62813c734b752bd041979d6725c6a6008ff9bf6c16bd6b701b7dc50a87a4617c",
+      "bytes": 3481,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIAlgebraicCoefficientAutomorphism.lean"
+    },
+    {
+      "module": "TypeIIIAlgebraicConstantFieldCommonTraitTransport02",
+      "path": "formal/TypeIIIAlgebraicConstantFieldCommonTraitTransport02.lean",
+      "sha256": "9141a91ebc6bb1bd8fcfdd031b59b51f86627edf6646680cf1de90dcf66cb334",
+      "bytes": 7953,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIAlgebraicConstantFieldCommonTraitTransport02.lean"
+    },
+    {
       "module": "TypeIIIAlgebraicDescent",
       "path": "formal/TypeIIIAlgebraicDescent.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -3538,6 +3583,258 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIAlgebraicallyClosedEtalePoints.lean"
+    },
+    {
+      "module": "TypeIIIAllPrimeArithmeticFromGeneralStandardOperationTheorems08",
+      "path": "formal/TypeIIIAllPrimeArithmeticFromGeneralStandardOperationTheorems08.lean",
+      "sha256": "40a3899a5920c082075a4defa2dfb85a3dbca0e5f63c776eca2e8feb1ea94f8f",
+      "bytes": 10347,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIAllPrimeArithmeticFromGeneralStandardOperationTheorems08.lean"
+    },
+    {
+      "module": "TypeIIIAllPrimeOriginInputsFromGeneralOperationFamilies05",
+      "path": "formal/TypeIIIAllPrimeOriginInputsFromGeneralOperationFamilies05.lean",
+      "sha256": "6da2a7c8da95244303c4b4e0232b79e4cfc65c6f526c126e73f6ea32ed9a8d53",
+      "bytes": 16122,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIAllPrimeOriginInputsFromGeneralOperationFamilies05.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryAssemblyFromCanonicalMaps11",
+      "path": "formal/TypeIIIArithmeticBoundaryAssemblyFromCanonicalMaps11.lean",
+      "sha256": "1c39bf6aa1505b4408de2d36efce8e79d8bbf7bd0976f413b7f3cfd84999559e",
+      "bytes": 4412,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryAssemblyFromCanonicalMaps11.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryConnectingTransportRoot01",
+      "path": "formal/TypeIIIArithmeticBoundaryConnectingTransportRoot01.lean",
+      "sha256": "c502823e405b320620ffcac31266a8f26db4d1895ed2a8a0415b3d47b63c7aef",
+      "bytes": 2870,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryConnectingTransportRoot01.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryFromCanonicalLocalization03",
+      "path": "formal/TypeIIIArithmeticBoundaryFromCanonicalLocalization03.lean",
+      "sha256": "6c04f0c2881eaa52b0845e607d11ba531180329f1058135001232c449f75747c",
+      "bytes": 7959,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryFromCanonicalLocalization03.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryFromGuardedFiniteFiberOperations04",
+      "path": "formal/TypeIIIArithmeticBoundaryFromGuardedFiniteFiberOperations04.lean",
+      "sha256": "02f61b510021e2b264c2744836bb723ff3f0e868047c9376217de4636e56397b",
+      "bytes": 8401,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryFromGuardedFiniteFiberOperations04.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryFromInvariantFunctors",
+      "path": "formal/TypeIIIArithmeticBoundaryFromInvariantFunctors.lean",
+      "sha256": "6fb6d925a63d25ac796e2d688e4434c2b05d2749363f5457f8b92d8a001258e3",
+      "bytes": 6198,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryFromInvariantFunctors.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryFromSources",
+      "path": "formal/TypeIIIArithmeticBoundaryFromSources.lean",
+      "sha256": "15543d3494ad6f8fd43c0158fdb6366024e216bd9861924631abda1734a51ca9",
+      "bytes": 9327,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryFromSources.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryInputsFromGuardedFiniteFiberOperations04",
+      "path": "formal/TypeIIIArithmeticBoundaryInputsFromGuardedFiniteFiberOperations04.lean",
+      "sha256": "b9e35d7e551553ae69685fa262d6bd7e7d0c8ed06df93ed32178d9db766076b2",
+      "bytes": 6342,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryInputsFromGuardedFiniteFiberOperations04.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryPrimitiveDataFromChosenLift03",
+      "path": "formal/TypeIIIArithmeticBoundaryPrimitiveDataFromChosenLift03.lean",
+      "sha256": "4b5a3a4d255155d05339bc1b8c8197d2f787743875ee54931307e96acebebb1e",
+      "bytes": 7093,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryPrimitiveDataFromChosenLift03.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryPrimitiveWeilRealization03",
+      "path": "formal/TypeIIIArithmeticBoundaryPrimitiveWeilRealization03.lean",
+      "sha256": "62e082da2d8ba4982713446483af26964b268306c154e1125063d07a88b6b8de",
+      "bytes": 5923,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryPrimitiveWeilRealization03.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryRecordsFromGuardedFiniteFiberOperations01",
+      "path": "formal/TypeIIIArithmeticBoundaryRecordsFromGuardedFiniteFiberOperations01.lean",
+      "sha256": "3d7beab1abd2aece3abfe25bacae3d383ac7861d293b7a962d95c745a51fe3a3",
+      "bytes": 6811,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryRecordsFromGuardedFiniteFiberOperations01.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticBoundaryStandardLocalizationReindex07",
+      "path": "formal/TypeIIIArithmeticBoundaryStandardLocalizationReindex07.lean",
+      "sha256": "76618f5d4ea7f6b3636fa36f1a101e48e1ad4e79f91ae94dfecd6f95a66817e1",
+      "bytes": 6640,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticBoundaryStandardLocalizationReindex07.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticCovarianceFromSpecialization",
+      "path": "formal/TypeIIIArithmeticCovarianceFromSpecialization.lean",
+      "sha256": "08762a72592444e85c0e34862e056e04b649e0aee230ab760012f8392f8b6cd7",
+      "bytes": 2400,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticCovarianceFromSpecialization.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticDualFromCanonicalEvaluation02",
+      "path": "formal/TypeIIIArithmeticDualFromCanonicalEvaluation02.lean",
+      "sha256": "8371171b996be94804041617d929ec15b3014aa3999be91da658079616446216",
+      "bytes": 3770,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticDualFromCanonicalEvaluation02.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticDualFromEvaluation",
+      "path": "formal/TypeIIIArithmeticDualFromEvaluation.lean",
+      "sha256": "ae165a962fc3c06aa67a00454ca40a2b8482d7ecc8bc810d1aec2a59dd90b33d",
+      "bytes": 7497,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticDualFromEvaluation.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticOriginFromScalar",
+      "path": "formal/TypeIIIArithmeticOriginFromScalar.lean",
+      "sha256": "87ffd099f40db6c4089cddff11146e2df54c1dec9b796411ea02a34b6ee6eb5e",
+      "bytes": 4983,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticOriginFromScalar.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticPrimitiveSources",
+      "path": "formal/TypeIIIArithmeticPrimitiveSources.lean",
+      "sha256": "410fbd17c60574cd880ec0e909af50531b53aa9fc215d6a1307ba76d953af92b",
+      "bytes": 5755,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticPrimitiveSources.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticPrimitivesFromCommonKatzConstruction",
+      "path": "formal/TypeIIIArithmeticPrimitivesFromCommonKatzConstruction.lean",
+      "sha256": "2bac3fa807eceec256f4f495ce9751be32d6f5421c217b892425cd41791fcaf9",
+      "bytes": 6833,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticPrimitivesFromCommonKatzConstruction.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticRealizationFromComputedStandardBoundary13",
+      "path": "formal/TypeIIIArithmeticRealizationFromComputedStandardBoundary13.lean",
+      "sha256": "dfc823b6fa805af5912aaf0df29886b551a9115e4d03968b5891b3ba9460a223",
+      "bytes": 29526,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticRealizationFromComputedStandardBoundary13.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticRealizationFromPublishedPrimitiveAndBoundary05",
+      "path": "formal/TypeIIIArithmeticRealizationFromPublishedPrimitiveAndBoundary05.lean",
+      "sha256": "caf4623743b1632f9d56a1dcdd3826178dfeeb7f7ad181a590f0599b6c04c1bb",
+      "bytes": 7032,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticRealizationFromPublishedPrimitiveAndBoundary05.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticRestrictionFromStalks",
+      "path": "formal/TypeIIIArithmeticRestrictionFromStalks.lean",
+      "sha256": "0dcb2fb511d9f8a159c830ece98730aaa475ae5be9556df48e8f7ef84f3b9d1c",
+      "bytes": 4805,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticRestrictionFromStalks.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticSourceMaps",
+      "path": "formal/TypeIIIArithmeticSourceMaps.lean",
+      "sha256": "92420fa463b2be81737f698d0af6bd7e5290f2eea240bfbfe0f5eadc515bbaf6",
+      "bytes": 5720,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticSourceMaps.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticSourcePointFromLaurentSpecialization02",
+      "path": "formal/TypeIIIArithmeticSourcePointFromLaurentSpecialization02.lean",
+      "sha256": "72f36a97ef8f0043eb162360c10de056eeee8379f27391bc188b025b18fe203f",
+      "bytes": 4552,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticSourcePointFromLaurentSpecialization02.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticSourceTransport",
+      "path": "formal/TypeIIIArithmeticSourceTransport.lean",
+      "sha256": "6535a77f3400138ec57eb3e11560d191d9623fd1177a643f2d7d17de9aadb2ea",
+      "bytes": 6944,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticSourceTransport.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticSourcesFromOrigin",
+      "path": "formal/TypeIIIArithmeticSourcesFromOrigin.lean",
+      "sha256": "76cc62747edfdd0db110d931ef65d4fd74f5cd94b9d0b78bcb9b93e57ee430b5",
+      "bytes": 9968,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticSourcesFromOrigin.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticTensorFromWeil",
+      "path": "formal/TypeIIIArithmeticTensorFromWeil.lean",
+      "sha256": "93e0c53f132a21996647868f9c18091e69f91a635c296a06479e7a4d1d9cbf05",
+      "bytes": 6354,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticTensorFromWeil.lean"
+    },
+    {
+      "module": "TypeIIIArithmeticZeroFromSpecialization",
+      "path": "formal/TypeIIIArithmeticZeroFromSpecialization.lean",
+      "sha256": "02def10020fc23488de0efccc2a73e157a4ae09d815188a25dce375317ef7a1b",
+      "bytes": 3470,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIArithmeticZeroFromSpecialization.lean"
     },
     {
       "module": "TypeIIIArtinSchreierAction",
@@ -3966,6 +4263,42 @@
       "prior_audit_status": "PASS_SUPPORTING_MODULES_ONLY"
     },
     {
+      "module": "TypeIIIBoundaryCohomologyFromSources",
+      "path": "formal/TypeIIIBoundaryCohomologyFromSources.lean",
+      "sha256": "d0507baa50596404f28bb428724baa5aa5057731d6b54c1d16a9c98e6b088059",
+      "bytes": 5332,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIBoundaryCohomologyFromSources.lean"
+    },
+    {
+      "module": "TypeIIIBoundaryFrobeniusNormalization",
+      "path": "formal/TypeIIIBoundaryFrobeniusNormalization.lean",
+      "sha256": "7827322e3b96d3db216455d7969ea1f4d7a58f01f0d4cae1c21c2e13c4ac45f8",
+      "bytes": 6251,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIBoundaryFrobeniusNormalization.lean"
+    },
+    {
+      "module": "TypeIIIBoundaryFromSourceModels",
+      "path": "formal/TypeIIIBoundaryFromSourceModels.lean",
+      "sha256": "e42527b62e54a86dc478a00c4070c78e1852eaddd8372b875692fd12a3b4cbb6",
+      "bytes": 6966,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIBoundaryFromSourceModels.lean"
+    },
+    {
+      "module": "TypeIIIBoundedCompactRealizationFromSameOperations",
+      "path": "formal/TypeIIIBoundedCompactRealizationFromSameOperations.lean",
+      "sha256": "c0297294b757c51f90f7ef344b7fc42c5a3a28469316c51eeca27273a2ed7fd6",
+      "bytes": 3601,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIBoundedCompactRealizationFromSameOperations.lean"
+    },
+    {
       "module": "TypeIIICRTCounting",
       "path": "formal/TypeIIICRTCounting.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -3973,6 +4306,141 @@
       "sha256": "32c597b547af0364f8d1db0e94a11ac842c83985eda54baff73839649d1dc6a7",
       "bytes": 7157,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIICanonicalAffineCoefficientChange",
+      "path": "formal/TypeIIICanonicalAffineCoefficientChange.lean",
+      "sha256": "1ee7c9254386d5b927fcc00502ac8249be8e221741d2d9b3d827a5e279c24f1a",
+      "bytes": 2476,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalAffineCoefficientChange.lean"
+    },
+    {
+      "module": "TypeIIICanonicalArithmeticRealization",
+      "path": "formal/TypeIIICanonicalArithmeticRealization.lean",
+      "sha256": "53a744373db555c8f3b1ec683b1c1c5d643e8ccdac7a42871353732035de8677",
+      "bytes": 9180,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalArithmeticRealization.lean"
+    },
+    {
+      "module": "TypeIIICanonicalCoefficients",
+      "path": "formal/TypeIIICanonicalCoefficients.lean",
+      "sha256": "22ff16d76699616ff9f3ed4d1fb5e97ee7799bdc7d4b0b9422b100e38b6aeda9",
+      "bytes": 3655,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalCoefficients.lean"
+    },
+    {
+      "module": "TypeIIICanonicalCurveInput",
+      "path": "formal/TypeIIICanonicalCurveInput.lean",
+      "sha256": "de07e89cf1b79b606751dfd35c99663d2788aaa0eae20a64ae255b69a586c3c8",
+      "bytes": 9744,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalCurveInput.lean"
+    },
+    {
+      "module": "TypeIIICanonicalFourierKernel",
+      "path": "formal/TypeIIICanonicalFourierKernel.lean",
+      "sha256": "5090e8db9392e1c7c6352b960f4821ad1f6ce3d0eb8ffb510c48be48bd4dbdca",
+      "bytes": 5992,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalFourierKernel.lean"
+    },
+    {
+      "module": "TypeIIICanonicalInputTrace",
+      "path": "formal/TypeIIICanonicalInputTrace.lean",
+      "sha256": "b186fdd21b48694ce1d7af757c5c69a8ab592d560fb64273281537b480d0c303",
+      "bytes": 3949,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalInputTrace.lean"
+    },
+    {
+      "module": "TypeIIICanonicalLocalCorrelation",
+      "path": "formal/TypeIIICanonicalLocalCorrelation.lean",
+      "sha256": "8e60993d202456d7f13aed1608883b7eb4cf266e18f99e334052a42ab05e4c79",
+      "bytes": 8957,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalLocalCorrelation.lean"
+    },
+    {
+      "module": "TypeIIICanonicalLocalWeilFiberFromGroupDictionaryRoot05",
+      "path": "formal/TypeIIICanonicalLocalWeilFiberFromGroupDictionaryRoot05.lean",
+      "sha256": "4e7f1af78bb003bc0a1e9f6ae845c3b4312b4f42275d5eacd2a73b2a30da46d8",
+      "bytes": 6116,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalLocalWeilFiberFromGroupDictionaryRoot05.lean"
+    },
+    {
+      "module": "TypeIIICanonicalOrdinaryDualEvaluation",
+      "path": "formal/TypeIIICanonicalOrdinaryDualEvaluation.lean",
+      "sha256": "094346c870a01458e8dc6c16eac2964a2313b325bbbac5ca8911c70cff7e640a",
+      "bytes": 8179,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalOrdinaryDualEvaluation.lean"
+    },
+    {
+      "module": "TypeIIICanonicalPhysicalFamily",
+      "path": "formal/TypeIIICanonicalPhysicalFamily.lean",
+      "sha256": "77b6ffe6161509ef816c9e2d4673bad96969dc82c1934b99e13783ef2c5a184d",
+      "bytes": 7652,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalPhysicalFamily.lean"
+    },
+    {
+      "module": "TypeIIICanonicalPrimeFramework",
+      "path": "formal/TypeIIICanonicalPrimeFramework.lean",
+      "sha256": "28e43e523d25b82b6dc78f559bc2196076390e91087083023b45fdfb3b8b6aab",
+      "bytes": 8072,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalPrimeFramework.lean"
+    },
+    {
+      "module": "TypeIIICanonicalPrimitiveEligibilityFromGeneralPublishedLaws05",
+      "path": "formal/TypeIIICanonicalPrimitiveEligibilityFromGeneralPublishedLaws05.lean",
+      "sha256": "da1d1a7ce75d53cb1cfed50849df323074ae606eece2af4799372a40e8b23b15",
+      "bytes": 10230,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalPrimitiveEligibilityFromGeneralPublishedLaws05.lean"
+    },
+    {
+      "module": "TypeIIICanonicalSourceCharacter",
+      "path": "formal/TypeIIICanonicalSourceCharacter.lean",
+      "sha256": "28a62825e41968128110aa42feee0e993a1a66b0bdcad9b01e7e38476450c225",
+      "bytes": 2914,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalSourceCharacter.lean"
+    },
+    {
+      "module": "TypeIIICanonicalSourceFourierStalk",
+      "path": "formal/TypeIIICanonicalSourceFourierStalk.lean",
+      "sha256": "9da9299620c34463f5858bc9c2451636ffd7e3681142e453ff7f705b6eda681c",
+      "bytes": 5486,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalSourceFourierStalk.lean"
+    },
+    {
+      "module": "TypeIIICanonicalSourceLocalData",
+      "path": "formal/TypeIIICanonicalSourceLocalData.lean",
+      "sha256": "a2e47b775792937540bbe2ba3ee6ae2209ef44f6e8f91a9e520599ec4a9badc2",
+      "bytes": 9571,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICanonicalSourceLocalData.lean"
     },
     {
       "module": "TypeIIICappedNormalization",
@@ -4011,6 +4479,24 @@
       "source_path": "formal/TypeIIICenteringIdentity.lean"
     },
     {
+      "module": "TypeIIIClosedCyclotomicCoefficient",
+      "path": "formal/TypeIIIClosedCyclotomicCoefficient.lean",
+      "sha256": "c84f3a654249992609d65fddb69a6b6149deb8bee8416befef72987a434fc5a9",
+      "bytes": 10757,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIClosedCyclotomicCoefficient.lean"
+    },
+    {
+      "module": "TypeIIICoefficientAutomorphism",
+      "path": "formal/TypeIIICoefficientAutomorphism.lean",
+      "sha256": "9184fde404490ea40240323c67a26c8e01fb7cf98c0c09ef92f61624242c6fc1",
+      "bytes": 7264,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoefficientAutomorphism.lean"
+    },
+    {
       "module": "TypeIIICoefficientCovariance",
       "path": "formal/TypeIIICoefficientCovariance.lean",
       "sha256": "de376acf31b4997cf13d7ae1a01a61ee44a201d5e18c3556ed73a22ac194c0b5",
@@ -4038,6 +4524,150 @@
       "source_path": "formal/TypeIIICoefficientSheafSupport.lean"
     },
     {
+      "module": "TypeIIICoefficientTraceTransport",
+      "path": "formal/TypeIIICoefficientTraceTransport.lean",
+      "sha256": "0f2daa07cd3923d01bb7c145aa4a8e366baa176a2daeefed13e6e7a063a531bb",
+      "bytes": 3429,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoefficientTraceTransport.lean"
+    },
+    {
+      "module": "TypeIIICoherentArithmeticFromLiteralPrimitivesDraft11",
+      "path": "formal/TypeIIICoherentArithmeticFromLiteralPrimitivesDraft11.lean",
+      "sha256": "7fd61e184d2c323cae51dc68b1bdc7a38a7b33114d63cb7575ad550df209cb20",
+      "bytes": 17883,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentArithmeticFromLiteralPrimitivesDraft11.lean"
+    },
+    {
+      "module": "TypeIIICoherentComputedRadialProjection01",
+      "path": "formal/TypeIIICoherentComputedRadialProjection01.lean",
+      "sha256": "b2737ece6246606ca2e9c6b7dcf6e1c64c46e79657fa9858a322de0d6e27ccbf",
+      "bytes": 3414,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentComputedRadialProjection01.lean"
+    },
+    {
+      "module": "TypeIIICoherentCurveNormalizationFiniteOrigin03",
+      "path": "formal/TypeIIICoherentCurveNormalizationFiniteOrigin03.lean",
+      "sha256": "3c83f900cb987708f84fac2894cbc09c3ef137ebeecd4496d29a53da8966862e",
+      "bytes": 12161,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentCurveNormalizationFiniteOrigin03.lean"
+    },
+    {
+      "module": "TypeIIICoherentGeneralOpenCompactKernelApplication01",
+      "path": "formal/TypeIIICoherentGeneralOpenCompactKernelApplication01.lean",
+      "sha256": "ac2eedd9cd084c7f7e3c7979c0df701e0360d4399e196f04e0299fc9e26ca688",
+      "bytes": 14060,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentGeneralOpenCompactKernelApplication01.lean"
+    },
+    {
+      "module": "TypeIIICoherentGenericCoreFromGeneralStandardOperations06",
+      "path": "formal/TypeIIICoherentGenericCoreFromGeneralStandardOperations06.lean",
+      "sha256": "76680a88c866bd952a48ed045dc67c75d1c47e72d51ddae5fb46a97de71eea18",
+      "bytes": 49651,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentGenericCoreFromGeneralStandardOperations06.lean"
+    },
+    {
+      "module": "TypeIIICoherentGenericSourceZeroFromGeneralOrigin03",
+      "path": "formal/TypeIIICoherentGenericSourceZeroFromGeneralOrigin03.lean",
+      "sha256": "add8abc68b732ed7548a50084e67aae0f42d560fb63e0d28aa334d282f34de83",
+      "bytes": 12834,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentGenericSourceZeroFromGeneralOrigin03.lean"
+    },
+    {
+      "module": "TypeIIICoherentGenericZeroBoundaryFromGeneralLocalization06",
+      "path": "formal/TypeIIICoherentGenericZeroBoundaryFromGeneralLocalization06.lean",
+      "sha256": "4711f7b4e476ae58e031bbfdb75b091c8b06b17773256ce77885f7157f58a758",
+      "bytes": 6957,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentGenericZeroBoundaryFromGeneralLocalization06.lean"
+    },
+    {
+      "module": "TypeIIICoherentNormalizedFourierCompactInfinity03",
+      "path": "formal/TypeIIICoherentNormalizedFourierCompactInfinity03.lean",
+      "sha256": "33ed0631643459b4cc4bb90b30901c2ea665369422d5377671b668f046f93407",
+      "bytes": 10077,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentNormalizedFourierCompactInfinity03.lean"
+    },
+    {
+      "module": "TypeIIICoherentSourceGlobalCohomologyFromGuardedLaurent04",
+      "path": "formal/TypeIIICoherentSourceGlobalCohomologyFromGuardedLaurent04.lean",
+      "sha256": "f08d844f4c28f56d7bafdb9adf9cd24bd9dab1fcbe188b75f25e08014c690ee6",
+      "bytes": 22130,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentSourceGlobalCohomologyFromGuardedLaurent04.lean"
+    },
+    {
+      "module": "TypeIIICoherentStandardDirectEndpointApplicationDraft05",
+      "path": "formal/TypeIIICoherentStandardDirectEndpointApplicationDraft05.lean",
+      "sha256": "e79ea9a22c908ec8bd2f79b8ba6dc4a14491c5f9d410288e0daecd838518adfa",
+      "bytes": 26644,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentStandardDirectEndpointApplicationDraft05.lean"
+    },
+    {
+      "module": "TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03",
+      "path": "formal/TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03.lean",
+      "sha256": "581a0b6c0142bd3910b36c0c4396369b49498a64f43882c96f3b4af53b968850",
+      "bytes": 46358,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICoherentUniformApplicationsFromGeneralStandardTheory03.lean"
+    },
+    {
+      "module": "TypeIIICohomologyInputTransport",
+      "path": "formal/TypeIIICohomologyInputTransport.lean",
+      "sha256": "99d8d9a68e46ea2b8217582690f4add846e6921fa3dea928cb20f3c27d5afe84",
+      "bytes": 4615,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICohomologyInputTransport.lean"
+    },
+    {
+      "module": "TypeIIICommonOriginStalkDataFromStandardOperations04",
+      "path": "formal/TypeIIICommonOriginStalkDataFromStandardOperations04.lean",
+      "sha256": "765e7bbb0e00ecd36f2d44e4bc438c9eb53377ee82076984d20926c3d1a3361f",
+      "bytes": 17682,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICommonOriginStalkDataFromStandardOperations04.lean"
+    },
+    {
+      "module": "TypeIIICompactLissityFromFiniteCoefficients",
+      "path": "formal/TypeIIICompactLissityFromFiniteCoefficients.lean",
+      "sha256": "523c739681c2f90532c72281ea5a9ba891487915ee540824715dcc58c9e097bd",
+      "bytes": 9580,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICompactLissityFromFiniteCoefficients.lean"
+    },
+    {
+      "module": "TypeIIICompactPairingFromCupTrace",
+      "path": "formal/TypeIIICompactPairingFromCupTrace.lean",
+      "sha256": "002e7d0a5e6ad7609d7b84bcae0f1691ef0b0da43fcd54e6738417064f65fccd",
+      "bytes": 9983,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICompactPairingFromCupTrace.lean"
+    },
+    {
       "module": "TypeIIICompletedBlock",
       "path": "formal/TypeIIICompletedBlock.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -4063,6 +4693,33 @@
       "sha256": "441ad62ef64101f043215a794e2924dd5e10f7f710558c47d2661250e35a1987",
       "bytes": 6056,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIConstantFieldLocalData",
+      "path": "formal/TypeIIIConstantFieldLocalData.lean",
+      "sha256": "f3dd7ec8d56c6ec631be02ebc069f184be9a2a361a9e89c28d17b6eedc76d787",
+      "bytes": 6157,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIConstantFieldLocalData.lean"
+    },
+    {
+      "module": "TypeIIIConstantSignFromStalks",
+      "path": "formal/TypeIIIConstantSignFromStalks.lean",
+      "sha256": "018dcbc52b47d6941363fa5397d44a059e532bd940f8bf09d6d2b44045d6ef04",
+      "bytes": 5992,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIConstantSignFromStalks.lean"
+    },
+    {
+      "module": "TypeIIIConstantSignInertia",
+      "path": "formal/TypeIIIConstantSignInertia.lean",
+      "sha256": "ca54d87af387e56a5c5c64ab0b47418fd2294273bb8c8b16338525506143bee4",
+      "bytes": 3370,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIConstantSignInertia.lean"
     },
     {
       "module": "TypeIIICoprimeIdempotentLifting",
@@ -4167,6 +4824,15 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIICurveDataFromOperations",
+      "path": "formal/TypeIIICurveDataFromOperations.lean",
+      "sha256": "b98d0c85802d255d3a9056830e3dd2b0faf631f6be6c01bc542e12a7d852a7ea",
+      "bytes": 2316,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICurveDataFromOperations.lean"
+    },
+    {
       "module": "TypeIIICurveDirection",
       "path": "formal/TypeIIICurveDirection.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -4255,6 +4921,15 @@
       "sha256": "7d65b4ed463dd3246df96dfe7eef566937b131f708ce0677becd7283e359c1d0",
       "bytes": 3952,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIICyclotomicFrobenius",
+      "path": "formal/TypeIIICyclotomicFrobenius.lean",
+      "sha256": "f77b43a9601179b0bb33aecabc4c274efe27eb3aa7c9749a16c2ca34390c3a6f",
+      "bytes": 2397,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIICyclotomicFrobenius.lean"
     },
     {
       "module": "TypeIIIDenseKernelBound",
@@ -4354,6 +5029,15 @@
       "sha256": "e2e5d8296a37414c95212fb450f38d32ddb66ca753a4ba0dbcf5a187d058f908",
       "bytes": 6273,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIEquivariantCompactification",
+      "path": "formal/TypeIIIEquivariantCompactification.lean",
+      "sha256": "b90d84becce03bb473e98e6fd81dbb3fbd4ada0f6e84bd44eface0242c0c928a",
+      "bytes": 3241,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIEquivariantCompactification.lean"
     },
     {
       "module": "TypeIIIEtaleClosedFieldSections",
@@ -4797,6 +5481,15 @@
       "source_path": "formal/TypeIIIExactFunctorResolutionTransformation.lean"
     },
     {
+      "module": "TypeIIIExactInverseImagesToDerived",
+      "path": "formal/TypeIIIExactInverseImagesToDerived.lean",
+      "sha256": "94ed713e356cea25318ccc00e9c95aebc9174b1fd330316c7211a67187adf936",
+      "bytes": 11496,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIExactInverseImagesToDerived.lean"
+    },
+    {
       "module": "TypeIIIExactPullback",
       "path": "formal/TypeIIIExactPullback.lean",
       "source_project": "prime_gaps_type_iii_verification_20260904",
@@ -4923,6 +5616,51 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIIFiniteOriginFromRestriction",
+      "path": "formal/TypeIIIFiniteOriginFromRestriction.lean",
+      "sha256": "4d3fd09fba1eb31f5e7348d49cabbd371e9a3c4e110d26252729a648a65de58d",
+      "bytes": 10446,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFiniteOriginFromRestriction.lean"
+    },
+    {
+      "module": "TypeIIIFiniteOriginFromVanishingCycles",
+      "path": "formal/TypeIIIFiniteOriginFromVanishingCycles.lean",
+      "sha256": "8d1f6154b542607078c3ea2493b22fc6d8ad6af5221d5bae13c1bf2a679e98bd",
+      "bytes": 4653,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFiniteOriginFromVanishingCycles.lean"
+    },
+    {
+      "module": "TypeIIIFinitePlaceScalarExtension",
+      "path": "formal/TypeIIIFinitePlaceScalarExtension.lean",
+      "sha256": "095ba7820329fc4167e620d69b755bf27353f5b92844a81e911db7d68c297d0c",
+      "bytes": 3991,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFinitePlaceScalarExtension.lean"
+    },
+    {
+      "module": "TypeIIIFiniteRepresentationCoefficientMonoidal",
+      "path": "formal/TypeIIIFiniteRepresentationCoefficientMonoidal.lean",
+      "sha256": "7a7ea6178313f84e9c9e15dc37cd229f8906c89264d51633bb8ad110f293eeb5",
+      "bytes": 9968,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFiniteRepresentationCoefficientMonoidal.lean"
+    },
+    {
+      "module": "TypeIIIFiniteRepresentationCoefficientTransport",
+      "path": "formal/TypeIIIFiniteRepresentationCoefficientTransport.lean",
+      "sha256": "4763873429ae90e6f86abeca3cb8149eefa0bcee2892c311ea331f7930b9f12e",
+      "bytes": 5889,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFiniteRepresentationCoefficientTransport.lean"
+    },
+    {
       "module": "TypeIIIFiveScaleBound",
       "path": "formal/TypeIIIFiveScaleBound.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -4966,6 +5704,87 @@
       "sha256": "91bae307c7f3ec419a4b9748b1de1b835194ddf43a1ba4c5c1f3b10cbbbeeb23",
       "bytes": 4641,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIFourierComparisonFromBaseChange",
+      "path": "formal/TypeIIIFourierComparisonFromBaseChange.lean",
+      "sha256": "392f0df1ca8e419dde75216ecb95681541f4d8038050e11daa9a43e052336b08",
+      "bytes": 6048,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierComparisonFromBaseChange.lean"
+    },
+    {
+      "module": "TypeIIIFourierNormalizationMaps",
+      "path": "formal/TypeIIIFourierNormalizationMaps.lean",
+      "sha256": "7e86998e2065df15b11fa8afb1718ec21207c4e3e3534192c81c72c62a6c6d9e",
+      "bytes": 9861,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierNormalizationMaps.lean"
+    },
+    {
+      "module": "TypeIIIFourierOriginFromASKernel",
+      "path": "formal/TypeIIIFourierOriginFromASKernel.lean",
+      "sha256": "1e8c934d2b26662a7c20edf2c3bf9362b2a90abd72b225550e849c503491a4d8",
+      "bytes": 17611,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierOriginFromASKernel.lean"
+    },
+    {
+      "module": "TypeIIIFourierOriginFromGlobalCycles",
+      "path": "formal/TypeIIIFourierOriginFromGlobalCycles.lean",
+      "sha256": "5c0e1a906cbe6817d447dda5a5e4cdec6908221359b2aaaee9f62b238836ffc8",
+      "bytes": 9457,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierOriginFromGlobalCycles.lean"
+    },
+    {
+      "module": "TypeIIIFourierSourceMaps",
+      "path": "formal/TypeIIIFourierSourceMaps.lean",
+      "sha256": "d83057ddf84a3aa8edc5a33e3ff5c86184472dbdbf0b14b7c3d2e96ebf0e4d18",
+      "bytes": 7070,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierSourceMaps.lean"
+    },
+    {
+      "module": "TypeIIIFourierSourceOpenCartesianFromLaurentLocalization",
+      "path": "formal/TypeIIIFourierSourceOpenCartesianFromLaurentLocalization.lean",
+      "sha256": "60de425c45071a853d46c20c3396bd83d9dd5c5c3922cc8bd86807e320b7f875",
+      "bytes": 6129,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierSourceOpenCartesianFromLaurentLocalization.lean"
+    },
+    {
+      "module": "TypeIIIFourierSourcePullbacks",
+      "path": "formal/TypeIIIFourierSourcePullbacks.lean",
+      "sha256": "8a090c9b51bce8af24092f1df68e7617b77c544bda2f6818a9a0c9b3b29a9cf6",
+      "bytes": 4619,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierSourcePullbacks.lean"
+    },
+    {
+      "module": "TypeIIIFourierStalkFromSources",
+      "path": "formal/TypeIIIFourierStalkFromSources.lean",
+      "sha256": "6780c1d2514ccfce91218d9e9ebc9c4416bb674cf0fb5f7d4ba7884a8557f44a",
+      "bytes": 9104,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierStalkFromSources.lean"
+    },
+    {
+      "module": "TypeIIIFourierStalkInertia",
+      "path": "formal/TypeIIIFourierStalkInertia.lean",
+      "sha256": "b7e5abc22ed43fbfa149974d960b7bc9e7242ddf28809f6292ea618c8142718f",
+      "bytes": 7279,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFourierStalkInertia.lean"
     },
     {
       "module": "TypeIIIFrequencyAverage",
@@ -5031,6 +5850,15 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIIFrobeniusBoundaryBasis",
+      "path": "formal/TypeIIIFrobeniusBoundaryBasis.lean",
+      "sha256": "313a9b64fcf2e39c22404e98aca2feecccc5bd15be0c768d02441f697008ddbb",
+      "bytes": 7143,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFrobeniusBoundaryBasis.lean"
+    },
+    {
       "module": "TypeIIIFrobeniusTraceBounds",
       "path": "formal/TypeIIIFrobeniusTraceBounds.lean",
       "sha256": "d57909ceab9d4fe9f14d5aa4c6fe297d5b1d5324eb90c22eaad29d11e70e45d1",
@@ -5038,6 +5866,15 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIFrobeniusTraceBounds.lean"
+    },
+    {
+      "module": "TypeIIIFuFromQuadraticPullback",
+      "path": "formal/TypeIIIFuFromQuadraticPullback.lean",
+      "sha256": "92b534d7d400141ff520116460e36b7cccea59e217025cead2447d91ee280108",
+      "bytes": 9019,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFuFromQuadraticPullback.lean"
     },
     {
       "module": "TypeIIIFuPhaseCoordinates",
@@ -5058,6 +5895,51 @@
       "source_path": "formal/TypeIIIFuTensorApplication.lean"
     },
     {
+      "module": "TypeIIIFullFourierCoreFromNativeBoundedOperations",
+      "path": "formal/TypeIIIFullFourierCoreFromNativeBoundedOperations.lean",
+      "sha256": "6f12f5ce7de26b4fd517970759e001038bf491be64eb2440939442d4cb53f24f",
+      "bytes": 26370,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFullFourierCoreFromNativeBoundedOperations.lean"
+    },
+    {
+      "module": "TypeIIIFullFourierKernelCoordinates",
+      "path": "formal/TypeIIIFullFourierKernelCoordinates.lean",
+      "sha256": "fc8f0583c040306038b230ae4981ed2af2620a2277b7f80ef6bfa106029a9c0d",
+      "bytes": 4752,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFullFourierKernelCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIFullFourierSourceProjectionSmoothFromPolynomialCoordinates",
+      "path": "formal/TypeIIIFullFourierSourceProjectionSmoothFromPolynomialCoordinates.lean",
+      "sha256": "bc5cd4d20739933ee294067cf02cdba67517b68ad8067a6500fc8c3943c50c96",
+      "bytes": 4619,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFullFourierSourceProjectionSmoothFromPolynomialCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIFullFourierTargetCartesianFromLaurentLocalization",
+      "path": "formal/TypeIIIFullFourierTargetCartesianFromLaurentLocalization.lean",
+      "sha256": "25720cf5dbd993c01cff0e1644a460c802c83e83c33c158cc1526ebdc5707845",
+      "bytes": 11998,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFullFourierTargetCartesianFromLaurentLocalization.lean"
+    },
+    {
+      "module": "TypeIIIFullFourierTargetChartFromRelativeAffineCoordinates",
+      "path": "formal/TypeIIIFullFourierTargetChartFromRelativeAffineCoordinates.lean",
+      "sha256": "87f2152cfc4b339071748c1160d727f9f17b906182215c67a954d6d53dd60cc9",
+      "bytes": 7285,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIFullFourierTargetChartFromRelativeAffineCoordinates.lean"
+    },
+    {
       "module": "TypeIIIGcdFinite",
       "path": "formal/TypeIIIGcdFinite.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -5067,6 +5949,123 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIIGeneralFuPrimitiveInfinityApplication03",
+      "path": "formal/TypeIIIGeneralFuPrimitiveInfinityApplication03.lean",
+      "sha256": "6cde2b4683f0b63664ae98b49d19adbdcdc8d02d6bb4b4c253fef18107379465",
+      "bytes": 10668,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGeneralFuPrimitiveInfinityApplication03.lean"
+    },
+    {
+      "module": "TypeIIIGenericCanonicalCore",
+      "path": "formal/TypeIIIGenericCanonicalCore.lean",
+      "sha256": "10cab30b735b5e1036b9b6114b438320139c6c33c91982e767f4db6ea9cb670d",
+      "bytes": 5989,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericCanonicalCore.lean"
+    },
+    {
+      "module": "TypeIIIGenericCohomologyBaseChange",
+      "path": "formal/TypeIIIGenericCohomologyBaseChange.lean",
+      "sha256": "6b2eb3c853b080526372697f25a5f60a2ad883a17a049c711fd2e5943e4d4057",
+      "bytes": 6905,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericCohomologyBaseChange.lean"
+    },
+    {
+      "module": "TypeIIIGenericCompactLissity",
+      "path": "formal/TypeIIIGenericCompactLissity.lean",
+      "sha256": "8d28f5233afb32b2fecfbb137765fd2a1b816641602797f77b05bc3c21a73811",
+      "bytes": 1461,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericCompactLissity.lean"
+    },
+    {
+      "module": "TypeIIIGenericCurvePullback",
+      "path": "formal/TypeIIIGenericCurvePullback.lean",
+      "sha256": "1cb2987fa3aad997c33e1d0dfd62eae1510d7ee542d97c0705123fa25d7b1a9f",
+      "bytes": 7703,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericCurvePullback.lean"
+    },
+    {
+      "module": "TypeIIIGenericCurveRanksFromActualFractionPoint",
+      "path": "formal/TypeIIIGenericCurveRanksFromActualFractionPoint.lean",
+      "sha256": "174fc1ace49f5bece85eda4d3b93983a815ee6c36c03fe011db849b6b8159e91",
+      "bytes": 6716,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericCurveRanksFromActualFractionPoint.lean"
+    },
+    {
+      "module": "TypeIIIGenericLocalObservablesFromActualParameterFibers",
+      "path": "formal/TypeIIIGenericLocalObservablesFromActualParameterFibers.lean",
+      "sha256": "068e8e12fce76688ec6cf667f1258176361f60dc2fb98d8126405752b6e74e15",
+      "bytes": 5692,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericLocalObservablesFromActualParameterFibers.lean"
+    },
+    {
+      "module": "TypeIIIGenericOriginFractionFieldCoordinates",
+      "path": "formal/TypeIIIGenericOriginFractionFieldCoordinates.lean",
+      "sha256": "aea7f7ea3fc49fc39a360a7f75ebb1684fb940711298486dcdf49f78777c2751",
+      "bytes": 6501,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericOriginFractionFieldCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIGenericPhysicalEntry",
+      "path": "formal/TypeIIIGenericPhysicalEntry.lean",
+      "sha256": "7d31b705c3819ef39d197f21f8b0e90bbc3e6070c78d4301fce1cf2c4b6a201f",
+      "bytes": 3428,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericPhysicalEntry.lean"
+    },
+    {
+      "module": "TypeIIIGenericRelativeAffineLineCoordinates",
+      "path": "formal/TypeIIIGenericRelativeAffineLineCoordinates.lean",
+      "sha256": "011a30e76d59cb0c59785e4d05bb4eebaa5e8d5b72f8aa65110cd50b12e1cd28",
+      "bytes": 4913,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericRelativeAffineLineCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIGenericRelativeAffineParameterBaseChangeCoordinates",
+      "path": "formal/TypeIIIGenericRelativeAffineParameterBaseChangeCoordinates.lean",
+      "sha256": "13f578eb7dd456a908bb9fc0c959dd2349e211c2b0a783231a47ca829d7ed539",
+      "bytes": 11310,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericRelativeAffineParameterBaseChangeCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIGenericSourceRanksFromActualFractionPoint",
+      "path": "formal/TypeIIIGenericSourceRanksFromActualFractionPoint.lean",
+      "sha256": "d7cb38c1489bc83517d7804284a4bbd66d69885d64169d3b6f41903cbde85c8e",
+      "bytes": 9129,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericSourceRanksFromActualFractionPoint.lean"
+    },
+    {
+      "module": "TypeIIIGenericSourceSpecialization",
+      "path": "formal/TypeIIIGenericSourceSpecialization.lean",
+      "sha256": "8dbd8c552316dbf507a529cf4c9d0a432c6664b2a997f4d176fd3bb360ca3309",
+      "bytes": 9432,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGenericSourceSpecialization.lean"
+    },
+    {
       "module": "TypeIIIGeometricAssembly",
       "path": "formal/TypeIIIGeometricAssembly.lean",
       "source_project": "prime_gaps_type_iii_verification_20260904",
@@ -5074,6 +6073,33 @@
       "sha256": "e75f55e468a85ebec160a14afdae39501cb91695ed3cdd1882789a8949ba6f4e",
       "bytes": 14690,
       "prior_audit_status": "PASS_SUPPORTING_MODULES_ONLY"
+    },
+    {
+      "module": "TypeIIIGeometricBoundaryFromFunctors",
+      "path": "formal/TypeIIIGeometricBoundaryFromFunctors.lean",
+      "sha256": "b6ec171abe9db54429289fb20f4a9a77ba74078ef2df0600c3426935a6c7b93c",
+      "bytes": 4122,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGeometricBoundaryFromFunctors.lean"
+    },
+    {
+      "module": "TypeIIIGeometricCoreRank",
+      "path": "formal/TypeIIIGeometricCoreRank.lean",
+      "sha256": "99a3d9a4d61b1543dd47124295b11ab71bcece8ce598844a7e0bbed8b20966d7",
+      "bytes": 4498,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGeometricCoreRank.lean"
+    },
+    {
+      "module": "TypeIIIGeometricOriginFromScalar",
+      "path": "formal/TypeIIIGeometricOriginFromScalar.lean",
+      "sha256": "2bfd98546cce331ef3b658b4c72039e6fd01708c7b1ccf3afa796f13101b5eca",
+      "bytes": 8419,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGeometricOriginFromScalar.lean"
     },
     {
       "module": "TypeIIIGlobalEstimate",
@@ -5101,6 +6127,15 @@
       "sha256": "a78c09753a629516afcf22b42073d1b420cc685c20f1e8106ecd75c9a2069253",
       "bytes": 1464,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIGloballyLisseLineRamificationFromKatz",
+      "path": "formal/TypeIIIGloballyLisseLineRamificationFromKatz.lean",
+      "sha256": "1b3a6c107f6c9df01eaf27bf07562e6a63ad1d28493ef10edf1f24bdcfdfdab8",
+      "bytes": 13683,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIGloballyLisseLineRamificationFromKatz.lean"
     },
     {
       "module": "TypeIIIHeightLoss",
@@ -5175,6 +6210,15 @@
       "source_path": "formal/TypeIIIHomogeneousEvaluation.lean"
     },
     {
+      "module": "TypeIIIImageWeightsFromCompact",
+      "path": "formal/TypeIIIImageWeightsFromCompact.lean",
+      "sha256": "1b7868f41985c4641cab0cbf7f77f58653b423bbfe8cbffd90cecabbcdfe16d9",
+      "bytes": 9691,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIImageWeightsFromCompact.lean"
+    },
+    {
       "module": "TypeIIIInfinitesimalAffineCompletion",
       "path": "formal/TypeIIIInfinitesimalAffineCompletion.lean",
       "sha256": "a06517406df9109be368b22a25a5cd250913f34d3ccf07e3a57138807c4cb041",
@@ -5218,6 +6262,15 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIInfinitesimalSections.lean"
+    },
+    {
+      "module": "TypeIIIInfinityNearbyFromComputedPowerEmbedding",
+      "path": "formal/TypeIIIInfinityNearbyFromComputedPowerEmbedding.lean",
+      "sha256": "03a6c63f7a57f85d3d33e099ccf8f1f7921c4da6c39ed2d1f9e7873463c30f0a",
+      "bytes": 4499,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIInfinityNearbyFromComputedPowerEmbedding.lean"
     },
     {
       "module": "TypeIIIInjectiveResolutionAdditivity",
@@ -5274,6 +6327,15 @@
       "source_path": "formal/TypeIIIIntegralAlgebraIdempotentLifting.lean"
     },
     {
+      "module": "TypeIIIIntermediateExtensionFromImage",
+      "path": "formal/TypeIIIIntermediateExtensionFromImage.lean",
+      "sha256": "a231c0283d9b943f112bd9d65e44c1d65853562722a8eb09f564c022077c0789",
+      "bytes": 7215,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIIntermediateExtensionFromImage.lean"
+    },
+    {
       "module": "TypeIIIIntervalCompletion",
       "path": "formal/TypeIIIIntervalCompletion.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -5299,6 +6361,24 @@
       "sha256": "8ec4789a186efb619b24c972009efd6686b78a7072e57591a556871b30661929",
       "bytes": 10780,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIJordanScaledCorrection",
+      "path": "formal/TypeIIIJordanScaledCorrection.lean",
+      "sha256": "edf4a291d7afba670848845519726158b357dff1808d797732beca8eabd0ca13",
+      "bytes": 3499,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIJordanScaledCorrection.lean"
+    },
+    {
+      "module": "TypeIIIKatzSourceNormalization",
+      "path": "formal/TypeIIIKatzSourceNormalization.lean",
+      "sha256": "2f2772495bd17c04bebf26a784a9ec16b50bfe857abebd3a93a30abdcfef3846",
+      "bytes": 4745,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIKatzSourceNormalization.lean"
     },
     {
       "module": "TypeIIIKernelPowerBound",
@@ -5418,6 +6498,15 @@
       "source_path": "formal/TypeIIIKloostermanFiniteCoefficientTransitions.lean"
     },
     {
+      "module": "TypeIIIKloostermanInfinityFromScalar",
+      "path": "formal/TypeIIIKloostermanInfinityFromScalar.lean",
+      "sha256": "55a0125dd89be641ac54aa015c883bbb85c5e0616dc74d3729382f535f9047bb",
+      "bytes": 3998,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIKloostermanInfinityFromScalar.lean"
+    },
+    {
       "module": "TypeIIIKloostermanPhaseFamily",
       "path": "formal/TypeIIIKloostermanPhaseFamily.lean",
       "sha256": "3d951869be985dcf91793e804d70e539265f2d8752bf25e70dc25c9e7713a3d1",
@@ -5490,6 +6579,42 @@
       "source_path": "formal/TypeIIILinePhaseDescent.lean"
     },
     {
+      "module": "TypeIIILinePurityFromStalks",
+      "path": "formal/TypeIIILinePurityFromStalks.lean",
+      "sha256": "a71a79bd4f5415b8890fbe2b593b36d6ced01237da1c0074f36b334e3cceb9bb",
+      "bytes": 6261,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILinePurityFromStalks.lean"
+    },
+    {
+      "module": "TypeIIILinearFourierRationalImage",
+      "path": "formal/TypeIIILinearFourierRationalImage.lean",
+      "sha256": "9351aa62e6f396b975796c31a59cd81a10275cbee1b6b5d4b909c55a0683d851",
+      "bytes": 2343,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILinearFourierRationalImage.lean"
+    },
+    {
+      "module": "TypeIIILinearFourierTransposeCoordinates",
+      "path": "formal/TypeIIILinearFourierTransposeCoordinates.lean",
+      "sha256": "80d2aed008079f719918fe39dc4975570d6a64335f9d2a2a207ae1ee09a7bf12",
+      "bytes": 10689,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILinearFourierTransposeCoordinates.lean"
+    },
+    {
+      "module": "TypeIIILinearRadialPhaseFromPoleTransport",
+      "path": "formal/TypeIIILinearRadialPhaseFromPoleTransport.lean",
+      "sha256": "1bc62af2a9e5c327ec5b2f4804f00e425b25443fb40df15af37359edcaf4d66a",
+      "bytes": 27355,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILinearRadialPhaseFromPoleTransport.lean"
+    },
+    {
       "module": "TypeIIILinearScale",
       "path": "formal/TypeIIILinearScale.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -5497,6 +6622,15 @@
       "sha256": "c3a5fa6a4206d4f1fbdc1f0fc152a2051bef878b5346ba78b6cc5e6e7c49d076",
       "bytes": 6445,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIILiteralArithmeticOriginBoundaryBindingHELD04",
+      "path": "formal/TypeIIILiteralArithmeticOriginBoundaryBindingHELD04.lean",
+      "sha256": "e3204b57838689e46b49038f38cca050cc7635776f991466e9bd030b7d8938c9",
+      "bytes": 8325,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILiteralArithmeticOriginBoundaryBindingHELD04.lean"
     },
     {
       "module": "TypeIIILocal",
@@ -5515,6 +6649,60 @@
       "sha256": "902eb602303e6d11bf2f822e62d3a7970e17c402cf9653a8117c3cf0c85a4c10",
       "bytes": 2571,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIILocalCyclotomicCoefficient",
+      "path": "formal/TypeIIILocalCyclotomicCoefficient.lean",
+      "sha256": "008744de6ce13e8947131d30a942afe83e80b3d018e06233db47df7da78d379a",
+      "bytes": 7537,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILocalCyclotomicCoefficient.lean"
+    },
+    {
+      "module": "TypeIIILocalFourierFromASPullbacks",
+      "path": "formal/TypeIIILocalFourierFromASPullbacks.lean",
+      "sha256": "781743eac7472d3f37eadb6a1a861cbb77e264d1da36e2b7d696e021596c9127",
+      "bytes": 7258,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILocalFourierFromASPullbacks.lean"
+    },
+    {
+      "module": "TypeIIILocalFourierFromAdditiveMaps",
+      "path": "formal/TypeIIILocalFourierFromAdditiveMaps.lean",
+      "sha256": "25f113c312c0ed93b443163fb843d34d7393766d94638b77ee07d474d835b7a6",
+      "bytes": 11302,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILocalFourierFromAdditiveMaps.lean"
+    },
+    {
+      "module": "TypeIIILocalFourierFromKernel",
+      "path": "formal/TypeIIILocalFourierFromKernel.lean",
+      "sha256": "50af3970c8b24a0c5e955ebb9e4f8429b45e4ded99e01314039e4e07c381a6e3",
+      "bytes": 7858,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILocalFourierFromKernel.lean"
+    },
+    {
+      "module": "TypeIIILocalFourierKernelCoordinates",
+      "path": "formal/TypeIIILocalFourierKernelCoordinates.lean",
+      "sha256": "ce0a7885f89a6252af0c19f01e329505e4e30b243865f4ca59fdd734313c1a0f",
+      "bytes": 7466,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILocalFourierKernelCoordinates.lean"
+    },
+    {
+      "module": "TypeIIILocalOriginRulesFromUniversalNearbyTheorems",
+      "path": "formal/TypeIIILocalOriginRulesFromUniversalNearbyTheorems.lean",
+      "sha256": "70750552c0f94dd8d98fdfde31dea404d2fca5669ba81d5ec43b3f9a1c367708",
+      "bytes": 7531,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILocalOriginRulesFromUniversalNearbyTheorems.lean"
     },
     {
       "module": "TypeIIILocalProgress",
@@ -5536,6 +6724,15 @@
       "sha256": "2fa8944d2453a8d3cde3d8d23a34c927b364ee38cbc816e4b97ed411d36af477",
       "bytes": 8727,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIILocalWeilAction",
+      "path": "formal/TypeIIILocalWeilAction.lean",
+      "sha256": "680da57cac7f2a098f120f714523a7bca6b5cab189c9a1710955136a8bdef90d",
+      "bytes": 3760,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIILocalWeilAction.lean"
     },
     {
       "module": "TypeIIIMatrixEstimate",
@@ -5574,6 +6771,177 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIIMiddleFromLocalization",
+      "path": "formal/TypeIIIMiddleFromLocalization.lean",
+      "sha256": "71fdd3ee159e2376c63dddf4e428fe740e7b34d0bcc20acf201eff0dbc15cb4a",
+      "bytes": 9270,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIMiddleFromLocalization.lean"
+    },
+    {
+      "module": "TypeIIIMiddleInfinityFromActualOrdinaryOpenAndPerverseCohomology",
+      "path": "formal/TypeIIIMiddleInfinityFromActualOrdinaryOpenAndPerverseCohomology.lean",
+      "sha256": "612a0f1842a8b83810badd814810f3d3701b59e59eaabe59a29fa39f96b6dfb1",
+      "bytes": 13676,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIMiddleInfinityFromActualOrdinaryOpenAndPerverseCohomology.lean"
+    },
+    {
+      "module": "TypeIIIMiddleInfinityFromPerverse",
+      "path": "formal/TypeIIIMiddleInfinityFromPerverse.lean",
+      "sha256": "1e6d73fe2f0f762c0375d9483a2553b599f8a41a13082cf67c4e8df874bc88d6",
+      "bytes": 6880,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIMiddleInfinityFromPerverse.lean"
+    },
+    {
+      "module": "TypeIIINativeAuxiliarySchemes",
+      "path": "formal/TypeIIINativeAuxiliarySchemes.lean",
+      "sha256": "fa921cd1112e9fc9591e62157a2d9ad9930039426cfeadfa1970f5fde1d5b2db",
+      "bytes": 1220,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeAuxiliarySchemes.lean"
+    },
+    {
+      "module": "TypeIIINativeCoefficientTransportFromIsomorphisms",
+      "path": "formal/TypeIIINativeCoefficientTransportFromIsomorphisms.lean",
+      "sha256": "4c1d26f80e7f2106eece9cc905fcdeaaaef53e593d398fcc3688b86bfb0bb75f",
+      "bytes": 4478,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeCoefficientTransportFromIsomorphisms.lean"
+    },
+    {
+      "module": "TypeIIINativeCommonArithmeticTraitWeilCone04",
+      "path": "formal/TypeIIINativeCommonArithmeticTraitWeilCone04.lean",
+      "sha256": "24e5748db73859975b46e78418e3c6048eee0e59790534479cee0171d97b6eae",
+      "bytes": 6766,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeCommonArithmeticTraitWeilCone04.lean"
+    },
+    {
+      "module": "TypeIIINativeLocalRulesFromRadialIsomorphisms",
+      "path": "formal/TypeIIINativeLocalRulesFromRadialIsomorphisms.lean",
+      "sha256": "0c2f0b39390fabcd0b2fef3b72f2979489e280b1b301f28cab359ea5974ac3d1",
+      "bytes": 8089,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeLocalRulesFromRadialIsomorphisms.lean"
+    },
+    {
+      "module": "TypeIIINativeLocalSupportFromGeometricDimensions",
+      "path": "formal/TypeIIINativeLocalSupportFromGeometricDimensions.lean",
+      "sha256": "3c643b7a302a000a387e97c236df26ce21a667f581554b3278c2f666b100cdf6",
+      "bytes": 3439,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeLocalSupportFromGeometricDimensions.lean"
+    },
+    {
+      "module": "TypeIIINativePerverseFromUniversalHeart",
+      "path": "formal/TypeIIINativePerverseFromUniversalHeart.lean",
+      "sha256": "86afc87f02391da6582f1eeeebaafed3a8579356be29dbefb54065d1b7d14d2b",
+      "bytes": 6820,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativePerverseFromUniversalHeart.lean"
+    },
+    {
+      "module": "TypeIIINativePointFiberFromUniversalGeometricFibers",
+      "path": "formal/TypeIIINativePointFiberFromUniversalGeometricFibers.lean",
+      "sha256": "e7bc0ec4fe3f6002a6688389457e98e6783f935f1b632019fb6864b2a77e5d89",
+      "bytes": 4020,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativePointFiberFromUniversalGeometricFibers.lean"
+    },
+    {
+      "module": "TypeIIINativePunctualFourierFromLisseWildStalks",
+      "path": "formal/TypeIIINativePunctualFourierFromLisseWildStalks.lean",
+      "sha256": "47765e919e333d228a18461568a7d089e49a2014be2094e8d8d2dac0bc1de502",
+      "bytes": 21232,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativePunctualFourierFromLisseWildStalks.lean"
+    },
+    {
+      "module": "TypeIIINativePunctualZeroPhaseFromActualPointWitnesses",
+      "path": "formal/TypeIIINativePunctualZeroPhaseFromActualPointWitnesses.lean",
+      "sha256": "c5df7c1c80248c2f43c237db1db3eeaa3fa06ce48a0148433db2c605f292550d",
+      "bytes": 11092,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativePunctualZeroPhaseFromActualPointWitnesses.lean"
+    },
+    {
+      "module": "TypeIIINativeSurfaceFromGeometricStalks",
+      "path": "formal/TypeIIINativeSurfaceFromGeometricStalks.lean",
+      "sha256": "1482a09362a2f0576342c15b2421f230b8cf7334c387589a43203b1fd8467c77",
+      "bytes": 9260,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeSurfaceFromGeometricStalks.lean"
+    },
+    {
+      "module": "TypeIIINativeSurfaceFromIntrinsicSimplicity",
+      "path": "formal/TypeIIINativeSurfaceFromIntrinsicSimplicity.lean",
+      "sha256": "e8ed65831c46498aaea1fbd47b26e0a3316d7954daab5722aa9d1578f63432d0",
+      "bytes": 2397,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeSurfaceFromIntrinsicSimplicity.lean"
+    },
+    {
+      "module": "TypeIIINativeTheoryFromRadialPhaseData",
+      "path": "formal/TypeIIINativeTheoryFromRadialPhaseData.lean",
+      "sha256": "fd7f1c54b1314a9575b14737dfea98d607ddc9850e66a012091d50442c7969eb",
+      "bytes": 5349,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeTheoryFromRadialPhaseData.lean"
+    },
+    {
+      "module": "TypeIIINativeWildRecognitionFromFixedGeometricTraits",
+      "path": "formal/TypeIIINativeWildRecognitionFromFixedGeometricTraits.lean",
+      "sha256": "508055c28c37d5e342c6129a11c27b938793fae10751ecc3667a2ed5a5b42b23",
+      "bytes": 11069,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINativeWildRecognitionFromFixedGeometricTraits.lean"
+    },
+    {
+      "module": "TypeIIINaturalCompactBaseChange",
+      "path": "formal/TypeIIINaturalCompactBaseChange.lean",
+      "sha256": "e3de73aab18fcd1c01b96e5560b6dfed4d9c34b8c796e1013796e900417ff19c",
+      "bytes": 3154,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINaturalCompactBaseChange.lean"
+    },
+    {
+      "module": "TypeIIINaturalSwanFromFiniteBreakProfile",
+      "path": "formal/TypeIIINaturalSwanFromFiniteBreakProfile.lean",
+      "sha256": "ac3afecbfbb9afa9f2dec74ab1d5b268a421c10aefa7f781fc292ee51bf2573a",
+      "bytes": 2807,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINaturalSwanFromFiniteBreakProfile.lean"
+    },
+    {
+      "module": "TypeIIINearbyFromStalkPullback",
+      "path": "formal/TypeIIINearbyFromStalkPullback.lean",
+      "sha256": "fd9d58cea339903d945f6f67363fd837417425b217e78771991881ba10fe3c97",
+      "bytes": 8574,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINearbyFromStalkPullback.lean"
+    },
+    {
       "module": "TypeIIINilpotentThickeningIdempotents",
       "path": "formal/TypeIIINilpotentThickeningIdempotents.lean",
       "sha256": "c99a1cbde77cfec32fc37c4898baa611703cafe5754746c739d73c3f27f6f955",
@@ -5601,6 +6969,168 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIINormalizedInfinityFromLiteralOpenAdjunction01",
+      "path": "formal/TypeIIINormalizedInfinityFromLiteralOpenAdjunction01.lean",
+      "sha256": "6619956a1c5d8b1ec2342a256685cc9edb192b4bcfdb988be224f342c2e97ac0",
+      "bytes": 8289,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIINormalizedInfinityFromLiteralOpenAdjunction01.lean"
+    },
+    {
+      "module": "TypeIIIOrdinaryBaseChangeFromDuality",
+      "path": "formal/TypeIIIOrdinaryBaseChangeFromDuality.lean",
+      "sha256": "c29ed13e3d9042e5dc41dcd4e0f30917b73d67a8627c9271fcc9db1a17863579",
+      "bytes": 10501,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOrdinaryBaseChangeFromDuality.lean"
+    },
+    {
+      "module": "TypeIIIOrdinaryFourierKernelExtensionFromGeneralSmoothBaseChange",
+      "path": "formal/TypeIIIOrdinaryFourierKernelExtensionFromGeneralSmoothBaseChange.lean",
+      "sha256": "e993b92442d1b34a344407db2c1c385cf60a3abfa7333019f857bea90123b83e",
+      "bytes": 5524,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOrdinaryFourierKernelExtensionFromGeneralSmoothBaseChange.lean"
+    },
+    {
+      "module": "TypeIIIOrdinaryOpenExtensionsFromAdjunctions",
+      "path": "formal/TypeIIIOrdinaryOpenExtensionsFromAdjunctions.lean",
+      "sha256": "d0671694ef7e2176374c4b52a3a5591052ca2c5c66ee5cdb219e6e767bce23df",
+      "bytes": 8944,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOrdinaryOpenExtensionsFromAdjunctions.lean"
+    },
+    {
+      "module": "TypeIIIOriginFiniteConstantFromCurveRealization05",
+      "path": "formal/TypeIIIOriginFiniteConstantFromCurveRealization05.lean",
+      "sha256": "5cb04a4e45d6f142a0a6889c79ccc801ae58bc46ba80b5093e93ebb14b98ded0",
+      "bytes": 12089,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginFiniteConstantFromCurveRealization05.lean"
+    },
+    {
+      "module": "TypeIIIOriginFiniteConstantInvariantFrobeniusTransport04",
+      "path": "formal/TypeIIIOriginFiniteConstantInvariantFrobeniusTransport04.lean",
+      "sha256": "9681a47c6d367b457b0321bc1054ad11fb4149c76e7e3ba41e00864bc9c0bf6e",
+      "bytes": 7965,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginFiniteConstantInvariantFrobeniusTransport04.lean"
+    },
+    {
+      "module": "TypeIIIOriginFrobeniusPowerFromInertiaTwistedLiftRoot02",
+      "path": "formal/TypeIIIOriginFrobeniusPowerFromInertiaTwistedLiftRoot02.lean",
+      "sha256": "c7a70b68b3bea9b3664cea81eba987f0c19e76d122281df63ba270ced641af14",
+      "bytes": 2375,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginFrobeniusPowerFromInertiaTwistedLiftRoot02.lean"
+    },
+    {
+      "module": "TypeIIIOriginInputsFromSharedStandardOperationsHELD04",
+      "path": "formal/TypeIIIOriginInputsFromSharedStandardOperationsHELD04.lean",
+      "sha256": "016ba7d958d512df6c956c3229187939de5e9a3b7388ae9cf904bb935af8a958",
+      "bytes": 25786,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginInputsFromSharedStandardOperationsHELD04.lean"
+    },
+    {
+      "module": "TypeIIIOriginInvariantsSameFieldCommonConeBridge03",
+      "path": "formal/TypeIIIOriginInvariantsSameFieldCommonConeBridge03.lean",
+      "sha256": "270f4efd2ebd0b5ffb20b2cb77a44cb6d163e89a3d7a0b01866802385ed30957",
+      "bytes": 9184,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginInvariantsSameFieldCommonConeBridge03.lean"
+    },
+    {
+      "module": "TypeIIIOriginModelsFromSameComputedCoefficients",
+      "path": "formal/TypeIIIOriginModelsFromSameComputedCoefficients.lean",
+      "sha256": "f9cef601522229fb43999e0ab1fe4bd3dcd51a915e5c7d821a6f475ef18f3d5d",
+      "bytes": 12142,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginModelsFromSameComputedCoefficients.lean"
+    },
+    {
+      "module": "TypeIIIOriginPoleFromExactInverseImages",
+      "path": "formal/TypeIIIOriginPoleFromExactInverseImages.lean",
+      "sha256": "4bfa9dd30960ca9349717c0ac52e7c65b8341fb0debfdb9a85ba811102cacdb0",
+      "bytes": 15962,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginPoleFromExactInverseImages.lean"
+    },
+    {
+      "module": "TypeIIIOriginPoleWildFromOriginalParameter",
+      "path": "formal/TypeIIIOriginPoleWildFromOriginalParameter.lean",
+      "sha256": "6f2ab5569e3df6f6071cdcd3d68f11016a3bdff8abbb4222ebfa67dbc581f4cc",
+      "bytes": 13730,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginPoleWildFromOriginalParameter.lean"
+    },
+    {
+      "module": "TypeIIIOriginRealizationFromExactInverseImages",
+      "path": "formal/TypeIIIOriginRealizationFromExactInverseImages.lean",
+      "sha256": "b74dfec36b00563aa6af788681507db2b499e50ae3a66c5a22b73caa3b44aa8e",
+      "bytes": 12770,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginRealizationFromExactInverseImages.lean"
+    },
+    {
+      "module": "TypeIIIOriginRulesFromStandardPrimitiveAndFiniteConstant04",
+      "path": "formal/TypeIIIOriginRulesFromStandardPrimitiveAndFiniteConstant04.lean",
+      "sha256": "f33138d79dedd8d2a85a510a36c437a6cacc8ef254256cd03286cab07a46f007",
+      "bytes": 7339,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginRulesFromStandardPrimitiveAndFiniteConstant04.lean"
+    },
+    {
+      "module": "TypeIIIOriginStalkDataFromIndividualStandardOperations03",
+      "path": "formal/TypeIIIOriginStalkDataFromIndividualStandardOperations03.lean",
+      "sha256": "212d42afbe5b90c7d18434e0ef101d189300da606bd4c5809a5f0419ea7e3137",
+      "bytes": 10455,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginStalkDataFromIndividualStandardOperations03.lean"
+    },
+    {
+      "module": "TypeIIIOriginStalksFromStandardWeilInvariants01",
+      "path": "formal/TypeIIIOriginStalksFromStandardWeilInvariants01.lean",
+      "sha256": "c7fee9069ff323522f70245e745e0a424069c2f69dc1c5673f0e8e4cf85a3611",
+      "bytes": 7322,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginStalksFromStandardWeilInvariants01.lean"
+    },
+    {
+      "module": "TypeIIIOriginalAffineFiniteOriginFromSharedEquivariantCompactification04",
+      "path": "formal/TypeIIIOriginalAffineFiniteOriginFromSharedEquivariantCompactification04.lean",
+      "sha256": "8a4da780db3f12045a3a23e07638756c45c7f8846137ac50c0bc595e9982b689",
+      "bytes": 12626,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginalAffineFiniteOriginFromSharedEquivariantCompactification04.lean"
+    },
+    {
+      "module": "TypeIIIOriginalAffineKernelFromPublishedOpenCompact03",
+      "path": "formal/TypeIIIOriginalAffineKernelFromPublishedOpenCompact03.lean",
+      "sha256": "219bf3b09d43b578a43cf7db2cd44a4bce7de8dbcc56d1dd7101f47b1730de9f",
+      "bytes": 17872,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginalAffineKernelFromPublishedOpenCompact03.lean"
+    },
+    {
       "module": "TypeIIIOriginalCompletion",
       "path": "formal/TypeIIIOriginalCompletion.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -5608,6 +7138,15 @@
       "sha256": "6383b690716637c8ee176d42cbc85849aff35ef1f099e39257af77b22fb4afa6",
       "bytes": 5473,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIOriginalCoreFourierStalk",
+      "path": "formal/TypeIIIOriginalCoreFourierStalk.lean",
+      "sha256": "54d8ffcbb900eb777e749a8425aeef4ec9ec6a45950b6e89910e6f214b097e48",
+      "bytes": 7025,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginalCoreFourierStalk.lean"
     },
     {
       "module": "TypeIIIOriginalFrequency",
@@ -5619,6 +7158,33 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIIOriginalGoodSourceGeometryFromThinGeneralLaurent03",
+      "path": "formal/TypeIIIOriginalGoodSourceGeometryFromThinGeneralLaurent03.lean",
+      "sha256": "53da60701f55d3c2b0b34d2b17816ce6fb84bd860ecbc6402e042ee2e3aa9cd9",
+      "bytes": 10858,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIOriginalGoodSourceGeometryFromThinGeneralLaurent03.lean"
+    },
+    {
+      "module": "TypeIIIParabolicBaseChange",
+      "path": "formal/TypeIIIParabolicBaseChange.lean",
+      "sha256": "0704d27884d53a668f38f732c44c37390862c69455f1940b6e62e01322cb797b",
+      "bytes": 5297,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIParabolicBaseChange.lean"
+    },
+    {
+      "module": "TypeIIIParabolicMiddleComparison",
+      "path": "formal/TypeIIIParabolicMiddleComparison.lean",
+      "sha256": "72e6f37992779165508033e0f841fbd41c4e895f4fbdde5ac42b1da5cd14e053",
+      "bytes": 6902,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIParabolicMiddleComparison.lean"
+    },
+    {
       "module": "TypeIIIParameterNormalization",
       "path": "formal/TypeIIIParameterNormalization.lean",
       "sha256": "8e4ceb02c271da840b23998a51efcf8fca8a52a87009afff9dd9c4b8189821e9",
@@ -5626,6 +7192,42 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIParameterNormalization.lean"
+    },
+    {
+      "module": "TypeIIIParameterPurityFromStalks",
+      "path": "formal/TypeIIIParameterPurityFromStalks.lean",
+      "sha256": "413ddf29fa3500603154e6d39e00ed2a12474c0c313934e313242039fd5f8ecf",
+      "bytes": 7527,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIParameterPurityFromStalks.lean"
+    },
+    {
+      "module": "TypeIIIPerverseLinearPullbackFromExactInverseImages",
+      "path": "formal/TypeIIIPerverseLinearPullbackFromExactInverseImages.lean",
+      "sha256": "6af6ebc557e47ec742f3895f1e54baf4b57df4dd332fcb9b2ef62b4d1fcbeda0",
+      "bytes": 6652,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPerverseLinearPullbackFromExactInverseImages.lean"
+    },
+    {
+      "module": "TypeIIIPhaseDataFromOriginalCharacters",
+      "path": "formal/TypeIIIPhaseDataFromOriginalCharacters.lean",
+      "sha256": "07d455b459723f2cafdcd054a0f7f744d130e23ba6ea185e3bbe63661b054982",
+      "bytes": 11921,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhaseDataFromOriginalCharacters.lean"
+    },
+    {
+      "module": "TypeIIIPhaseFieldConstants",
+      "path": "formal/TypeIIIPhaseFieldConstants.lean",
+      "sha256": "28b0d2bad1e5b926cd3b4503921c7c492bbd4a7611de3c728613f5c0ca2d1160",
+      "bytes": 4670,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhaseFieldConstants.lean"
     },
     {
       "module": "TypeIIIPhaseObstruction",
@@ -5637,6 +7239,42 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIIPhaseRulesFromSeparatedCharacters",
+      "path": "formal/TypeIIIPhaseRulesFromSeparatedCharacters.lean",
+      "sha256": "d2e1dfbd66cd05ddc183ada9b12da509b8573cde22ec9365029d28405adf0e8b",
+      "bytes": 32294,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhaseRulesFromSeparatedCharacters.lean"
+    },
+    {
+      "module": "TypeIIIPhysicalEntryFourier",
+      "path": "formal/TypeIIIPhysicalEntryFourier.lean",
+      "sha256": "9edb2f214eed9d21c3fdbbba7d01610431c11e07a607002c347fb9fc7b8807ba",
+      "bytes": 10119,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhysicalEntryFourier.lean"
+    },
+    {
+      "module": "TypeIIIPhysicalLocalDataFromSources",
+      "path": "formal/TypeIIIPhysicalLocalDataFromSources.lean",
+      "sha256": "aad6b484e758c5c519a7f085916a7121571725d8911c71a68d944426923e7523",
+      "bytes": 9530,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhysicalLocalDataFromSources.lean"
+    },
+    {
+      "module": "TypeIIIPhysicalLocalFamilyData",
+      "path": "formal/TypeIIIPhysicalLocalFamilyData.lean",
+      "sha256": "f4279b74a2df3b62ec43da4a1a690c87f303699f014b53dafd3797e2c162ada4",
+      "bytes": 3521,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhysicalLocalFamilyData.lean"
+    },
+    {
       "module": "TypeIIIPhysicalPolynomialMap",
       "path": "formal/TypeIIIPhysicalPolynomialMap.lean",
       "sha256": "7a6396f198401a24ba379b21403b4684b6ae09e7e94374daf8afa505adb54c66",
@@ -5644,6 +7282,24 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIPhysicalPolynomialMap.lean"
+    },
+    {
+      "module": "TypeIIIPhysicalRadialMorphism",
+      "path": "formal/TypeIIIPhysicalRadialMorphism.lean",
+      "sha256": "556e29a0ff5f14142c0f824207434d56db246ff51d14b899852cb770c2916e85",
+      "bytes": 9182,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhysicalRadialMorphism.lean"
+    },
+    {
+      "module": "TypeIIIPhysicalTensorComparison",
+      "path": "formal/TypeIIIPhysicalTensorComparison.lean",
+      "sha256": "af6c02797e0928fb98febf913104803a30aeee4722fe6f4b8a5dab94da9eb899",
+      "bytes": 5283,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhysicalTensorComparison.lean"
     },
     {
       "module": "TypeIIIPhysicalTorusLaurent",
@@ -5662,6 +7318,60 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIPhysicalTorusMorphism.lean"
+    },
+    {
+      "module": "TypeIIIPhysicalUnsignedInertia",
+      "path": "formal/TypeIIIPhysicalUnsignedInertia.lean",
+      "sha256": "b636ffb3f838bf822c96be7d77dc78bbfb08bf236cae2b7245d621dbdc47a884",
+      "bytes": 2514,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPhysicalUnsignedInertia.lean"
+    },
+    {
+      "module": "TypeIIIPlaneGeneralTheoryFromSharedOperationsBeforePrime03",
+      "path": "formal/TypeIIIPlaneGeneralTheoryFromSharedOperationsBeforePrime03.lean",
+      "sha256": "1ce4ba2f0390ffccce258777ac829df63a4aa511731b4a44fe93c4442d78145a",
+      "bytes": 3349,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPlaneGeneralTheoryFromSharedOperationsBeforePrime03.lean"
+    },
+    {
+      "module": "TypeIIIPointDualSpectrumFromEvaluation",
+      "path": "formal/TypeIIIPointDualSpectrumFromEvaluation.lean",
+      "sha256": "bf39280444c293807e0240502fcff0184f84fd49779cfba423522be3eee06f99",
+      "bytes": 9958,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPointDualSpectrumFromEvaluation.lean"
+    },
+    {
+      "module": "TypeIIIPointImagePurity",
+      "path": "formal/TypeIIIPointImagePurity.lean",
+      "sha256": "4e1311b9a3e94036f552c11e6a3846d370d1139cfe0f92295ab3b39aef8d2090",
+      "bytes": 9009,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPointImagePurity.lean"
+    },
+    {
+      "module": "TypeIIIPointTensorAndAutomorphismsFromUniversalWeilFibers",
+      "path": "formal/TypeIIIPointTensorAndAutomorphismsFromUniversalWeilFibers.lean",
+      "sha256": "5dd26553c20806448375b1d36e4d97d5a3a695eb11f1c0aa4b7abd1f46b79914",
+      "bytes": 2931,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPointTensorAndAutomorphismsFromUniversalWeilFibers.lean"
+    },
+    {
+      "module": "TypeIIIPointTraceFromTensor",
+      "path": "formal/TypeIIIPointTraceFromTensor.lean",
+      "sha256": "79e9c6998733ae69f50e89aa2af191ab0cdce600f4d65c24b32bf62c07f60aac",
+      "bytes": 8109,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPointTraceFromTensor.lean"
     },
     {
       "module": "TypeIIIPoisson",
@@ -5698,6 +7408,33 @@
       "sha256": "737c56d11fdb060d9d8bab10eba8fd2386e7cf42e065a3ef040a49b8924eebd5",
       "bytes": 31842,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIPowerCoverBaseChangeFromEtaleCartesian",
+      "path": "formal/TypeIIIPowerCoverBaseChangeFromEtaleCartesian.lean",
+      "sha256": "62783ef4df67fe41a23aa8d13cbf225ad762ac2633954d102f9501922c61d4f2",
+      "bytes": 5121,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPowerCoverBaseChangeFromEtaleCartesian.lean"
+    },
+    {
+      "module": "TypeIIIPowerCoverScalarCoordinates",
+      "path": "formal/TypeIIIPowerCoverScalarCoordinates.lean",
+      "sha256": "b0b54289e5c3d7f5433b0a5bb8d633104d23a949c30fdd71af97790a464bfa8d",
+      "bytes": 4438,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPowerCoverScalarCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIPowerScalarCartesianFromUnitAutomorphism",
+      "path": "formal/TypeIIIPowerScalarCartesianFromUnitAutomorphism.lean",
+      "sha256": "d5af071c43a1d670828e55690ad593dc12848efc750be344f344c4ff33c25f11",
+      "bytes": 4699,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPowerScalarCartesianFromUnitAutomorphism.lean"
     },
     {
       "module": "TypeIIIPrimeCompletion",
@@ -5740,6 +7477,105 @@
         ],
         "log_sha256": "6498ed010950816776849f6c5fe30cdc91c5caad28a8dfbe96ccbad9d13dbcb5"
       }
+    },
+    {
+      "module": "TypeIIIPrimeOriginFromStandardKloostermanLang06",
+      "path": "formal/TypeIIIPrimeOriginFromStandardKloostermanLang06.lean",
+      "sha256": "e870e141deed3149c4665bbf8936044b798a85d320798d791070db7fe25ab92f",
+      "bytes": 10968,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimeOriginFromStandardKloostermanLang06.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveLinePropertiesFromGlobalLissity",
+      "path": "formal/TypeIIIPrimitiveLinePropertiesFromGlobalLissity.lean",
+      "sha256": "dfbe87fa45441bf5222da9b822cc3ed43ec2ca76b86f5b2b58808781c1740629",
+      "bytes": 3760,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveLinePropertiesFromGlobalLissity.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveLinearAS",
+      "path": "formal/TypeIIIPrimitiveLinearAS.lean",
+      "sha256": "f6d65d824aef1fd20bb51a954b602d48a75a2245ef3bab8061e6ebe9da002f34",
+      "bytes": 3771,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveLinearAS.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveOriginRulesFromConstantFieldExtension",
+      "path": "formal/TypeIIIPrimitiveOriginRulesFromConstantFieldExtension.lean",
+      "sha256": "3597bd77de4f328f5e2e51c951a2ef3c72efc2982782bb2e4db570c0756ca9dd",
+      "bytes": 8321,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveOriginRulesFromConstantFieldExtension.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveRadialAS",
+      "path": "formal/TypeIIIPrimitiveRadialAS.lean",
+      "sha256": "238a2f8c9795e899616c5cd912829a40151375579e65cf76149cda265baac953",
+      "bytes": 6294,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveRadialAS.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveRadialFromParameter",
+      "path": "formal/TypeIIIPrimitiveRadialFromParameter.lean",
+      "sha256": "03b58244fcf8d444fd890c3674ba9a0503d69db0f8ed8784f08c0959fc526ef6",
+      "bytes": 4948,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveRadialFromParameter.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveRamificationFromGeneralKatzTheory",
+      "path": "formal/TypeIIIPrimitiveRamificationFromGeneralKatzTheory.lean",
+      "sha256": "8e340ae00e8447067180d1578a80cd47427bb4d61bd9084d2313dee70d3788c0",
+      "bytes": 19258,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveRamificationFromGeneralKatzTheory.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveRankPurityFromGeneralKatzTheory",
+      "path": "formal/TypeIIIPrimitiveRankPurityFromGeneralKatzTheory.lean",
+      "sha256": "f05a987e0929be5970d2670d90cba95f902c501509cd91d57841d045c748a2bc",
+      "bytes": 25615,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveRankPurityFromGeneralKatzTheory.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveRanksFromComputedGenericLineRank",
+      "path": "formal/TypeIIIPrimitiveRanksFromComputedGenericLineRank.lean",
+      "sha256": "e608a865cd41c0a01f5a2bf167b2313970ff205fa61a1cf5d185ae155a31e45e",
+      "bytes": 7586,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveRanksFromComputedGenericLineRank.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveTateTraceFromGeneralStalkNormalization",
+      "path": "formal/TypeIIIPrimitiveTateTraceFromGeneralStalkNormalization.lean",
+      "sha256": "06dc3db490c8db6df10e5de9f7714d05e941097e35651b5d719a9c3a3ae568db",
+      "bytes": 4612,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveTateTraceFromGeneralStalkNormalization.lean"
+    },
+    {
+      "module": "TypeIIIPrimitiveTracesFromGeneralKatzArtinSchreierFormulas",
+      "path": "formal/TypeIIIPrimitiveTracesFromGeneralKatzArtinSchreierFormulas.lean",
+      "sha256": "8c0a311e98c0cffff92edb6d180191e1cc8c8665c391a51165331fc8597b226a",
+      "bytes": 16219,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPrimitiveTracesFromGeneralKatzArtinSchreierFormulas.lean"
     },
     {
       "module": "TypeIIIProductMasks",
@@ -5835,6 +7671,33 @@
       "origin_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION"
     },
     {
+      "module": "TypeIIIPublishedCohomologyCorollary",
+      "path": "formal/TypeIIIPublishedCohomologyCorollary.lean",
+      "sha256": "f00d3953e9ef2ecec6f28fe454dd0aeaa985039936328cfed13a1266a3ff3e9d",
+      "bytes": 2634,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPublishedCohomologyCorollary.lean"
+    },
+    {
+      "module": "TypeIIIPublishedCohomologyFunctor",
+      "path": "formal/TypeIIIPublishedCohomologyFunctor.lean",
+      "sha256": "b68a41fbed5ec29f757c0c5509d772e6232891b4416696de4fb15d46b42621ed",
+      "bytes": 7112,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPublishedCohomologyFunctor.lean"
+    },
+    {
+      "module": "TypeIIIPublishedConstructionComplexity",
+      "path": "formal/TypeIIIPublishedConstructionComplexity.lean",
+      "sha256": "df1d204bde87373f1c6155280047b9014ea4da573888c4d185340cc669c81976",
+      "bytes": 10146,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPublishedConstructionComplexity.lean"
+    },
+    {
       "module": "TypeIIIPublishedCovarianceRules",
       "path": "formal/TypeIIIPublishedCovarianceRules.lean",
       "sha256": "9acfb18200a899a8648439882db3809cac7953daee3a092cb2d2a4ec4b6c3438",
@@ -5865,6 +7728,24 @@
       "source_path": "formal/TypeIIIPublishedLocalConstruction.lean"
     },
     {
+      "module": "TypeIIIPublishedLocalInfinity",
+      "path": "formal/TypeIIIPublishedLocalInfinity.lean",
+      "sha256": "b3cd166d7527293e816c196a71a6f9a2ac1c134f7b6cca5501c86dbb58273e1c",
+      "bytes": 2257,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPublishedLocalInfinity.lean"
+    },
+    {
+      "module": "TypeIIIPublishedLocalOrigin",
+      "path": "formal/TypeIIIPublishedLocalOrigin.lean",
+      "sha256": "92107b88667875156cc4253e8964d95eefd14c372c8528bddf54fe93c1297e88",
+      "bytes": 3115,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPublishedLocalOrigin.lean"
+    },
+    {
       "module": "TypeIIIPublishedLocalPhases",
       "path": "formal/TypeIIIPublishedLocalPhases.lean",
       "sha256": "325a855d581c5262c7a0ba17c335b47dca315cd01f7977695222817e97457b76",
@@ -5881,6 +7762,15 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIPublishedMackey.lean"
+    },
+    {
+      "module": "TypeIIIPublishedOriginFrobenius",
+      "path": "formal/TypeIIIPublishedOriginFrobenius.lean",
+      "sha256": "34ee8bd2c1dcdc5fbccdce0ee5f5c64ad9dda66d08faf05a031e1cfaae95d7bc",
+      "bytes": 3634,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPublishedOriginFrobenius.lean"
     },
     {
       "module": "TypeIIIPublishedParabolicTrace",
@@ -5903,11 +7793,14 @@
     {
       "module": "TypeIIIPublishedPhysicalConstruction",
       "path": "formal/TypeIIIPublishedPhysicalConstruction.lean",
-      "sha256": "788e2e05fb3d767ea0bf954fe18111cb440930d7f4e069b50dccefcccc953006",
-      "bytes": 76072,
+      "sha256": "c8b617c6c88698a4c48f93df57c6ed1ebe14500a371f86ffb9594a5444399782",
+      "bytes": 76450,
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
-      "source_path": "formal/TypeIIIPublishedPhysicalConstruction.lean"
+      "source_path": "formal/TypeIIIPublishedPhysicalConstruction.lean",
+      "origin_sha256": "788e2e05fb3d767ea0bf954fe18111cb440930d7f4e069b50dccefcccc953006",
+      "origin_bytes": 76072,
+      "origin_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION"
     },
     {
       "module": "TypeIIIPublishedPolynomialComplexity",
@@ -5917,6 +7810,15 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIPublishedPolynomialComplexity.lean"
+    },
+    {
+      "module": "TypeIIIPublishedPrimitiveSources",
+      "path": "formal/TypeIIIPublishedPrimitiveSources.lean",
+      "sha256": "7d2a081e236fc6d268d864db2af487c29f160ef567d156c66ae0baa1c4e18a3f",
+      "bytes": 5689,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPublishedPrimitiveSources.lean"
     },
     {
       "module": "TypeIIIPublishedStalkCertificate",
@@ -5955,6 +7857,15 @@
       "origin_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION"
     },
     {
+      "module": "TypeIIIPublishedTorusEndpoint",
+      "path": "formal/TypeIIIPublishedTorusEndpoint.lean",
+      "sha256": "b1531b9ba9c83c671bf806aff3246d87ddf213f57ddf9b2d66d24ee560a8e0da",
+      "bytes": 3043,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPublishedTorusEndpoint.lean"
+    },
+    {
       "module": "TypeIIIPublishedTypeIII",
       "path": "formal/TypeIIIPublishedTypeIII.lean",
       "sha256": "b168ca88976fe9e2ac9c42aa2b4f6163f9eed064b38474bcd2d966bc5d9b5a64",
@@ -5976,6 +7887,105 @@
       "source_path": "formal/TypeIIIPublishedUniformComplexity.lean"
     },
     {
+      "module": "TypeIIIPulledCurveInput",
+      "path": "formal/TypeIIIPulledCurveInput.lean",
+      "sha256": "5dc413cc34cceb9c010352fcea32789b6190c8fa0144b7c6076f9c86fb912d39",
+      "bytes": 3917,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPulledCurveInput.lean"
+    },
+    {
+      "module": "TypeIIIPureDualTrace",
+      "path": "formal/TypeIIIPureDualTrace.lean",
+      "sha256": "7673d49c111e1c0a8af2b7d48f686a7a6d6d275330bf79a2716beb33d4e6aed3",
+      "bytes": 5947,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIPureDualTrace.lean"
+    },
+    {
+      "module": "TypeIIIQSTAdmissibilityFromBoundedDerived",
+      "path": "formal/TypeIIIQSTAdmissibilityFromBoundedDerived.lean",
+      "sha256": "82f76bac4ca23245d5c2f42e35ee0672ad9cd486985385a22a9f224303b4ff76",
+      "bytes": 4853,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTAdmissibilityFromBoundedDerived.lean"
+    },
+    {
+      "module": "TypeIIIQSTBoundedTensorFromUniversalDerivedMonoidal",
+      "path": "formal/TypeIIIQSTBoundedTensorFromUniversalDerivedMonoidal.lean",
+      "sha256": "1afaeab848ec25f4895b39ff231229a23bc927bb7c40f9f2c653753f7b55053a",
+      "bytes": 10738,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTBoundedTensorFromUniversalDerivedMonoidal.lean"
+    },
+    {
+      "module": "TypeIIIQSTCompactBridgeFromCompactifiedDerivedPushforward",
+      "path": "formal/TypeIIIQSTCompactBridgeFromCompactifiedDerivedPushforward.lean",
+      "sha256": "9c38e2545d8c51c4bb79117cbdff105a7b68243cb3a04ca0f8d428055827c416",
+      "bytes": 10777,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTCompactBridgeFromCompactifiedDerivedPushforward.lean"
+    },
+    {
+      "module": "TypeIIIQSTDualityBridgesFromSmoothLisseVerdier",
+      "path": "formal/TypeIIIQSTDualityBridgesFromSmoothLisseVerdier.lean",
+      "sha256": "14e98ced87fd1034b6ea20aa3c8ce14f94898a731ba38e16b8c231bd5b98902f",
+      "bytes": 11995,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTDualityBridgesFromSmoothLisseVerdier.lean"
+    },
+    {
+      "module": "TypeIIIQSTGenericFiberFromActualGenericPoint",
+      "path": "formal/TypeIIIQSTGenericFiberFromActualGenericPoint.lean",
+      "sha256": "d6da96f2689de95b299646eabee07220aad6a9584507532009079c64c5d8d1a4",
+      "bytes": 4382,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTGenericFiberFromActualGenericPoint.lean"
+    },
+    {
+      "module": "TypeIIIQSTHypergeometricRankFromGeneralKatzRank",
+      "path": "formal/TypeIIIQSTHypergeometricRankFromGeneralKatzRank.lean",
+      "sha256": "9bc4c61736751ba6bba76343300b804a89caebd9f50a1dbba3a910a5433090b3",
+      "bytes": 4373,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTHypergeometricRankFromGeneralKatzRank.lean"
+    },
+    {
+      "module": "TypeIIIQSTPerverseBackgroundFromUniversalHeart",
+      "path": "formal/TypeIIIQSTPerverseBackgroundFromUniversalHeart.lean",
+      "sha256": "2273542aa17f8768bf2474281441274772b7ea9cf0c9637b88c90e34112ef3a8",
+      "bytes": 8238,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTPerverseBackgroundFromUniversalHeart.lean"
+    },
+    {
+      "module": "TypeIIIQSTPrimitiveBridgesFromCommonKatzConstruction",
+      "path": "formal/TypeIIIQSTPrimitiveBridgesFromCommonKatzConstruction.lean",
+      "sha256": "920c6b56695ebe4e35ff0fef8fee955e67c92bf5f5fab6e82b916d31ff94b425",
+      "bytes": 12504,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTPrimitiveBridgesFromCommonKatzConstruction.lean"
+    },
+    {
+      "module": "TypeIIIQSTRealizationFromExactInverseImages",
+      "path": "formal/TypeIIIQSTRealizationFromExactInverseImages.lean",
+      "sha256": "b2ad6263cf5ca8297bf8a6063716b3fffd1157dd3d3b613deb2ec4d25cd544c1",
+      "bytes": 26053,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIQSTRealizationFromExactInverseImages.lean"
+    },
+    {
       "module": "TypeIIIQuarterRoot",
       "path": "formal/TypeIIIQuarterRoot.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -5983,6 +7993,114 @@
       "sha256": "1ce216fc93a703460f6057084d199ad79236275f0da5a10a13641c732fcabbb2",
       "bytes": 3666,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIRadialDualTateFromEvaluation",
+      "path": "formal/TypeIIIRadialDualTateFromEvaluation.lean",
+      "sha256": "ab4dea09e4b1ee5a78ff238aaac55ed2058e74a9dd648f36a3182f79f7fd774b",
+      "bytes": 5129,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRadialDualTateFromEvaluation.lean"
+    },
+    {
+      "module": "TypeIIIRadialGenericDominance",
+      "path": "formal/TypeIIIRadialGenericDominance.lean",
+      "sha256": "170462c9667b042eb42e209aeb66007ecea539e2579d987eec3adcf659fe70b4",
+      "bytes": 9544,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRadialGenericDominance.lean"
+    },
+    {
+      "module": "TypeIIIRankOneTrivialRepresentationFromActualAction",
+      "path": "formal/TypeIIIRankOneTrivialRepresentationFromActualAction.lean",
+      "sha256": "edac01882b03445d54d0c5d5c7dca47474212200bc17850dc20cdf4ce89d0175",
+      "bytes": 1385,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRankOneTrivialRepresentationFromActualAction.lean"
+    },
+    {
+      "module": "TypeIIIRankTwoFourierFromNativeASKernel",
+      "path": "formal/TypeIIIRankTwoFourierFromNativeASKernel.lean",
+      "sha256": "6487b84f2c07cc800382f6791046e3480b376a9e9050c6aa0b45025899481bd9",
+      "bytes": 11723,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRankTwoFourierFromNativeASKernel.lean"
+    },
+    {
+      "module": "TypeIIIRankTwoFourierKernelCoordinates",
+      "path": "formal/TypeIIIRankTwoFourierKernelCoordinates.lean",
+      "sha256": "b279445de3f39cb3477699fe49ee9a38e807aba013c6af8367927245d02ff51f",
+      "bytes": 8886,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRankTwoFourierKernelCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIRationalPointStalks",
+      "path": "formal/TypeIIIRationalPointStalks.lean",
+      "sha256": "6841ee7904060a8c43b8f1d48e827fcc5a1316fcaeb8f7cc2fa13fc5f0919bf2",
+      "bytes": 10300,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRationalPointStalks.lean"
+    },
+    {
+      "module": "TypeIIIRationalPointStalksFromUniversalFiber",
+      "path": "formal/TypeIIIRationalPointStalksFromUniversalFiber.lean",
+      "sha256": "9a6420f09e8e9618017cddd5776f89f7ed2eb64ae9fef3d1496a3d9cbf3858fd",
+      "bytes": 4095,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRationalPointStalksFromUniversalFiber.lean"
+    },
+    {
+      "module": "TypeIIIRegularTameBasisFromFiniteJordanExponential",
+      "path": "formal/TypeIIIRegularTameBasisFromFiniteJordanExponential.lean",
+      "sha256": "74475453d2a2bc0538eee20d1bf68c933bb0eb687906319311e82605a9e5cb99",
+      "bytes": 3442,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRegularTameBasisFromFiniteJordanExponential.lean"
+    },
+    {
+      "module": "TypeIIIRegularUnipotentBoundary",
+      "path": "formal/TypeIIIRegularUnipotentBoundary.lean",
+      "sha256": "88f1aa6bf9353bb52b9e6fa9ad1b332579c92ed2904a0f845379f3f2c0dbc98e",
+      "bytes": 9161,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRegularUnipotentBoundary.lean"
+    },
+    {
+      "module": "TypeIIIRegularUnipotentRepresentation",
+      "path": "formal/TypeIIIRegularUnipotentRepresentation.lean",
+      "sha256": "c60f3fc3bbd0be849efaa728f985d0dd8e6304d63583d4091320c5c8df3a47bb",
+      "bytes": 4642,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRegularUnipotentRepresentation.lean"
+    },
+    {
+      "module": "TypeIIIRelativeAffineFourierKernelFromActualCoordinates",
+      "path": "formal/TypeIIIRelativeAffineFourierKernelFromActualCoordinates.lean",
+      "sha256": "7bdf4bf9f3e1f3bff8465110637d9596d3559c5096ef0100b1c4422b06daa5c6",
+      "bytes": 4939,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRelativeAffineFourierKernelFromActualCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIRelativeAffineFourierKernelRestrictionFromInverseImages",
+      "path": "formal/TypeIIIRelativeAffineFourierKernelRestrictionFromInverseImages.lean",
+      "sha256": "6cc299b43fe1919889a49793d7e260b1e2d107ab227f6c8239bac75ce8db1582",
+      "bytes": 3729,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRelativeAffineFourierKernelRestrictionFromInverseImages.lean"
     },
     {
       "module": "TypeIIIRepeatedAlgebra",
@@ -6075,6 +8193,15 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIIRestrictionFrobenius",
+      "path": "formal/TypeIIIRestrictionFrobenius.lean",
+      "sha256": "f43c6a46ffabb6163398271ba31d14895cc97148de9176044cbbca887c1050cd",
+      "bytes": 10205,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIRestrictionFrobenius.lean"
+    },
+    {
       "module": "TypeIIIRightDerivedLongExact",
       "path": "formal/TypeIIIRightDerivedLongExact.lean",
       "sha256": "d63f3958dbcf4127fca1a491ffc63175dbaaa15e3da9bbade8c3788c97a4d6ba",
@@ -6120,6 +8247,15 @@
       "source_path": "formal/TypeIIIRightDerivedPostcompose.lean"
     },
     {
+      "module": "TypeIIISameICRadialFromGeneralRestrictionEvaluationHELD04",
+      "path": "formal/TypeIIISameICRadialFromGeneralRestrictionEvaluationHELD04.lean",
+      "sha256": "c320f7b62b2b5255ea8cdccb035acf4b492ac62ced12be2cffbb85a1c4c1fab6",
+      "bytes": 13982,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISameICRadialFromGeneralRestrictionEvaluationHELD04.lean"
+    },
+    {
       "module": "TypeIIISampledFineBand",
       "path": "formal/TypeIIISampledFineBand.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -6127,6 +8263,60 @@
       "sha256": "cb5de5b9edc9558472ae2a61f2ecdd7ee29dfc242fe7965596b6098988264b6f",
       "bytes": 28274,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIIScalarGenericSourceRankFromLissePoints",
+      "path": "formal/TypeIIIScalarGenericSourceRankFromLissePoints.lean",
+      "sha256": "2506973d372e53b5d2588cd8400cb3777697d53630b04af4ea2a97820db28b79",
+      "bytes": 4620,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIScalarGenericSourceRankFromLissePoints.lean"
+    },
+    {
+      "module": "TypeIIIScalarLocalPropagationFromFilteredTraits",
+      "path": "formal/TypeIIIScalarLocalPropagationFromFilteredTraits.lean",
+      "sha256": "9003cf03e3f25b9b6bc99918fc6f99da0d2b2482d5be736963e9a3e3470e3113",
+      "bytes": 12715,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIScalarLocalPropagationFromFilteredTraits.lean"
+    },
+    {
+      "module": "TypeIIIScalarRankFromCommonFinitePoints",
+      "path": "formal/TypeIIIScalarRankFromCommonFinitePoints.lean",
+      "sha256": "3948d63fd71f1e5d33415e9602c4d7c6fd964ac612b113993a1b92997a385884",
+      "bytes": 3683,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIScalarRankFromCommonFinitePoints.lean"
+    },
+    {
+      "module": "TypeIIIScalarSourcePointCoordinates",
+      "path": "formal/TypeIIIScalarSourcePointCoordinates.lean",
+      "sha256": "a5380d83aeca8aebbd820d97d1c304f89475f8a08d811b19aeb49102a2dc0c25",
+      "bytes": 5490,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIScalarSourcePointCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIScalarSourceSpecializationCoordinates",
+      "path": "formal/TypeIIIScalarSourceSpecializationCoordinates.lean",
+      "sha256": "bcd46f8afe2b08607ce0e5f240180ff1eed1ffc2d02fe3b7ae4a65afeae4c0d7",
+      "bytes": 6422,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIScalarSourceSpecializationCoordinates.lean"
+    },
+    {
+      "module": "TypeIIIScalarTraitFromLiteralPowerSeriesRescale02",
+      "path": "formal/TypeIIIScalarTraitFromLiteralPowerSeriesRescale02.lean",
+      "sha256": "2dade59ab03d43e629eef5cdb0ce5e150a2d625f39709f4d472dbbcf2cfedaea",
+      "bytes": 4496,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIScalarTraitFromLiteralPowerSeriesRescale02.lean"
     },
     {
       "module": "TypeIIIScaleBounds",
@@ -6210,6 +8400,15 @@
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
     },
     {
+      "module": "TypeIIISelectedTensorTransport",
+      "path": "formal/TypeIIISelectedTensorTransport.lean",
+      "sha256": "cdf9bf82e029e0728fa8cda717525e78d9d2582e826aa9042922e8fa5c640e5e",
+      "bytes": 6421,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISelectedTensorTransport.lean"
+    },
+    {
       "module": "TypeIIISeparatedCoefficients",
       "path": "formal/TypeIIISeparatedCoefficients.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -6235,6 +8434,15 @@
       "sha256": "f054ad9b6924b89581a2bda97cbcb4507a3bac3639937b4cf12bd4319ce219ef",
       "bytes": 13560,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIISharedCohomology",
+      "path": "formal/TypeIIISharedCohomology.lean",
+      "sha256": "b96a8a0649ded0d0b838e10f1a0181443676b51cfd34a0c0be13ec1bb641075f",
+      "bytes": 4634,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISharedCohomology.lean"
     },
     {
       "module": "TypeIIISharedFrequency",
@@ -6291,6 +8499,15 @@
       "source_path": "formal/TypeIIISheafTowerEvaluation.lean"
     },
     {
+      "module": "TypeIIISignStalkFromTensor",
+      "path": "formal/TypeIIISignStalkFromTensor.lean",
+      "sha256": "579c4e70dead9c01f85bbb82e90f6bd0809a19962bc2f2fa7c487dce1c03db18",
+      "bytes": 4109,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISignStalkFromTensor.lean"
+    },
+    {
       "module": "TypeIIISignedRepartition",
       "path": "formal/TypeIIISignedRepartition.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -6316,6 +8533,96 @@
       "sha256": "b6a5e3860728e764e2fa7c63428733d8c664e4975681b09f00414837a578a78f",
       "bytes": 10503,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIISourceCohomologyInputs",
+      "path": "formal/TypeIIISourceCohomologyInputs.lean",
+      "sha256": "1fe7e726fe86379ac22b1d4a0417c03b96b8608502aab791f6df7283fe07ed3d",
+      "bytes": 2648,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourceCohomologyInputs.lean"
+    },
+    {
+      "module": "TypeIIISourceCurveBaseChange",
+      "path": "formal/TypeIIISourceCurveBaseChange.lean",
+      "sha256": "5d1e9371ab8dad5ca672f54c03bcfad993de8515137aa4f4bc8569ca451c504f",
+      "bytes": 11725,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourceCurveBaseChange.lean"
+    },
+    {
+      "module": "TypeIIISourceGeometricRulesFromGlobalLissity",
+      "path": "formal/TypeIIISourceGeometricRulesFromGlobalLissity.lean",
+      "sha256": "6ef9a09af526b80db37b5f5f1a519ce80d3b1d9f4d89009f8f55b8d3edd7993a",
+      "bytes": 6739,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourceGeometricRulesFromGlobalLissity.lean"
+    },
+    {
+      "module": "TypeIIISourceGlobalLissityFromKatzPullbacks",
+      "path": "formal/TypeIIISourceGlobalLissityFromKatzPullbacks.lean",
+      "sha256": "e655391651ac22c3ba5df457cb1bf5e1014e6e1a7c0631d3fa96a3ba0d9a2afa",
+      "bytes": 12330,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourceGlobalLissityFromKatzPullbacks.lean"
+    },
+    {
+      "module": "TypeIIISourceInverseImageSystem",
+      "path": "formal/TypeIIISourceInverseImageSystem.lean",
+      "sha256": "8423edfcbf4d5f474774ffd57d3e479987b6235ec64afba7837d143a6528e6f6",
+      "bytes": 5376,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourceInverseImageSystem.lean"
+    },
+    {
+      "module": "TypeIIISourceLocalTensorDualFromUniformProfiles",
+      "path": "formal/TypeIIISourceLocalTensorDualFromUniformProfiles.lean",
+      "sha256": "16de6df0c96d8be6fa8d07b4ff048ac10d7d7c48041f1a5539f917b247e4862a",
+      "bytes": 11354,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourceLocalTensorDualFromUniformProfiles.lean"
+    },
+    {
+      "module": "TypeIIISourcePointDualityFromGeneralLisseDualStalks",
+      "path": "formal/TypeIIISourcePointDualityFromGeneralLisseDualStalks.lean",
+      "sha256": "e5b795392a0ecec95363413102f9097e7f856689f70e02fb313a80b0eb7a828b",
+      "bytes": 4485,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourcePointDualityFromGeneralLisseDualStalks.lean"
+    },
+    {
+      "module": "TypeIIISourceProjectionForQST",
+      "path": "formal/TypeIIISourceProjectionForQST.lean",
+      "sha256": "ff00830acaea7a24dd20daa76cf42612fd9ef4dbc21fd71a16132780a5d74602",
+      "bytes": 5136,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourceProjectionForQST.lean"
+    },
+    {
+      "module": "TypeIIISourcePurityFromStalks",
+      "path": "formal/TypeIIISourcePurityFromStalks.lean",
+      "sha256": "92f9cd9c960751730c05ba3867add605a9a4d77fa8da79c290aea77b5bf2bbed",
+      "bytes": 4948,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourcePurityFromStalks.lean"
+    },
+    {
+      "module": "TypeIIISourceRanksFromCommonFinitePoint",
+      "path": "formal/TypeIIISourceRanksFromCommonFinitePoint.lean",
+      "sha256": "b66e38e54f0c7664b54baf93e428ba25c8e268e089f2cf25aa4ac5f486dba433",
+      "bytes": 5196,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIISourceRanksFromCommonFinitePoint.lean"
     },
     {
       "module": "TypeIIISplitImageTransport",
@@ -6354,6 +8661,69 @@
       "source_path": "formal/TypeIIIStalkAssembly.lean"
     },
     {
+      "module": "TypeIIIStandardFiniteConstantOriginTheorems01",
+      "path": "formal/TypeIIIStandardFiniteConstantOriginTheorems01.lean",
+      "sha256": "4c5e6a93104868c596397bfdbccbb5422721524c187425ab3d3f7ed3bc479bf3",
+      "bytes": 6998,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIStandardFiniteConstantOriginTheorems01.lean"
+    },
+    {
+      "module": "TypeIIIStandardGmTraceFromFaithfulArithmeticOperations02",
+      "path": "formal/TypeIIIStandardGmTraceFromFaithfulArithmeticOperations02.lean",
+      "sha256": "c97b2ecc02b7caa5f945784ea99eda8b576676f8d818143c431d6a070af27823",
+      "bytes": 10641,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIStandardGmTraceFromFaithfulArithmeticOperations02.lean"
+    },
+    {
+      "module": "TypeIIIStandardKloostermanLangOriginTheorems03",
+      "path": "formal/TypeIIIStandardKloostermanLangOriginTheorems03.lean",
+      "sha256": "e18d911485101c0764fa50f24eb66a6406fac2b0942fc05a9dfb3442350283ac",
+      "bytes": 6749,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIStandardKloostermanLangOriginTheorems03.lean"
+    },
+    {
+      "module": "TypeIIIStandardP1BoundaryPrimitives03",
+      "path": "formal/TypeIIIStandardP1BoundaryPrimitives03.lean",
+      "sha256": "dc86b52476792388c40a1bd6ab74be78aec943b473922ac0ba24717e87ac41ff",
+      "bytes": 8013,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIStandardP1BoundaryPrimitives03.lean"
+    },
+    {
+      "module": "TypeIIIStandardTwoAdicAction",
+      "path": "formal/TypeIIIStandardTwoAdicAction.lean",
+      "sha256": "74774af1754479ea8f4fa9c45e30e58251ecf25e74b00d809cd6e3539e00ede3",
+      "bytes": 4824,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIStandardTwoAdicAction.lean"
+    },
+    {
+      "module": "TypeIIIStartingSourceComplexity",
+      "path": "formal/TypeIIIStartingSourceComplexity.lean",
+      "sha256": "edd9aeb7f78142e7fc9272d4d7a1356119556aa69b80d682a7573a1dc31e5493",
+      "bytes": 6583,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIStartingSourceComplexity.lean"
+    },
+    {
+      "module": "TypeIIIStartingSourceMaps",
+      "path": "formal/TypeIIIStartingSourceMaps.lean",
+      "sha256": "f81d7ea740aca830637ba35f0e3d88af7a9c341fda2c9cf26ece917379d04370",
+      "bytes": 9167,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIStartingSourceMaps.lean"
+    },
+    {
       "module": "TypeIIIStrictHenselianEtaleCohomology",
       "path": "formal/TypeIIIStrictHenselianEtaleCohomology.lean",
       "sha256": "66c95fce00b5b27c2a7678a7c62e7f4af803946d8fce7bf307c9a238e3f993a6",
@@ -6390,6 +8760,15 @@
       "source_path": "formal/TypeIIISurfaceWeightBounds.lean"
     },
     {
+      "module": "TypeIIITameFrobeniusScaling",
+      "path": "formal/TypeIIITameFrobeniusScaling.lean",
+      "sha256": "838137aca0edc3f48a5cdb032b4a45bd9ae45c4d5bed73220bf26d88cbb222f7",
+      "bytes": 6828,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITameFrobeniusScaling.lean"
+    },
+    {
       "module": "TypeIIITameLinearAlgebra",
       "path": "formal/TypeIIITameLinearAlgebra.lean",
       "source_project": "prime_gaps_analytic_verification_20260904",
@@ -6397,6 +8776,60 @@
       "sha256": "2ec0ab9f235815588bcdb0b0116f232b6de437188fa3fd90fe7b95ed6df64c96",
       "bytes": 7817,
       "prior_audit_status": "PASS_REBUILD_AND_AXIOM_AUDIT"
+    },
+    {
+      "module": "TypeIIITameScalarNearbyFromQuotientAction",
+      "path": "formal/TypeIIITameScalarNearbyFromQuotientAction.lean",
+      "sha256": "a4ef40f2ba23942ed2641008f9469283c17847a59315ac5276aae6d940634ebc",
+      "bytes": 7949,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITameScalarNearbyFromQuotientAction.lean"
+    },
+    {
+      "module": "TypeIIITateLineInvariantContraction03",
+      "path": "formal/TypeIIITateLineInvariantContraction03.lean",
+      "sha256": "3139b54c994831dc0761565b95bcfcea04cdcbf23edfdebd3406973c30223873",
+      "bytes": 3413,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITateLineInvariantContraction03.lean"
+    },
+    {
+      "module": "TypeIIITensorBoundaryFrobenius",
+      "path": "formal/TypeIIITensorBoundaryFrobenius.lean",
+      "sha256": "35c9af70d0b229c13fd9f35c3c4a963bae2583d413bcf22e0d2b2da8c60989b3",
+      "bytes": 7737,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITensorBoundaryFrobenius.lean"
+    },
+    {
+      "module": "TypeIIITensorListRepresentation",
+      "path": "formal/TypeIIITensorListRepresentation.lean",
+      "sha256": "5185dafe6e15341da83c52c0be9c3021c95976e7482867c26ac8ec604714e92f",
+      "bytes": 6801,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITensorListRepresentation.lean"
+    },
+    {
+      "module": "TypeIIITensorPurityFromStalks",
+      "path": "formal/TypeIIITensorPurityFromStalks.lean",
+      "sha256": "c868f147f36b56c1f7a2798a59cd4e0bc3124d8c7df9ff5f830c8fcd92060d23",
+      "bytes": 9344,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITensorPurityFromStalks.lean"
+    },
+    {
+      "module": "TypeIIITheoryFromNativePerverseInverseImages",
+      "path": "formal/TypeIIITheoryFromNativePerverseInverseImages.lean",
+      "sha256": "cbc9070ba0047d888747a3da84349c0ef69613a14065ac4e041ee9e34a495105",
+      "bytes": 5231,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITheoryFromNativePerverseInverseImages.lean"
     },
     {
       "module": "TypeIIITorsionArtinSchreierReductionComparison",
@@ -6480,6 +8913,24 @@
       "source_path": "formal/TypeIIITorusFiberBound.lean"
     },
     {
+      "module": "TypeIIITorusOpenFromLaurentLocalization",
+      "path": "formal/TypeIIITorusOpenFromLaurentLocalization.lean",
+      "sha256": "82a5641e9201ed65c54d5eefaefe9cd618dbdb54b221fb1db3cbd84552cf99eb",
+      "bytes": 5610,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITorusOpenFromLaurentLocalization.lean"
+    },
+    {
+      "module": "TypeIIITorusStalkCriterion",
+      "path": "formal/TypeIIITorusStalkCriterion.lean",
+      "sha256": "75f608271d3ffdbb0b99c9754395ffc4952fad03c3f4ef6bbddf6be5b793f138",
+      "bytes": 7736,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITorusStalkCriterion.lean"
+    },
+    {
       "module": "TypeIIITraceIdentity",
       "path": "formal/TypeIIITraceIdentity.lean",
       "sha256": "3f97dafb208e624a2f69c992da544313d04e21d07ccba0cfba4b2cfbc1b7b502",
@@ -6489,6 +8940,51 @@
       "source_path": "formal/TypeIIITraceIdentity.lean"
     },
     {
+      "module": "TypeIIITraitClosureLiftDifferenceFromEverySeries04",
+      "path": "formal/TypeIIITraitClosureLiftDifferenceFromEverySeries04.lean",
+      "sha256": "062cc83343b387653c446b042863fd874b8b78734b2738f880683bb557568d77",
+      "bytes": 6967,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITraitClosureLiftDifferenceFromEverySeries04.lean"
+    },
+    {
+      "module": "TypeIIITwoAdicCoefficientField",
+      "path": "formal/TypeIIITwoAdicCoefficientField.lean",
+      "sha256": "f648c8be7d274e77da84d3d232db652caaee3ca2779e30cb27ba214204fc327d",
+      "bytes": 6802,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITwoAdicCoefficientField.lean"
+    },
+    {
+      "module": "TypeIIITwoAdicComplexEmbedding",
+      "path": "formal/TypeIIITwoAdicComplexEmbedding.lean",
+      "sha256": "3c14ae4b3508fd75bef1ff7abe38d58a7b6021da4584dad106b682c175e00cee",
+      "bytes": 2562,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIITwoAdicComplexEmbedding.lean"
+    },
+    {
+      "module": "TypeIIIUniformComplexityFromCommonRealization",
+      "path": "formal/TypeIIIUniformComplexityFromCommonRealization.lean",
+      "sha256": "fe28f7dab3b0293579ef564fc85248eb65e0b2296c6062ff5f5f8acc5b819e33",
+      "bytes": 27808,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIUniformComplexityFromCommonRealization.lean"
+    },
+    {
+      "module": "TypeIIIUniformSourceLocalObservablesFromParameterFibers",
+      "path": "formal/TypeIIIUniformSourceLocalObservablesFromParameterFibers.lean",
+      "sha256": "9de2c8b3e4d13c9ab7ed20eb2a2dd10e318889e56a14dd3909e39b4cde6b076a",
+      "bytes": 10116,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIUniformSourceLocalObservablesFromParameterFibers.lean"
+    },
+    {
       "module": "TypeIIIUniformStalkCriterion",
       "path": "formal/TypeIIIUniformStalkCriterion.lean",
       "sha256": "7e6bbb48b415eefabd8e486994b0889fa6fa9d0455a1bef8c05f4e9ecbe86dd3",
@@ -6496,6 +8992,33 @@
       "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
       "source_project": "prime-gaps-lean",
       "source_path": "formal/TypeIIIUniformStalkCriterion.lean"
+    },
+    {
+      "module": "TypeIIIUniversalBoundedInverseImagesFromExactSystem",
+      "path": "formal/TypeIIIUniversalBoundedInverseImagesFromExactSystem.lean",
+      "sha256": "904bcf894cc907b5e2c613fa72f4e963c84d214d8484ef18776f24db20767ab8",
+      "bytes": 3566,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIUniversalBoundedInverseImagesFromExactSystem.lean"
+    },
+    {
+      "module": "TypeIIIUniversalOrdinaryInverseImages",
+      "path": "formal/TypeIIIUniversalOrdinaryInverseImages.lean",
+      "sha256": "8c86a1d7ecd451a3922b5faae87a4960e9653eb1515cc395f3f44abf76ff66d1",
+      "bytes": 5979,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIUniversalOrdinaryInverseImages.lean"
+    },
+    {
+      "module": "TypeIIIWholeWeilFromInertiaAndChosenLift02",
+      "path": "formal/TypeIIIWholeWeilFromInertiaAndChosenLift02.lean",
+      "sha256": "1d1f870257cdec04fa4d708e5f3066086530d73d5f5d5e884818f876cc099caa",
+      "bytes": 7486,
+      "prior_audit_status": "CHANGED_AFTER_INITIAL_IMPORT_REQUIRES_CURRENT_VERIFICATION",
+      "source_project": "prime-gaps-lean",
+      "source_path": "formal/TypeIIIWholeWeilFromInertiaAndChosenLift02.lean"
     },
     {
       "module": "TypeIIIZeroCoefficients",
@@ -6666,5 +9189,5 @@
       "scope": "Diagnostic commands printing previously defined baseline declarations and their axioms. No new mathematical declarations. Excluded from the development library and its theorem audit."
     }
   ],
-  "working_manifest_updated_utc": "2026-09-05T08:18:20.206807+00:00"
+  "working_manifest_updated_utc": "2026-10-04T05:36:40.827284+00:00"
 }

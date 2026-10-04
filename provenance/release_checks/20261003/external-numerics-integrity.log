@@ -1,0 +1,8 @@
+{
+  "status": "PASS_EXTERNAL_PACKAGE_INTEGRITY",
+  "repository_copies": 21,
+  "lean_target_files": 5,
+  "archive_entries_checked": 0,
+  "integrations_repeated": false,
+  "lean_proof_run": false
+}
